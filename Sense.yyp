@@ -4,9 +4,14 @@
   "name": "Sense",
   "resources": [
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"MACROS","path":"objects/MACROS/MACROS.yy",},"order":3,},
+    {"id":{"name":"spr_pathMaker","path":"sprites/spr_pathMaker/spr_pathMaker.yy",},"order":2,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"obj_pathMaker","path":"objects/obj_pathMaker/obj_pathMaker.yy",},"order":2,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"ts_walls","path":"tilesets/ts_walls/ts_walls.yy",},"order":0,},
+    {"id":{"name":"obj_prefabSpawner","path":"objects/obj_prefabSpawner/obj_prefabSpawner.yy",},"order":1,},
+    {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -23,6 +28,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

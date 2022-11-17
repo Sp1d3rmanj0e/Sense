@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Get tilemap
-tilemap = layer_tilemap_get_id("ground");
+tilemap = layer_tilemap_get_id("walls");
 
 // Movement Control Initialization
 hsp = 0;

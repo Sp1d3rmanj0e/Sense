@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Set to fullscreen
+window_set_fullscreen(true);
+
 // Get tilemap
 tilemap = layer_tilemap_get_id("walls");
 

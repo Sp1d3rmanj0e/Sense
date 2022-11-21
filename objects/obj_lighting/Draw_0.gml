@@ -31,9 +31,6 @@ else
 			{
 				case obj_player:
 					draw_sprite(spr_lightSourceRadial, 0, x - _cx, y - _cy);
-					show_debug_message(x);
-					show_debug_message(_cx);
-					show_debug_message(x - _cx);
 					break;
 				case obj_flashlight:
 					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, 1, obj_flashlight.image_angle, c_white, 1);

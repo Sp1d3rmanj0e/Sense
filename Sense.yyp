@@ -7,6 +7,7 @@
     {"id":{"name":"MACROS","path":"objects/MACROS/MACROS.yy",},"order":3,},
     {"id":{"name":"obj_lightParent","path":"objects/obj_lightParent/obj_lightParent.yy",},"order":1,},
     {"id":{"name":"spr_lightSourceRadial","path":"sprites/spr_lightSourceRadial/spr_lightSourceRadial.yy",},"order":3,},
+    {"id":{"name":"scr_goto","path":"scripts/scr_goto/scr_goto.yy",},"order":0,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":6,},
     {"id":{"name":"spr_flashlight","path":"sprites/spr_flashlight/spr_flashlight.yy",},"order":4,},
     {"id":{"name":"spr_pathMaker","path":"sprites/spr_pathMaker/spr_pathMaker.yy",},"order":2,},

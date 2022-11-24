@@ -13,9 +13,16 @@ function goto(_path, _x, _y, _speed)
 	// Lock location to the center of the grid squares
 	var _nx = (_x div tile_size) * tile_size + (tile_size/2);
 	var _ny = (_y div tile_size) * tile_size + (tile_size/2);
-
-	if (mp_grid_path(global.grid, path, x, y, _nx, _ny, 1))
+	
+	// Do the path if possible
+	if (mp_grid_path(global.grid, _path, x, y, _nx, _ny, 1))
 	{
-		path_start(path, _speed, path_action_stop, false);
+		path_start(_path, _speed, path_action_stop, false);
+		return true;
+	}
+	// If the path is impossible
+	else
+	{
+		return false;
 	}
 }

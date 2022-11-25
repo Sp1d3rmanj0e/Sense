@@ -22,7 +22,3 @@ for (var j = 0; j < h; j++) {
 		show_debug_message("cell added to " + string(i) + ", " + string (j));
     }
 }}
-
-// Add smoothness to the path
-path_set_kind(global.grid, 1);
-path_set_precision(global.grid, 4);

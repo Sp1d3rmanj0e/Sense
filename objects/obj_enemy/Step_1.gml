@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Look in the direction of motion (if not moving)
+if ((prevX - x) + (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY) + 90;
+image_angle = dir;
+
+// Set new previous locations
+prevX = x;
+prevY = y;
+
+// State machine
 switch(state)
 {
 	case STATE.WANDER:
@@ -56,6 +65,9 @@ switch(state)
 				idleTimer = -1;
 			}
 		}
+		
+		// Search for the player to aggro to
+		
 		break;
 		
 	case STATE.CHASE:

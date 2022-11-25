@@ -4,10 +4,13 @@
 // Enemy variables
 eSpeed = 4;
 idleTime = 4;
+dir = 0;
 
 // Other variables
 task = -1;
 newPath = true;
+prevX = x;
+prevY = y;
 
 // Timers
 idleTimer = -1;

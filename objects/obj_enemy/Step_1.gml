@@ -2,12 +2,35 @@
 // You can write your code in this editor
 
 // Look in the direction of motion (if not moving)
-if ((prevX - x) + (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY) + 90;
-image_angle = dir;
+if ((prevX - x) + (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
+image_angle = dir + 90;
 
 // Set new previous locations
 prevX = x;
 prevY = y;
+
+// Initialize temp vars
+var _visWithinCone, _visWithinDist, _visNotWallBlocked = false, _playerDir;
+
+// Check to see if player is within line of sight (and conditions are met)
+_playerDir = abs(point_direction(x, y, obj_player.x, obj_player.y) - 180);
+_visWithinCone = (abs(dir - _playerDir) < viewConeDeg);
+_visWithinDist = (distance_to_object(obj_player) < maxSightDist);
+
+// Draw a line to make sure los does not go through walls
+if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
+_visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 
+										  tilemap, distance_to_object(obj_player)));
+/*
+ * visWithinCone - Makes sure the view is within a certain cone 
+ * from the facing direction
+ * visWithinDist - Makes sure the player is close enough to be seen
+ * visNotWallBlocked - Makes sure the player is not being seen through walls
+*/
+
+// Activates aggro if the player is seen
+if (_visNotWallBlocked) state = STATE.CHASE;
+
 
 // State machine
 switch(state)

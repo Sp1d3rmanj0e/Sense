@@ -6,6 +6,6 @@ enum WORLD
 
 enum STATE
 {
-	WANDER,
-	CHASE
+	WANDER = 5,
+	CHASE = 6
 }

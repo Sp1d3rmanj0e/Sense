@@ -29,7 +29,8 @@ _visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y,
 */
 
 // Activates aggro if the player is seen
-if (_visNotWallBlocked) state = STATE.CHASE;
+show_debug_message(_visNotWallBlocked);
+if (_visNotWallBlocked || place_meeting(x, y, obj_player)) state = STATE.CHASE;
 
 
 // State machine
@@ -73,7 +74,7 @@ switch(state)
 		{
 			// Idle for a few seconds
 			if (idleTimer == -1) idleTimer = idleTime * room_speed;
-				
+			
 			// Countdown the timer
 			if (idleTimer > 0) 
 			{

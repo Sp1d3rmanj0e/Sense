@@ -1,11 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Randomize
+randomize();
+
 // Enemy variables
 eSpeed = 4;
 idleTime = 4;
 dir = 0;
-viewConeDeg = 15;
+viewConeDeg = 45;
 maxSightDist = 5 * WORLD.TILE_SIZE; // 5 tile view range
 
 // Other variables

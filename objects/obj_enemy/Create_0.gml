@@ -6,19 +6,22 @@ randomize();
 
 // Enemy variables
 eSpeed = 4;
-idleTime = 4;
 dir = 0;
 viewConeDeg = 45;
 maxSightDist = 5 * WORLD.TILE_SIZE; // 5 tile view range
 
 // Other variables
-task = -1;
 newPath = true;
 prevX = x;
 prevY = y;
 
 // Timers
 idleTimer = -1;
+idleTime = 4;
+playerChaseTimer = -1;
+playerChaseTime = 1;
+enemyMemoryTimer = -1;
+enemyMemoryTime = 1.75;
 
 // Create the path
 path = path_add();

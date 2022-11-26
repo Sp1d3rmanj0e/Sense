@@ -29,20 +29,26 @@ _visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y,
 */
 
 // Activates aggro if the player is seen
-show_debug_message(_visNotWallBlocked);
-if (_visNotWallBlocked || place_meeting(x, y, obj_player)) state = STATE.CHASE;
-
+/*
+if (_visNotWallBlocked || place_meeting(x, y, obj_player)) 
+{
+	state = STATE.CHASE; // Switches to chase state
+}
+else
+{
+	state = STATE.WANDER; // Switches to wander state
+}
+*/
 
 // State machine
 switch(state)
 {
 	case STATE.WANDER:
-		// Assign task a variable if there is none
-		if (task == -1) task = 1;
-			
+	
 		// Get a path to follow
 		if (newPath == true)
 		{
+			
 			// Only allows one tick to go through
 			newPath = false;
 				
@@ -91,10 +97,50 @@ switch(state)
 		}
 		
 		// Search for the player to aggro to
-		
+		if (_visNotWallBlocked || place_meeting(x, y, obj_player))
+		{
+			// Reset vars
+			idleTimer = -1;
+			newPath = false;
+			
+			// Set the state to chase
+			state = STATE.CHASE;
+		}
 		break;
 		
 	case STATE.CHASE:
 		
+		// Forget the player if not seen for x amt. time
+		if (_visNotWallBlocked || place_meeting(x, y, obj_player)) // If the player is seen
+		{
+			// Activate timer while player is visually seen
+			enemyMemoryTimer = enemyMemoryTime * room_speed;
+		}
+		else // If the player is not seen
+		{
+			// Count down timer
+			if (enemyMemoryTimer > 0) enemyMemoryTimer--;
+			else 
+			{
+				// Reset timer
+				enemyMemoryTimer = -1;
+				
+				// Switch to wander state
+				state = STATE.WANDER;
+				exit;
+			}
+		}
+		
+		// Delay timer before the enemy will find a new path towards the player
+		if (playerChaseTimer == -1) playerChaseTimer = playerChaseTime * room_speed;
+			
+		// Countdown the timer
+		if (playerChaseTimer > 0) playerChaseTimer--;
+		// Reset the timer & refresh pathfinding towards player
+		else 
+		{
+			playerChaseTimer = -1;
+			goto(path, obj_player.x, obj_player.y, eSpeed);
+		}
 		break;
 }

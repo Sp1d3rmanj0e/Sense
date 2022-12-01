@@ -22,6 +22,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":10,},
     {"id":{"name":"obj_lighting","path":"objects/obj_lighting/obj_lighting.yy",},"order":0,},
+    {"id":{"name":"Player_With_Thermal","path":"sprites/Player_With_Thermal/Player_With_Thermal.yy",},"order":7,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

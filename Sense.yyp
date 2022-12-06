@@ -19,6 +19,7 @@
     {"id":{"name":"spr_pathMaker","path":"sprites/spr_pathMaker/spr_pathMaker.yy",},"order":2,},
     {"id":{"name":"spr_lightSourceFlashlight","path":"sprites/spr_lightSourceFlashlight/spr_lightSourceFlashlight.yy",},"order":5,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":10,},
+    {"id":{"name":"losObstruction","path":"objects/losObstruction/losObstruction.yy",},"order":1,},
     {"id":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_demoFurniture","path":"sprites/spr_demoFurniture/spr_demoFurniture.yy",},"order":9,},

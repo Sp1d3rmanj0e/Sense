@@ -1,4 +1,4 @@
-/// @description Check if entities near
+/// @description Door opening
 
 // Get cell size to local var
 var cellSize = WORLD.CELL_SIZE;

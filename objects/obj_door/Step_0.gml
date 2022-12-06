@@ -1,19 +1,35 @@
 /// @description Check if entities near
 
+// Get cell size to local var
+var cellSize = WORLD.CELL_SIZE;
+
+// Changeable vars
+var checkLength = 0.25; // how many tiles out from the door tile to check for a player
+var checkWidth  = 1; // how wide you want the check to be (in tiles also)
+
+// Translate to creating the rectangle
+// Compenstates for the origin being in the center
+checkLength = checkLength * cellSize + cellSize / 2;
+checkWidth  = checkWidth  * cellSize/2 - 1;
+
 // Check if entity is near
-if (distance_to_object(canOpenDoors) < WORLD.CELL_SIZE)
+if (distance_to_object(canOpenDoors) < checkLength)
 {
-	var cellSize = WORLD.CELL_SIZE;
-	var checkLength = cellSize * 3;
-	var checkWidth = cellSize;
-	var topOrigin = y - cellSize;
-	var leftOrigin = x - cellSize;
 	
-	// Origin is in the top right
 	// The check shape is similar to a "+"
-	if (collision_rectangle(leftOrigin, checkWidth, leftOrigin + checkLength) != noone) // Horizontal (-)
-	&& (collision_rectangle() != noone) // Vertical   (|)
+	if (collision_rectangle(x - checkLength, y - checkWidth, x + checkLength, y + checkWidth, 
+							canOpenDoors, false, false) != noone) // Horizontal (-)
+	|| (collision_rectangle(x - checkWidth, y - checkLength, x + checkWidth, y + checkLength,
+							canOpenDoors, false, false) != noone) // Vertical   (|)
 	{
-		
+		image_index = 1; // Open
 	}
+	else
+	{
+		image_index = 0; // Closed
+	}
+}
+else
+{
+	image_index = 0; // Closed
 }

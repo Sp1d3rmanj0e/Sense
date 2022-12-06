@@ -8,7 +8,7 @@
 function goto(_path, _x, _y, _speed)
 {
 	// Get tile size
-	var tile_size = WORLD.TILE_SIZE;
+	var tile_size = WORLD.CELL_SIZE;
 	
 	// Lock location to the center of the grid squares
 	var _nx = (_x div tile_size) * tile_size + (tile_size/2);

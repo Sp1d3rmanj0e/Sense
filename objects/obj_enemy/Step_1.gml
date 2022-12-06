@@ -53,7 +53,7 @@ switch(state)
 			newPath = false;
 				
 			// Get the tile size
-			var tile_size = WORLD.TILE_SIZE;
+			var tile_size = WORLD.CELL_SIZE;
 			
 			// Get cell width and height
 			var cw = room_width div tile_size;

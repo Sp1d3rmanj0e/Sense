@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_lightParent",
-    "path": "objects/obj_lightParent/obj_lightParent.yy",
+    "name": "canOpenDoors",
+    "path": "objects/canOpenDoors/canOpenDoors.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

@@ -36,3 +36,22 @@ else
 }
 #endregion
 // Returns openable T/F
+
+#region interaction with the door
+if (obj_player.keyInteract && openable)
+{
+	// If interact delay is over
+	if (interactDelayTimer == -1)
+	{
+		// Close or open door
+		doorOpen = !doorOpen;
+		interactDelayTimer = interactDelay * room_speed;
+		event_user(0); // Put or remove tile block
+	}
+}
+
+// Work timers
+if (interactDelayTimer > 0) interactDelayTimer--;
+else interactDelayTimer = -1;
+#endregion
+// If [interact] pressed near a door, open/close it

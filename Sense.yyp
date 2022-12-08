@@ -8,6 +8,7 @@
     {"id":{"name":"spr_wallLightSource","path":"sprites/spr_wallLightSource/spr_wallLightSource.yy",},"order":8,},
     {"id":{"name":"MACROS","path":"objects/MACROS/MACROS.yy",},"order":0,},
     {"id":{"name":"obj_lightParent","path":"objects/obj_lightParent/obj_lightParent.yy",},"order":1,},
+    {"id":{"name":"shd_outline","path":"shaders/shd_outline/shd_outline.yy",},"order":0,},
     {"id":{"name":"spr_lightSourceRadial","path":"sprites/spr_lightSourceRadial/spr_lightSourceRadial.yy",},"order":3,},
     {"id":{"name":"scr_collisions","path":"scripts/scr_collisions/scr_collisions.yy",},"order":1,},
     {"id":{"name":"scr_goto","path":"scripts/scr_goto/scr_goto.yy",},"order":0,},
@@ -72,7 +73,7 @@
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
   ],
   "TextureGroups": [
-    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
+    {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":false,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
   "IncludedFiles": [],
   "MetaData": {

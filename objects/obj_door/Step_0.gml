@@ -1,5 +1,6 @@
-/// @description Door opening
+/// @description Door Opening
 
+#region see if able to open the door
 // Get cell size to local var
 var cellSize = WORLD.CELL_SIZE;
 
@@ -22,14 +23,16 @@ if (distance_to_object(canOpenDoors) < checkLength)
 	|| (collision_rectangle(x - checkWidth, y - checkLength, x + checkWidth, y + checkLength,
 							canOpenDoors, false, false) != noone) // Vertical   (|)
 	{
-		image_index = 1; // Open
+		openable = 1; // Open
 	}
 	else
 	{
-		image_index = 0; // Closed
+		openable = 0; // Closed
 	}
 }
 else
 {
-	image_index = 0; // Closed
+	openable = 0; // Closed
 }
+#endregion
+// Returns openable T/F

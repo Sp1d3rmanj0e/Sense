@@ -31,12 +31,8 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"ts_walls","path":"tilesets/ts_walls/ts_walls.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
-<<<<<<< HEAD
     {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":10,},
     {"id":{"name":"map_idea_2","path":"rooms/map_idea_2/map_idea_2.yy",},"order":2,},
-=======
-    {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":1,},
->>>>>>> 8b6d2ee0bf978921754a3cb4c4a8ade47c03c9b4
     {"id":{"name":"obj_demoFurniture","path":"objects/obj_demoFurniture/obj_demoFurniture.yy",},"order":11,},
     {"id":{"name":"spr_wall_test","path":"sprites/spr_wall_test/spr_wall_test.yy",},"order":10,},
     {"id":{"name":"obj_lighting","path":"objects/obj_lighting/obj_lighting.yy",},"order":0,},
@@ -70,17 +66,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gadgets","folderPath":"folders/Objects/gadgets.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"lights","folderPath":"folders/Objects/lights.yy","order":8,},
-<<<<<<< HEAD
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":3,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":8,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy","order":13,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sequences","folderPath":"folders/Sequences.yy","order":9,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy","order":4,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy","order":2,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":0,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":6,},
-=======
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"parents","folderPath":"folders/Objects/parents.yy","order":14,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"spriteless","folderPath":"folders/Objects/spriteless.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Paths","folderPath":"folders/Paths.yy","order":4,},
@@ -92,7 +77,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
->>>>>>> 8b6d2ee0bf978921754a3cb4c4a8ade47c03c9b4
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

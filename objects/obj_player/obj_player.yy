@@ -11,10 +11,7 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "canOpenDoors",
-    "path": "objects/canOpenDoors/canOpenDoors.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

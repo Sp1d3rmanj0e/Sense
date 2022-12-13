@@ -21,10 +21,10 @@ _visWithinDist = (distance_to_object(obj_player) < maxSightDist);
 if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
 
 // Checks if los intercepts with a tilemap wall or any object labeled with losObstruction
+// True = No walls blocking LOS to player
+// False = Walls blocking LOS to player
 _visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 
-										  tilemap, distance_to_object(obj_player))
-					  && (!collision_line(x, y, obj_player.x, obj_player.y,
-										losObstruction, false, false)));
+										  tilemap, distance_to_object(obj_player)));
 /*
  * visWithinCone - Makes sure the view is within a certain cone 
  * from the facing direction

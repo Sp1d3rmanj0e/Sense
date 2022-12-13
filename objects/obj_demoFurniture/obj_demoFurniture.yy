@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_grid",
-  "spriteId": null,
+  "name": "obj_demoFurniture",
+  "spriteId": {
+    "name": "spr_demoFurniture",
+    "path": "sprites/spr_demoFurniture/spr_demoFurniture.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -23,13 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":3,"eventType":7,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

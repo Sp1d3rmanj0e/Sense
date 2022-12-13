@@ -2,15 +2,15 @@
 // You can write your code in this editor
 
 // Create the grid
-var hcells = room_width div WORLD.TILE_SIZE;
-var vcells = room_height div WORLD.TILE_SIZE;
+var hcells = room_width div WORLD.CELL_SIZE;
+var vcells = room_height div WORLD.CELL_SIZE;
 
-global.grid = mp_grid_create(0, 0, hcells, vcells, WORLD.TILE_SIZE, WORLD.TILE_SIZE);
+global.grid = mp_grid_create(0, 0, hcells, vcells, WORLD.CELL_SIZE, WORLD.CELL_SIZE);
 
 // Add walls to the grid
 var tilemap = layer_tilemap_get_id("walls");
 
-var cell_size = WORLD.TILE_SIZE;
+var cell_size = WORLD.CELL_SIZE;
 var w = room_width / cell_size;
 var h = room_height / cell_size;
 

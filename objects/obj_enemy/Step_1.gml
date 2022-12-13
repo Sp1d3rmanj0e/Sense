@@ -19,6 +19,10 @@ _visWithinDist = (distance_to_object(obj_player) < maxSightDist);
 
 // Draw a line to make sure los does not go through walls
 if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
+
+// Checks if los intercepts with a tilemap wall or any object labeled with losObstruction
+// True = No walls blocking LOS to player
+// False = Walls blocking LOS to player
 _visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 
 										  tilemap, distance_to_object(obj_player)));
 /*
@@ -53,7 +57,7 @@ switch(state)
 			newPath = false;
 				
 			// Get the tile size
-			var tile_size = WORLD.TILE_SIZE;
+			var tile_size = WORLD.CELL_SIZE;
 			
 			// Get cell width and height
 			var cw = room_width div tile_size;

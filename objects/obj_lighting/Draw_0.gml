@@ -34,6 +34,13 @@ else
 					break;
 				case obj_flashlight:
 					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, 1, obj_flashlight.image_angle, c_white, 1);
+					break;
+				case obj_wallLight:
+					if (toggleLight)
+					{
+						draw_sprite_ext(spr_wallLightSource, 0, x - _cx, y - _cy, 1, 1, image_angle, c_yellow, 0.75);
+					}
+					break;
 			}
 		}
 		gpu_set_blendmode(bm_normal);

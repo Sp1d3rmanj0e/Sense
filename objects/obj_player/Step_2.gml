@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Allow player to go behind furniture
+depth = -y - (bbox_bottom - y);
+
 // Get camera dimensions
 var camWidth = camera_get_view_width(view_camera[0]);
 var camHeight = camera_get_view_height(view_camera[0]);

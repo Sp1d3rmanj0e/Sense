@@ -2,7 +2,7 @@
 
 if (keyboard_check(vk_f1))
 {
-	var tile_size = WORLD.TILE_SIZE
+	var tile_size = WORLD.CELL_SIZE
 	
 	draw_set_alpha(0.1);
 	draw_set_color(c_white);

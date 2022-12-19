@@ -7,8 +7,10 @@ randomize();
 // Enemy variables
 eSpeed = 4;
 dir = 0;
-viewConeDeg = 45;
-maxSightDist = 5 * WORLD.CELL_SIZE; // 5 tile view range
+
+// Mod Vars
+//viewConeDeg = 45;
+//maxSightDist = 5 * WORLD.CELL_SIZE; // 5 tile view range
 
 // Other variables
 newPath = true;

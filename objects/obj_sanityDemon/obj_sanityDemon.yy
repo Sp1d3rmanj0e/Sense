@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_flashlight",
-  "spriteId": {
-    "name": "spr_flashlight",
-    "path": "sprites/spr_flashlight/spr_flashlight.yy",
-  },
+  "name": "obj_sanityDemon",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_lightParent",
-    "path": "objects/obj_lightParent/obj_lightParent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,13 +21,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "lights",
-    "path": "folders/Objects/lights.yy",
+    "name": "enemies",
+    "path": "folders/Objects/enemies.yy",
   },
 }

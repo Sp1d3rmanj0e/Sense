@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "canOpenDoors",
+  "name": "obj_mimic",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -21,13 +21,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "parents",
-    "path": "folders/Objects/parents.yy",
+    "name": "enemies",
+    "path": "folders/Objects/enemies.yy",
   },
 }

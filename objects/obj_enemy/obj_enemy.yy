@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "canOpenDoors",
-    "path": "objects/canOpenDoors/canOpenDoors.yy",
+    "name": "enemies",
+    "path": "objects/enemies/enemies.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -35,9 +35,11 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
   ],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxViewDist","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"5 * WORLD.CELL_SIZE",},
+  ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "enemies",
+    "path": "folders/Objects/enemies.yy",
   },
 }

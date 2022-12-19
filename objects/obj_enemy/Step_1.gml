@@ -9,40 +9,7 @@ image_angle = dir + 90;
 prevX = x;
 prevY = y;
 
-// Initialize temp vars
-var _visWithinCone, _visWithinDist, _visNotWallBlocked = false, _playerDir;
-
-// Check to see if player is within line of sight (and conditions are met)
-_playerDir = abs(point_direction(x, y, obj_player.x, obj_player.y) - 180);
-_visWithinCone = (abs(dir - _playerDir) < viewConeDeg);
-_visWithinDist = (distance_to_object(obj_player) < maxSightDist);
-
-// Draw a line to make sure los does not go through walls
-if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
-
-// Checks if los intercepts with a tilemap wall or any object labeled with losObstruction
-// True = No walls blocking LOS to player
-// False = Walls blocking LOS to player
-_visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 
-										  tilemap, distance_to_object(obj_player)));
-/*
- * visWithinCone - Makes sure the view is within a certain cone 
- * from the facing direction
- * visWithinDist - Makes sure the player is close enough to be seen
- * visNotWallBlocked - Makes sure the player is not being seen through walls
-*/
-
-// Activates aggro if the player is seen
-/*
-if (_visNotWallBlocked || place_meeting(x, y, obj_player)) 
-{
-	state = STATE.CHASE; // Switches to chase state
-}
-else
-{
-	state = STATE.WANDER; // Switches to wander state
-}
-*/
+var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
 
 // State machine
 switch(state)
@@ -101,7 +68,7 @@ switch(state)
 		}
 		
 		// Search for the player to aggro to
-		if (_visNotWallBlocked || place_meeting(x, y, obj_player))
+		if (_canSee || place_meeting(x, y, obj_player))
 		{
 			// Reset vars
 			idleTimer = -1;
@@ -115,7 +82,7 @@ switch(state)
 	case STATE.CHASE:
 		
 		// Forget the player if not seen for x amt. time
-		if (_visNotWallBlocked || place_meeting(x, y, obj_player)) // If the player is seen
+		if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
 		{
 			// Activate timer while player is visually seen
 			enemyMemoryTimer = enemyMemoryTime * room_speed;

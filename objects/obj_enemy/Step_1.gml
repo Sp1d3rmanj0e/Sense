@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 // Look in the direction of motion (if not moving)
-if ((prevX - x) + (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
-image_angle = dir + 90;
+if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
+//image_angle = dir + 90;
 
 // Set new previous locations
 prevX = x;
@@ -15,7 +15,7 @@ var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
 switch(state)
 {
 	case STATE.WANDER:
-	
+		#region code
 		// Get a path to follow
 		if (newPath == true)
 		{
@@ -77,6 +77,9 @@ switch(state)
 			// Set the state to chase
 			state = STATE.CHASE;
 		}
+		#endregion code
+		#region animations
+		#endregion animations
 		break;
 		
 	case STATE.CHASE:

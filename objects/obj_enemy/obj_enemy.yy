@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_enemy",
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_ghost",
+    "path": "sprites/spr_ghost/spr_ghost.yy",
   },
   "solid": false,
   "visible": true,

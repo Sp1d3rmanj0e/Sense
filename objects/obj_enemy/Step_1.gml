@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Look in the direction of motion (if not moving)
+// Get direction of motion
 if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
-//image_angle = dir + 90;
+/**
+ * 0   - left
+ * 180 - right
+ * 270 - up
+ * 90  - down
+ */
 
 // Set new previous locations
 prevX = x;

@@ -27,6 +27,3 @@ switch(state)
 		image_index = _dir;
 		break;
 }
-
-
-

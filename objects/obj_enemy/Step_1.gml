@@ -2,12 +2,12 @@
 // You can write your code in this editor
 
 // Get direction of motion
-if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
+if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(prevX, prevY, x, y);
 /**
- * 0   - left
- * 180 - right
- * 270 - up
- * 90  - down
+ * 0   - right
+ * 180 - left
+ * 270 - down
+ * 90  - up
  */
 
 // Set new previous locations
@@ -16,7 +16,7 @@ prevY = y;
 
 // Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
-
+show_debug_message("Can see: " + string(_canSee));
 // State machine
 switch(state)
 {

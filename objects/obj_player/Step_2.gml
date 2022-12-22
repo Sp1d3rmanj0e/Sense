@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Animations and Camera
 
 // Allow player to go behind furniture
 depth = -y - (bbox_bottom - y);
@@ -10,3 +9,54 @@ var camHeight = camera_get_view_height(view_camera[0]);
 
 // Camera follows player
 camera_set_view_pos(view_camera[0],x - camWidth/2,y - camHeight/2);
+
+// Animations
+
+// Animate only if player is moving
+if (hsp == 0 && vsp == 0)
+{
+	image_index = 3; // Sets animation to idle frame (the fourth frame)
+	image_speed = 0; // Freezes on that frame
+}
+else // Moving
+{
+	image_speed = 1; // Sets animation speed to normal when moving
+	
+	// Get directions of motion **THANKS TO FriendlyCosmonaut
+	var _moveX = keyRight - keyLeft;
+	var _moveY = keyDown - keyUp;
+	
+	// Gets the degree direction the player is facing
+	var _dir = point_direction(0, 0, _moveX, _moveY);
+	
+	// flip animations if moving left (because we only have 5 out of 8 directions
+	if (_moveX != 0) image_xscale = _moveX;
+	
+	switch(_dir)
+	{
+		case 0:
+		case 180:
+		
+			sprite_index = spr_playerSide;
+			break;
+		case 45:
+		case 135:
+
+			sprite_index = spr_playerQBack;
+			break;
+		case 90:
+			
+			sprite_index = spr_playerBack;
+			break;
+		case 225:
+		case 315:
+			
+			sprite_index = spr_playerQFront
+			break;
+		case 270:
+			
+			sprite_index = spr_playerFront
+			break;
+	}
+	
+}

@@ -11,8 +11,10 @@ function scr_sight(_viewConeDeg, _viewDist, _dir)
 	var _visWithinCone, _visWithinDist, _visNotWallBlocked = false, _playerDir;
 
 	// Check to see if player is within line of sight (and conditions are met)
-	_playerDir = abs(point_direction(x, y, obj_player.x, obj_player.y) - 180); // Gets direction of player
+	_playerDir = point_direction(x, y, obj_player.x, obj_player.y); // Gets direction of player
 	_visWithinCone = (abs(_dir - _playerDir) < _viewConeDeg); // Ensures that player is within FOV
+	show_debug_message("facing: " + string(_dir));
+	show_debug_message("player is: " + string(_playerDir));
 	_visWithinDist = (distance_to_object(obj_player) < _viewDist); // Ensures that player is within view dist
 
 	// Draw a line to make sure los does not go through walls

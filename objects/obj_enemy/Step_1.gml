@@ -14,6 +14,7 @@ if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(x, y, prevX, pre
 prevX = x;
 prevY = y;
 
+// Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
 
 // State machine
@@ -83,12 +84,10 @@ switch(state)
 			state = STATE.CHASE;
 		}
 		#endregion code
-		#region animations
-		#endregion animations
 		break;
 		
 	case STATE.CHASE:
-		
+		#region code
 		// Forget the player if not seen for x amt. time
 		if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
 		{
@@ -121,5 +120,6 @@ switch(state)
 			playerChaseTimer = -1;
 			goto(path, obj_player.x, obj_player.y, eSpeed);
 		}
+		#endregion code
 		break;
 }

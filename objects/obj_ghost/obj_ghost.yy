@@ -8,7 +8,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "enemies",
+    "path": "objects/enemies/enemies.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

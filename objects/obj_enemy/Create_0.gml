@@ -5,7 +5,7 @@
 randomize();
 
 // Enemy variables
-eSpeed = 4;
+eSpeed = 4000;
 dir = 0;
 
 // Mod Vars
@@ -19,7 +19,7 @@ prevY = y;
 
 // Timers
 idleTimer = -1;
-idleTime = 4;
+idleTime = 0.01;
 playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;

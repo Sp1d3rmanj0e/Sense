@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-event_inherited();
+
+goto(path, mouse_x, mouse_y, eSpeed);

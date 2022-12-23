@@ -1,0 +1,3 @@
+/// @description Activators
+
+sanityDemon = false;

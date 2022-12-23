@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Open door upon collision
+
 with(other) 
 {
 	if(doorOpen == false)

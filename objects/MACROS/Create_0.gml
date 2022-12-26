@@ -1,3 +1,13 @@
+global.difficulty = DIFF.EASY;
+
+enum DIFF
+{
+	EASY = 0,
+	MEDIUM = 1,
+	HARD = 2,
+	HARDER = 3
+}
+
 enum STATE
 {
 	WANDER = 5,

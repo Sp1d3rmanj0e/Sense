@@ -44,7 +44,7 @@ switch(state)
 				var gotoY = irandom_range(1, ch - 1) * tile_size;
 					
 				// Make sure that random location isn't in a wall
-				if (goto(path, gotoX, gotoY, eSpeed))
+				if (goto(path, gotoX, gotoY, eSpeed, global.ghostGrid))
 				{
 					// Break the while loop and continue the code
 					exit;
@@ -118,7 +118,7 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.ghostGrid);
 		}
 		#endregion code
 		break;

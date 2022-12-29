@@ -44,7 +44,7 @@ switch(state)
 				var gotoY = irandom_range(1, ch - 1) * tile_size;
 					
 				// Make sure that random location isn't in a wall
-				if (goto(path, gotoX, gotoY, eSpeed))
+				if (goto(path, gotoX, gotoY, eSpeed, global.grid))
 				{
 					// Break the while loop and continue the code
 					exit;

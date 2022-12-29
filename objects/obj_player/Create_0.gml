@@ -11,3 +11,4 @@ tilemap = layer_tilemap_get_id("walls");
 hsp = 0;
 vsp = 0;
 walkSp = 5;
+origWalkSp = walkSp; // Save walk speed just in case

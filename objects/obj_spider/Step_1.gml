@@ -1,4 +1,4 @@
-/// @description State engine and line of sight
+/// @description State Machine
 
 // Get direction of motion
 if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(prevX, prevY, x, y);
@@ -43,7 +43,7 @@ switch(state)
 				var gotoY = irandom_range(1, ch - 1) * tile_size;
 					
 				// Make sure that random location isn't in a wall
-				if (goto(path, gotoX, gotoY, eSpeed, global.ghostGrid))
+				if (goto(path, gotoX, gotoY, eSpeed, global.grid))
 				{
 					// Break the while loop and continue the code
 					exit;
@@ -117,7 +117,7 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed, global.ghostGrid);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
 		#endregion code
 		break;

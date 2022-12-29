@@ -16,6 +16,8 @@ playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
+spiderWebTimer = 8 * room_speed;
+spiderWebTime = -1;
 
 // Hover vars
 hoverTimer = 0;

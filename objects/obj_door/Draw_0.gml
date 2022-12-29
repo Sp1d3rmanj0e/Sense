@@ -11,5 +11,5 @@ if (openable)
 draw_self();
 shader_reset();
 
-draw_text(x,y,openable);
-draw_text(x,y+20, doorOpen);
+//draw_text(x,y,openable);
+//draw_text(x,y+20, doorOpen);

@@ -17,9 +17,15 @@ if (hsp == 0 && vsp == 0)
 {
 	image_index = 3; // Sets animation to idle frame (the fourth frame)
 	image_speed = 0; // Freezes on that frame
+	
+	// Pause footsteps if not moving
+	audio_pause_sound(footCur);
 }
 else // Moving
-{
+{	
+	// Play footstep noises when moving
+	audio_resume_sound(footCur);
+	
 	image_speed = 1; // Sets animation speed to normal when moving
 	
 	// Get directions of motion **THANKS TO FriendlyCosmonaut

@@ -11,7 +11,8 @@ enum DIFF
 enum STATE
 {
 	WANDER = 5,
-	CHASE = 6
+	CHASE = 6,
+	ANGRY = 7,
 }
 
 enum WORLD

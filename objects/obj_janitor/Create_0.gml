@@ -12,14 +12,6 @@ dir = 0;
 // Timers
 idleTimer = -1;
 idleTime = 4;
-playerChaseTimer = -1;
-playerChaseTime = 1;
-enemyMemoryTimer = -1;
-enemyMemoryTime = 1.75;
-
-// Hover vars
-hoverTimer = 0;
-hover = 0;
 
 // Create the path
 path = path_add();

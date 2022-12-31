@@ -46,6 +46,7 @@ if (obj_player.keyInteract && openable)
 		show_debug_message("opening/closing door");
 		// Close or open door
 		doorOpen = !doorOpen;
+		// Resaet delay timer
 		interactDelayTimer = interactDelay * room_speed;
 		event_user(0); // Put or remove tile block
 		show_debug_message("door open is: " + string(doorOpen));

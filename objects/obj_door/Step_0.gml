@@ -14,14 +14,14 @@ checkLength = checkLength * cellSize + cellSize / 2;
 checkWidth  = checkWidth  * cellSize/2 - 1;
 
 // Check if entity is near
-if (distance_to_object(canOpenDoors) < checkLength)
+if (distance_to_object(obj_player) < checkLength)
 {
 	
 	// The check shape is similar to a "+"
 	if (collision_rectangle(x - checkLength, y - checkWidth, x + checkLength, y + checkWidth, 
-							canOpenDoors, false, false) != noone) // Horizontal (-)
+							obj_player, false, false) != noone) // Horizontal (-)
 	|| (collision_rectangle(x - checkWidth, y - checkLength, x + checkWidth, y + checkLength,
-							canOpenDoors, false, false) != noone) // Vertical   (|)
+							obj_player, false, false) != noone) // Vertical   (|)
 	{
 		openable = 1; // Open
 	}
@@ -43,10 +43,13 @@ if (obj_player.keyInteract && openable)
 	// If interact delay is over
 	if (interactDelayTimer == -1)
 	{
+		show_debug_message("opening/closing door");
 		// Close or open door
 		doorOpen = !doorOpen;
+		// Resaet delay timer
 		interactDelayTimer = interactDelay * room_speed;
 		event_user(0); // Put or remove tile block
+		show_debug_message("door open is: " + string(doorOpen));
 	}
 }
 

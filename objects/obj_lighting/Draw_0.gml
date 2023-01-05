@@ -31,9 +31,20 @@ else
 			{
 				case obj_player:
 					draw_sprite(spr_lightSourceRadial, 0, x - _cx, y - _cy);
+					draw_circle(x - _cx, y - _cy, 30, true);
 					break;
 				case obj_flashlight:
-					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, 1, obj_flashlight.image_angle, c_white, 1);
+					var _tilemap = layer_tilemap_get_id("walls");
+					var _lightLen = 5;
+					var _pointDir = obj_flashlight.image_angle + 90;
+					var _maxLength = 500;
+					while(_lightLen < _maxLength) 
+					   &&(tilemap_get_at_pixel(_tilemap,x+lengthdir_x(_lightLen,_pointDir),y+lengthdir_y(_lightLen,_pointDir)) != 1)
+					{
+						_lightLen++;
+					}
+					//draw_line_width(x - _cx,y - _cy,x+lengthdir_x(100,_pointDir) - _cx,y+lengthdir_y(100,_pointDir) - _cy,20);
+					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, _lightLen, _pointDir - 90, c_white, 1);
 					break;
 				case obj_wallLight:
 					if (toggleLight)

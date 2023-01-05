@@ -7,6 +7,5 @@
 
 
 draw_self();
-draw_text(x,y,walkSp);
-
-
+draw_text(x,y,playerHealth);
+draw_text(x,y+20,hardcoreMode);

@@ -14,7 +14,7 @@ hardcoreMode = false;
 // Movement Control Initialization
 hsp = 0;
 vsp = 0;
-walkSp = 5;
+walkSp = 4;
 origWalkSp = walkSp; // Save walk speed just in case
 
 room1 = Room1;

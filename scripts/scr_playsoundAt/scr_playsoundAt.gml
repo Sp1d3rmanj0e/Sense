@@ -1,5 +1,4 @@
 
-
 function playsoundAt(_listener, _sound)
 {
 	audio_listener_position(_listener.x, _listener.y, 0);

@@ -80,7 +80,7 @@ switch(state)
 			newPath = false;
 			
 			// Set the state to chase
-			state = STATE.CHASE;
+			state = STATE.AGGRO;
 		}
 		#endregion code
 		break;
@@ -117,8 +117,36 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
 		#endregion code
+		break;
+	case STATE.AGGRO:
+		#region code
+		// Freeze in place (cancel path)
+		path_end();
+		path_position = 1; // To activate idle timer
+		
+		// Always check to see if the eyeball can see you
+		if (_canSee || place_meeting(x, y, obj_player))
+		{
+			// Start timer till chase mode
+			if (angryTimer == -1) angryTimer = angryTime;
+			else angryTimer--;
+			
+			// If the timer reaches 0, go into chase mode
+			if (angryTimer <= 0)
+			{
+				state = STATE.CHASE;
+				angryTimer = -1;
+			}
+		}
+		else // LOS was broken
+		{
+			angryTimer = -1;
+			state = STATE.WANDER;
+		}
+		
+		#endregion
 		break;
 }

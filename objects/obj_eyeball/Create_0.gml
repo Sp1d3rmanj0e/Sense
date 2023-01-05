@@ -16,8 +16,8 @@ playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
-angryTimer = 1 * room_speed;
-angryTime = -1;
+angryTimer = -1;
+angryTime = 1 * room_speed;
 
 // Hover vars
 hoverTimer = 0;

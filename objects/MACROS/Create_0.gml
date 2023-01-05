@@ -12,7 +12,7 @@ enum STATE
 {
 	WANDER = 5,
 	CHASE = 6,
-	ANGRY = 7,
+	AGGRO = 7,
 }
 
 enum WORLD

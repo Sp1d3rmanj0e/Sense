@@ -117,7 +117,7 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
 		#endregion code
 		break;

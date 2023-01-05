@@ -26,4 +26,12 @@ switch(state)
 		// Set image index to dirwdection
 		image_index = _dir;
 		break;
+	case STATE.AGGRO:
+	
+		// Check if index is already selected - switch if not
+		if (sprite_index != aggroSprite) sprite_index = aggroSprite;
+		
+		// Set image index to dirwdection
+		image_index = _dir;
+		break;
 }

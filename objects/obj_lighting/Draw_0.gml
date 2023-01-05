@@ -22,7 +22,7 @@ else
 		var _cy = camera_get_view_y(view_camera[0]);
 		surface_set_target(surf);
 		draw_set_color(c_black);
-		draw_set_alpha(0.99);
+		draw_set_alpha(1);
 		draw_rectangle(0, 0, _cw, _ch, 0);
 		gpu_set_blendmode(bm_subtract);
 		with(obj_lightParent)

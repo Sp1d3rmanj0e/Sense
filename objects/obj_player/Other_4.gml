@@ -27,7 +27,7 @@ switch(global.difficulty)
 switch(room)
 {
 	case room1:
-		footCur = footBasement;
+		footCur = footMain;
 		break;
 	default:
 		footCur = footMain;

@@ -3,3 +3,6 @@
 
 //ds_grid_destroy(enemyArr);
 //ds_grid_destroy(enemyID);
+
+simRunning = false;
+

@@ -11,7 +11,7 @@ entities =
 	[obj_spider,"Spider",spr_spider]
 ];
 
-totalBars = 3; // How many different sections there will be
+totalBars = 5; // How many different sections there will be
 
 // Location on control panel
 scrlY = 0;
@@ -42,3 +42,7 @@ enemyArr = ds_grid_create(4,maxEntities);
 enemyID = ds_list_create();
 
 lock = false;
+
+// View range of enemy
+viewRing = true;
+viewRange = 4 * WORLD.CELL_SIZE;

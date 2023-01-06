@@ -20,7 +20,13 @@ if (room != rm_testingHub)
 	// Start / Stop simulation status + hotkey
 	draw_text(0,80, "(3) Sim running: " + string(simRunning));
 
-	draw_text(0,100, "Go back --> [Q]");
+	// Show view ring
+	draw_text(0,100, "(4) View ring: " + string(viewRing));
+	
+	// Show view range
+	draw_text(0,120, "(5) View range: " + string(viewRange));
+
+	draw_text(0,140, "Go back --> [Q]");
 
 	draw_set_color(c_black);
 }

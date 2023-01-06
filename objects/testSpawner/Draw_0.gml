@@ -48,6 +48,19 @@ if (room != rm_testingHub)
 		
 			// Draw all sprites in data set
 			draw_sprite(_sprite, 0, _x, _y);
+			
+		}
+	}
+	
+	if (simRunning) && (simRunning)
+	{
+		for (var i = 0; i < entityCnt; i++)
+		{
+			var _ID = ds_list_find_value(enemyID, i);
+			var _x = _ID.x;
+			var _y = _ID.y;
+			
+			draw_circle(_x, _y, viewRange, true);
 		}
 	}
 }

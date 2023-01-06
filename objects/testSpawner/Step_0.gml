@@ -57,6 +57,19 @@ if (moveX != 0)
 		case 3: // Sim running
 			simRunning = !simRunning; 
 			break;
+		case 4:
+			viewRing = !viewRing;
+			break;
+		case 5:
+			if (moveX == 1) // Scroll right
+			{
+				viewRange += 0.25 * WORLD.CELL_SIZE; // Increment
+			}
+			else // Scroll left
+			{
+				viewRange = max(viewRange - 0.25 * WORLD.CELL_SIZE, 0); // Decrement
+			}
+			break;
 	}
 }
 
@@ -89,6 +102,7 @@ if (simRunning) && (lock == false)
 		var _spawnID = instance_create_layer(_x, _y, "Instances", _id)
 		
 		with(_spawnID) eSpeed = other.curSpd;
+		with(_spawnID) maxViewDist = other.viewRange;
 		
 		// Spawn it in
 		ds_list_add(enemyID, _spawnID);
@@ -102,4 +116,5 @@ else if (!simRunning)
 	{
 		instance_destroy(ds_list_find_value(enemyID, j));
 	}
+	ds_list_clear(enemyID);
 }

@@ -21,20 +21,17 @@ if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2))
 	// Check if clicked
 	if (mouse_check_button_pressed(mb_left))
 	{
+		if (roomCode != noone) // Check if button is a room
+		{
+			room_goto(roomCode);
+		}
+		
 		// Execute button code
 		if (executeCode != noone) // Check if button is a script
 		{
 			// If the value is an array, execute the script with a condition as well
 			if(is_array(executeCode)) script_execute(executeCode[0],executeCode[1]);
 			else					  script_execute(executeCode);
-		}
-		else if (roomCode != noone) // Check if button is a room
-		{
-			room_goto(roomCode);
-		}
-		else
-		{
-			show_debug_message("Button code unassigned");
 		}
 	}
 }

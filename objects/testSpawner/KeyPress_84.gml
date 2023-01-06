@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message(global.difficulty);
-room_restart();
+
+entityCnt = 0;
+ds_grid_clear(enemyArr,-4);

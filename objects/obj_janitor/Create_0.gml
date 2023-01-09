@@ -13,8 +13,13 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 
+targetId = noone;
+
 // Create the path
 path = path_add();
 
 // Tilemap variables
 tilemap = layer_tilemap_get_id("walls");
+
+testX = 0;
+testY = 0;

@@ -19,10 +19,6 @@ enemyMemoryTime = 1.75;
 angryTimer = -1;
 angryTime = 1 * room_speed;
 
-// Hover vars
-hoverTimer = 0;
-hover = 0;
-
 // Create the path
 path = path_add();
 

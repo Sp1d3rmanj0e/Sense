@@ -1,7 +1,7 @@
-/// @description State Machine
-
-// Get direction of motion
-event_inherited()
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_ghost()
+{
 
 // Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
@@ -33,7 +33,7 @@ switch(state)
 				var gotoY = irandom_range(1, ch - 1) * tile_size;
 					
 				// Make sure that random location isn't in a wall
-				if (goto(path, gotoX, gotoY, eSpeed, global.grid))
+				if (goto(path, gotoX, gotoY, eSpeed, global.ghostGrid))
 				{
 					// Break the while loop and continue the code
 					exit;
@@ -107,8 +107,10 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.ghostGrid);
 		}
 		#endregion code
 		break;
+}
+
 }

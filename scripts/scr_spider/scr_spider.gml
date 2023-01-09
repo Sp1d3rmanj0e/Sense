@@ -1,7 +1,7 @@
-/// @description State Machine
-
-// Get direction of motion
-event_inherited()
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_spider()
+{
 
 // Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
@@ -111,4 +111,6 @@ switch(state)
 		}
 		#endregion code
 		break;
+}
+
 }

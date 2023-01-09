@@ -1,7 +1,7 @@
-/// @description State Machine
-
-// Get direction of motion
-event_inherited()
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function scr_eyeball()
+{
 
 // Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
@@ -70,7 +70,7 @@ switch(state)
 			newPath = false;
 			
 			// Set the state to chase
-			state = STATE.CHASE;
+			state = STATE.AGGRO;
 		}
 		#endregion code
 		break;
@@ -111,4 +111,34 @@ switch(state)
 		}
 		#endregion code
 		break;
+	case STATE.AGGRO:
+		#region code
+		// Freeze in place (cancel path)
+		path_end();
+		path_position = 1; // To activate idle timer
+		
+		// Always check to see if the eyeball can see you
+		if (_canSee || place_meeting(x, y, obj_player))
+		{
+			// Start timer till chase mode
+			if (angryTimer == -1) angryTimer = angryTime;
+			else angryTimer--;
+			
+			// If the timer reaches 0, go into chase mode
+			if (angryTimer <= 0)
+			{
+				state = STATE.CHASE;
+				angryTimer = -1;
+			}
+		}
+		else // LOS was broken
+		{
+			angryTimer = -1;
+			state = STATE.WANDER;
+		}
+		
+		#endregion
+		break;
+}
+
 }

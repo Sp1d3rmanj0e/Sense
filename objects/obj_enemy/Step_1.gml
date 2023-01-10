@@ -1,50 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description State Machine
 
-// Look in the direction of motion (if not moving)
-if ((prevX - x) + (prevY - y) != 0) dir = point_direction(x, y, prevX, prevY);
-image_angle = dir + 90;
+// Get direction of motion
+event_inherited()
 
-// Set new previous locations
-prevX = x;
-prevY = y;
-
-// Initialize temp vars
-var _visWithinCone, _visWithinDist, _visNotWallBlocked = false, _playerDir;
-
-// Check to see if player is within line of sight (and conditions are met)
-_playerDir = abs(point_direction(x, y, obj_player.x, obj_player.y) - 180);
-_visWithinCone = (abs(dir - _playerDir) < viewConeDeg);
-_visWithinDist = (distance_to_object(obj_player) < maxSightDist);
-
-// Draw a line to make sure los does not go through walls
-if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
-_visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 
-										  tilemap, distance_to_object(obj_player)));
-/*
- * visWithinCone - Makes sure the view is within a certain cone 
- * from the facing direction
- * visWithinDist - Makes sure the player is close enough to be seen
- * visNotWallBlocked - Makes sure the player is not being seen through walls
-*/
-
-// Activates aggro if the player is seen
-/*
-if (_visNotWallBlocked || place_meeting(x, y, obj_player)) 
-{
-	state = STATE.CHASE; // Switches to chase state
-}
-else
-{
-	state = STATE.WANDER; // Switches to wander state
-}
-*/
+// Checks if enemy can see the player
+var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
 
 // State machine
 switch(state)
 {
 	case STATE.WANDER:
-	
+		#region code
 		// Get a path to follow
 		if (newPath == true)
 		{
@@ -53,7 +19,7 @@ switch(state)
 			newPath = false;
 				
 			// Get the tile size
-			var tile_size = WORLD.TILE_SIZE;
+			var tile_size = WORLD.CELL_SIZE;
 			
 			// Get cell width and height
 			var cw = room_width div tile_size;
@@ -67,7 +33,7 @@ switch(state)
 				var gotoY = irandom_range(1, ch - 1) * tile_size;
 					
 				// Make sure that random location isn't in a wall
-				if (goto(path, gotoX, gotoY, eSpeed))
+				if (goto(path, gotoX, gotoY, eSpeed, global.grid))
 				{
 					// Break the while loop and continue the code
 					exit;
@@ -97,7 +63,7 @@ switch(state)
 		}
 		
 		// Search for the player to aggro to
-		if (_visNotWallBlocked || place_meeting(x, y, obj_player))
+		if (_canSee || place_meeting(x, y, obj_player))
 		{
 			// Reset vars
 			idleTimer = -1;
@@ -106,12 +72,13 @@ switch(state)
 			// Set the state to chase
 			state = STATE.CHASE;
 		}
+		#endregion code
 		break;
 		
 	case STATE.CHASE:
-		
+		#region code
 		// Forget the player if not seen for x amt. time
-		if (_visNotWallBlocked || place_meeting(x, y, obj_player)) // If the player is seen
+		if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
 		{
 			// Activate timer while player is visually seen
 			enemyMemoryTimer = enemyMemoryTime * room_speed;
@@ -140,7 +107,8 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
+		#endregion code
 		break;
 }

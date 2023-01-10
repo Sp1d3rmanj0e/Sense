@@ -1,19 +1,13 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Set up vars
 
 // Randomize
 randomize();
-
-// Enemy variables
-eSpeed = 4;
-dir = 0;
-viewConeDeg = 45;
-maxSightDist = 5 * WORLD.TILE_SIZE; // 5 tile view range
 
 // Other variables
 newPath = true;
 prevX = x;
 prevY = y;
+dir = 0;
 
 // Timers
 idleTimer = -1;
@@ -25,6 +19,8 @@ enemyMemoryTime = 1.75;
 
 // Create the path
 path = path_add();
+
+// Initialize state
 state = STATE.WANDER;
 
 // Tilemap variables

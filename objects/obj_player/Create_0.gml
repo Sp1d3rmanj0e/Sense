@@ -17,6 +17,7 @@ vsp = 0;
 walkSp = 4;
 origWalkSp = walkSp; // Save walk speed just in case
 
+/* delete later
 room1 = Room1;
 room2 = noone;
 room3 = noone;
@@ -31,3 +32,4 @@ footMain = snd_FloorFootsteps;
 footBedroom = snd_CarpetFootsteps;
 footGrass = snd_GrassFootsteps;
 footAttic = snd_FloorFootsteps;
+*/

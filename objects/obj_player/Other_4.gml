@@ -27,6 +27,7 @@ switch(global.difficulty)
 		show_debug_message("DIFFICULTY NOT SELECTED: ROOM START OF PLAYER");
 }
 
+/* Delete later
 // Get footstep noise per room
 switch(room)
 {
@@ -36,6 +37,8 @@ switch(room)
 	default:
 		footCur = footMain;
 }
+*/
+var _footNoise = getFootSound();
 
 // Play selected footstep noise
-audio_play_sound(footCur, 1, true);
+footCur = audio_play_sound(_footNoise, 1, true);

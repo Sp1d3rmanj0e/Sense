@@ -23,3 +23,6 @@ tilemap = layer_tilemap_get_id("walls");
 
 testX = 0;
 testY = 0;
+
+// Add audio noises
+event_inherited();

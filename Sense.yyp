@@ -20,6 +20,7 @@
     {"id":{"name":"scr_mimic","path":"scripts/scr_mimic/scr_mimic.yy",},"order":2,},
     {"id":{"name":"spr_goo","path":"sprites/spr_goo/spr_goo.yy",},"order":0,},
     {"id":{"name":"spr_intro","path":"sprites/spr_intro/spr_intro.yy",},"order":0,},
+    {"id":{"name":"spr_sanityDemon2","path":"sprites/spr_sanityDemon2/spr_sanityDemon2.yy",},"order":1,},
     {"id":{"name":"scr_playsoundAt","path":"scripts/scr_playsoundAt/scr_playsoundAt.yy",},"order":5,},
     {"id":{"name":"spr_playerSide","path":"sprites/spr_playerSide/spr_playerSide.yy",},"order":1,},
     {"id":{"name":"obj_lightParent","path":"objects/obj_lightParent/obj_lightParent.yy",},"order":2,},

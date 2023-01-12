@@ -1,1 +1,0 @@
-/// @description Start sanity timer

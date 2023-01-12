@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_sanityDemon",
   "spriteId": {
-    "name": "spr_sanityDemon",
-    "path": "sprites/spr_sanityDemon/spr_sanityDemon.yy",
+    "name": "spr_sanityDemon2",
+    "path": "sprites/spr_sanityDemon2/spr_sanityDemon2.yy",
   },
   "solid": false,
   "visible": true,

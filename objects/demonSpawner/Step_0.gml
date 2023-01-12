@@ -2,6 +2,7 @@
 
 // Decrement sanity to 0
 if (sanity > 0) sanity--;
+
 // Summon sanity demon if time ran out
 else if (!instance_exists(obj_sanityDemon))
 {

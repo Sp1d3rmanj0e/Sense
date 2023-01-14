@@ -17,19 +17,5 @@ vsp = 0;
 walkSp = 4;
 origWalkSp = walkSp; // Save walk speed just in case
 
-/* delete later
-room1 = Room1;
-room2 = noone;
-room3 = noone;
-room4 = noone;
-room5 = noone;
-
-// Initialize level footstep noises
-footCur = snd_FloorFootsteps;
-footBasement = snd_GravelFootsteps;
-footKitchen = snd_ConcreteFootsteps;
-footMain = snd_FloorFootsteps;
-footBedroom = snd_CarpetFootsteps;
-footGrass = snd_GrassFootsteps;
-footAttic = snd_FloorFootsteps;
-*/
+// special vars
+trashCollected = 0;

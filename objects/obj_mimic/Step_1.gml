@@ -27,3 +27,10 @@ if (distance_to_object(enemies) < transformDist)
 // Decrement timer
 if (mimicFormTimer > 0) mimicFormTimer--;
 else mimicFormTimer = -1;
+
+// If close to player, transform into demon
+if (scr_sight(viewConeDeg,maxViewDist,dir)  || place_meeting(x,y,obj_player))
+{
+	stateScript = defaultScript;
+	sprite_index = defaultSprite;
+}

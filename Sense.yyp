@@ -94,6 +94,7 @@
     {"id":{"name":"spr_difficultyExtGr","path":"sprites/spr_difficultyExtGr/spr_difficultyExtGr.yy",},"order":3,},
     {"id":{"name":"snd_FloorFootsteps","path":"sounds/snd_FloorFootsteps/snd_FloorFootsteps.yy",},"order":2,},
     {"id":{"name":"obj_difficultyExt","path":"objects/obj_difficultyExt/obj_difficultyExt.yy",},"order":2,},
+    {"id":{"name":"obj_sanitySpawn","path":"objects/obj_sanitySpawn/obj_sanitySpawn.yy",},"order":2,},
     {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"order":1,},
     {"id":{"name":"spr_sanitySpawn","path":"sprites/spr_sanitySpawn/spr_sanitySpawn.yy",},"order":2,},
     {"id":{"name":"scr_sanityDemon","path":"scripts/scr_sanityDemon/scr_sanityDemon.yy",},"order":3,},

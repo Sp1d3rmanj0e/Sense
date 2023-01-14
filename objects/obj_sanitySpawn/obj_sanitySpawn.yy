@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "demonSpawner",
-  "spriteId": null,
+  "name": "obj_sanitySpawn",
+  "spriteId": {
+    "name": "spr_sanitySpawn",
+    "path": "sprites/spr_sanitySpawn/spr_sanitySpawn.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -23,15 +26,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "pets",
+    "path": "folders/Objects/pets.yy",
   },
 }

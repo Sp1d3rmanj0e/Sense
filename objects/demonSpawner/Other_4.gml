@@ -5,15 +5,17 @@ switch(global.difficulty)
 {
 	
 	case DIFF.EASY:
-		sanity = 200;
+		sanity = 2000;
 		break;
 	case DIFF.MEDIUM:
-		sanity = 150;
+		sanity = 1500;
 		break;
 	case DIFF.HARD:
-		sanity = 100;
+		sanity = 1000;
 		break;
 	case DIFF.HARDER:
-		sanity = 100;
+		sanity = 1000;
 		break;
 }
+
+startSanity = sanity;

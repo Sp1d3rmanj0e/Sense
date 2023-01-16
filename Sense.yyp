@@ -110,6 +110,7 @@
     {"id":{"name":"obj_mimic","path":"objects/obj_mimic/obj_mimic.yy",},"order":3,},
     {"id":{"name":"snd_DoorClose2","path":"sounds/snd_DoorClose2/snd_DoorClose2.yy",},"order":1,},
     {"id":{"name":"spr_sanityDemon","path":"sprites/spr_sanityDemon/spr_sanityDemon.yy",},"order":0,},
+    {"id":{"name":"garbageSpawner","path":"objects/garbageSpawner/garbageSpawner.yy",},"order":5,},
     {"id":{"name":"snd_Stun2","path":"sounds/snd_Stun2/snd_Stun2.yy",},"order":3,},
     {"id":{"name":"snd_DoorOpen3","path":"sounds/snd_DoorOpen3/snd_DoorOpen3.yy",},"order":5,},
     {"id":{"name":"snd_GhostGoop","path":"sounds/snd_GhostGoop/snd_GhostGoop.yy",},"order":2,},

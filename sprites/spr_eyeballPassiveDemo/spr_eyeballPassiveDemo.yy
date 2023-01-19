@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "eyeball",
-    "path": "folders/Sprites/enemies/eyeball.yy",
+    "name": "wander",
+    "path": "folders/Sprites/enemies/eyeball/wander.yy",
   },
 }

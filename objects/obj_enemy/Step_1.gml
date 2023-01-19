@@ -1,17 +1,7 @@
 /// @description State Machine
 
 // Get direction of motion
-if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(prevX, prevY, x, y);
-/**
- * 0   - right
- * 180 - left
- * 270 - down
- * 90  - up
- */
-
-// Set new previous locations
-prevX = x;
-prevY = y;
+event_inherited()
 
 // Checks if enemy can see the player
 var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
@@ -117,7 +107,7 @@ switch(state)
 		else 
 		{
 			playerChaseTimer = -1;
-			goto(path, obj_player.x, obj_player.y, eSpeed);
+			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
 		#endregion code
 		break;

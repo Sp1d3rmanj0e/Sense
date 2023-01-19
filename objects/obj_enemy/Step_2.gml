@@ -21,7 +21,7 @@ switch(state)
 	case STATE.CHASE: // Use aggro sprites
 		
 		// Check if index is already selected - switch if not
-		if (sprite_index != aggroSprite) sprite_index = aggroSprite;
+		if (sprite_index != chaseSprite) sprite_index = chaseSprite;
 		
 		// Set image index to dirwdection
 		image_index = _dir;

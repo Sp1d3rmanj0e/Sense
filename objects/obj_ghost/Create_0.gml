@@ -13,9 +13,11 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 playerChaseTimer = -1;
-playerChaseTime = 1;
+playerChaseTime = 0.5;
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
+gooTimer = -1;
+gooTime = 3;
 
 // Hover vars
 hoverTimer = 0;

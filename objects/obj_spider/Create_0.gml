@@ -19,10 +19,6 @@ enemyMemoryTime = 1.75;
 spiderWebTimer = 8 * room_speed;
 spiderWebTime = -1;
 
-// Hover vars
-hoverTimer = 0;
-hover = 0;
-
 // Create the path
 path = path_add();
 

@@ -1,37 +1,129 @@
 /// @description Animations
 
-// Get dir var
-var _dir = floor(dir) + 1; // + 1 biases the code upwards to prevent glitches
+// Animations
 
-// Turn dir from degrees to a number we can work with (whole number)
-_dir = floor(_dir / 45);
+var _moveX, _moveY;
 
-// Check what state the enemy is in (different animations based on that)
-switch(state)
+// Turn dir into local var
+var _dir = dir;
+
+// Get the direction of motion into hsp and vsp variables
+var _moveX = sign(lengthdir_x(1,_dir));
+var _moveY = sign(lengthdir_y(1,_dir));
+
+// Animate only if player is moving
+if (_moveX == 0 && _moveY == 0)
 {
-	case STATE.WANDER: // Use passive sprites
+	image_index = 3; // Sets animation to idle frame (the fourth frame)
+	image_speed = 0; // Freezes on that frame
 	
-		// Check if index is already selected - switch if not
-		if (sprite_index != passiveSprite) sprite_index = passiveSprite;
-		
-		// Set image index to direction
-		image_index = _dir;
-		
-		break;
-	case STATE.CHASE: // Use aggro sprites
-		
-		// Check if index is already selected - switch if not
-		if (sprite_index != chaseSprite) sprite_index = chaseSprite;
-		
-		// Set image index to dirwdection
-		image_index = _dir;
-		break;
-	case STATE.AGGRO:
+	// Pause footsteps if not moving
+	//audio_pause_sound(footCur);
+}
+else // Moving
+{	
+	image_speed = 1; // Sets animation speed to normal when moving
 	
-		// Check if index is already selected - switch if not
-		if (sprite_index != aggroSprite) sprite_index = aggroSprite;
+	// flip animations if moving left (because we only have 5 out of 8 directions
+	if (_moveX != 0) image_xscale = _moveX;
+	
+	// Get which stage of eyeball to be
+	switch(state)
+	{
+		case STATE.WANDER:
+			#region angles
+			// Get which angle eyeball is facing
+			switch(_dir)
+			{
+				case 0:
+				case 180:
 		
-		// Set image index to dirwdection
-		image_index = _dir;
-		break;
+					sprite_index = spr_eyeSide_0;
+					break;
+				case 45:
+				case 135:
+
+					sprite_index = spr_eyeBack3_0;
+					break;
+				case 90:
+			
+					sprite_index = spr_eyeBack_0;
+					break;
+				case 225:
+				case 315:
+			
+					sprite_index = spr_eyeFrnt3_0;
+					break;
+				case 270:
+			
+					sprite_index = spr_eyeFront_0;
+					break;
+			}
+			#endregion angles
+			break;
+			
+		case STATE.AGGRO:
+			#region angles
+			// Get which angle eyeball is facing
+			switch(_dir)
+			{
+				case 0:
+				case 180:
+		
+					sprite_index = spr_eyeSide_1;
+					break;
+				case 45:
+				case 135:
+
+					sprite_index = spr_eyeBack3_1;
+					break;
+				case 90:
+			
+					sprite_index = spr_eyeBack_1;
+					break;
+				case 225:
+				case 315:
+			
+					sprite_index = spr_eyeFrnt3_1;
+					break;
+				case 270:
+			
+					sprite_index = spr_eyeFront_1;
+					break;
+			}
+			#endregion angles
+			break;
+			
+		case STATE.CHASE:
+			#region angles
+			// Get which angle eyeball is facing
+			switch(_dir)
+			{
+				case 0:
+				case 180:
+		
+					sprite_index = spr_eyeSide_2;
+					break;
+				case 45:
+				case 135:
+
+					sprite_index = spr_eyeBack3_2;
+					break;
+				case 90:
+			
+					sprite_index = spr_eyeBack_2;
+					break;
+				case 225:
+				case 315:
+			
+					sprite_index = spr_eyeFrnt3_2;
+					break;
+				case 270:
+			
+					sprite_index = spr_eyeFront_2;
+					break;
+			}
+			#endregion angles
+			break;
+	}
 }

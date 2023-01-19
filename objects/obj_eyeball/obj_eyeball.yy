@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_eyeball",
   "spriteId": {
-    "name": "spr_eyeballPassiveDemo",
-    "path": "sprites/spr_eyeballPassiveDemo/spr_eyeballPassiveDemo.yy",
+    "name": "spr_eyeFrnt3_0",
+    "path": "sprites/spr_eyeFrnt3_0/spr_eyeFrnt3_0.yy",
   },
   "solid": false,
   "visible": true,

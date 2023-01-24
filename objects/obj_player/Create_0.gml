@@ -12,6 +12,8 @@ playerHealth = 1;
 hardcoreMode = false;
 
 // Movement Control Initialization
+moveX = 0;
+moveY = 0;
 hsp = 0;
 vsp = 0;
 walkSp = 4;

@@ -15,9 +15,13 @@ idleTime = 4;
 playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;
-enemyMemoryTime = 1.75;
+enemyMemoryTime = 3;
 mimicFormTimer = -1;
 mimicFormTime = 10;
+
+// Counters
+anger = 0;
+maxAnger = 30;
 
 // Create the path
 path = path_add();

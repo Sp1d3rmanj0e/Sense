@@ -60,13 +60,41 @@ if (state == STATE.WANDER)
 			idleTimer = -1;
 		}
 	}
+	
+	// Aggroing code
+	/*
+	* If player is within radius AND 
+	* player is making noise for more 
+	* than 1/2 second, switch to aggro
+	*/
+	
+	var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
+	var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
+	// Increment anger if people moving within range, decrement if not
+	if (_canHear)
+	{
+		anger++;
+	}
+	else if (anger > 0)
+	{
+		anger-= 0.75;
+	}
+	
+	if (anger > maxAnger)
+	{
+		state = STATE.CHASE;
+	}
 	#endregion code
 }
 else if (state == STATE.CHASE)
 {
 	#region code
+	
+	var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
+	var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
+	
 	// Forget the player if not seen for x amt. time
-	if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
+	if (_canHear || place_meeting(x, y, obj_player)) // If the player is seen
 	{
 		// Activate timer while player is visually seen
 		enemyMemoryTimer = enemyMemoryTime * room_speed;

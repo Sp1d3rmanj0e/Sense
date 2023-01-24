@@ -18,7 +18,7 @@ if (distance_to_object(enemies) < transformDist)
 	instance_activate_object(id);
 	
 	// Take enemy's behavior
-	stateScript = copyID.stateScript;
+	//stateScript = copyID.stateScript;
 	
 	// Take enemy's sprite
 	sprite_index = copyID.sprite_index;

@@ -18,6 +18,8 @@ enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
 angryTimer = -1;
 angryTime = 1 * room_speed;
+eyebeamTimer = -1;
+eyebeamTime = 2 * room_speed;
 
 // Create the path
 path = path_add();

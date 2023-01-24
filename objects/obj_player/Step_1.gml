@@ -1,5 +1,8 @@
 /// @description Movement and Collisions
 
+if (state = PSTATE.NORMAL)
+{
+	
 // Set variables for movement
 keyRight = keyboard_check(ord("D"));
 keyLeft = keyboard_check(ord("A"));
@@ -31,3 +34,4 @@ vsp = moveY;
 
 // Add collisions to the walls
 collisions(hsp, vsp);
+}

@@ -22,7 +22,7 @@ controller =
 ];
 
 // Gets tilemap id
-var _tilemap = layer_tilemap_get_id("Walls");
+var _tilemap = layer_tilemap_get_id("walls");
 
 // Finds amount of tiles in map
 var _tileX = ceil(room_width / WORLD.CELL_SIZE);

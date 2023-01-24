@@ -21,3 +21,6 @@ origWalkSp = walkSp; // Save walk speed just in case
 
 // special vars
 trashCollected = 0;
+
+// state code
+state = PSTATE.NORMAL

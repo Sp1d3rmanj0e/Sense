@@ -1,14 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-
-
-
-
-
-
-
 draw_self();
 
 var _string = (distance_to_object(enemies) < transformDist) && (stateScript == defaultScript)

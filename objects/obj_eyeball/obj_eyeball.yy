@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_eyeball",
   "spriteId": {
-    "name": "spr_eyeballPassiveDemo",
-    "path": "sprites/spr_eyeballPassiveDemo/spr_eyeballPassiveDemo.yy",
+    "name": "spr_eyeFrnt3_0",
+    "path": "sprites/spr_eyeFrnt3_0/spr_eyeFrnt3_0.yy",
   },
   "solid": false,
   "visible": true,
@@ -38,8 +38,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"aggroSprite","varType":5,"value":"spr_eyeballAggroDemo","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"passiveSprite","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"spr_eyeballPassiveDemo",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chaseSprite","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"spr_eyeballAggroingDemo",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"stateScript","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"scr_eyeball",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"animScript","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"scr_eyeballA",},
   ],
   "parent": {
     "name": "entities",

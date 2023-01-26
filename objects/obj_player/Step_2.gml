@@ -57,11 +57,11 @@ else // Moving
 		case 225:
 		case 315:
 			
-			sprite_index = spr_playerQFront
+			sprite_index = spr_playerQFront;
 			break;
 		case 270:
 			
-			sprite_index = spr_playerFront
+			sprite_index = spr_playerFront;
 			break;
 	}
 	

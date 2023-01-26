@@ -19,3 +19,18 @@ enum WORLD
 {
 	CELL_SIZE = 64
 }
+
+enum SENSES
+{
+	SEE,
+	HEAR,
+	FEEL,
+	TASTE,
+	SMELL
+}
+
+enum PSTATE
+{
+	NORMAL,
+	STUN
+}

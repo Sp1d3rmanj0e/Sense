@@ -12,22 +12,15 @@ playerHealth = 1;
 hardcoreMode = false;
 
 // Movement Control Initialization
+moveX = 0;
+moveY = 0;
 hsp = 0;
 vsp = 0;
-walkSp = 5;
+walkSp = 4;
 origWalkSp = walkSp; // Save walk speed just in case
 
-room1 = Room1;
-room2 = noone;
-room3 = noone;
-room4 = noone;
-room5 = noone;
+// special vars
+trashCollected = 0;
 
-// Initialize level footstep noises
-footCur = snd_FloorFootsteps;
-footBasement = snd_GravelFootsteps;
-footKitchen = snd_ConcreteFootsteps;
-footMain = snd_FloorFootsteps;
-footBedroom = snd_CarpetFootsteps;
-footGrass = snd_GrassFootsteps;
-footAttic = snd_FloorFootsteps;
+// state code
+state = PSTATE.NORMAL

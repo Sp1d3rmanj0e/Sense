@@ -36,18 +36,4 @@ tilemap = layer_tilemap_get_id("walls");
 copyID = noone;
 
 // Stores default data for mimic
-defaultSprite = spr_mimic;
-defaultScript = scr_mimic;
-
-// Add other enemy vars for if they clone them
-
-// Eyeball
-angryTimer = -1;
-angryTime = 1 * room_speed;
-
-// Janitor
-targetId = noone;
-
-// Spider
-spiderWebTimer = 8 * room_speed;
-spiderWebTime = -1;
+defaultAnimScript = scr_mimicA;

@@ -3,9 +3,6 @@
 function scr_mimic()
 {
 
-// Checks if enemy can see the player
-var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
-
 // State machine
 if (state == STATE.WANDER)
 {
@@ -146,7 +143,7 @@ if (distance_to_object(enemies) < transformDist)
 	//stateScript = copyID.stateScript;
 	
 	// Take enemy's sprite
-	sprite_index = copyID.sprite_index;
+	animScript = copyID.animScript;
 }
 
 // Decrement timer
@@ -155,16 +152,14 @@ else
 {
 	// Transform back
 	mimicFormTimer = -1;
-	stateScript = defaultScript;
-	sprite_index = defaultSprite;
+	animScript = defaultAnimScript;
 }
 
 // If close to player, transform into demon
 if ((_canHear && anger >= maxAnger ) || place_meeting(x,y,obj_player))
 {
 	state = STATE.CHASE;
-	stateScript = defaultScript;
-	sprite_index = defaultSprite;
+	animScript = defaultAnimScript;
 	
 	// Set transform timer to 0
 	mimicFormTimer = -1;

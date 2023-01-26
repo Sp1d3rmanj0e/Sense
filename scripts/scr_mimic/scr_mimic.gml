@@ -2,6 +2,31 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_mimic()
 {
+	
+var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
+var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
+
+// Aggroing code
+/*
+* If player is within radius AND 
+* player is making noise for more 
+* than 1/2 second, switch to aggro
+*/
+	
+// Increment anger if people moving within range, decrement if not
+if (_canHear && anger < maxAnger)
+{
+	anger++;
+}
+else if (anger > 0)
+{
+	anger-= 0.7;
+}
+	
+if (anger >= maxAnger)
+{
+	state = STATE.CHASE;
+}
 
 // State machine
 if (state == STATE.WANDER)
@@ -58,57 +83,20 @@ if (state == STATE.WANDER)
 		}
 	}
 	
-	// Aggroing code
-	/*
-	* If player is within radius AND 
-	* player is making noise for more 
-	* than 1/2 second, switch to aggro
-	*/
-	
-	var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
-	var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
-	// Increment anger if people moving within range, decrement if not
-	if (_canHear)
-	{
-		anger++;
-	}
-	else if (anger > 0)
-	{
-		anger-= 0.75;
-	}
-	
-	if (anger > maxAnger)
-	{
-		state = STATE.CHASE;
-	}
 	#endregion code
 }
 else if (state == STATE.CHASE)
 {
 	#region code
 	
-	var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
-	var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
-	
-	// Forget the player if not seen for x amt. time
-	if (_canHear) // If the player is seen
+	if (anger <= 0)
 	{
-		// Activate timer while player is visually seen
-		enemyMemoryTimer = enemyMemoryTime * room_speed;
-	}
-	else // If the player is not seen
-	{
-		// Count down timer
-		if (enemyMemoryTimer > 0) enemyMemoryTimer--;
-		else 
-		{
-			// Reset timer
-			enemyMemoryTimer = -1;
-				
-			// Switch to wander state
-			state = STATE.WANDER;
-			exit;
-		}
+		// Stop current path
+		goto(path, x, y, eSpeed, global.grid);	
+			
+		// Switch to wander state
+		state = STATE.WANDER;
+		exit;
 	}
 		
 	// Delay timer before the enemy will find a new path towards the player

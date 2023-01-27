@@ -23,6 +23,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46C31E_1","properties":[],"isDnd":false,"objectId":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3EAAA8A0","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":2160.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E4D20CA","properties":[],"isDnd":false,"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-48.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":48,"gridY":48,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"visual_walls","tilesetId":{"name":"ts_Gwalls","path":"tilesets/ts_Gwalls/ts_Gwalls.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":53,"SerialiseHeight":35,"TileCompressedData":[
 1,24,-10,12,1,24,-7,12,1,24,-22,12,1,24,-9,12,2,6,18,-10,-2147483648,1,18,-7,-2147483648,1,18,-22,-2147483648,1,18,-9,-2147483648,2,6,18,-10,-2147483648,1,18,-7,-2147483648,1,18,-22,-2147483648,1,18,-9,-2147483648,5,6,18,
@@ -73,6 +74,7 @@
     {"name":"inst_9139DC4_1","path":"rooms/map_idea_1/map_idea_1.yy",},
     {"name":"inst_46C31E_1","path":"rooms/map_idea_1/map_idea_1.yy",},
     {"name":"inst_3EAAA8A0","path":"rooms/map_idea_1/map_idea_1.yy",},
+    {"name":"inst_6E4D20CA","path":"rooms/map_idea_1/map_idea_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

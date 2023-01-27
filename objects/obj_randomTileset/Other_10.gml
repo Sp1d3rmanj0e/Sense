@@ -1,29 +1,10 @@
-// Set up controller
+/// @description Insert description here
+// You can write your code in this editor
 
-/*
-	[
-		[BASE TILE,[REPLACEMENT, WEIGHT],[REPLACEMENT, WEIGHT]]
-		[BASE TILE,[REPLACEMENT, WEIGHT],[REPLACEMENT, WEIGHT]]
-	]
-*/
-
-// Randomize
 randomize();
 
-controller =
-[
-	[6,[1,1],[7,1],[13,1],[19,1],[25,1],[31,1]],
-	[12,[2,2],[8,2],[14,2],[20,2],[26,1],[32,1]],
-	[18,[3,2],[9,2],[15,2],[21,2],[27,1],[33,1]],
-	[24,[4,2],[10,2],[16,2],[22,2],[28,1],[34,1]],
-	[30,[5,2],[11,2],[17,2],[23,2],[29,1],[35,1]]
-	
-	
-	
-];
-
 // Gets tilemap id
-var _tilemap = layer_tilemap_get_id("walls");
+var _tilemap = layer_tilemap_get_id("visual_walls");
 
 // Finds amount of tiles in map
 var _tileX = ceil(room_width / WORLD.CELL_SIZE);

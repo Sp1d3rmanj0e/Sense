@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item_ui",
-  "spriteId": null,
+  "name": "obj_ui_bar",
+  "spriteId": {
+    "name": "spr_ui_bar",
+    "path": "sprites/spr_ui_bar/spr_ui_bar.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

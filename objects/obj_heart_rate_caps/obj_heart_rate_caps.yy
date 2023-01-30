@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_item_ui",
-  "spriteId": null,
+  "name": "obj_heart_rate_caps",
+  "spriteId": {
+    "name": "spr_heart_rate_caps",
+    "path": "sprites/spr_heart_rate_caps/spr_heart_rate_caps.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

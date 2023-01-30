@@ -104,7 +104,6 @@
     {"id":{"name":"spr_wallLight","path":"sprites/spr_wallLight/spr_wallLight.yy",},"order":2,},
     {"id":{"name":"spr_eyeFront_1","path":"sprites/spr_eyeFront_1/spr_eyeFront_1.yy",},"order":3,},
     {"id":{"name":"spr_mimic","path":"sprites/spr_mimic/spr_mimic.yy",},"order":0,},
-    {"id":{"name":"obj_senseTooltip","path":"objects/obj_senseTooltip/obj_senseTooltip.yy",},"order":4,},
     {"id":{"name":"snd_CarpetFootsteps","path":"sounds/snd_CarpetFootsteps/snd_CarpetFootsteps.yy",},"order":0,},
     {"id":{"name":"spr_playerFront","path":"sprites/spr_playerFront/spr_playerFront.yy",},"order":4,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":2,},

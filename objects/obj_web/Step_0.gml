@@ -1,5 +1,8 @@
 /// @description Slow player when walked on
 
+// Outline if mouse is on it;
+event_inherited();
+
 /**
  * If the player touches the webs, it will ratio its speed
  * until the player escapes the webs.  In which case, the web

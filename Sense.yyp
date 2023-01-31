@@ -18,6 +18,7 @@
     {"id":{"name":"obj_eyebeam","path":"objects/obj_eyebeam/obj_eyebeam.yy",},"order":3,},
     {"id":{"name":"scr_mimicA","path":"scripts/scr_mimicA/scr_mimicA.yy",},"order":3,},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},"order":1,},
+    {"id":{"name":"spr_mimicSpirit","path":"sprites/spr_mimicSpirit/spr_mimicSpirit.yy",},"order":1,},
     {"id":{"name":"scr_sanityDemonA","path":"scripts/scr_sanityDemonA/scr_sanityDemonA.yy",},"order":4,},
     {"id":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},"order":2,},
     {"id":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"order":7,},

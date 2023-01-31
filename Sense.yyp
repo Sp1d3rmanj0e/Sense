@@ -83,6 +83,7 @@
     {"id":{"name":"obj_difficultyDesc","path":"objects/obj_difficultyDesc/obj_difficultyDesc.yy",},"order":1,},
     {"id":{"name":"obj_janitor","path":"objects/obj_janitor/obj_janitor.yy",},"order":2,},
     {"id":{"name":"rm_doors","path":"rooms/rm_doors/rm_doors.yy",},"order":3,},
+    {"id":{"name":"Credits","path":"notes/Credits/Credits.yy",},"order":0,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":1,},
     {"id":{"name":"spr_eyeSide_0","path":"sprites/spr_eyeSide_0/spr_eyeSide_0.yy",},"order":1,},
     {"id":{"name":"losObstruction","path":"objects/losObstruction/losObstruction.yy",},"order":1,},

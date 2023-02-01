@@ -135,6 +135,7 @@
     {"id":{"name":"spr_difficultyDesc","path":"sprites/spr_difficultyDesc/spr_difficultyDesc.yy",},"order":1,},
     {"id":{"name":"spr_eyeFrnt3_0","path":"sprites/spr_eyeFrnt3_0/spr_eyeFrnt3_0.yy",},"order":3,},
     {"id":{"name":"spr_difficultyDescGr","path":"sprites/spr_difficultyDescGr/spr_difficultyDescGr.yy",},"order":0,},
+    {"id":{"name":"spr_door_closed","path":"sprites/spr_door_closed/spr_door_closed.yy",},"order":16,},
     {"id":{"name":"snd_DoorClose3","path":"sounds/snd_DoorClose3/snd_DoorClose3.yy",},"order":2,},
     {"id":{"name":"effects","path":"objects/effects/effects.yy",},"order":2,},
     {"id":{"name":"obj_mimic","path":"objects/obj_mimic/obj_mimic.yy",},"order":3,},

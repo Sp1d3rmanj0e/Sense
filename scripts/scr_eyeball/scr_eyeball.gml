@@ -109,6 +109,22 @@ switch(state)
 			playerChaseTimer = -1;
 			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
+		
+		// Shoot eyebeam every couple seconds
+		/*
+		if (eyebeamTimer > 0) eyebeamTimer--;
+		else 
+		{
+			eyebeamTimer = eyebeamTime;
+			
+			// Create eyebeam
+			with(instance_create_layer(x,y,"Instances",obj_eyebeam))
+			{
+				image_angle = point_direction(x,y, obj_player.x, obj_player.y);
+			}
+		}
+		*/
+		
 		#endregion code
 		break;
 	case STATE.AGGRO:

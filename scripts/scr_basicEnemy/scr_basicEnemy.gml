@@ -26,8 +26,3 @@ function scr_sight(_viewConeDeg, _viewDist, _dir)
 											  
 	return _visNotWallBlocked;
 }
-
-function scr_wander()
-{
-	
-}

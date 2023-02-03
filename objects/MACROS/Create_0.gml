@@ -28,3 +28,9 @@ enum SENSES
 	TASTE,
 	SMELL
 }
+
+enum PSTATE
+{
+	NORMAL,
+	STUN
+}

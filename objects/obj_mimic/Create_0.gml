@@ -1,5 +1,8 @@
 /// @description Set up vars
 
+// Footstep and heat
+event_inherited();
+
 // Randomize
 randomize();
 

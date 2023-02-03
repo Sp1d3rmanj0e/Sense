@@ -2,6 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_mimicA(){
 
-sprite_index = spr_mimic;
+if (state == STATE.WANDER)
+{
+	sprite_index = spr_mimicSpirit;
+}
+else
+{
+	sprite_index = spr_mimic;
+}
 
 }

@@ -68,6 +68,12 @@ if (state == STATE.WANDER)
 		// Idle for a few seconds
 		if (idleTimer == -1) idleTimer = idleTime * room_speed;
 			
+		// If in pixie form, immediately start moving again
+		if (animScript == defaultAnimScript)
+		{
+			idleTimer = 0;
+		}
+			
 		// Countdown the timer
 		if (idleTimer > 0) 
 		{

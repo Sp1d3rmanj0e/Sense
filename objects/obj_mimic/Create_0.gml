@@ -23,6 +23,10 @@ mimicFormTime = 10;
 anger = 0;
 maxAnger = 30;
 
+// Hover vars
+hoverTimer = 0;
+hover = 0;
+
 // Create the path
 path = path_add();
 

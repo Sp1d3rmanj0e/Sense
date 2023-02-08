@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "spawners",
+    "path": "folders/Objects/spriteless/spawners.yy",
   },
 }

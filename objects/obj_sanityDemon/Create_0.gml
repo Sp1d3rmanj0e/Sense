@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Footstep and heat
+event_inherited();
+
 // Create the path
 path = path_add();
 

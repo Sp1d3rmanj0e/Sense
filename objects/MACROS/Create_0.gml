@@ -20,11 +20,29 @@ enum WORLD
 	CELL_SIZE = 64
 }
 
-enum SENSES
+enum SENSE
 {
 	SEE,
 	HEAR,
 	FEEL,
 	TASTE,
-	SMELL
+	SMELL,
+	NONE
+}
+
+enum GADGET
+{
+	LIGHT,
+	TASER,
+	ECHO,
+	DASH,
+	PHASE,
+	TELEPORT,
+	NONE
+}
+
+enum PSTATE
+{
+	NORMAL,
+	STUN
 }

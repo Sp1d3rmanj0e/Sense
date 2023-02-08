@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "taser",
-    "path": "folders/Sprites/taser.yy",
+    "path": "folders/Sprites/ui/gadgets_powers/taser.yy",
   },
 }

@@ -12,3 +12,13 @@ if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(prevX, prevY, x,
 // Set new previous locations
 prevX = x;
 prevY = y;
+
+
+if (heatSpawnTimer > 0) heatSpawnTimer--;
+else
+{
+	heatSpawnTimer = heatSpawnTime;
+	
+	// Create heat residue
+	instance_create_layer(x, y, "Instances", obj_heat);
+}

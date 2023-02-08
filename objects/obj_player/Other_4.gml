@@ -1,4 +1,4 @@
-/// @description 
+/// @description Set up player stats
 
 // Reset player health every round
 switch(global.difficulty)

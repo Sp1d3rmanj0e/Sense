@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ui",
-    "path": "folders/Objects/ui.yy",
+    "name": "GUIcons",
+    "path": "folders/Objects/ui/GUIcons.yy",
   },
 }

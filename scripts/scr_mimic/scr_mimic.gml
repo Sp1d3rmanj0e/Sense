@@ -2,9 +2,31 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_mimic()
 {
+	
+var _playerMoving = (obj_player.moveX != 0 || obj_player.moveY != 0);
+var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
 
-// Checks if enemy can see the player
-var _canSee = scr_sight(viewConeDeg, maxViewDist, dir);
+// Aggroing code
+/*
+* If player is within radius AND 
+* player is making noise for more 
+* than 1/2 second, switch to aggro
+*/
+	
+// Increment anger if people moving within range, decrement if not
+if (_canHear && anger < maxAnger)
+{
+	anger++;
+}
+else if (anger > 0)
+{
+	anger-= 0.7;
+}
+	
+if (anger >= maxAnger)
+{
+	state = STATE.CHASE;
+}
 
 // State machine
 if (state == STATE.WANDER)
@@ -46,6 +68,12 @@ if (state == STATE.WANDER)
 		// Idle for a few seconds
 		if (idleTimer == -1) idleTimer = idleTime * room_speed;
 			
+		// If in pixie form, immediately start moving again
+		if (animScript == defaultAnimScript)
+		{
+			idleTimer = 0;
+		}
+			
 		// Countdown the timer
 		if (idleTimer > 0) 
 		{
@@ -60,30 +88,21 @@ if (state == STATE.WANDER)
 			idleTimer = -1;
 		}
 	}
+	
 	#endregion code
 }
 else if (state == STATE.CHASE)
 {
 	#region code
-	// Forget the player if not seen for x amt. time
-	if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
+	
+	if (anger <= 0)
 	{
-		// Activate timer while player is visually seen
-		enemyMemoryTimer = enemyMemoryTime * room_speed;
-	}
-	else // If the player is not seen
-	{
-		// Count down timer
-		if (enemyMemoryTimer > 0) enemyMemoryTimer--;
-		else 
-		{
-			// Reset timer
-			enemyMemoryTimer = -1;
-				
-			// Switch to wander state
-			state = STATE.WANDER;
-			exit;
-		}
+		// Stop current path
+		goto(path, x, y, eSpeed, global.grid);	
+			
+		// Switch to wander state
+		state = STATE.WANDER;
+		exit;
 	}
 		
 	// Delay timer before the enemy will find a new path towards the player
@@ -98,6 +117,46 @@ else if (state == STATE.CHASE)
 		goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 	}
 	#endregion code
+}
+
+// Passive stuff
+
+// Transform into nearby enemies
+if (distance_to_object(enemies) < transformDist)
+{
+	show_debug_message("copying new enemy");
+	// Start the transformation timer
+	mimicFormTimer = mimicFormTime * room_speed;
+	
+	// Get ID of copied enemy
+	instance_deactivate_object(id);
+	copyID = instance_nearest(x,y,enemies);
+	instance_activate_object(id);
+	
+	// Take enemy's behavior
+	//stateScript = copyID.stateScript;
+	
+	// Take enemy's sprite
+	animScript = copyID.animScript;
+}
+
+// Decrement timer
+if (mimicFormTimer > 0) mimicFormTimer--;
+else 
+{
+	// Transform back
+	mimicFormTimer = -1;
+	animScript = defaultAnimScript;
+}
+
+// If close to player, transform into demon
+if ((_canHear && anger >= maxAnger ) || place_meeting(x,y,obj_player))
+{
+	state = STATE.CHASE;
+	animScript = defaultAnimScript;
+	
+	// Set transform timer to 0
+	mimicFormTimer = -1;
 }
 
 }

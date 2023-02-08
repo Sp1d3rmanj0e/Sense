@@ -78,6 +78,6 @@
   "nineSlice": null,
   "parent": {
     "name": "gadgets_powers",
-    "path": "folders/Sprites/gadgets_powers.yy",
+    "path": "folders/Sprites/ui/gadgets_powers.yy",
   },
 }

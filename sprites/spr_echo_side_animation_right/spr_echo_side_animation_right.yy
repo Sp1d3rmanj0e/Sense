@@ -42,7 +42,7 @@
     "name": "spr_echo_side_animation_right",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 8.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -82,6 +82,6 @@
   "nineSlice": null,
   "parent": {
     "name": "gadget_animation_on_the_side_thhings",
-    "path": "folders/Sprites/gadgets_powers/gadget_animation_on_the_side_thhings.yy",
+    "path": "folders/Sprites/ui/gadgets_powers/gadget_animation_on_the_side_thhings.yy",
   },
 }

@@ -19,8 +19,12 @@ vsp = 0;
 walkSp = 4;
 origWalkSp = walkSp; // Save walk speed just in case
 
+// Gadget and sense storage
+curGadget = GADGET.ECHO;
+curSense = SENSE.NONE;
+
 // special vars
 trashCollected = 0;
 
 // state code
-state = PSTATE.NORMAL
+state = PSTATE.NORMAL;

@@ -5,6 +5,6 @@
 height = sprite_height;
 count = 4;
 upsize = 1.25;
-spriteColor = spr_difficultyDesc;
-spriteGrey  = spr_difficultyDescGr;
+spriteColor = spr_difficulty_main;
+spriteGrey  = spr_difficulty_main;
 selColor = -1;

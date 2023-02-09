@@ -53,6 +53,7 @@
     {"id":{"name":"spr_playerQBack","path":"sprites/spr_playerQBack/spr_playerQBack.yy",},"order":2,},
     {"id":{"name":"spr_lightSourceRadial","path":"sprites/spr_lightSourceRadial/spr_lightSourceRadial.yy",},"order":1,},
     {"id":{"name":"spr_playerQFront","path":"sprites/spr_playerQFront/spr_playerQFront.yy",},"order":0,},
+    {"id":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"order":10,},
     {"id":{"name":"scr_collisions","path":"scripts/scr_collisions/scr_collisions.yy",},"order":1,},
     {"id":{"name":"scr_goto","path":"scripts/scr_goto/scr_goto.yy",},"order":0,},
     {"id":{"name":"spr_trash01","path":"sprites/spr_trash01/spr_trash01.yy",},"order":7,},

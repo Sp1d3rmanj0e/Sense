@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_taser",
-  "spriteId": {
-    "name": "spr_taser_item_1",
-    "path": "sprites/spr_taser_item_1/spr_taser_item_1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

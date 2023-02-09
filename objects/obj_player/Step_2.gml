@@ -4,11 +4,18 @@
 depth = -y - (bbox_bottom - y);
 
 // Get camera dimensions
-var camWidth = camera_get_view_width(view_camera[0]);
-var camHeight = camera_get_view_height(view_camera[0]);
+var _camWidth = camera_get_view_width(view_camera[0]);
+var _camHeight = camera_get_view_height(view_camera[0]);
+
+var _camX = x - _camWidth/2;
+var _camY = y - _camHeight/2;
+
+// Camera does not go out of map bounds
+_camX = clamp(_camX, 0, room_width - _camWidth);
+_camY = clamp(_camY, 0, room_height - _camHeight);
 
 // Camera follows player
-camera_set_view_pos(view_camera[0],x - camWidth/2,y - camHeight/2);
+camera_set_view_pos(view_camera[0], _camX, _camY);
 
 // Animations
 

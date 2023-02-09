@@ -5,7 +5,7 @@ entities =
 [
 	[obj_ghost,"Ghost",spr_ghost],
 	[obj_eyeball,"Eyeball",spr_eyeballPassiveDemo],
-	[obj_janitor,"Janitor",spr_janitor],
+	[obj_janitor,"Janitor",spr_JanitorFront],
 	[obj_mimic,"Mimic",spr_mimic],
 	[obj_sanityDemon,"Sanity Demon",spr_sanityDemon],
 	[obj_spider,"Spider",spr_spider]

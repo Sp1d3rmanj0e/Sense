@@ -1,5 +1,8 @@
 /// @description Set up vars
 
+// Footstep and heat
+event_inherited();
+
 // Randomize
 randomize();
 
@@ -15,9 +18,19 @@ idleTime = 4;
 playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;
-enemyMemoryTime = 1.75;
+enemyMemoryTime = 3;
 mimicFormTimer = -1;
 mimicFormTime = 10;
+
+// Counters
+anger = 0;
+maxAnger = 30;
+angerGain = 1;
+angerLose = 0.5;
+
+// Hover vars
+hoverTimer = 0;
+hover = 0;
 
 // Create the path
 path = path_add();
@@ -32,18 +45,4 @@ tilemap = layer_tilemap_get_id("walls");
 copyID = noone;
 
 // Stores default data for mimic
-defaultSprite = spr_mimic;
-defaultScript = scr_mimic;
-
-// Add other enemy vars for if they clone them
-
-// Eyeball
-angryTimer = -1;
-angryTime = 1 * room_speed;
-
-// Janitor
-targetId = noone;
-
-// Spider
-spiderWebTimer = 8 * room_speed;
-spiderWebTime = -1;
+defaultAnimScript = scr_mimicA;

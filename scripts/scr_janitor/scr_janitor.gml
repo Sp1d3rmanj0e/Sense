@@ -25,18 +25,18 @@ if (newPath == true)
 		var gotoX, gotoY;
 		
 		// Check if there is any garbage on the map
-		if (instance_number(cleanable) > 0)
+		if (instance_number(obj_residue) > 0)
 		{
 			// Create garbage array
 			var _garbage = [];
 			
 			// Get number of garbage pieces on the map
-			var  _numGarbage = instance_number(cleanable);
+			var  _numGarbage = instance_number(obj_residue);
 		
 			// Look for garbage to clean up
 			for (var i = 0; i < _numGarbage; ++i;)
 			{
-			    _garbage[i] = instance_find(cleanable,i);
+			    _garbage[i] = instance_find(obj_residue,i);
 			}
 			
 			// Choose a random piece of garbage and get ID

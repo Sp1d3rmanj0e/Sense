@@ -12,7 +12,15 @@ if (tilemap_get_at_pixel(tilemap,x,y) != 0)
 	var _y = round(y / tileSize) * tileSize - 32;
 	
 	// Spawn goo
-	instance_create_layer(_x,_y,"Senses", obj_goo);
+	with(instance_create_layer(_x, _y, "Senses", obj_residue))
+	{
+		// Tell the residue that it is actually goop
+		realResidue = spr_resGoo;
+		
+		// Point it in the direction that it came from
+		// (spills onto the walls)
+		image_angle = other.dir;
+	}
 	gooTimer = gooTime * room_speed;
 }
 

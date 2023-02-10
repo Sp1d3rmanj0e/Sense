@@ -19,8 +19,10 @@ playerChaseTimer = -1;
 playerChaseTime = 1;
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
-spiderWebTimer = 8 * room_speed;
-spiderWebTime = -1;
+residueTimer = 8 * room_speed;
+
+// Spawn residue
+alarm[0] = residueTimer;
 
 // Create the path
 path = path_add();

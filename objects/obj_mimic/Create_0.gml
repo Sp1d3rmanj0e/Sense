@@ -21,6 +21,10 @@ enemyMemoryTimer = -1;
 enemyMemoryTime = 3;
 mimicFormTimer = -1;
 mimicFormTime = 10;
+residueTimer = 7 * room_speed;
+
+// Residue spawn timer
+alarm[0] = residueTimer;
 
 // Counters
 anger = 0;

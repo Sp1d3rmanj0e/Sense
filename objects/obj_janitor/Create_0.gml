@@ -15,7 +15,12 @@ dir = 0;
 // Timers
 idleTimer = -1;
 idleTime = 4;
+residueTimer = 10 * room_speed;
 
+// Spawn residue
+alarm[0] = residueTimer;
+
+// Tracks residue created
 targetId = noone;
 
 // Create the path

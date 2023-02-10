@@ -45,5 +45,5 @@ alarm[0] = residueTimer;
 // Initialize state
 state = STATE.WANDER;
 
-// Initialize tilemap
+// Get tilemap
 tilemap = layer_tilemap_get_id("walls");

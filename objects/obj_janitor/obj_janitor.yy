@@ -30,14 +30,10 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"stateScript","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"scr_janitor",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"animScript","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"scr_janitorA",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "entities",
     "path": "folders/Objects/entities.yy",

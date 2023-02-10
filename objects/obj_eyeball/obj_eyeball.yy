@@ -35,9 +35,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":53,"eventType":6,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"eSpeed","path":"objects/enemies/enemies.yy",},"objectId":{"name":"enemies","path":"objects/enemies/enemies.yy",},"value":"400",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "entities",
     "path": "folders/Objects/entities.yy",

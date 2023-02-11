@@ -16,5 +16,12 @@ var _qtrPerc = clamp(_progPerc, 0.25, 1);
 image_xscale = _qtrPerc
 image_yscale = _qtrPerc
 
-// Alpha
-image_alpha = _qtrPerc
+// Alpha - Hide if smell is not activated
+if (obj_player.curSense == SENSE.SMELL)
+{
+	image_alpha = _qtrPerc
+}
+else
+{
+	image_alpha = 0;
+}

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "item_ui",
-    "path": "folders/Sprites/ui/item_ui.yy",
+    "name": "GUIcons",
+    "path": "folders/Sprites/ui/GUIcons.yy",
   },
 }

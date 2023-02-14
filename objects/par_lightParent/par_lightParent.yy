@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "losObstruction",
+  "name": "par_lightParent",
   "spriteId": null,
   "solid": false,
   "visible": true,
@@ -25,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "parents",
-    "path": "folders/Objects/parents.yy",
+    "name": "lights",
+    "path": "folders/Objects/lights.yy",
   },
 }

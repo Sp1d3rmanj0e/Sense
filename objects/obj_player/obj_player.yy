@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_lightParent",
-    "path": "objects/obj_lightParent/obj_lightParent.yy",
+    "name": "par_lightParent",
+    "path": "objects/par_lightParent/par_lightParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

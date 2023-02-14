@@ -25,7 +25,7 @@ else
 		draw_set_alpha(1);
 		draw_rectangle(0, 0, _cw, _ch, 0);
 		gpu_set_blendmode(bm_subtract);
-		with(obj_lightParent)
+		with(par_lightParent)
 		{
 			switch(object_index)
 			{

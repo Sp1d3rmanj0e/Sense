@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "pets",
-    "path": "folders/Objects/pets.yy",
+    "name": "Effects",
+    "path": "folders/Objects/ui/Effects.yy",
   },
 }

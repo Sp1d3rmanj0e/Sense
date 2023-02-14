@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "sensesAndGadgets",
-    "path": "folders/Sprites/sensesAndGadgets.yy",
+    "name": "ui",
+    "path": "folders/Sprites/ui.yy",
   },
 }

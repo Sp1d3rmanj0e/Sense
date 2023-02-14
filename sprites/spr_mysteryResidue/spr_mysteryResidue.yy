@@ -71,6 +71,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Entity residues",
-    "path": "folders/Sprites/pets/Entity residues.yy",
+    "path": "folders/Sprites/ui/Entity residues.yy",
   },
 }

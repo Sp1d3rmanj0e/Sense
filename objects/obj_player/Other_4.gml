@@ -27,6 +27,8 @@ switch(global.difficulty)
 		show_debug_message("DIFFICULTY NOT SELECTED: ROOM START OF PLAYER");
 }
 
+origWalkSp = walkSp; // Save walk speed just in case
+
 /* Delete later
 // Get footstep noise per room
 switch(room)

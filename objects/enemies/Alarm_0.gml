@@ -1,4 +1,4 @@
-/// @description Spawn residue
+/// @description Spawn residue (Smell sense)
 
 with(instance_create_layer(x,y,"Senses", obj_residue))
 {

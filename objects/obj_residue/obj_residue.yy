@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "pets",
-    "path": "folders/Objects/pets.yy",
+    "name": "senses",
+    "path": "folders/Objects/senses.yy",
   },
 }

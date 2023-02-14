@@ -23,6 +23,9 @@ origWalkSp = walkSp; // Save walk speed just in case
 curGadget = GADGET.ECHO;
 curSense = SENSE.NONE;
 
+// Sense vars
+feelRad = 2 * WORLD.CELL_SIZE;
+
 // special vars
 trashCollected = 0;
 

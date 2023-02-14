@@ -3,7 +3,7 @@
 // Check if ghost is going through a wall
 // and that goo isn't already there
 if (tilemap_get_at_pixel(tilemap,x,y) != 0)
-&& (!place_meeting(x,y,obj_goo) 
+&& (!place_meeting(x,y,obj_residue) 
 && (gooTimer = -1))
 {
 	// Make x and y fit the tile grid

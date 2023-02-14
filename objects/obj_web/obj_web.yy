@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_web",
   "spriteId": {
-    "name": "spr_web",
-    "path": "sprites/spr_web/spr_web.yy",
+    "name": "spr_resWeb",
+    "path": "sprites/spr_resWeb/spr_resWeb.yy",
   },
   "solid": false,
   "visible": true,

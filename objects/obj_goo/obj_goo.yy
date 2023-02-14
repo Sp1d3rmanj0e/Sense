@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_goo",
   "spriteId": {
-    "name": "spr_goo",
-    "path": "sprites/spr_goo/spr_goo.yy",
+    "name": "spr_resGoo",
+    "path": "sprites/spr_resGoo/spr_resGoo.yy",
   },
   "solid": false,
   "visible": true,

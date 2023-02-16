@@ -18,7 +18,6 @@ with(instance_create_layer(x,y,"Senses", obj_residue))
 			
 		case scr_mimicA:
 			realResidue = spr_resGlitches;
-			show_debug_message("Creating mimic glitches");
 			break;
 			
 		case scr_spiderA:
@@ -29,7 +28,6 @@ with(instance_create_layer(x,y,"Senses", obj_residue))
 	if (other.object_index == obj_mimic)
 	{
 		glitched = true;
-		show_debug_message("This is a mimic");
 	}
 }
 

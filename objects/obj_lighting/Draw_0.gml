@@ -33,6 +33,7 @@ else
 					draw_sprite(spr_lightSourceRadial, 0, x - _cx, y - _cy);
 					draw_circle(x - _cx, y - _cy, 30, true);
 					break;
+					
 				case obj_flashlight:
 					var _tilemap = layer_tilemap_get_id("walls");
 					var _lightLen = 5;
@@ -46,10 +47,20 @@ else
 					//draw_line_width(x - _cx,y - _cy,x+lengthdir_x(100,_pointDir) - _cx,y+lengthdir_y(100,_pointDir) - _cy,20);
 					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, _lightLen, _pointDir - 90, c_white, 1);
 					break;
+					
 				case obj_wallLight:
 					if (toggleLight)
 					{
 						draw_sprite_ext(spr_wallLightSource, 0, x - _cx, y - _cy, 1, 1, image_angle, c_yellow, 0.75);
+					}
+					break;
+					
+				case obj_mimic:
+					// Only draw light if in pixie form
+					if (sprite_index == spr_mimicSpirit)
+					{
+						var _randomScale = random_range(0.3, 0.5);
+						draw_sprite_ext(spr_lightSourceRadial, 0, x - _cx, y - _cy, _randomScale, _randomScale, 0, c_white, 1);
 					}
 					break;
 			}

@@ -8,7 +8,7 @@ if (position_meeting(mouse_x, mouse_y, self))
 	// Show the sense if clicked
 	if (mouse_check_button_pressed(mb_left))
 	{
-		sprite_index = realResidue;
+		smelled = true;
 	}
 }
 else // Mouse is not over residue

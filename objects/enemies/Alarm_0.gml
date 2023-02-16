@@ -2,28 +2,37 @@
 
 with(instance_create_layer(x,y,"Senses", obj_residue))
 {
-	switch(other.object_index)
+	switch(other.animScript)
 	{
-		case obj_eyeball:
+		case scr_eyeballA:
 			realResidue = spr_resTeardrop;
 			break;
 			
-		case obj_ghost:
+		case scr_ghostA:
 			realResidue = spr_resGoo;
 			break;
 			
-		case obj_janitor:
+		case scr_janitorA:
 			realResidue = spr_resMudprints;
 			break;
 			
-		case obj_mimic:
+		case scr_mimicA:
 			realResidue = spr_resGlitches;
+			show_debug_message("Creating mimic glitches");
 			break;
 			
-		case obj_spider:
+		case scr_spiderA:
 			realResidue = spr_resWeb;
 			break;
 	}
+	
+	if (other.object_index == obj_mimic)
+	{
+		glitched = true;
+		show_debug_message("This is a mimic");
+	}
 }
+
+
 
 alarm[0] = residueTimer;

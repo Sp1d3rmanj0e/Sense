@@ -238,19 +238,25 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
-    {"roomId":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},},
-    {"roomId":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},},
+    {"groupName":"Start","children":[
+        {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
+        {"roomId":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},},
+        {"roomId":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},},
+      ],},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"map_idea_1","path":"rooms/map_idea_1/map_idea_1.yy",},},
     {"roomId":{"name":"map_idea_2","path":"rooms/map_idea_2/map_idea_2.yy",},},
     {"roomId":{"name":"map_idea_3","path":"rooms/map_idea_3/map_idea_3.yy",},},
     {"roomId":{"name":"kitchen_idea_1","path":"rooms/kitchen_idea_1/kitchen_idea_1.yy",},},
-    {"roomId":{"name":"rm_testingHub","path":"rooms/rm_testingHub/rm_testingHub.yy",},},
-    {"roomId":{"name":"rm_doors","path":"rooms/rm_doors/rm_doors.yy",},},
-    {"roomId":{"name":"rm_hallway","path":"rooms/rm_hallway/rm_hallway.yy",},},
-    {"roomId":{"name":"rm_open","path":"rooms/rm_open/rm_open.yy",},},
-    {"roomId":{"name":"rm_ui","path":"rooms/rm_ui/rm_ui.yy",},},
+    {"groupName":"Testing","children":[
+        {"roomId":{"name":"rm_open","path":"rooms/rm_open/rm_open.yy",},},
+        {"roomId":{"name":"rm_hallway","path":"rooms/rm_hallway/rm_hallway.yy",},},
+        {"roomId":{"name":"rm_doors","path":"rooms/rm_doors/rm_doors.yy",},},
+        {"roomId":{"name":"rm_testingHub","path":"rooms/rm_testingHub/rm_testingHub.yy",},},
+      ],},
+    {"groupName":"Other","children":[
+        {"roomId":{"name":"rm_ui","path":"rooms/rm_ui/rm_ui.yy",},},
+      ],},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":9,},

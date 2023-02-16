@@ -30,7 +30,7 @@ else
 			switch(object_index)
 			{
 				case obj_player:
-					draw_sprite(spr_lightSourceRadial, 0, x - _cx, y - _cy);
+					draw_sprite_ext(spr_lightSourceRadial, 0, x - _cx, y - _cy, 1.25, 1.25, 0, c_white, 1);
 					draw_circle(x - _cx, y - _cy, 30, true);
 					break;
 					

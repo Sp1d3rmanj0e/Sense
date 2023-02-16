@@ -2,6 +2,7 @@
 
 with(instance_create_layer(x,y,"Senses", obj_residue))
 {
+	// Place residue based on the enemy's animation script
 	switch(other.animScript)
 	{
 		case scr_eyeballA:
@@ -25,6 +26,7 @@ with(instance_create_layer(x,y,"Senses", obj_residue))
 			break;
 	}
 	
+	// If the enemy is secretly a mimic, leave a glitch residue behind as well
 	if (other.object_index == obj_mimic)
 	{
 		glitched = true;

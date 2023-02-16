@@ -24,6 +24,9 @@ prevX = x;
 prevY = y;
 dir = 0;
 
+// Goo vars
+canPlace = false;
+
 // Timers
 idleTimer = -1;
 idleTime = 4;

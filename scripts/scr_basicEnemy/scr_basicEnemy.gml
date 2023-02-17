@@ -18,7 +18,7 @@ function scr_sight(_viewConeDeg, _viewDist, _dir)
 	// Draw a line to make sure los does not go through walls
 	if (_visWithinCone && _visWithinDist) // Only activates if less resource intensive methods have been met
 
-	// Checks if los intercepts with a tilemap wall or any object labeled with losObstruction
+	// Checks if los intercepts with a tilemap wall
 	// True = No walls blocking LOS to player
 	// False = Walls blocking LOS to player
 	_visNotWallBlocked = (collision_line_tile(x, y, obj_player.x, obj_player.y, 

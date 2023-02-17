@@ -1,4 +1,4 @@
-/// @description 
+/// @description Set up player stats
 
 // Reset player health every round
 switch(global.difficulty)
@@ -26,6 +26,8 @@ switch(global.difficulty)
 	default:
 		show_debug_message("DIFFICULTY NOT SELECTED: ROOM START OF PLAYER");
 }
+
+origWalkSp = walkSp; // Save walk speed just in case
 
 /* Delete later
 // Get footstep noise per room

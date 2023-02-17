@@ -132,7 +132,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ui",
-    "path": "folders/Sprites/ui.yy",
+    "name": "logos",
+    "path": "folders/Sprites/ui/logos.yy",
   },
 }

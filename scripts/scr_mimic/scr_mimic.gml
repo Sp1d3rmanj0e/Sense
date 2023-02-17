@@ -14,7 +14,7 @@ var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
 */
 	
 // Increment anger if people moving within range, decrement if not
-if (_canHear && anger < maxAnger)
+if (_canHear && anger < maxAnger) && (sprite_index != spr_mimicSpirit)
 {
 	anger++;
 }
@@ -68,6 +68,12 @@ if (state == STATE.WANDER)
 		// Idle for a few seconds
 		if (idleTimer == -1) idleTimer = idleTime * room_speed;
 			
+		// If in pixie form, immediately start moving again
+		if (animScript == defaultAnimScript)
+		{
+			idleTimer = 0;
+		}
+			
 		// Countdown the timer
 		if (idleTimer > 0) 
 		{
@@ -81,6 +87,25 @@ if (state == STATE.WANDER)
 			newPath = true;
 			idleTimer = -1;
 		}
+	}
+	
+	// Transform into nearby enemies (if close enough and in pixie form)
+	if (distance_to_object(enemies) < transformDist) && (sprite_index = spr_mimicSpirit)
+	{
+		show_debug_message("copying new enemy");
+		// Start the transformation timer
+		mimicFormTimer = mimicFormTime * room_speed;
+	
+		// Get ID of copied enemy
+		instance_deactivate_object(id);
+		copyID = instance_nearest(x,y,enemies);
+		instance_activate_object(id);
+	
+		// Take enemy's behavior
+		//stateScript = copyID.stateScript;
+	
+		// Take enemy's sprite
+		animScript = copyID.animScript;
 	}
 	
 	#endregion code
@@ -115,24 +140,7 @@ else if (state == STATE.CHASE)
 
 // Passive stuff
 
-// Transform into nearby enemies
-if (distance_to_object(enemies) < transformDist)
-{
-	show_debug_message("copying new enemy");
-	// Start the transformation timer
-	mimicFormTimer = mimicFormTime * room_speed;
-	
-	// Get ID of copied enemy
-	instance_deactivate_object(id);
-	copyID = instance_nearest(x,y,enemies);
-	instance_activate_object(id);
-	
-	// Take enemy's behavior
-	//stateScript = copyID.stateScript;
-	
-	// Take enemy's sprite
-	animScript = copyID.animScript;
-}
+
 
 // Decrement timer
 if (mimicFormTimer > 0) mimicFormTimer--;
@@ -144,7 +152,7 @@ else
 }
 
 // If close to player, transform into demon
-if ((_canHear && anger >= maxAnger ) || place_meeting(x,y,obj_player))
+if ((_canHear && anger >= maxAnger ) || place_meeting(x,y,obj_player)) && (sprite_index != spr_mimicSpirit)
 {
 	state = STATE.CHASE;
 	animScript = defaultAnimScript;

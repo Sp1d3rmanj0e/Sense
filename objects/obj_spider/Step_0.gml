@@ -1,5 +1,5 @@
 /// @description Interaction with environment
-
+/*
 // Slowly decrement timer
 if (spiderWebTime > 0) spiderWebTime--;
 else 

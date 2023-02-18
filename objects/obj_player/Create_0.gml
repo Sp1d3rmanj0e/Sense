@@ -25,6 +25,10 @@ curSense = SENSE.NONE;
 
 // Sense vars
 feelRad = 2 * WORLD.CELL_SIZE;
+/*
+feelRingTimer = -1;
+feelRingTime = 1;
+*/
 
 // special vars
 trashCollected = 0;

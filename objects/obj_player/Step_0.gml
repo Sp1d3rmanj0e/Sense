@@ -16,38 +16,20 @@ if (_id != noone) && (_id.realResidue == spr_resWeb) // Check if the residue are
 	walkSp *= 0.66; // Reduce speed by 1/3
 }
 
-/*
-// Only spawn rings when timer is at 0
-if (feelRingTimer > 0)
+// Feeling sense (vibrations when enemies are near)
+if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && mouse_check_button(mb_left))
 {
-	// Decrement timer
-	feelRingTimer--;
-}
-else
-{
-	// Reset feelRingTimer
-	feelRingTimer = feelRingTime;
+	curSense = SENSE.FEEL; // Set active sense to feel
 	
-	// Feeling sense (vibrations when enemies are near)
-	if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && mouse_check_button(mb_left))
+	// Create a Ds_List to store how many enemies are within radius
+	var _enemies = ds_list_create();
+	
+	// Check if enemies are within sense radius
+	var _enemyNum = collision_circle_list(x, y, feelRad, enemies, false, 
+										  false, _enemies, false); // Enemies are within circle
+	for (var i = 0; i < _enemyNum; i++)
 	{
-		curSense = SENSE.FEEL; // Set active sense to feel
-	
-		// Store nearby enemies in a ds_list
-		var _enemies = ds_list_create();
-		var _enemyNum = collision_circle_list(x, y, feelRad, enemies, false, 
-											  false, _enemies, false); // Enemies are within circle
-		// Loop for every enemy ID in the circle
-		for (var i = 0; i < _enemyNum; i++)
-		{
-			// Point towards the enemy and set the intensity
-			var _enemyID = ds_list_find_value(_enemies, i); // Get an enemy id
-			with(instance_create_layer(x, y, "Instances", obj_feelRing))
-			{
-				image_angle = point_direction(x, y, _enemyID.x, _enemyID.y); // Point towards the enemy
-				shakeIntensity = (other.feelRad - distance_to_object(_enemyID)) * 0.04; // Give the ring an intensity based on distance to enemy
-			}
-		}
+		instance_create_layer(x, y, "Instances", obj_feelRing);
 	}
 }
 

@@ -3,6 +3,12 @@
 // Start the player speed as normal
 walkSp = origWalkSp;
 
+// Speed boost when taking damage
+if (alarm[1] != -1)
+{
+	walkSp *= 1.3;
+}
+
 // If colliding with janitor, match speed with him
 if (place_meeting(x, y, obj_janitor))
 {

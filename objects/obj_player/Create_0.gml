@@ -17,8 +17,8 @@ moveX = 0;
 moveY = 0;
 hsp = 0;
 vsp = 0;
-walkSp = 4;
-origWalkSp = walkSp; // Save walk speed just in case
+//walkSp = 4;
+//origWalkSp = walkSp; // Save walk speed just in case
 
 // Gadget and sense storage
 curGadget = GADGET.ECHO;
@@ -45,14 +45,11 @@ function takeDmg() // Enemy can call this when able to hurt you
 		// Decrease health
 		playerHealth--;
 	
-		// Increase speed temporarily
-		walkSp *= 2;
-	
 		// Temp invulnerability
 		invuln = true;
 		
 		// Remove speed boost and invuln after time
-		alarm[1] = 2 * room_speed;
+		alarm[1] = 2 * room_speed; // This will also activate speed boost
 		
 		// Restart game/round if health is 0
 		if (playerHealth <= 0)

@@ -160,6 +160,7 @@
     {"id":{"name":"spr_sense_logo_blank","path":"sprites/spr_sense_logo_blank/spr_sense_logo_blank.yy",},"order":1,},
     {"id":{"name":"snd_CarpetFootsteps","path":"sounds/snd_CarpetFootsteps/snd_CarpetFootsteps.yy",},"order":0,},
     {"id":{"name":"spr_playerFront","path":"sprites/spr_playerFront/spr_playerFront.yy",},"order":4,},
+    {"id":{"name":"scr_diffStats","path":"scripts/scr_diffStats/scr_diffStats.yy",},"order":10,},
     {"id":{"name":"spr_smell_button","path":"sprites/spr_smell_button/spr_smell_button.yy",},"order":4,},
     {"id":{"name":"spr_door_left","path":"sprites/spr_door_left/spr_door_left.yy",},"order":5,},
     {"id":{"name":"spr_difficulty_main","path":"sprites/spr_difficulty_main/spr_difficulty_main.yy",},"order":10,},

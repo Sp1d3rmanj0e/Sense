@@ -1,5 +1,6 @@
 /// @description Set up player stats
 
+/*
 // Reset player health every round
 switch(global.difficulty)
 {
@@ -26,6 +27,12 @@ switch(global.difficulty)
 	default:
 		show_debug_message("DIFFICULTY NOT SELECTED: ROOM START OF PLAYER");
 }
+*/
+
+// Get stats based on the current difficulty
+playerHealth = scr_diffStats(3, 2, 1, 1);
+hardcoreMode = scr_diffStats(false, false, false, true);
+walkSp       = scr_diffStats(5, 4, 3.5, 3.25);
 
 origWalkSp = walkSp; // Save walk speed just in case
 

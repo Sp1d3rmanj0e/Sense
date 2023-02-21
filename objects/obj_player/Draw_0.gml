@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 draw_self();
-draw_text(x,y,playerHealth);
-draw_text(x,y+20,hardcoreMode);
+draw_set_color(c_white);
+draw_text(x,y-20,playerHealth);
+draw_text(x,y-40,hardcoreMode);
 
 // Feeling sense (vibrations when enemies are near)
 if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && mouse_check_button(mb_left))

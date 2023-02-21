@@ -10,6 +10,7 @@ tilemap = layer_tilemap_get_id("walls");
 // Initialize player variables
 playerHealth = 1;
 hardcoreMode = false;
+invuln = false;
 
 // Movement Control Initialization
 moveX = 0;
@@ -35,3 +36,35 @@ trashCollected = 0;
 
 // state code
 state = PSTATE.NORMAL;
+
+// Functions
+function takeDmg() // Enemy can call this when able to hurt you
+{
+	if (!invuln) // Only take damage if not invulnerable
+	{
+		// Decrease health
+		playerHealth--;
+	
+		// Increase speed temporarily
+		walkSp *= 2;
+	
+		// Temp invulnerability
+		invuln = true;
+		
+		// Remove speed boost and invuln after time
+		alarm[1] = 2 * room_speed;
+		
+		// Restart game/round if health is 0
+		if (playerHealth <= 0)
+		{
+			if (global.difficulty == DIFF.HARDER)
+			{ // Hardcore mode (restart after one hit)
+				game_restart();
+			}
+			else
+			{ // Anything else (restart round after all lives lost)
+				room_restart();
+			}
+		}
+	}
+}

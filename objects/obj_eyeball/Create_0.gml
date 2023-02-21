@@ -14,8 +14,12 @@ maxViewDist = 5 * WORLD.CELL_SIZE;
 stateScript = scr_eyeball;
 animScript = scr_eyeballA;
 
-// Path and movement
-eSpeed = 4;
+// Movement
+wanderSpeed = 2;
+chaseSpeed = 4;
+eSpeed = wanderSpeed;
+
+// Paths
 newPath = true;
 path = path_add(); // Create the enemy path
 

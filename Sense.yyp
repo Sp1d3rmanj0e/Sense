@@ -216,7 +216,7 @@
     {"id":{"name":"demonSpawner","path":"objects/demonSpawner/demonSpawner.yy",},"order":0,},
     {"id":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},"order":0,},
     {"id":{"name":"spr_taser_item_1","path":"sprites/spr_taser_item_1/spr_taser_item_1.yy",},"order":0,},
-    {"id":{"name":"Sprite123","path":"sprites/Sprite123/Sprite123.yy",},"order":11,},
+    {"id":{"name":"spr_enemy_poster","path":"sprites/spr_enemy_poster/spr_enemy_poster.yy",},"order":11,},
     {"id":{"name":"obj_demoFurniture","path":"objects/obj_demoFurniture/obj_demoFurniture.yy",},"order":0,},
     {"id":{"name":"rm_testingHub","path":"rooms/rm_testingHub/rm_testingHub.yy",},"order":0,},
     {"id":{"name":"spr_flashlight_item","path":"sprites/spr_flashlight_item/spr_flashlight_item.yy",},"order":3,},

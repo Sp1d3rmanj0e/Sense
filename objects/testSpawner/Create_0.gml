@@ -4,11 +4,11 @@
 entities = 
 [
 	[obj_ghost,"Ghost",spr_ghost],
-	[obj_eyeball,"Eyeball",spr_eyeballPassiveDemo],
+	[obj_eyeball,"Eyeball",spr_eyeFrnt3_0],
 	[obj_janitor,"Janitor",spr_JanitorFront],
-	[obj_mimic,"Mimic",spr_mimic],
+	[obj_mimic,"Mimic",spr_mimicFront3],
 	[obj_sanityDemon,"Sanity Demon",spr_sanityDemon],
-	[obj_spider,"Spider",spr_spider]
+	[obj_spider,"Spider",spr_spiderFront3]
 ];
 
 totalBars = 5; // How many different sections there will be

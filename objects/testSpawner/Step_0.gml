@@ -101,7 +101,7 @@ if (simRunning) && (lock == false)
 		
 		var _spawnID = instance_create_layer(_x, _y, "Instances", _id)
 		
-		with(_spawnID) eSpeed = other.curSpd;
+		//with(_spawnID) eSpeed = other.curSpd;
 		with(_spawnID) maxViewDist = other.viewRange;
 		
 		// Spawn it in

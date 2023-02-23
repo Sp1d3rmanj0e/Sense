@@ -15,8 +15,8 @@ stateScript = scr_eyeball;
 animScript = scr_eyeballA;
 
 // Movement
-wanderSpeed = 2;
-chaseSpeed = 4;
+wanderSpeed = scr_diffStats(2, 3, 4, 5);
+chaseSpeed = scr_diffStats(6, 7, 8, 9);
 eSpeed = wanderSpeed;
 
 // Paths
@@ -39,7 +39,7 @@ enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
 
 angryTimer = -1;
-angryTime = 1 * room_speed;
+angryTime = scr_diffStats(1, 0.9, 0.8, 0.7) * room_speed;
 
 residueTimer = 8 * room_speed;
 

@@ -4,4 +4,4 @@
 realResidue = noone;
 glitched = false;
 smelled = false;
-alarm[0] = 12 * room_speed;
+alarm[0] = scr_diffStats(25, 20, 15, 10) * room_speed;

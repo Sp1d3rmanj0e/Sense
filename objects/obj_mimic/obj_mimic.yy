@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_mimic",
   "spriteId": {
-    "name": "spr_mimic",
-    "path": "sprites/spr_mimic/spr_mimic.yy",
+    "name": "spr_mimicFront",
+    "path": "sprites/spr_mimicFront/spr_mimicFront.yy",
   },
   "solid": false,
   "visible": true,

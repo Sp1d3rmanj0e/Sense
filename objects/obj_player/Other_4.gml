@@ -3,7 +3,7 @@
 // Get stats based on the current difficulty
 playerHealth = scr_diffStats(3, 2, 1, 1); // Reset player health every round
 hardcoreMode = scr_diffStats(false, false, false, true);
-walkSp       = scr_diffStats(5, 4, 3.5, 3.25);
+walkSp       = 4;
 
 origWalkSp = walkSp; // Save walk speed just in case
 

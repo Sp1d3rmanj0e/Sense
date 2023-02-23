@@ -4,6 +4,6 @@ function scr_sanityDemon()
 {
 
 // Slowly increase speed
-eSpeed = min(eSpeed + (0.15/room_speed), obj_player.walkSp - 0.5);
+eSpeed = min(eSpeed + (0.15/room_speed), scr_diffStats(4, 5, 6, 7));
 
 }

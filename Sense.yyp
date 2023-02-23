@@ -20,6 +20,7 @@
     {"id":{"name":"spr_difficulty_screen_u","path":"sprites/spr_difficulty_screen_u/spr_difficulty_screen_u.yy",},"order":9,},
     {"id":{"name":"spr_touch_button","path":"sprites/spr_touch_button/spr_touch_button.yy",},"order":0,},
     {"id":{"name":"spr_ghostAggro","path":"sprites/spr_ghostAggro/spr_ghostAggro.yy",},"order":1,},
+    {"id":{"name":"spr_menu_surrounding_glitch","path":"sprites/spr_menu_surrounding_glitch/spr_menu_surrounding_glitch.yy",},"order":8,},
     {"id":{"name":"obj_garbage","path":"objects/obj_garbage/obj_garbage.yy",},"order":2,},
     {"id":{"name":"spr_difficulty_screen_m","path":"sprites/spr_difficulty_screen_m/spr_difficulty_screen_m.yy",},"order":8,},
     {"id":{"name":"obj_eyebeam","path":"objects/obj_eyebeam/obj_eyebeam.yy",},"order":3,},

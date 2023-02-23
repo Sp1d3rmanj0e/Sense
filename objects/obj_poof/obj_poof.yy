@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ui",
-    "path": "folders/Objects/ui.yy",
+    "name": "Effects",
+    "path": "folders/Objects/ui/Effects.yy",
   },
 }

@@ -11,6 +11,10 @@ switch(state)
 {
 	case STATE.WANDER:
 		#region code
+		
+		// Set to wander speed
+		eSpeed = wanderSpeed;
+		
 		// Get a path to follow
 		if (newPath == true)
 		{
@@ -77,6 +81,10 @@ switch(state)
 		
 	case STATE.CHASE:
 		#region code
+		
+		// Set to chase speed
+		eSpeed = chaseSpeed;
+		
 		// Forget the player if not seen for x amt. time
 		if (_canSee || place_meeting(x, y, obj_player)) // If the player is seen
 		{

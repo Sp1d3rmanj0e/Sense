@@ -6,8 +6,20 @@ event_inherited();
 // Randomize
 randomize();
 
-// Other variables
+// Sight vars
+viewConeDeg = 45;
+maxViewDist = 5 * WORLD.CELL_SIZE;
+
+// Path and movement
+eSpeed = 4;
 newPath = true;
+path = path_add(); // Create a path for an enemy
+
+// Scripts
+stateScript = scr_janitor;
+animScript = scr_janitorA;
+
+// Animation vars
 prevX = x;
 prevY = y;
 dir = 0;
@@ -16,16 +28,16 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 
+residueTimer = 10 * room_speed;
+
+// Spawn residue
+alarm[0] = residueTimer;
+
+// Tracker for cleanable residue
 targetId = noone;
 
-// Create the path
-path = path_add();
-
-// Tilemap variables
+// Get tilemap
 tilemap = layer_tilemap_get_id("walls");
-
-testX = 0;
-testY = 0;
 
 // Add audio noises
 event_inherited();

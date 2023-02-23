@@ -7,7 +7,7 @@ hoverTimer++;
 
 draw_sprite(sprite_index, image_index, x, y + hover);
 draw_text(x,y,state);
-draw_text(x,y+20,enemyMemoryTimer)
+draw_text(x,y+20,canPlace);
 draw_text(x,y+40, image_index);
 
 draw_line_width(x,y,x+lengthdir_x(75,dir),y+lengthdir_y(75,dir),5);

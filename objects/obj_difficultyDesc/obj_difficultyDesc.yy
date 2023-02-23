@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_difficultyDesc",
   "spriteId": {
-    "name": "spr_difficultyDescGr",
-    "path": "sprites/spr_difficultyDescGr/spr_difficultyDescGr.yy",
+    "name": "spr_difficulty_main",
+    "path": "sprites/spr_difficulty_main/spr_difficulty_main.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ui",
-    "path": "folders/Objects/ui.yy",
+    "name": "Difficulty",
+    "path": "folders/Objects/ui/Difficulty.yy",
   },
 }

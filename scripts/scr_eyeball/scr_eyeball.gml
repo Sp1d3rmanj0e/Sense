@@ -117,8 +117,7 @@ switch(state)
 	case STATE.AGGRO:
 		#region code
 		// Freeze in place (cancel path)
-		path_end();
-		path_position = 1; // To activate idle timer
+		path_cancel();
 		
 		// Always check to see if the eyeball can see you
 		if (_canSee || place_meeting(x, y, obj_player))

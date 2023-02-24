@@ -29,3 +29,9 @@ function scr_sight(_viewConeDeg, _viewDist, _dir)
 											  
 	return _visNotWallBlocked;
 }
+
+function path_cancel()
+{
+	path_end();
+	path_position = 1;
+}

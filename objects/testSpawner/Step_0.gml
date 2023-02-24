@@ -13,6 +13,8 @@ if (room != rm_testingHub)
 
 	moveY = (moveDown - moveUp);
 	moveX = (moveRight - moveLeft);
+	
+	obj_player.playerHealth = 100;
 }
 
 // Move line accordingly

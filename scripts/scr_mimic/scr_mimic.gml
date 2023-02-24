@@ -25,6 +25,12 @@ else if (anger > 0)
 	
 if (anger >= maxAnger)
 {
+	// Cancel the wander path when it switches to aggro
+	if (state = STATE.WANDER)
+	{
+		path_cancel();
+	}
+	
 	state = STATE.CHASE;
 }
 

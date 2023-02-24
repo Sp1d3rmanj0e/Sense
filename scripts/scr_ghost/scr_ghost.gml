@@ -71,6 +71,7 @@ switch(state)
 			
 			// Set the state to chase
 			state = STATE.CHASE;
+			path_cancel();
 		}
 		#endregion code
 		break;

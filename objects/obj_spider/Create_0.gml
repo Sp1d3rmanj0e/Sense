@@ -28,9 +28,6 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 
-playerChaseTimer = -1;
-playerChaseTime = 1;
-
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
 

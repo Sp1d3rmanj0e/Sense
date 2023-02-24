@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_spider",
   "spriteId": {
-    "name": "spr_spider",
-    "path": "sprites/spr_spider/spr_spider.yy",
+    "name": "spr_spiderFront",
+    "path": "sprites/spr_spiderFront/spr_spiderFront.yy",
   },
   "solid": false,
   "visible": true,

@@ -105,33 +105,12 @@ switch(state)
 				exit;
 			}
 		}
-		
-		// Delay timer before the enemy will find a new path towards the player
-		if (playerChaseTimer == -1) playerChaseTimer = playerChaseTime * room_speed;
-			
-		// Countdown the timer
-		if (playerChaseTimer > 0) playerChaseTimer--;
-		// Reset the timer & refresh pathfinding towards player
-		else 
+
+		// Find a new path once the old one finishes
+		if (path_position == 1)
 		{
-			playerChaseTimer = -1;
 			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
-		
-		// Shoot eyebeam every couple seconds
-		/*
-		if (eyebeamTimer > 0) eyebeamTimer--;
-		else 
-		{
-			eyebeamTimer = eyebeamTime;
-			
-			// Create eyebeam
-			with(instance_create_layer(x,y,"Instances",obj_eyebeam))
-			{
-				image_angle = point_direction(x,y, obj_player.x, obj_player.y);
-			}
-		}
-		*/
 		
 		#endregion code
 		break;

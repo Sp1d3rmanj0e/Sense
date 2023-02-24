@@ -9,30 +9,29 @@ if (instance_exists(obj_player))
 	// Draw a hearbeat for every instance in the ds_list
 	for (var i = 0; i < ds_list_size(beats); i++)
 	{
-		draw_sprite(spr_heart_rate, 0, ds_list_find_value(beats, i), beatY);
+		draw_sprite(spr_heart_rate, 0, ds_list_find_value(beats, i), 550);
 	}
 
 	// Draw heart rate covers
 	draw_sprite(spr_heart_rate_caps, 0, 359, 570);
 
-	// Draw accent sprite icons (the ones on either side of the gadget icon)
+	#region Draw decorative sprite icons
+	
+	// Get the current gadget
 	var _gadget = obj_player.curGadget; // Get the gadget from the player
 
-	// Stores the decorative sprites to use for current gadget
-	var _decSprites = decSprites[_gadget];
-
-	// Draw the left sprite
-	var _lSprite = _decSprites[0];
-	
-	// Draws the sprite at the exact speed intented
-	lSpriteFrame = (lSpriteFrame+(sprite_get_speed(_lSprite)/room_speed)) % sprite_get_number(_lSprite);
-	
-	draw_sprite(_lSprite, lSpriteFrame, 481, 626);
-
-	// Draw the right sprite
+	// Set up sprite information
+	var _decSprites = decSprites[_gadget]; // Get the sprite array
+	var _scale = 1.703125;
+	var _lSprite = _decSprites[0]; // Get the sprites
 	var _rSprite = _decSprites[1];
-	
-	rSpriteFrame = (rSpriteFrame+(sprite_get_speed(_rSprite)/room_speed)) % sprite_get_number(_rSprite);
-	
-	draw_sprite(_rSprite, rSpriteFrame, 776, 626);
+
+	// Increment the frames
+	lSpriteFrame = (lSpriteFrame + sprite_get_speed(_lSprite) / room_speed) % sprite_get_number(_lSprite);
+	rSpriteFrame = (rSpriteFrame + sprite_get_speed(_rSprite) / room_speed) % sprite_get_number(_rSprite);
+
+	// Draw the sprites
+	draw_sprite_ext(_lSprite, lSpriteFrame, 476, 618, _scale, _scale, 0, c_white, 1);
+	draw_sprite_ext(_rSprite, rSpriteFrame, 785, 618, _scale, _scale, 0, c_white, 1);
+	#endregion Decorative sprites
 }

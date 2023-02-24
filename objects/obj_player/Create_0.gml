@@ -21,7 +21,7 @@ vsp = 0;
 //origWalkSp = walkSp; // Save walk speed just in case
 
 // Gadget and sense storage
-curGadget = GADGET.ECHO;
+curGadget = GADGET.NIGHTVIS;
 curSense = SENSE.NONE;
 
 // Sense vars

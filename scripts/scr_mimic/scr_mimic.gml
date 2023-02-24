@@ -23,6 +23,7 @@ else if (anger > 0)
 	anger-= 0.7;
 }
 	
+// Switch to STATE.CHASE if anger is too high
 if (anger >= maxAnger)
 {
 	// Cancel the wander path when it switches to aggro
@@ -32,6 +33,19 @@ if (anger >= maxAnger)
 	}
 	
 	state = STATE.CHASE;
+	animScript = defaultAnimScript;
+	
+	// Set transform timer to 0
+	mimicFormTimer = -1;
+}
+
+// Transform back to spirit if timer ran out
+if (mimicFormTimer > 0) mimicFormTimer--;
+else 
+{
+	// Transform back
+	mimicFormTimer = -1;
+	animScript = defaultAnimScript;
 }
 
 // State machine
@@ -136,29 +150,6 @@ else if (state == STATE.CHASE)
 		goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 	}
 	#endregion code
-}
-
-// Passive stuff
-
-
-
-// Decrement timer
-if (mimicFormTimer > 0) mimicFormTimer--;
-else 
-{
-	// Transform back
-	mimicFormTimer = -1;
-	animScript = defaultAnimScript;
-}
-
-// If close to player, transform into demon
-if ((_canHear && anger >= maxAnger ) || place_meeting(x,y,obj_player)) && (sprite_index != spr_mimicSpirit)
-{
-	state = STATE.CHASE;
-	animScript = defaultAnimScript;
-	
-	// Set transform timer to 0
-	mimicFormTimer = -1;
 }
 
 }

@@ -1,3 +1,3 @@
-/// @description Stun Time
+/// @description Remove Stun
 
 state = PSTATE.NORMAL;

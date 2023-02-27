@@ -1,7 +1,4 @@
 /// @description Movement and Collisions
-
-show_debug_message("speed is: " + string(walkSp)); 
-
 if (state = PSTATE.NORMAL)
 {
 	

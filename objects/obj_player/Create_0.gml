@@ -20,16 +20,15 @@ vsp = 0;
 //walkSp = 4;
 //origWalkSp = walkSp; // Save walk speed just in case
 
+// Camera vars
+sShake = 0;
+
 // Gadget and sense storage
 curGadget = GADGET.NIGHTVIS;
 curSense = SENSE.NONE;
 
 // Sense vars
 feelRad = 2 * WORLD.CELL_SIZE;
-/*
-feelRingTimer = -1;
-feelRingTime = 1;
-*/
 
 // special vars
 trashCollected = 0;
@@ -42,9 +41,12 @@ function takeDmg() // Enemy can call this when able to hurt you
 {
 	if (!invuln) // Only take damage if not invulnerable
 	{
+		// Player speed in End Step
+		
 		// Decrease health
 		playerHealth--;
-	
+		screenShake(7);
+		
 		// Temp invulnerability
 		invuln = true;
 		
@@ -64,4 +66,10 @@ function takeDmg() // Enemy can call this when able to hurt you
 			}
 		}
 	}
+}
+
+function screenShake(_shakeInt)
+{
+	sShake = _shakeInt;
+	alarm[2] = 0.5 * room_speed;
 }

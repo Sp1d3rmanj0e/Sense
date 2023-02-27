@@ -15,7 +15,7 @@ _camX = clamp(_camX, 0, room_width - _camWidth);
 _camY = clamp(_camY, 0, room_height - _camHeight);
 
 // Camera follows player
-camera_set_view_pos(view_camera[0], _camX, _camY);
+camera_set_view_pos(view_camera[0], _camX + irandom_range(-sShake, sShake), _camY + irandom_range(-sShake, sShake));
 
 // Animations
 

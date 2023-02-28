@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_wallLight",
   "spriteId": {
-    "name": "spr_wallLight",
-    "path": "sprites/spr_wallLight/spr_wallLight.yy",
+    "name": "spr_wall_light",
+    "path": "sprites/spr_wall_light/spr_wall_light.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,2 +1,2 @@
-rate = 60;
+ rate = 60;
 alarm[0]=rate;

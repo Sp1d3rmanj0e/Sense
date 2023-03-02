@@ -11,7 +11,7 @@ viewConeDeg = 45;
 maxViewDist = 1 * WORLD.CELL_SIZE;
 
 // Path and movement
-eSpeed = 8;
+eSpeed = 7;
 newPath = true;
 path = path_add(); // Create a path for the enemy
 
@@ -28,14 +28,11 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 
-playerChaseTimer = -1;
-playerChaseTime = 1;
-
 enemyMemoryTimer = -1;
-enemyMemoryTime = 3;
+enemyMemoryTime = scr_diffStats(1, 1.5, 2, 3);
 
 mimicFormTimer = -1;
-mimicFormTime = 10;
+mimicFormTime = scr_diffStats(15, 20, 25, 30);
 
 residueTimer = 7 * room_speed;
 
@@ -44,7 +41,7 @@ alarm[0] = residueTimer;
 
 // Anger counters
 anger = 0;
-maxAnger = 30;
+maxAnger = scr_diffStats(60, 48, 36, 24);
 
 // Hover vars
 hoverTimer = 0;

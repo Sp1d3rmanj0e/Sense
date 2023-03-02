@@ -6,9 +6,6 @@
 startBeatX = 358;
 endBeatX = 945;
 
-// Beat Location
-beatY = 551 
-
 // Beat vars
 beatSpawnTime = 30;
 beatSpeed = 2;
@@ -24,11 +21,9 @@ alarm[0] = beatSpawnTime;
 beats = ds_list_create();
 #endregion
 
-// Decorative sprites for every gadget
-decSprites[GADGET.DASH] = [noone, noone];
-decSprites[GADGET.ECHO] = [spr_echo_side_animation_left, spr_echo_side_animation_right];
-decSprites[GADGET.LIGHT] = [noone, noone];
-decSprites[GADGET.PHASE] = [noone, spr_phase_side_animation_right];
-decSprites[GADGET.TASER] = [spr_taser_side_animation_left, spr_taser_side_animation_right];
-decSprites[GADGET.TELEPORT] = [noone, noone];
-decSprites[GADGET.NONE] = [noone, noone];
+// Decorative sprites for every gadget [left decoration, right decoration]
+decSprites[GADGET.ECHO]     = [spr_echo_side_animation_left, spr_echo_side_animation_right];
+decSprites[GADGET.NIGHTVIS] = [spr_night_vision_side_animation_left, spr_night_vision_side_animation_right]
+decSprites[GADGET.TASER]    = [spr_taser_side_animation_left, spr_taser_side_animation_right];
+decSprites[GADGET.TELEPORT] = [spr_teleport_side_animation_left, spr_teleport_side_animation_right];
+decSprites[GADGET.NONE]     = [noone, noone];

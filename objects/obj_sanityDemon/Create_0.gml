@@ -11,6 +11,9 @@ animScript = scr_sanityDemonA;
 // Create the path
 path = path_add();
 
+// Enemy speed
+eSpeed = 3;
+
 // Start alarm loop
 alarm[0] = 1;
 

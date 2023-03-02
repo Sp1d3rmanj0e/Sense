@@ -32,11 +32,9 @@ enum SENSE
 
 enum GADGET
 {
-	LIGHT,
+	NIGHTVIS,
 	TASER,
 	ECHO,
-	DASH,
-	PHASE,
 	TELEPORT,
 	NONE
 }

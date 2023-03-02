@@ -15,7 +15,7 @@ if (room != rm_testingHub)
 	draw_text(0,40, "(1) Lights: " + string(lightsOn));
 
 	// Current speed
-	draw_text(0,60, "(2) Current enemy speed: " + string(curSpd));
+	draw_text(0,60, "(2) [DISABLED] Current enemy speed: " + string(curSpd));
 
 	// Start / Stop simulation status + hotkey
 	draw_text(0,80, "(3) Sim running: " + string(simRunning));

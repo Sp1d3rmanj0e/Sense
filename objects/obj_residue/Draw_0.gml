@@ -11,3 +11,10 @@ else
 	if (glitched)
 		draw_sprite(spr_resGlitches, 0, x, y);
 }
+
+if (!smelled)
+{
+	// Draw smellProgress healthbar
+	draw_healthbar(bbox_left, bbox_bottom, bbox_right, bbox_bottom+12,
+				   smellProgress, c_black, c_red, c_green, 0, true, true);
+}

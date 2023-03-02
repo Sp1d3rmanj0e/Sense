@@ -13,6 +13,9 @@ if (room != rm_testingHub)
 
 	moveY = (moveDown - moveUp);
 	moveX = (moveRight - moveLeft);
+	
+	// Make player invincible
+	if (instance_exists(obj_player)) obj_player.playerHealth = 100;
 }
 
 // Move line accordingly
@@ -101,7 +104,7 @@ if (simRunning) && (lock == false)
 		
 		var _spawnID = instance_create_layer(_x, _y, "Instances", _id)
 		
-		with(_spawnID) eSpeed = other.curSpd;
+		//with(_spawnID) eSpeed = other.curSpd;
 		with(_spawnID) maxViewDist = other.viewRange;
 		
 		// Spawn it in

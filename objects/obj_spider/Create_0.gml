@@ -11,7 +11,7 @@ viewConeDeg = 45;
 maxViewDist = 5 * WORLD.CELL_SIZE;
 
 // Path and movement
-eSpeed = 4;
+eSpeed = scr_diffStats(2.8, 3.6, 5.2, 5.6);
 newPath = true;
 path = path_add(); // Create a path for the enemy
 
@@ -28,13 +28,10 @@ dir = 0;
 idleTimer = -1;
 idleTime = 4;
 
-playerChaseTimer = -1;
-playerChaseTime = 1;
-
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;
 
-residueTimer = 8 * room_speed;
+residueTimer = scr_diffStats(15, 14, 11, 8) * room_speed;
 
 // Spawn residue
 alarm[0] = residueTimer;

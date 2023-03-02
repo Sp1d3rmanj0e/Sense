@@ -1,4 +1,4 @@
-/// @description Get Direction of motion
+/// @description Get Direction of motion + attack player
 
 // Get direction of motion
 if ((prevX - x) != 0 || (prevY - y) != 0) dir = point_direction(prevX, prevY, x, y);
@@ -21,4 +21,12 @@ else
 	
 	// Create heat residue
 	instance_create_layer(x, y, "Instances", obj_heat);
+}
+
+if (distance_to_object(obj_player) < WORLD.CELL_SIZE/2)
+{
+	with(obj_player)
+	{
+		takeDmg();
+	}
 }

@@ -11,7 +11,7 @@ viewConeDeg = 45;
 maxViewDist = 5 * WORLD.CELL_SIZE;
 
 // Path and movement
-eSpeed = 4;
+eSpeed = scr_diffStats(3.5, 4, 4.5, 5);
 newPath = true;
 path = path_add(); // Create a path for the enemy
 
@@ -30,9 +30,6 @@ canPlace = false;
 // Timers
 idleTimer = -1;
 idleTime = 4;
-
-playerChaseTimer = -1;
-playerChaseTime = 0.5;
 
 enemyMemoryTimer = -1;
 enemyMemoryTime = 1.75;

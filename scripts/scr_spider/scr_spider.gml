@@ -71,6 +71,7 @@ switch(state)
 			
 			// Set the state to chase
 			state = STATE.CHASE;
+			path_cancel();
 		}
 		#endregion code
 		break;
@@ -98,15 +99,9 @@ switch(state)
 			}
 		}
 		
-		// Delay timer before the enemy will find a new path towards the player
-		if (playerChaseTimer == -1) playerChaseTimer = playerChaseTime * room_speed;
-			
-		// Countdown the timer
-		if (playerChaseTimer > 0) playerChaseTimer--;
-		// Reset the timer & refresh pathfinding towards player
-		else 
+		// Find a new path once the old one finishes
+		if (path_position == 1)
 		{
-			playerChaseTimer = -1;
 			goto(path, obj_player.x, obj_player.y, eSpeed, global.grid);
 		}
 		#endregion code

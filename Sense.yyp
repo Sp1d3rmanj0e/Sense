@@ -240,7 +240,6 @@
     {"id":{"name":"spr_eyeBack_1","path":"sprites/spr_eyeBack_1/spr_eyeBack_1.yy",},"order":2,},
     {"id":{"name":"demonSpawner","path":"objects/demonSpawner/demonSpawner.yy",},"order":0,},
     {"id":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},"order":0,},
-    {"id":{"name":"spr_taser_item_1","path":"sprites/spr_taser_item_1/spr_taser_item_1.yy",},"order":0,},
     {"id":{"name":"spr_enemy_poster","path":"sprites/spr_enemy_poster/spr_enemy_poster.yy",},"order":11,},
     {"id":{"name":"obj_demoFurniture","path":"objects/obj_demoFurniture/obj_demoFurniture.yy",},"order":0,},
     {"id":{"name":"spr_smell","path":"sprites/spr_smell/spr_smell.yy",},"order":1,},

@@ -6,7 +6,7 @@ walkSp = origWalkSp;
 // Speed boost when taking damage
 if (alarm[1] != -1)
 {
-	walkSp *= 1.4;
+	walkSp = 8.5;
 }
 
 // If colliding with janitor, match speed with him

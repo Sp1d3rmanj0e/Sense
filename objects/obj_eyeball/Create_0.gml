@@ -33,7 +33,7 @@ idleTimer = -1;
 idleTime = 4;
 
 enemyMemoryTimer = -1;
-enemyMemoryTime = 1.75;
+enemyMemoryTime = 0.5;
 
 angryTimer = -1;
 angryTime = scr_diffStats(1, 0.9, 0.8, 0.7) * room_speed;

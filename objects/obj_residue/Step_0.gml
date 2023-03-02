@@ -3,7 +3,7 @@
 // Outline when hovered
 image_index = position_meeting(mouse_x, mouse_y, self);
 
-if (mouse_check_button(mb_left) && (position_meeting(mouse_x, mouse_y, self)))
+if (place_meeting(x,y, obj_player) && (obj_player.curSense == SENSE.TASTE))
 {
 	smellProgress = min(smellProgress+1, 100); // Increment smell progress when clicked
 } else {

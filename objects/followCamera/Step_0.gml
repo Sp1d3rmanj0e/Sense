@@ -6,6 +6,3 @@ var _camY = camera_get_view_y(view_camera[0]);
 
 x = _camX + offX;
 y = _camY + offY;
-
-show_debug_message("X is: " + string(x));
-show_debug_message("Y is: " + string(y));

@@ -11,7 +11,7 @@ viewConeDeg = 45;
 maxViewDist = 5 * WORLD.CELL_SIZE;
 
 // Path and movement
-eSpeed = scr_diffStats(3.5, 4, 4.5, 5);
+eSpeed = scr_diffStats(3.5, 3.6, 3.7, 3.8);
 newPath = true;
 path = path_add(); // Create a path for the enemy
 

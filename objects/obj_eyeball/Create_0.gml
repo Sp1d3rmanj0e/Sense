@@ -15,8 +15,8 @@ stateScript = scr_eyeball;
 animScript = scr_eyeballA;
 
 // Movement
-wanderSpeed = scr_diffStats(2, 3, 4, 5);
-chaseSpeed = scr_diffStats(6, 7, 8, 9);
+wanderSpeed = scr_diffStats(2, 2.2, 2.4, 2.6);
+chaseSpeed = scr_diffStats(5, 5.2, 5.4, 5.6);
 eSpeed = wanderSpeed;
 
 // Paths

@@ -4,6 +4,6 @@ function scr_sanityDemon()
 {
 
 // Slowly increase speed
-eSpeed = min(eSpeed + (0.15/room_speed), scr_diffStats(4, 5, 6, 7));
+eSpeed = min(eSpeed + (0.15/room_speed), scr_diffStats(3.6, 3.8, 4, 4.2));
 
 }

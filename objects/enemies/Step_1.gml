@@ -25,9 +25,11 @@ if (obj_player.curSense != SENSE.HEAR)
 {
 	audio_emitter_gain(footsteps, 0);
 	
-	if ((_moving) // Can hear sound but it's not activated
+	// Create a sound icon when player could hear, but isn't actively hearing
+	if ((_moving)
     && (distance_to_object(obj_player) < obj_soundControl.max_distance_to_be_heard))
 	{
+		// Create sound icon
 		if (!instance_exists(obj_soundIcon))
 			instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_soundIcon);
 	}

@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_soundIcon",
-  "spriteId": {
-    "name": "spr_trash01",
-    "path": "sprites/spr_trash01/spr_trash01.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

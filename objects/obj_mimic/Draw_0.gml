@@ -10,8 +10,4 @@ draw_sprite_ext(sprite_index, image_index, x, y + hover, image_xscale, image_ysc
 draw_set_color(c_white);
 //draw_text(x,y+20,stateScript);
 //draw_text(x,y+40,mimicFormTimer);
-draw_text(x,y+60,anger);
 draw_set_color(c_black);
-
-draw_text(x,y+20, sign(lengthdir_x(1,dir)));
-draw_text(x,y-20, image_xscale);

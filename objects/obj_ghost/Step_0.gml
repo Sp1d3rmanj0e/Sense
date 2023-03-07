@@ -17,7 +17,7 @@ if (canPlace) && (tilemap_get_at_pixel(tilemap, x, y) == 0)
 	var _y = ceil(y / tileSize) * tileSize - 32;
 	
 	// Spawn goo
-	with(instance_create_layer(_x, _y, "Senses", obj_residue))
+	with(instance_create_layer(_x, _y, "Instances", obj_residue))
 	{
 		// Tell the residue that it is actually goop
 		realResidue = spr_resGoo;

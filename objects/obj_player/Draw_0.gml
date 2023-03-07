@@ -1,11 +1,5 @@
 /// @description Feel Ring
 
-draw_self();
-draw_set_color(c_white);
-draw_text(x,y-20,playerHealth);
-draw_text(x,y-40,instance_exists(obj_soundControl));
-draw_text(x,y-60,"depth: " + string(depth));
-
 // Feeling sense (vibrations when enemies are near)
 if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && curSense == SENSE.FEEL)
 {
@@ -29,3 +23,5 @@ if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && curSense == SENSE.FEEL)
 						1, 1, _angle, c_white, 1);
 	}
 }
+
+draw_self();

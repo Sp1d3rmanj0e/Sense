@@ -1,9 +1,8 @@
 // Door vars
-openable = false;
-// doorOpen = most likely false
 
-// Put a wall under the door if
-// the door started out closed
+openable = false;
+
+// Get the door's starting status (open/closed)
 if (!doorOpen) event_user(0);
 
 // Timers

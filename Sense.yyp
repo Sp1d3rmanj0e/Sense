@@ -106,7 +106,7 @@
     {"id":{"name":"spr_sense_button","path":"sprites/spr_sense_button/spr_sense_button.yy",},"order":0,},
     {"id":{"name":"sq_stairs","path":"sequences/sq_stairs/sq_stairs.yy",},"order":1,},
     {"id":{"name":"spr_player_outline","path":"sprites/spr_player_outline/spr_player_outline.yy",},"order":7,},
-    {"id":{"name":"rm_Gwall_2","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},"order":2,},
+    {"id":{"name":"rm_Gwall_2","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},"order":11,},
     {"id":{"name":"spr_trash02","path":"sprites/spr_trash02/spr_trash02.yy",},"order":7,},
     {"id":{"name":"spr_Gwall_tileset","path":"sprites/spr_Gwall_tileset/spr_Gwall_tileset.yy",},"order":0,},
     {"id":{"name":"spr_eyeBack3_1","path":"sprites/spr_eyeBack3_1/spr_eyeBack3_1.yy",},"order":1,},

@@ -191,7 +191,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Rooms",
+    "path": "folders/Rooms.yy",
   },
 }

@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2429518-3373-4767-b98c-0e8a68c92da4",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"315313b2-2292-4bdf-9c4c-5855d94f2ee7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d2429518-3373-4767-b98c-0e8a68c92da4",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9fcf74d8-549a-4bb7-9e07-d7f32d0b22c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2429518-3373-4767-b98c-0e8a68c92da4","path":"sprites/spr_mysteryResidue/spr_mysteryResidue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ac5822d0-f6ce-4381-9111-96af39645523","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"315313b2-2292-4bdf-9c4c-5855d94f2ee7","path":"sprites/spr_mysteryResidue/spr_mysteryResidue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ac5822d0-f6ce-4381-9111-96af39645523","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"315313b2-2292-4bdf-9c4c-5855d94f2ee7","path":"sprites/spr_mysteryResidue/spr_mysteryResidue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9fcf74d8-549a-4bb7-9e07-d7f32d0b22c9","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2429518-3373-4767-b98c-0e8a68c92da4","path":"sprites/spr_mysteryResidue/spr_mysteryResidue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

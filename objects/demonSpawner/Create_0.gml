@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 sanity = 100;
-maxSpawns = 0;
+spawnCap = 0;
+maxSpawns = 12;
 
 // Get player spawn location (to later summon the demon on)
 startX = obj_player.x;

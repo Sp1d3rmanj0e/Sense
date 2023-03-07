@@ -4,7 +4,7 @@
 #region beat vars
 // Beat checkpoints
 startBeatX = 358;
-endBeatX = 945;
+endBeatX = 910;
 
 // Beat vars
 beatSpawnTime = 30;

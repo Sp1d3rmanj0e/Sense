@@ -9,10 +9,17 @@ else if (!instance_exists(obj_sanityDemon))
 	instance_create_layer(startX, startY, "Instances", obj_sanityDemon);
 }
 
-// Get max number of sanitySpawns per sanity section
-maxSpawns = (startSanity - sanity) / 100;
+// In decimal form - 1 to 0
+var _percentInsane = sanity/startSanity;
 
-if (instance_number(obj_sanitySpawn) < maxSpawns)
+// Gets the num of sanity entities based on current sanity
+spawnCap = (0.5- _percentInsane) * maxSpawns * 0.5; // spawnCap is amt of entities at 0 sanity
+
+// Change player heart rate based on _percentInsane
+if (instance_exists(obj_gui))
+	obj_gui.beatSpawnTime = _percentInsane * 90 + 30; // 30 is fastest, 120 is slowest
+
+if (instance_number(obj_sanitySpawn) < spawnCap)
 {
 	var _x = -1;
 	var _y = -1;

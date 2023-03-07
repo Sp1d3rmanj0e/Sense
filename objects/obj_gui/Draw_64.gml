@@ -4,7 +4,7 @@
 if (instance_exists(obj_player))
 {
 	// Draw UI Backdrop
-	draw_sprite(spr_ui_bar, 0, 0, 0);
+	draw_sprite(spr_ui_bar, 0, 683, 768);
 
 	// Draw a hearbeat for every instance in the ds_list
 	for (var i = 0; i < ds_list_size(beats); i++)
@@ -13,7 +13,7 @@ if (instance_exists(obj_player))
 	}
 
 	// Draw heart rate covers
-	draw_sprite(spr_heart_rate_caps, 0, 359, 570);
+	draw_sprite(spr_heart_rate_caps, 0, 677, 589);
 
 	#region Draw decorative sprite icons
 	
@@ -31,7 +31,7 @@ if (instance_exists(obj_player))
 	rSpriteFrame = (rSpriteFrame + sprite_get_speed(_rSprite) / room_speed) % sprite_get_number(_rSprite);
 
 	// Draw the sprites
-	draw_sprite_ext(_lSprite, lSpriteFrame, 476, 618, _scale, _scale, 0, c_white, 1);
-	draw_sprite_ext(_rSprite, rSpriteFrame, 785, 618, _scale, _scale, 0, c_white, 1);
+	draw_sprite_ext(_lSprite, lSpriteFrame, 473, 618, _scale, _scale, 0, c_white, 1);
+	draw_sprite_ext(_rSprite, rSpriteFrame, 782, 618, _scale, _scale, 0, c_white, 1);
 	#endregion Decorative sprites
 }

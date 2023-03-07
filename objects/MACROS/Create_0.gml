@@ -42,5 +42,5 @@ enum GADGET
 enum PSTATE
 {
 	NORMAL,
-	STUN
+	FREEZE
 }

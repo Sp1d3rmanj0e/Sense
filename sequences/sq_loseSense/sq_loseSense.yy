@@ -17,7 +17,10 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"be9ff6c4-ccaf-49e5-bb26-7697bc625dea","Key":1399.9999,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"cc07858f-d5cf-43a4-bbee-543658379cdd","Key":1398.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+              "TransitionChangeRoom",
+            ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
+      {"id":"8c56dcb6-ef8e-4bdc-a941-e1604850e15c","Key":1399.9999,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "TransitionFinished",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],

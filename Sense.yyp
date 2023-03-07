@@ -150,6 +150,8 @@
     {"id":{"name":"snd_Janitor1","path":"sounds/snd_Janitor1/snd_Janitor1.yy",},"order":1,},
     {"id":{"name":"spr_paper_trash","path":"sprites/spr_paper_trash/spr_paper_trash.yy",},"order":0,},
     {"id":{"name":"snd_FlashlightOff","path":"sounds/snd_FlashlightOff/snd_FlashlightOff.yy",},"order":0,},
+    {"id":{"name":"spr_door_front_light","path":"sprites/spr_door_front_light/spr_door_front_light.yy",},"order":7,},
+    {"id":{"name":"spr_door_left_light","path":"sprites/spr_door_left_light/spr_door_left_light.yy",},"order":6,},
     {"id":{"name":"spr_mimicFront3","path":"sprites/spr_mimicFront3/spr_mimicFront3.yy",},"order":5,},
     {"id":{"name":"spr_night_vision_side_animation_left","path":"sprites/spr_night_vision_side_animation_left/spr_night_vision_side_animation_left.yy",},"order":6,},
     {"id":{"name":"spr_night_vision_side_animation_right","path":"sprites/spr_night_vision_side_animation_right/spr_night_vision_side_animation_right.yy",},"order":7,},

@@ -7,9 +7,9 @@ function getFootSound()
 	// Get room names
 	room1 = Room1;
 	room2 = kitchen_idea_1;
-	room3 = map_idea_1;
-	room4 = map_idea_2;
-	room5 = map_idea_3;
+	room3 = rm_Gwall_1;
+	room4 = rm_Gwall_2;
+	room5 = rm_Gwall_3;
 
 	// Initialize level footstep noises
 	_footNoise = snd_FloorFootsteps;

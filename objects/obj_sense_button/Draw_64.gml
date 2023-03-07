@@ -3,13 +3,17 @@
 
 if (instance_exists(obj_player))
 {
-	if (obj_player.curSense == sense)
+	if (deactivated)
 	{
-		image_index = 1;
+		image_index = 2; // Deactivated (Dark Gray)
+	}
+	else if (obj_player.curSense == sense)
+	{
+		image_index = 1; // Activated (Yellow)
 	}
 	else
 	{
-		image_index = 0;
+		image_index = 0; // Available but not activated (Gray)
 	}
 }
 

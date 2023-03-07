@@ -1,4 +1,5 @@
 global.difficulty = DIFF.EASY;
+global.lostSenses = [];
 
 enum DIFF
 {

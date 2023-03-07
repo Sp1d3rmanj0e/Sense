@@ -177,7 +177,6 @@
     {"id":{"name":"spr_playerFront","path":"sprites/spr_playerFront/spr_playerFront.yy",},"order":4,},
     {"id":{"name":"scr_diffStats","path":"scripts/scr_diffStats/scr_diffStats.yy",},"order":8,},
     {"id":{"name":"scr_sequence","path":"scripts/scr_sequence/scr_sequence.yy",},"order":9,},
-    {"id":{"name":"spr_smell_button","path":"sprites/spr_smell_button/spr_smell_button.yy",},"order":4,},
     {"id":{"name":"spr_door_left","path":"sprites/spr_door_left/spr_door_left.yy",},"order":5,},
     {"id":{"name":"spr_difficulty_main","path":"sprites/spr_difficulty_main/spr_difficulty_main.yy",},"order":10,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":2,},

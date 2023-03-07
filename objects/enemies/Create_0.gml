@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Spawn the Sound Control
+if (!instance_exists(obj_soundControl))
+	instance_create_layer(0, 0, "Instances", obj_soundControl);
+
 var _footNoise = getFootSound();
 //footsteps = play_sound_at(_footNoise, true);
 footsteps = audio_emitter_create();

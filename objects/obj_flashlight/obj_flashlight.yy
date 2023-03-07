@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_flashlight",
   "spriteId": {
-    "name": "spr_flashlight",
-    "path": "sprites/spr_flashlight/spr_flashlight.yy",
+    "name": "spr_flashlight_item",
+    "path": "sprites/spr_flashlight_item/spr_flashlight_item.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,11 +29,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "lights",
-    "path": "folders/Objects/lights.yy",
+    "name": "senses",
+    "path": "folders/Objects/senses.yy",
   },
 }

@@ -25,30 +25,41 @@ else
 		draw_set_alpha(1);
 		draw_rectangle(0, 0, _cw, _ch, 0);
 		gpu_set_blendmode(bm_subtract);
-		with(par_lightParent)
+		with(par_lightParent) // This is where we draw the lights on specific lighting objects
 		{
 			switch(object_index)
 			{
 				case obj_player:
+				
+					// Draw light ring around the player
 					draw_sprite_ext(spr_lightSourceRadial, 0, x - _cx, y - _cy, 1.25, 1.25, 0, c_white, 1);
 					draw_circle(x - _cx, y - _cy, 30, true);
 					break;
 					
 				case obj_flashlight:
-					var _tilemap = layer_tilemap_get_id("walls");
-					var _lightLen = 5;
-					var _pointDir = obj_flashlight.image_angle + 90;
-					var _maxLength = 500;
-					while(_lightLen < _maxLength) 
-					   &&(tilemap_get_at_pixel(_tilemap,x+lengthdir_x(_lightLen,_pointDir),y+lengthdir_y(_lightLen,_pointDir)) != 1)
+					if (obj_flashlight.lightOn)
 					{
-						_lightLen++;
+						var _tilemap = layer_tilemap_get_id("walls");
+						var _lightLen = 5;
+						var _pointDir = obj_flashlight.image_angle;
+						var _maxLength = 500;
+						
+						// Make light extend until it hits a wall
+						// or it gets too long
+						while(_lightLen < _maxLength) 
+						   &&(tilemap_get_at_pixel(_tilemap,x+lengthdir_x(_lightLen,_pointDir),y+lengthdir_y(_lightLen,_pointDir)) != 1)
+						{
+							_lightLen++;
+						}
+						
+						// Draw the light
+						draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, _lightLen, _pointDir - 90, c_white, 1);
 					}
-					//draw_line_width(x - _cx,y - _cy,x+lengthdir_x(100,_pointDir) - _cx,y+lengthdir_y(100,_pointDir) - _cy,20);
-					draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, _lightLen, _pointDir - 90, c_white, 1);
 					break;
 					
 				case obj_wallLight:
+					
+					// Draw light when light is on
 					if (toggleLight)
 					{
 						draw_sprite_ext(spr_wallLightSource, 0, x - _cx, y - _cy, 1, 1, image_angle, c_yellow, 0.75);

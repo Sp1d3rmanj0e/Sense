@@ -5,7 +5,7 @@
 var cellSize = WORLD.CELL_SIZE;
 
 // Changeable vars
-var checkLength = 0.25; // how many tiles out from the door tile to check for a player
+var checkLength = 0.4; // how many tiles out from the door tile to check for a player
 var checkWidth  = 1; // how wide you want the check to be (in tiles also)
 
 // Translate to creating the rectangle
@@ -14,7 +14,7 @@ checkLength = checkLength * cellSize + cellSize / 2;
 checkWidth  = checkWidth  * cellSize/2 - 1;
 
 // Check if entity is near
-if (distance_to_object(obj_player) < checkLength)
+if (distance_to_object(obj_player) < checkLength) && (!place_meeting(x, y, obj_player))
 {
 	
 	// The check shape is similar to a "+"

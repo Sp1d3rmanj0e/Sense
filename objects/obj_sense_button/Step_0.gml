@@ -11,7 +11,7 @@ image_yscale = _scale;
 
 
 // Check if mouse is touching button
-if (position_meeting(mouse_x, mouse_y, id))
+if (point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2))
 {
 	// Grow if mouse touching
 	if (hover < 1) hover+= changeSp;

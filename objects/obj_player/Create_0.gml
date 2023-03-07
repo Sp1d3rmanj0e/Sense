@@ -36,9 +36,6 @@ trashCollected = 0;
 // state code
 state = PSTATE.NORMAL;
 
-// depth vars
-layerDepth = layer_get_depth(layer_get_id("Instances"));
-
 // Functions
 function takeDmg() // Enemy can call this when able to hurt you
 {

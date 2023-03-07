@@ -48,7 +48,7 @@ else
 }
 
 // Deal damage to the player if close enough
-if (distance_to_object(obj_player) < WORLD.CELL_SIZE/2)
+if (distance_to_object(obj_player) < attackRange)
 {
 	with(obj_player)
 	{

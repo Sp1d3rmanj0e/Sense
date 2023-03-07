@@ -21,3 +21,6 @@ heatSpawnTimer = -1;
 
 // Initialize dir
 dir = 0;
+
+// Enemy Attacks
+attackRange = 1.5 * WORLD.CELL_SIZE;

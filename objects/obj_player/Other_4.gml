@@ -8,6 +8,10 @@ if (!instance_exists(obj_gui))
 if (!instance_exists(obj_soundControl))
 	instance_create_layer(0, 0, "Instances", obj_soundControl);
 	
+// Spawn the flashlight
+if (!instance_exists(obj_flashlight))
+	instance_create_layer(x, y, "Instances", obj_flashlight);
+	
 
 #region player stats
 // Get stats based on the current difficulty

@@ -47,8 +47,8 @@ else
 	instance_create_layer(x, y, "Instances", obj_heat);
 }
 
-// Deal damage to the player if close enough
-if (distance_to_object(obj_player) < attackRange)
+// Deal damage to the player if close enough + but not the janitor
+if (distance_to_object(obj_player) < attackRange) && (stateScript != scr_janitor)
 {
 	with(obj_player)
 	{

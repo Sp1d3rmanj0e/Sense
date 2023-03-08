@@ -18,6 +18,9 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Lighting","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9139DC4_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_lighting","path":"objects/obj_lighting/obj_lighting.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":-32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3C17D232","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"roomTarget","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"rm_Gwall_3",},
+          ],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2592.0,"y":2208.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"lights","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4009748B","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2720.0,"y":1920.0,},
@@ -226,6 +229,7 @@
     {"name":"inst_5112B23E","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},
     {"name":"inst_78798871","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},
     {"name":"inst_18224E69","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},
+    {"name":"inst_3C17D232","path":"rooms/rm_Gwall_2/rm_Gwall_2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

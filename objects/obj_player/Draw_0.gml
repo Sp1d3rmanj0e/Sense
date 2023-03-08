@@ -25,3 +25,5 @@ if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && curSense == SENSE.FEEL)
 }
 
 draw_self();
+draw_set_color(c_white);
+draw_text(x,y+20, "Health: " + string(playerHealth));

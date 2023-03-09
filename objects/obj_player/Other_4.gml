@@ -12,6 +12,9 @@ if (!instance_exists(obj_soundControl))
 if (!instance_exists(obj_flashlight))
 	instance_create_layer(x, y, "Instances", obj_flashlight);
 	
+// Spawn the sanity demon spawner
+if (!instance_exists(demonSpawner))
+	instance_create_layer(x, y, "Instances", demonSpawner);
 
 #region player stats
 // Get stats based on the current difficulty

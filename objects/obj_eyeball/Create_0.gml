@@ -6,6 +6,9 @@ event_inherited();
 // Randomize seed
 randomize();
 
+// Aggro
+passive = false;
+
 // Sight vars
 viewConeDeg = 45;
 maxViewDist = 5 * WORLD.CELL_SIZE;

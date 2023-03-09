@@ -48,7 +48,7 @@ else
 }
 
 // Deal damage to the player if close enough + but not the janitor
-if (distance_to_object(obj_player) < attackRange) && (stateScript != scr_janitor)
+if (distance_to_object(obj_player) < attackRange) && (!passive)
 {
 	with(obj_player)
 	{

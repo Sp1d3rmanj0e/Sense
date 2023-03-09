@@ -4,6 +4,9 @@
 // Footstep and heat
 event_inherited();
 
+// Aggro
+passive = false;
+
 // Scripts
 stateScript = scr_sanityDemon;
 animScript = scr_sanityDemonA;

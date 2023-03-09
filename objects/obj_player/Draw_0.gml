@@ -1,9 +1,8 @@
 /// @description Feel Ring
 
 // Feeling sense (vibrations when enemies are near)
-if (tilemap_get_at_pixel(tilemap, mouse_x, mouse_y) && curSense == SENSE.FEEL)
+if (curSense == SENSE.FEEL)
 {
-	
 	// Store nearby enemies in a ds_list
 	var _enemies = ds_list_create();
 	var _enemyNum = collision_circle_list(x, y, feelRad, enemies, false, 

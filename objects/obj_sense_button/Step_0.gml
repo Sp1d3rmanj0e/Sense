@@ -4,39 +4,43 @@
 // Inherit the parent event
 event_inherited();
 
+// Grow when mouse hovers over it
+if (point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2))
+{
+	// Grow if mouse touching
+	if (hover < 1) hover+= changeSp;
+}
+else
+{
+	// Unshrink if not hovered over
+	if (hover > 0) hover-= changeSp;
+}
+
 // Grow and shrink button
 var _scale = lerp(minSize,maxSize,hover);
 image_xscale = _scale;
 image_yscale = _scale;
 
 
+var _clicked = ((point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2)) && (mouse_check_button_pressed(mb_left)));
+var _hotkeyPressed = (keyboard_check_pressed(ord(string(hotkey))));
+
 // Check if mouse is touching button
-if (point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2)) && (!deactivated)
+if  ((_clicked) || (_hotkeyPressed)) && (!deactivated)
 {
-	// Grow if mouse touching
-	if (hover < 1) hover+= changeSp;
 	
-	// Check if button is clicked
-	if (mouse_check_button_pressed(mb_left))
+	// Toggle this button (on or off)
+	if (instance_exists(obj_player))
 	{
-		// Toggle this button (on or off)
-		if (instance_exists(obj_player))
+		if (obj_player.curSense == sense) // Toggle off sense
 		{
-			if (obj_player.curSense == sense) // Toggle off sense
-			{
-				obj_player.curSense = SENSE.NONE;
-				show_debug_message("swapping off sense");
-			}
-			else // Toggle on sense
-			{
-				obj_player.curSense = sense;
-				show_debug_message("swapping on semse");
-			}
+			obj_player.curSense = SENSE.NONE;
+			show_debug_message("swapping off sense");
+		}
+		else // Toggle on sense
+		{
+			obj_player.curSense = sense;
+			show_debug_message("swapping on semse");
 		}
 	}
-}
-else
-{
-	// Unshrink if not hovered over
-	if (hover > 0) hover-= changeSp;
 }

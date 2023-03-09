@@ -9,7 +9,8 @@ var _camY = y - _camHeight/2;
 
 // Camera does not go out of map bounds
 _camX = clamp(_camX, 0, room_width - _camWidth);
-_camY = clamp(_camY, 0, room_height - _camHeight);
+_camY = clamp(_camY, 0, room_height - 500); // -500 so the camera doesn't block the
+											// bottom of the screen
 
 // Camera follows player
 camera_set_view_pos(view_camera[0], _camX + irandom_range(-sShake, sShake), _camY + irandom_range(-sShake, sShake));

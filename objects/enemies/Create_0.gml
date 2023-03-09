@@ -23,4 +23,4 @@ heatSpawnTimer = -1;
 dir = 0;
 
 // Enemy Attacks
-attackRange = 1.5 * WORLD.CELL_SIZE;
+attackRange = 0.75 * WORLD.CELL_SIZE;

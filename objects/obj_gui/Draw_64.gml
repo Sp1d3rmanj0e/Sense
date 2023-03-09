@@ -34,4 +34,7 @@ if (instance_exists(obj_player))
 	draw_sprite_ext(_lSprite, lSpriteFrame, 473, 618, _scale, _scale, 0, c_white, 1);
 	draw_sprite_ext(_rSprite, rSpriteFrame, 782, 618, _scale, _scale, 0, c_white, 1);
 	#endregion Decorative sprites
+	
+	// Draw healthbar
+	draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);
 }

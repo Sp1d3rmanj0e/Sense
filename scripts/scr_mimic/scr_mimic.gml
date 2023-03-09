@@ -13,6 +13,16 @@ var _canHear = (distance_to_object(obj_player) < maxViewDist && _playerMoving);
 * than 1/2 second, switch to aggro
 */
 	
+// Only aggro if in active form
+if (sprite_index == spr_mimicSpirit)
+{
+	passive = true;
+}
+else
+{
+	passive = false;
+}
+	
 // Increment anger if people moving within range, decrement if not
 if (_canHear && anger < maxAnger) && (sprite_index != spr_mimicSpirit)
 {

@@ -8,6 +8,9 @@ event_inherited();
 // Stores the sense it represents
 sense = SENSE.NONE;
 
+// Hotkey var
+hotkey = 0;
+
 // Grow and shrink effects
 minSize = 2;
 maxSize = 2.2;

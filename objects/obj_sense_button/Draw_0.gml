@@ -17,7 +17,7 @@ if (instance_exists(obj_player))
 	}
 }
 
-draw_sprite_ext(spr_sense_button, image_index, offX, offY, image_xscale, image_yscale, 0, c_white, 1);
+draw_sprite_ext(spr_sense_button, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 
 // Get the sense sprite to represent
 var _sprite = noone;
@@ -30,4 +30,4 @@ switch(sense)
 	case SENSE.TASTE: _sprite = spr_taste   break;
 }
 
-draw_sprite_ext(_sprite, 0, offX, offY, image_xscale*0.75, image_yscale*0.75, 0, c_white, 1);
+draw_sprite_ext(_sprite, 0, x, y, image_xscale*0.75, image_yscale*0.75, 0, c_white, 1);

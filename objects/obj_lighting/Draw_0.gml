@@ -45,14 +45,19 @@ else
 						var _pointDir = obj_flashlight.image_angle;
 						var _maxLength = 500;
 						var _spriteHeight = sprite_get_height(spr_lightSourceFlashlight);
+						var _spriteWidth = sprite_get_width(spr_lightSourceFlashlight);
 						while(_lightLen < _maxLength) 
 						   &&(tilemap_get_at_pixel(_tilemap,x+lengthdir_x(_lightLen,_pointDir),y+lengthdir_y(_lightLen,_pointDir)) != 1)
 						{
 							_lightLen++;
 						}
 					
-						//draw_circle((x-_cx) + lengthdir_x(_lightLen, _pointDir), (y - _cy) + lengthdir_y(_lightLen, _pointDir), 50, true);
-						draw_sprite_ext(spr_lightSourceFlashlight, 0, x - _cx, y - _cy, 1, _lightLen/_spriteHeight, _pointDir - 90, c_white, 1);
+						draw_circle((x-_cx) + lengthdir_x(_lightLen, _pointDir), (y - _cy) + lengthdir_y(_lightLen, _pointDir), 50, true);
+						draw_sprite_ext(spr_lightSourceFlashlight, 
+										0, x - _cx, y - _cy,
+										_lightLen/(5*_spriteWidth), // Width. Expands as the light gets longer
+										_lightLen/_spriteHeight, // Length. +35 to bleed into wall
+										_pointDir - 90, c_white, 1);
 					}
 				break;
 					

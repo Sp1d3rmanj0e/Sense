@@ -41,7 +41,6 @@ if (newPath == true)
 			
 			// Choose a random piece of garbage and get ID
 			targetId = _garbage[irandom(_numGarbage-1)];
-			show_debug_message("ID IS >>>>>>> " + string(targetId));
 			
 			// Get x and y from ID and go there
 			var _x = targetId.x;
@@ -50,47 +49,9 @@ if (newPath == true)
 			gotoX = _x;
 			gotoY = _y;
 			
-			// Get tilemap info
-			var _tilemap = layer_tilemap_get_id("Walls");
-			
-			if (tilemap_get_at_pixel(_tilemap, _x, _y) != 0)
-			{
-				show_debug_message("wall obstruction");
-				
-				var _offset = WORLD.CELL_SIZE
-				
-				if      (goto(path, _x, _y - _offset, eSpeed, global.grid))
-				{
-					show_debug_message("found space on top!");
-					gotoX = _x;
-					gotoY = _y - _offset;
-				}
-				else if (goto(path, _x, _y + _offset, eSpeed, global.grid))
-				{
-					show_debug_message("found space on top!");
-					gotoX = _x;
-					gotoY = _y + _offset;
-				}
-				else if (goto(path, _x - _offset, _y, eSpeed, global.grid))
-				{
-					show_debug_message("found space on top!");
-					gotoX = _x - _offset;
-					gotoY = _y;
-				}
-				else if (goto(path, _x + _offset, _y, eSpeed, global.grid))
-				{
-					show_debug_message("found space on top!");
-					gotoX = _x + _offset;
-					gotoY = _y;
-				}
-				else
-				{
-				// Choose a random spot to go to
-				gotoX = irandom_range(1, cw - 1) * tile_size;
-				gotoY = irandom_range(1, ch - 1) * tile_size;
-				}
-			}
-			
+			// Choose a random spot to go to
+			gotoX = irandom_range(1, cw - 1) * tile_size;
+			gotoY = irandom_range(1, ch - 1) * tile_size;
 			
 		}
 		else

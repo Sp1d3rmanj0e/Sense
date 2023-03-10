@@ -43,7 +43,6 @@ if (obj_player.keyInteract && openable)
 	// If interact delay is over
 	if (interactDelayTimer == -1)
 	{
-		show_debug_message("opening/closing door");
 		
 		// Close or open door
 		doorOpen = !doorOpen;

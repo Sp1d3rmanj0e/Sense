@@ -14,6 +14,7 @@ audio_emitter_falloff(
 					  obj_soundControl.start_dropping_off_at,
 					  obj_soundControl.multiplier);
 audio_play_sound_on(footsteps, _footNoise, 1, 1);
+audio_emitter_position(footsteps, x, y, 0); // So that the sound doesn't lock at 0, 0
 
 // Timer for heat residue
 heatSpawnTime = 0.5;

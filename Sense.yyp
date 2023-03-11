@@ -122,6 +122,7 @@
     {"id":{"name":"obj_heat","path":"objects/obj_heat/obj_heat.yy",},"order":2,},
     {"id":{"name":"spr_echo_item","path":"sprites/spr_echo_item/spr_echo_item.yy",},"order":1,},
     {"id":{"name":"spr_JanitorFront","path":"sprites/spr_JanitorFront/spr_JanitorFront.yy",},"order":1,},
+    {"id":{"name":"scr_dectivateSense","path":"scripts/scr_dectivateSense/scr_dectivateSense.yy",},"order":11,},
     {"id":{"name":"spr_mimicBack","path":"sprites/spr_mimicBack/spr_mimicBack.yy",},"order":3,},
     {"id":{"name":"spr_flashlight","path":"sprites/spr_flashlight/spr_flashlight.yy",},"order":0,},
     {"id":{"name":"spr_playerBack","path":"sprites/spr_playerBack/spr_playerBack.yy",},"order":3,},

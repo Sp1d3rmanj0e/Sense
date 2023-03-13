@@ -27,3 +27,5 @@ draw_self();
 draw_set_color(c_white);
 
 draw_text(x, y, string(global.lostSenses));
+draw_text(x, y+20, string(global.counters));
+draw_text(x, y+40, string(getMaxSense()));

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dectivateSense",
+  "name": "scr_loseSense",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-deactivateSense(SENSE.HEAR);
+var _lostSense = getMaxSense();
+deactivateSense(_lostSense);
 room_restart();
-
-
-
-
-

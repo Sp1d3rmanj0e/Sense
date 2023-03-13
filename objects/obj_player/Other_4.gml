@@ -23,9 +23,4 @@ hardcoreMode = scr_diffStats(false, false, false, true);
 walkSp       = 4;
 
 origWalkSp = walkSp; // Save walk speed just in case
-
-var _footNoise = getFootSound();
-
-// Play selected footstep noise
-//footCur = audio_play_sound(_footNoise, 1, true);
 #endregion

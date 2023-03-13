@@ -78,3 +78,12 @@ function resetLostSenses()
 {
 	global.lostSenses = [];
 }
+
+function getLoseSenseSequence(_sense)
+{
+	switch(_sense)
+	{
+		case SENSE.SEE: return sq_loseSenseSight;
+		default: return sq_loseSense;
+	}
+}

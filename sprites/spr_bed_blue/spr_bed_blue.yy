@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_sound_indicator",
+  "name": "spr_bed_blue",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 6,
-  "bbox_right": 58,
+  "bbox_left": 7,
+  "bbox_right": 59,
   "bbox_top": 8,
-  "bbox_bottom": 59,
+  "bbox_bottom": 60,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,15 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2c8c06e0-5727-4fed-8933-7fc1d4756c54",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a736f16-375e-431a-928e-2174889f09d6",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_sound_indicator",
+    "name": "spr_bed_blue",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"900791de-9645-4acb-be85-0bd10d5d5abb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c8c06e0-5727-4fed-8933-7fc1d4756c54","path":"sprites/spr_sound_indicator/spr_sound_indicator.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2fc1b7cd-df93-462b-a1dc-6efcfda4ce56","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a736f16-375e-431a-928e-2174889f09d6","path":"sprites/spr_bed_blue/spr_bed_blue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,11 +64,12 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c063080f-b9e7-4dd3-af6a-3e27fb639afd","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7aa9e63e-6cb6-43b4-adb6-e97d5c65a46a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1949a0cf-94cc-45e5-af31-36cdafcbad0e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "senses",
-    "path": "folders/Sprites/senses.yy",
+    "name": "living room",
+    "path": "folders/Sprites/furniture/living room.yy",
   },
 }

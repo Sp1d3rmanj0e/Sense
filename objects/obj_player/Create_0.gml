@@ -17,8 +17,6 @@ moveX = 0;
 moveY = 0;
 hsp = 0;
 vsp = 0;
-//walkSp = 4;
-//origWalkSp = walkSp; // Save walk speed just in case
 
 // Camera vars
 sShake = 0;

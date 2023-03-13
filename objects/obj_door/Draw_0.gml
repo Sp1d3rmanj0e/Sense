@@ -10,10 +10,12 @@ if (roomTarget != noone)
 	if (rotated)
 	{
 		draw_sprite(spr_door_left_light, lightFrames, x, y);
+		draw_sprite_ext(spr_door_left_light, lightFrames, x, y, -1, 1, 0, c_white, 1);
 	}
 	else
 	{
 		draw_sprite(spr_door_front_light, lightFrames, x, y);
+		draw_sprite_ext(spr_door_front_light, lightFrames, x, y, -1, 1, 0, c_white, 1);
 	}
 }
 

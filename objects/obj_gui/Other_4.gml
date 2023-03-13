@@ -13,6 +13,15 @@ function createButton(_index, _sense)
 	{
 		sense = _sense;
 		hotkey = _index+1; // +1 because hotkeys start at 1, not 0
+		
+		// Turn off the button if sense is lost
+		var _sensesLost = global.lostSenses; // Get the lostSenses array
+		for (var i = 0; i < array_length(_sensesLost); i++)
+		{
+			// If this button held a lost sense, deactivate (unactivatable)
+			if (_sensesLost[i] == sense)
+				deactivated = true;
+		}
 	}
 }
 

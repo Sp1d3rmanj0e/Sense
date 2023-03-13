@@ -12,6 +12,9 @@ if (!instance_exists(obj_soundControl))
 if (!instance_exists(obj_flashlight))
 	instance_create_layer(x, y, "Instances", obj_flashlight);
 	
+// Spawn the sanity demon spawner
+if (!instance_exists(demonSpawner))
+	instance_create_layer(x, y, "Instances", demonSpawner);
 
 #region player stats
 // Get stats based on the current difficulty
@@ -20,9 +23,4 @@ hardcoreMode = scr_diffStats(false, false, false, true);
 walkSp       = 4;
 
 origWalkSp = walkSp; // Save walk speed just in case
-
-var _footNoise = getFootSound();
-
-// Play selected footstep noise
-//footCur = audio_play_sound(_footNoise, 1, true);
 #endregion

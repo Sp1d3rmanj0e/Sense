@@ -26,10 +26,9 @@ for (var j = 0; j < h; j++) {
         mp_grid_add_cell(global.grid, i, j);
 		
 		// Sometimes add walls for ghost wall set
-		if (irandom(9) < 7) // 80% chance a wall will exist
+		if (irandom(9) < 8) // 90% chance a wall will exist
 		{
 			mp_grid_add_cell(global.ghostGrid, i, j);
 		}
-		show_debug_message("cell added to " + string(i) + ", " + string (j));
     }
 }}

@@ -35,12 +35,10 @@ if  ((_clicked) || (_hotkeyPressed)) && (!deactivated)
 		if (obj_player.curSense == sense) // Toggle off sense
 		{
 			obj_player.curSense = SENSE.NONE;
-			show_debug_message("swapping off sense");
 		}
 		else // Toggle on sense
 		{
 			obj_player.curSense = sense;
-			show_debug_message("swapping on semse");
 		}
 	}
 }

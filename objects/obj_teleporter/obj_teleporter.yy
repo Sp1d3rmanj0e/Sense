@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_taser",
-  "spriteId": null,
+  "name": "obj_teleporter",
+  "spriteId": {
+    "name": "spr_teleporter",
+    "path": "sprites/spr_teleporter/spr_teleporter.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "gadgets",
-    "path": "folders/Objects/gadgets.yy",
+    "name": "@gadgets",
+    "path": "folders/Objects/@gadgets.yy",
   },
 }

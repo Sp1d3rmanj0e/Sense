@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "gadgets",
-    "path": "folders/Objects/gadgets.yy",
+    "name": "@gadgets",
+    "path": "folders/Objects/@gadgets.yy",
   },
 }

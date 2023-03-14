@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "senses",
-    "path": "folders/Sprites/senses.yy",
+    "name": "@senses",
+    "path": "folders/Sprites/@senses.yy",
   },
 }

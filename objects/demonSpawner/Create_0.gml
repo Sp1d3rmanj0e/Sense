@@ -5,10 +5,6 @@ sanity = 100;
 spawnCap = 0;
 maxSpawns = 12;
 
-// Get player spawn location (to later summon the demon on)
-startX = obj_player.x;
-startY = obj_player.y;
-
 // Create wall location grid
 var gridX = ceil(room_width / WORLD.CELL_SIZE);
 var gridY = ceil(room_height / WORLD.CELL_SIZE);

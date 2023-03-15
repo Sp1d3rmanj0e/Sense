@@ -3,9 +3,6 @@
 // Get whether a front or side door
 rotated = (image_angle != 0);
 
-// Go behind the player layeraw
-depth += 50;
-
 // Get the correct sprite perspective
 if (rotated) // Not Straight Up
 {

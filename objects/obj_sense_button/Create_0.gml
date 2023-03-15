@@ -19,14 +19,3 @@ changeSp = 0.15;
 
 // Sense loss
 deactivated = false; // Default to being on
-
-// Turn off the button if sense is lost
-var _sensesLost = global.lostSenses; // Get the lostSenses array
-for (var i = 0; i < array_length(_sensesLost); i++)
-{
-	// If this button held a lost sense, deactivate (unactivatable)
-	if (_sensesLost[i] == sense)
-	{
-		deactivated = true;
-	}
-}

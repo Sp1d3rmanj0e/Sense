@@ -17,8 +17,9 @@ spawnCap = (0.5- _percentInsane) * maxSpawns * 0.5; // spawnCap is amt of entiti
 
 // Change player heart rate based on _percentInsane
 if (instance_exists(obj_gui))
+{
 	obj_gui.beatSpawnTime = _percentInsane * 90 + 30; // 30 is fastest, 120 is slowest
-
+}
 if (instance_number(obj_sanitySpawn) < spawnCap)
 {
 	var _x = -1;

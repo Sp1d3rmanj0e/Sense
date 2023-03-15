@@ -122,7 +122,6 @@ if (state == STATE.WANDER)
 	// Transform into nearby enemies (if close enough and in pixie form)
 	if (distance_to_object(enemies) < transformDist) && (sprite_index = spr_mimicSpirit)
 	{
-		show_debug_message("copying new enemy");
 		// Start the transformation timer
 		mimicFormTimer = mimicFormTime * room_speed;
 	

@@ -17,7 +17,12 @@ if (!activated) && (roomTarget != noone)
 	with(enemies) instance_destroy();
 
 	// Create a cutscene
-	TransitionStart(sq_loseSense, roomTarget);
+	var _mostUsedSense = getMaxSense();
+	var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
+	TransitionStart(_loseSenseSequence, roomTarget);
+	
+	// Make player lose that sense
+	deactivateSense(_mostUsedSense);
 	
 	// Freeze player and remove UI for best view
 	obj_player.state = PSTATE.FREEZE;

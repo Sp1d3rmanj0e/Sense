@@ -1,4 +1,4 @@
-/// @description Speed Changes
+/// @description Speed Changes + Sense Loss
 
 // Start the player speed as normal
 walkSp = origWalkSp;
@@ -21,3 +21,7 @@ if (_id != noone) && (_id.realResidue == spr_resWeb) // Check if the residue are
 {
 	walkSp *= 0.66; // Reduce speed by 1/3
 }
+
+// Increment sense counter
+if (curSense != SENSE.NONE)
+	incrCounter(curSense);

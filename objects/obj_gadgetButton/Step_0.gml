@@ -9,6 +9,8 @@ if (position_meeting(mouse_x, mouse_y, id)
 		case GADGET.ECHO:
 			break;
 		case GADGET.NIGHTVIS:
+			nightvis();
+			log("nightvis activated");
 			break;
 		case GADGET.TASER:
 			break;

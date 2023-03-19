@@ -11,7 +11,9 @@ function echo()
 
 function nightvis()
 {
-	
+	alarm[0] = 5*room_speed;
+	with(enemies) image_blend = c_red;
+	obj_lighting.darkness = 0.25;
 }
 
 function tase()

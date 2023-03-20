@@ -6,17 +6,25 @@ if (position_meeting(mouse_x, mouse_y, id)
 {
 	switch(obj_player.curGadget)
 	{
-		case GADGET.ECHO:
+		case GADGET.DASH:
+			dash();
+			log("dash activated");
 			break;
-		case GADGET.NIGHTVIS:
-			nightvis();
-			log("nightvis activated");
+		case GADGET.DECOY:
+			decoy();
+			log("decoy activated");
 			break;
-		case GADGET.TASER:
+		case GADGET.GPS:
+			GPS();
+			log("GPS activated");
 			break;
 		case GADGET.TELEPORT: 
 			teleport(); 
 			log("teleport activated");
+			break;
+		case GADGET.THERMAL:
+			thermal();
+			log("thermal activated");
 			break;
 	}
 	

@@ -15,11 +15,13 @@ if (instance_exists(obj_player))
 	// Draw heart rate covers
 	draw_sprite(spr_heart_rate_caps, 0, 677, 589);
 
+	
+	/*
 	#region Draw decorative sprite icons
 	
 	// Get the current gadget
 	var _gadget = obj_player.curGadget; // Get the gadget from the player
-
+	
 	// Set up sprite information
 	var _decSprites = decSprites[_gadget]; // Get the sprite array
 	var _scale = 1.703125;
@@ -34,6 +36,7 @@ if (instance_exists(obj_player))
 	draw_sprite_ext(_lSprite, lSpriteFrame, 473, 618, _scale, _scale, 0, c_white, draw_get_alpha());
 	draw_sprite_ext(_rSprite, rSpriteFrame, 782, 618, _scale, _scale, 0, c_white, draw_get_alpha());
 	#endregion Decorative sprites
+	*/
 	
 	// Draw healthbar
 	draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);

@@ -22,7 +22,7 @@ vsp = 0;
 sShake = 0;
 
 // Gadget and sense storage
-curGadget = GADGET.NIGHTVIS;
+curGadget = GADGET.NONE;
 curSense = SENSE.NONE;
 
 // Sense vars

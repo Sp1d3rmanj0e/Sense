@@ -4,19 +4,17 @@
 event_inherited();
 
 // Functions for the gadget
-function echo()
+function dash()
 {
 	
 }
 
-function nightvis()
+function decoy()
 {
-	alarm[0] = 5*room_speed;
-	with(enemies) image_blend = c_red;
-	obj_lighting.darkness = 0.25;
+	
 }
 
-function tase()
+function GPS()
 {
 	
 }
@@ -44,3 +42,7 @@ function teleport()
 	}
 }
 
+function thermal()
+{
+	
+}

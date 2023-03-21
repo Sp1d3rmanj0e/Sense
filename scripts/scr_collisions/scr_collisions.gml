@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function collisions(_hsp, _vsp)
+
+// tilemap collisions
+function collisions()
 {
 	// Collisions - Credit to Shaun Spalding
 	var bbox_side;
@@ -21,6 +23,26 @@ function collisions(_hsp, _vsp)
 		vsp = 0;
 	}
 
+	object_collisions(obj_furniture);
+
 	x += hsp;
 	y += vsp;
+}
+
+// Object collisions
+function object_collisions(_object)
+{
+	// Collisions
+	if (place_meeting(x + hsp, y, _object))
+	{
+		hsp = 0;
+	}
+
+	if (place_meeting(x, y + vsp, _object))
+	{
+		while(!place_meeting(x, y+sign(vsp), _object))
+			y+=sign(vsp);
+		
+		vsp = 0;
+	}
 }

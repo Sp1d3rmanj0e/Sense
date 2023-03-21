@@ -24,8 +24,5 @@ if (curSense == SENSE.FEEL)
 }
 
 draw_self();
+depth = 100 - y/room_height*100 + layerDepth;
 draw_set_color(c_white);
-
-draw_text(x, y, string(global.lostSenses));
-draw_text(x, y+20, string(global.counters));
-draw_text(x, y+40, string(getMaxSense()));

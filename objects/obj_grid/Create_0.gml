@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description create and add mp_walls
 
 // Create the grid
 var hcells = room_width div WORLD.CELL_SIZE;

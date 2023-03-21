@@ -32,13 +32,19 @@ function collisions()
 // Object collisions
 function object_collisions(_object)
 {
-	// Collisions
-	if (place_meeting(x + hsp, y, _object))
+	// Stores the id of the collided object
+	var _id = noone;
+	
+	// Check if there is an object in the way (horizontal)
+	_id = instance_place(x + hsp, y, _object);
+	if ((_id != noone) && (_id.solid))
 	{
 		hsp = 0;
 	}
-
-	if (place_meeting(x, y + vsp, _object))
+	
+	// Check if there is an object in the way (vertical)
+	_id = instance_place(x, y + vsp, _object);
+	if ((_id != noone) && (_id.solid))
 	{
 		while(!place_meeting(x, y+sign(vsp), _object))
 			y+=sign(vsp);

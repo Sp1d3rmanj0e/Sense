@@ -212,6 +212,7 @@
     {"id":{"name":"spr_roll_device_item","path":"sprites/spr_roll_device_item/spr_roll_device_item.yy",},"order":9,},
     {"id":{"name":"spr_poof","path":"sprites/spr_poof/spr_poof.yy",},"order":1,},
     {"id":{"name":"spr_eyeFront_2","path":"sprites/spr_eyeFront_2/spr_eyeFront_2.yy",},"order":1,},
+    {"id":{"name":"spr_Bwall_tileset","path":"sprites/spr_Bwall_tileset/spr_Bwall_tileset.yy",},"order":4,},
     {"id":{"name":"spr_sound_indicator","path":"sprites/spr_sound_indicator/spr_sound_indicator.yy",},"order":7,},
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},"order":0,},
     {"id":{"name":"spr_difficultyExtGr","path":"sprites/spr_difficultyExtGr/spr_difficultyExtGr.yy",},"order":3,},

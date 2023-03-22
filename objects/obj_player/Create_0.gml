@@ -22,7 +22,7 @@ vsp = 0;
 sShake = 0;
 
 // Gadget and sense storage
-curGadget = GADGET.GPS;
+curGadget = GADGET.DECOY;
 curSense = SENSE.NONE;
 
 // Sense vars

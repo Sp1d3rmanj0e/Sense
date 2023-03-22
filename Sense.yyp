@@ -54,6 +54,7 @@
     {"id":{"name":"scr_janitorA","path":"scripts/scr_janitorA/scr_janitorA.yy",},"order":2,},
     {"id":{"name":"par_lightParent","path":"objects/par_lightParent/par_lightParent.yy",},"order":3,},
     {"id":{"name":"spr_spiderFront3","path":"sprites/spr_spiderFront3/spr_spiderFront3.yy",},"order":4,},
+    {"id":{"name":"spr_master_furniture","path":"sprites/spr_master_furniture/spr_master_furniture.yy",},"order":3,},
     {"id":{"name":"spr_heat","path":"sprites/spr_heat/spr_heat.yy",},"order":6,},
     {"id":{"name":"spr_eye","path":"sprites/spr_eye/spr_eye.yy",},"order":4,},
     {"id":{"name":"spr_eyeBack_2","path":"sprites/spr_eyeBack_2/spr_eyeBack_2.yy",},"order":2,},

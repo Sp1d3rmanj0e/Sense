@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description create and add mp_walls
 
 // Create the grid
 var hcells = room_width div WORLD.CELL_SIZE;
@@ -32,3 +31,25 @@ for (var j = 0; j < h; j++) {
 		}
     }
 }}
+
+
+function furnitureWalls()
+{
+	var cell_size = WORLD.CELL_SIZE;
+	
+	// Add collision walls for solid decorations as well
+	with(obj_furniture)
+	{
+		
+		// Only add a wall if marked as a solid
+		if (solid)
+		{
+			// Get the cell that the furniture is in
+			var _x = round(x/cell_size);
+			var _y = round(y/cell_size);
+		
+			// Add tiles for any present wall
+	        mp_grid_add_cell(global.grid, _x, _y);
+		}
+	}
+}

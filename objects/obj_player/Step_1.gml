@@ -29,6 +29,6 @@ hsp = moveX;
 vsp = moveY;
 
 // Add collisions to the walls
-collisions(hsp, vsp);
+collisions();
 
 }

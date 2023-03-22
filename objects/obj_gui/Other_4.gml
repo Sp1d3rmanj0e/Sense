@@ -5,7 +5,7 @@
 x = camera_get_view_x(view_camera[0]);
 y = camera_get_view_y(view_camera[0]);
 
-// Create the buttons
+#region create Sense buttons
 instance_destroy(obj_sense_button); // Delete existing buttons
 function createButton(_index, _sense)
 {
@@ -24,6 +24,20 @@ function createButton(_index, _sense)
 		}
 	}
 }
+#endregion
+
+#region create Gadget button
+
+// Destroy the button
+instance_destroy(obj_gadgetButton);
+
+// Create a new button
+var _id = instance_create_layer(683, 672, "GUI", obj_gadgetButton);
+
+// Scale up the button
+_id.image_xscale = 1.75;
+_id.image_yscale = 1.75;
+#endregion
 
 createButton(0, SENSE.FEEL);
 createButton(1, SENSE.HEAR);

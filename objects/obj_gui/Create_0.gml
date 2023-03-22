@@ -22,8 +22,8 @@ beats = ds_list_create();
 #endregion
 
 // Decorative sprites for every gadget [left decoration, right decoration]
-decSprites[GADGET.ECHO]     = [spr_echo_side_animation_left, spr_echo_side_animation_right];
-decSprites[GADGET.NIGHTVIS] = [spr_night_vision_side_animation_left, spr_night_vision_side_animation_right]
-decSprites[GADGET.TASER]    = [spr_taser_side_animation_left, spr_taser_side_animation_right];
-decSprites[GADGET.TELEPORT] = [spr_teleport_side_animation_left, spr_teleport_side_animation_right];
+//decSprites[GADGET.ECHO]     = [spr_echo_side_animation_left, spr_echo_side_animation_right];
+//decSprites[GADGET.NIGHTVIS] = [spr_night_vision_side_animation_left, spr_night_vision_side_animation_right]
+//decSprites[GADGET.TASER]    = [spr_taser_side_animation_left, spr_taser_side_animation_right];
+//decSprites[GADGET.TELEPORT] = [spr_teleport_side_animation_left, spr_teleport_side_animation_right];
 decSprites[GADGET.NONE]     = [noone, noone];

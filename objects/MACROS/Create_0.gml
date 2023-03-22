@@ -33,10 +33,11 @@ enum SENSE
 
 enum GADGET
 {
-	NIGHTVIS,
-	TASER,
-	ECHO,
+	GPS,
+	DECOY,
 	TELEPORT,
+	DASH,
+	THERMAL,
 	NONE
 }
 

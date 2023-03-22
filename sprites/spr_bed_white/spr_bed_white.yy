@@ -1,8 +1,13 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
+<<<<<<< HEAD:sprites/spr_bed/spr_bed.yy
+  "name": "spr_bed",
+  "bboxMode": 2,
+=======
   "name": "spr_bed_white",
   "bboxMode": 0,
+>>>>>>> f193c4fb8d1a6138d156c4ffe4ba56470374f3aa:sprites/spr_bed_white/spr_bed_white.yy
   "collisionKind": 1,
   "type": 0,
   "origin": 0,
@@ -12,7 +17,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 7,
   "bbox_right": 59,
-  "bbox_top": 8,
+  "bbox_top": 33,
   "bbox_bottom": 60,
   "HTile": false,
   "VTile": false,

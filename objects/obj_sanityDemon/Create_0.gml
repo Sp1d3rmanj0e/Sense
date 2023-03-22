@@ -21,6 +21,9 @@ eSpeed = 3;
 alarm[0] = 1;
 
 // Activate sanity demon effect
+if (!instance_exists(effects)) // Spawn effects if needed
+	instance_create_layer(0, 0, "Effects", effects);
+	
 with(effects) 
 {
 	event_user(0);

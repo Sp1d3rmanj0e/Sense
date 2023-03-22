@@ -9,14 +9,31 @@ function dash()
 	
 }
 
+/**
+ * Player will press the gadget button and then
+ * gets the ability to throw a sticky GPS at a nearby enemy
+ * the gps will then tell you exactly where it is on the map
+ * via an arrow.
+ * If the player misses their shot, they can pick it up again.
+ */
 function decoy()
 {
 	
 }
 
-function GPS()
+function gps()
 {
-	
+	// Check if the gadget is already activated
+	if (!instance_exists(obj_gps)) // Not activated
+	{
+		// Create the GPS to be shot
+		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_gps);
+	}
+	else // Activated
+	{
+		// Recall the GPS (Player decided not to use it)
+		instance_destroy(obj_gps);
+	}
 }
 
 /**

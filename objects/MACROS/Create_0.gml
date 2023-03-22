@@ -46,3 +46,11 @@ enum PSTATE
 	NORMAL,
 	FREEZE
 }
+
+enum GPS
+{
+	PLAYER,
+	AIRBORNE,
+	GROUND,
+	ENEMY
+}

@@ -15,7 +15,7 @@ if (position_meeting(mouse_x, mouse_y, id)
 			log("decoy activated");
 			break;
 		case GADGET.GPS:
-			GPS();
+			gps();
 			log("GPS activated");
 			break;
 		case GADGET.TELEPORT: 

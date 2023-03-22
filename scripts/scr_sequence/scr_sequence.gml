@@ -41,17 +41,3 @@ function TransitionFinished()
 	layer_sequence_destroy(self.elementID);
 	global.midTransition = false;
 }
-
-// Might need to just merge stair animation with sense loss animation
-function TransitionBySense()
-{
-	// End the current transition before making a new one
-	TransitionFinished();
-	
-	// Create a different seq based on the sense the player will lose
-	switch(obj_player.curGadget) // This will be the one the player loses
-	{
-		case GADGET.NONE: TransitionStart(sq_loseSense) break;
-		default: TransitionStart(sq_loseSense);
-	}
-}

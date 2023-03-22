@@ -5,4 +5,5 @@
 hover = hover + sin(hoverTimer * 0.03) * 0.3;
 hoverTimer++;
 
-draw_sprite(sprite_index, image_index, x, y + hover);
+draw_sprite_ext(sprite_index, image_index, x, y + hover, 
+				image_xscale, image_yscale, image_angle, image_blend, image_alpha);

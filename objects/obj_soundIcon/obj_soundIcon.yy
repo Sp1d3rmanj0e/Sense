@@ -25,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "senses",
-    "path": "folders/Objects/senses.yy",
+    "name": "@senses",
+    "path": "folders/Objects/@senses.yy",
   },
 }

@@ -90,6 +90,6 @@
   "nineSlice": null,
   "parent": {
     "name": "gadget_animation_on_the_side_thhings",
-    "path": "folders/Sprites/ui/gadgets_powers/gadget_animation_on_the_side_thhings.yy",
+    "path": "folders/Sprites/gadgets_powers/gadget_animation_on_the_side_thhings.yy",
   },
 }

@@ -10,17 +10,26 @@ function dash()
 }
 
 /**
+ * When the button is pressed, a lure is spawned.
+ * The lure will attract enemies within a certain radius
+ */
+function lure()
+{
+	// Destroy any existing lures
+	if (instance_exists(obj_lure))
+		instance_destroy(obj_lure);
+	
+	// Create a new lurew
+	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_lure);
+}
+
+/**
  * Player will press the gadget button and then
  * gets the ability to throw a sticky GPS at a nearby enemy
  * the gps will then tell you exactly where it is on the map
  * via an arrow.
  * If the player misses their shot, they can pick it up again.
  */
-function decoy()
-{
-	
-}
-
 function gps()
 {
 	// Check if the gadget is already activated

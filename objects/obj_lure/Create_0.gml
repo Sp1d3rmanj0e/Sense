@@ -5,4 +5,10 @@ activated = false;
 alarm[0] = 3 * room_speed;
 
 // Lure vars
-lureRadius = 5 * WORLD.CELL_SIZE;
+lureRadius = 10 * WORLD.CELL_SIZE;
+
+with(enemies)
+{
+	if (distance_to_object(other.id) < other.lureRadius)
+		goto(path, other.x, other.y, eSpeed, global.grid);
+}

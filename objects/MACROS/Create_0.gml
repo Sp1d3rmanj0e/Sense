@@ -34,7 +34,7 @@ enum SENSE
 enum GADGET
 {
 	GPS,
-	DECOY,
+	LURE,
 	TELEPORT,
 	DASH,
 	THERMAL,

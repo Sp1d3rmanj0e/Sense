@@ -6,6 +6,18 @@ event_inherited();
 // Functions for the gadget
 function dash()
 {
+	// How far the player will go if unobstructed
+	//var _dashLen = 5 * WORLD.CELL_SIZE;
+	//var _stunTime = 3 * room_speed;
+	
+	if (!instance_exists(obj_dash)) // Not activated
+	{
+		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_dash);
+	}
+	else // Activated
+	{
+		instance_destroy(obj_dash);
+	}
 	
 }
 

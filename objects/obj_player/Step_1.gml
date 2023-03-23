@@ -32,3 +32,15 @@ vsp = moveY;
 collisions();
 
 }
+else if (state == PSTATE.DASH)
+{
+	// Saving hsp and vsp so it can be
+	// reestablished after collisions
+	var _hspSave = hsp;
+	var _vspSave = vsp;
+	
+	collisions(); // Collisions sets hsp and vsp to 0
+	
+	hsp = _hspSave;
+	vsp = _vspSave;
+}

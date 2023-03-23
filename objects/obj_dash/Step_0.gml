@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Dash mechanics
 
 // Get button inputs
 var _keyRight = obj_player.keyRight;
@@ -29,19 +28,34 @@ for (var i = 0; i < 4; i++) // Loop through all 4 buttons
 }
 
 // If only 1 input pressed
-if (_buttonsPressed == 1)
+if ((_buttonsPressed == 1) && (!pressed))
 {
+	pressed = true; // Only allow one press
+	
+	obj_player.state = PSTATE.DASH; // Dash state
+	
+	alarm[0] = dashTime // Stop dashing timer
+	
 	// Find which button it was and
 	// move player accordingly
-	switch(_button)
+	with(obj_player)
 	{
-		case 0: log("right");
-			break;
-		case 1: log("left");
-			break;
-		case 2: log("down");
-			break;
-		case 3: log("up");
-			break;
+		switch(_button)
+		{
+			case 0: log("right");
+				hsp = other.dashSpeed;
+				break;
+			case 1: log("left");
+				hsp = -other.dashSpeed;
+				break;
+			case 2: log("down");
+				vsp = other.dashSpeed;
+				break;
+			case 3: log("up");
+				vsp = -other.dashSpeed;
+				break;
+		}
 	}
+	
+	//instance_destroy();
 }

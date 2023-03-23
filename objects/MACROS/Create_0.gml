@@ -44,7 +44,8 @@ enum GADGET
 enum PSTATE
 {
 	NORMAL,
-	FREEZE
+	FREEZE,
+	DASH
 }
 
 enum GPS

@@ -82,5 +82,15 @@ function teleport()
 
 function thermal()
 {
+	function createHeat()
+	{
+		var _id = instance_create_layer(x, y, "Effects", obj_heat);
+		_id.followID = id;
+	}
 	
+	with(obj_wallLight)
+		createHeat();
+	
+	with(enemies)
+		createHeat();
 }

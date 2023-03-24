@@ -1,9 +1,12 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_furniture",
-  "spriteId": null,
-  "solid": true,
+  "name": "obj_smellResidue",
+  "spriteId": {
+    "name": "spr_smellResidue",
+    "path": "sprites/spr_smellResidue/spr_smellResidue.yy",
+  },
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
@@ -23,13 +26,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"solid","varType":3,"value":"False","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "structures",
-    "path": "folders/Objects/structures.yy",
+    "name": "@senses",
+    "path": "folders/Objects/@senses.yy",
   },
 }

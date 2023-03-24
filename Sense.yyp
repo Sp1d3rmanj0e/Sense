@@ -256,6 +256,7 @@
     {"id":{"name":"rm_room_template","path":"rooms/rm_room_template/rm_room_template.yy",},"order":10,},
     {"id":{"name":"spr_taste","path":"sprites/spr_taste/spr_taste.yy",},"order":3,},
     {"id":{"name":"snd_DoorClose3","path":"sounds/snd_DoorClose3/snd_DoorClose3.yy",},"order":2,},
+    {"id":{"name":"rm_Gwall_5","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},"order":11,},
     {"id":{"name":"spr_teleport_side_animation_left","path":"sprites/spr_teleport_side_animation_left/spr_teleport_side_animation_left.yy",},"order":5,},
     {"id":{"name":"spr_touch_damaged","path":"sprites/spr_touch_damaged/spr_touch_damaged.yy",},"order":11,},
     {"id":{"name":"scr_favoriteFunctions","path":"scripts/scr_favoriteFunctions/scr_favoriteFunctions.yy",},"order":12,},
@@ -328,6 +329,7 @@
     {"roomId":{"name":"rm_copyRoom","path":"rooms/rm_copyRoom/rm_copyRoom.yy",},},
     {"roomId":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},},
     {"roomId":{"name":"rm_room_template","path":"rooms/rm_room_template/rm_room_template.yy",},},
+    {"roomId":{"name":"rm_Gwall_5","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":9,},

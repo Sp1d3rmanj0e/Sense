@@ -61,9 +61,6 @@ if (newPath == true)
 			gotoY = irandom_range(1, ch - 1) * tile_size;
 		}
 		
-		testX = gotoX;
-		testY = gotoY;
-		
 		// Make sure that random location isn't in a wall
 		if (goto(path, gotoX, gotoY, eSpeed, global.grid))
 		{

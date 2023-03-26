@@ -3,7 +3,6 @@
 function scr_janitorA(){
 
 // Animations
-
 var _moveX, _moveY;
 
 // Turn dir into local var
@@ -18,15 +17,10 @@ if (_moveX == 0 && _moveY == 0)
 {
 	image_index = 3; // Sets animation to idle frame (the fourth frame)
 	image_speed = 0; // Freezes on that frame
-	
-	// Pause footsteps if not moving
-	//audio_pause_sound(footCur);
+
 }
 else // Moving
 {	
-	// Play footstep noises when moving
-	//audio_resume_sound(footCur);
-	
 	image_speed = 1; // Sets animation speed to normal when moving
 	
 	// flip animations if moving left (because we only have 5 out of 8 directions

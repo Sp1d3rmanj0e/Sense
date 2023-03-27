@@ -87,10 +87,13 @@ function thermal()
 		var _id = instance_create_layer(x, y, "Effects", obj_heat);
 		_id.followID = id;
 	}
+		if (!instance_exists(obj_heat))
+		{
 	
-	with(obj_wallLight)
-		createHeat();
+		with(obj_wallLight)
+			createHeat();
 	
-	with(enemies)
-		createHeat();
+		with(enemies)
+			createHeat();
+	}
 }

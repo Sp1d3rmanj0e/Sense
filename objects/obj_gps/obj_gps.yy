@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_gps",
   "spriteId": {
-    "name": "delete1",
-    "path": "sprites/delete1/delete1.yy",
+    "name": "spr_GPSTmp",
+    "path": "sprites/spr_GPSTmp/spr_GPSTmp.yy",
   },
   "solid": false,
   "visible": true,

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_dash",
   "spriteId": {
-    "name": "spr_enemy_poster",
-    "path": "sprites/spr_enemy_poster/spr_enemy_poster.yy",
+    "name": "spr_dashTmp",
+    "path": "sprites/spr_dashTmp/spr_dashTmp.yy",
   },
   "solid": false,
   "visible": true,

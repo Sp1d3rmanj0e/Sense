@@ -37,6 +37,19 @@ state = PSTATE.NORMAL;
 // Depth vars
 layerDepth = layer_get_depth(layer);
 
+// Initialize player dash particles
+pSystem = part_system_create_layer("Effects", false);
+dashTrail = part_type_create();
+
+// \/\/\/ Subject to change based on sprite_index at the time of activation
+part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false);
+
+part_type_alpha2(dashTrail, 1, 0);
+part_type_life(dashTrail, 60, 60);
+part_type_blend(dashTrail, 1);
+part_type_speed(dashTrail,0.1, 0.2, 0, 0);
+part_type_direction(dashTrail, 0, 359, 0, 20);
+
 // Functions
 function takeDmg() // Enemy can call this when able to hurt you
 {

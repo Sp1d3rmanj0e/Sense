@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_self();
+if (stunned)
+	draw_sprite(spr_stunnedTemp, -1, x, y);

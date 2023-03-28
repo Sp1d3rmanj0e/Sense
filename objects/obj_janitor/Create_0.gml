@@ -22,6 +22,9 @@ path = path_add(); // Create a path for an enemy
 stateScript = scr_janitor;
 animScript = scr_janitorA;
 
+// State vars
+stunned = false;
+
 // Animation vars
 prevX = x;
 prevY = y;

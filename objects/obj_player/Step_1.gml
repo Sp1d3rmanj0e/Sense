@@ -48,5 +48,9 @@ else if (state == PSTATE.DASH)
 	part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false); // Set particle to player's sprite_index
 	part_type_scale(dashTrail, image_xscale, image_yscale);					 // Flip the particle if necessary
 	part_particles_create(pSystem, x, y, dashTrail, 1);						 // Create the particle
-
+	
+	// Stun any enemies the player collides with
+	var _collId = instance_place(x, y, enemies); // Get Id of collided enemies
+	if (_collId != noone)
+		with(_collId) stun(3 * room_speed); // Stun for 3 seconds
 }

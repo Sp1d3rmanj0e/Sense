@@ -11,6 +11,9 @@ passive = false;
 stateScript = scr_sanityDemon;
 animScript = scr_sanityDemonA;
 
+// State vars
+stunned = false;
+
 // Create the path
 path = path_add();
 

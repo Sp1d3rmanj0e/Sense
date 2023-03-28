@@ -45,10 +45,8 @@ else if (state == PSTATE.DASH)
 	vsp = _vspSave;
 	
 	// Create a particle dash
-	
-	// \/\/\/ Set particle sprite_index to current player sprite_index
-	part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false);
-	part_type_scale(dashTrail, image_xscale, image_yscale);
-	part_particles_create(pSystem, x, y, dashTrail, 1); // Create the particle
+	part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false); // Set particle to player's sprite_index
+	part_type_scale(dashTrail, image_xscale, image_yscale);					 // Flip the particle if necessary
+	part_particles_create(pSystem, x, y, dashTrail, 1);						 // Create the particle
 
 }

@@ -33,6 +33,7 @@ if ((_buttonsPressed == 1) && (!pressed))
 	pressed = true; // Only allow one press
 	
 	obj_player.state = PSTATE.DASH; // Dash state
+	obj_player.invuln = true; // Invuln on
 	
 	alarm[0] = dashTime // Stop dashing timer
 	

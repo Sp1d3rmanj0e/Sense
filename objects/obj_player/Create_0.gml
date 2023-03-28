@@ -41,11 +41,15 @@ layerDepth = layer_get_depth(layer);
 pSystem = part_system_create_layer("Effects", false);
 dashTrail = part_type_create();
 
+// Flash animation vars
+flashColor = c_white;
+flashAlpha = 0
+
 // \/\/\/ Subject to change based on sprite_index at the time of activation
 part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false);
 
 part_type_alpha2(dashTrail, 1, 0);
-part_type_life(dashTrail, 60, 60);
+part_type_life(dashTrail, 15, 15);
 part_type_blend(dashTrail, 1);
 part_type_speed(dashTrail,0.1, 0.2, 0, 0);
 part_type_direction(dashTrail, 0, 359, 0, 20);

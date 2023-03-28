@@ -71,6 +71,7 @@
     {"id":{"name":"obj_spider","path":"objects/obj_spider/obj_spider.yy",},"order":4,},
     {"id":{"name":"spr_eyeFrnt3_1","path":"sprites/spr_eyeFrnt3_1/spr_eyeFrnt3_1.yy",},"order":0,},
     {"id":{"name":"obj_poof","path":"objects/obj_poof/obj_poof.yy",},"order":0,},
+    {"id":{"name":"sd_flash","path":"shaders/sd_flash/sd_flash.yy",},"order":0,},
     {"id":{"name":"spr_eyeBack_0","path":"sprites/spr_eyeBack_0/spr_eyeBack_0.yy",},"order":0,},
     {"id":{"name":"spr_light_source_scaling","path":"sprites/spr_light_source_scaling/spr_light_source_scaling.yy",},"order":5,},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":1,},

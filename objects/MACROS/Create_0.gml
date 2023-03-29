@@ -55,3 +55,11 @@ enum GPS
 	GROUND,
 	ENEMY
 }
+
+enum LISTTYPE
+{
+	OPTIONS,
+	GRAPHICS,
+	AUDIO,
+	CONTROLS
+}

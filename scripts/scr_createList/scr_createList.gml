@@ -52,10 +52,11 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			break;
 			
 		case LISTTYPE.CONTROLS:
-			addButton(_buttonArr, "Move Left", true);
-			addButton(_buttonArr, "Move Right", true);
-			addButton(_buttonArr, "Move Up", true);
-			addButton(_buttonArr, "Move Down", true);
+			addButton(_buttonArr, "Move Left", true, [getUnicodeString(global.kb_keyLeft), "Press any key..."]);
+			addButton(_buttonArr, "Move Right", true, [getUnicodeString(global.kb_keyRight), "Press any key..."]);
+			addButton(_buttonArr, "Move Up", true, [getUnicodeString(global.kb_keyUp), "Press any key..."]);
+			addButton(_buttonArr, "Move Down", true, [getUnicodeString(global.kb_keyDown), "Press any key..."]);
+			addButton(_buttonArr, "Interact", true, [getUnicodeString(global.kb_keyInteract), "Press any key..."]);
 			break;
 			
 		case LISTTYPE.AUDIO:

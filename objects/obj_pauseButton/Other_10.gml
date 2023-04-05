@@ -2,8 +2,7 @@
 
 show_debug_message(">>>>> Clicked <<<<<");
 
-// Does different actions based on its text
-switch(text)
+switch(bText) // Does different actions based on its text
 {
 	case "Graphics":
 		new_list(LISTTYPE.GRAPHICS);
@@ -26,6 +25,25 @@ switch(text)
 	case "Resume":
 		with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
 		with(pauseSpawner) event_user(0); // Unpause game
+		break;
+		
+	case "Move Left":
+	case "Move Right":
+	case "Move Up":
+	case "Move Down":
+	case "Interact":
+		
+		if (selected == 1) // Entering keybind mode
+		{
+			// Create this object to get the next keyboard button
+			// pressed, then set its creator's (this button) keybind to
+			// the new button
+			instance_create_layer(0,0, "Instances", obj_keybindSetter,
+			{
+				parent : id
+			});
+		}
+		
 		break;
 		
 	default:

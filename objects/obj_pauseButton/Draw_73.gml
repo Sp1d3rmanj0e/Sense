@@ -10,7 +10,7 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height))
 	draw_set_color(selColor);
 	
 	// Check if button was clicked
-	var _clicked = mouse_check_button_pressed(mb_left);
+	var _clicked = (mouse_check_button_pressed(mb_left) && (!global.settingKeybind));
 	
 	if (options[0] != -1) 
 	{
@@ -64,14 +64,14 @@ draw_set_valign(fa_center);
 if (options[0] != -1)
 {
 	// Draw the button name (1/4 inwards)
-	draw_text(x + titleOffset, y + height/2, text);
+	draw_text(x + titleOffset, y + height/2, bText);
 
 	// Draw the selected value (2/3 inwards)
 	draw_text(x + valueOffset, y + height/2, options[selected]);
 }
 else
 {
-	draw_text(x + width/2, y+height/2, text);	
+	draw_text(x + width/2, y+height/2, bText);	
 }
 
 // Reset Draw Alignment

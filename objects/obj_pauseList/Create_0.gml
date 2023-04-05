@@ -24,7 +24,7 @@ function createButtons()
 		var _buttonID = instance_create_layer(x, y + (i * (buttonHeight + padding)), "Instances", obj_pauseButton,
 		{
 			generation : generation,
-			text : _button[0],
+			bText : _button[0],
 			isToggle : _button[1],
 			options : _button[2],
 			selected : _button[3],

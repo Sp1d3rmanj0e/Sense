@@ -14,6 +14,18 @@ valueOffset = width*(2/3);
 listID = noone; // Stores a listID if the
 				// button makes a new list
 
+/*
+ Default create vars (happens before create event)
+
+ 		generation : generation,
+		bText : _button[0],
+		isToggle : _button[1],
+		options : _button[2],
+		selected : _button[3],
+		height : buttonHeight,
+		width : 300
+*/
+
 // Functions
 
 /*

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (!global.settingKeybind) { // Don't leave the settings room until
+							  // the keybind being set is complete
+
 gamePaused = !gamePaused; // Toggle game paused
 
 if (gamePaused)
@@ -17,4 +20,5 @@ else
 	instance_activate_all(); // Reactivate the game
 	
 	with(list) destroyGen(0);
+}
 }

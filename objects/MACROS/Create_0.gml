@@ -1,5 +1,6 @@
 global.difficulty = DIFF.EASY;
 global.lostSenses = [];
+global.settingKeybind = false;
 
 enum DIFF
 {

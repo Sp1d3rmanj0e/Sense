@@ -245,11 +245,8 @@
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},"order":0,},
     {"id":{"name":"spr_difficultyExtGr","path":"sprites/spr_difficultyExtGr/spr_difficultyExtGr.yy",},"order":3,},
     {"id":{"name":"spr_spiderFront","path":"sprites/spr_spiderFront/spr_spiderFront.yy",},"order":3,},
-<<<<<<< HEAD
     {"id":{"name":"spr_dash_arrow_use","path":"sprites/spr_dash_arrow_use/spr_dash_arrow_use.yy",},"order":8,},
-=======
     {"id":{"name":"obj_gps","path":"objects/obj_gps/obj_gps.yy",},"order":7,},
->>>>>>> 31fac69c1c9ede5b004b685dd3aa63c95f3e573d
     {"id":{"name":"spr_garbage","path":"sprites/spr_garbage/spr_garbage.yy",},"order":3,},
     {"id":{"name":"snd_FloorFootsteps","path":"sounds/snd_FloorFootsteps/snd_FloorFootsteps.yy",},"order":2,},
     {"id":{"name":"obj_difficultyExt","path":"objects/obj_difficultyExt/obj_difficultyExt.yy",},"order":1,},

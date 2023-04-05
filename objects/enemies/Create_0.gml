@@ -24,4 +24,13 @@ heatSpawnTimer = -1;
 dir = 0;
 
 // Enemy Attacks
-attackRange = 0.75 * WORLD.CELL_SIZE;
+attackRange = 0.25 * WORLD.CELL_SIZE;
+
+// Functions
+
+function stun(_duration)
+{
+	stunned = true; // Stop any decisions made by the enemy
+	alarm[1] = _duration; // Time until no longer stunned
+	path_cancel(); // Stop any paths going
+}

@@ -3,11 +3,11 @@ if (state = PSTATE.NORMAL)
 {
 	
 // Keybinds
-keyRight = keyboard_check(ord("D"));
-keyLeft = keyboard_check(ord("A"));
-keyUp = keyboard_check(ord("W"));
-keyDown = keyboard_check(ord("S"));
-keyInteract = keyboard_check_pressed(vk_space);
+keyRight = keyboard_check(global.kb_keyRight); // keyboard_check(ord("D"));
+keyLeft = keyboard_check(global.kb_keyLeft); //ord("A"));
+keyUp = keyboard_check(global.kb_keyUp); //ord("W"));
+keyDown = keyboard_check(global.kb_keyDown); //ord("S"));
+keyInteract = keyboard_check_pressed(global.kb_keyInteract); //vk_space);
 
 // Calculate direction and speed
 moveX = (keyRight - keyLeft);
@@ -31,4 +31,26 @@ vsp = moveY;
 // Add collisions to the walls
 collisions();
 
+}
+else if (state == PSTATE.DASH)
+{
+	// Saving hsp and vsp so it can be
+	// reestablished after collisions
+	var _hspSave = hsp;
+	var _vspSave = vsp;
+	
+	collisions(); // Collisions sets hsp and vsp to 0
+	
+	hsp = _hspSave;
+	vsp = _vspSave;
+	
+	// Create a particle dash
+	part_type_sprite(dashTrail, obj_player.sprite_index, true, true, false); // Set particle to player's sprite_index
+	part_type_scale(dashTrail, image_xscale, image_yscale);					 // Flip the particle if necessary
+	part_particles_create(pSystem, x, y, dashTrail, 1);						 // Create the particle
+	
+	// Stun any enemies the player collides with
+	var _collId = instance_place(x, y, enemies); // Get Id of collided enemies
+	if (_collId != noone)
+		with(_collId) stun(3 * room_speed); // Stun for 3 seconds
 }

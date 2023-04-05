@@ -22,6 +22,9 @@ path = path_add(); // Create a path for an enemy
 stateScript = scr_janitor;
 animScript = scr_janitorA;
 
+// State vars
+stunned = false;
+
 // Animation vars
 prevX = x;
 prevY = y;
@@ -42,6 +45,3 @@ targetId = noone;
 
 // Get tilemap
 tilemap = layer_tilemap_get_id("walls");
-
-// Add audio noises
-event_inherited();

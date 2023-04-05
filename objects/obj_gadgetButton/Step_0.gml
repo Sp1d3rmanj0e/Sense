@@ -10,12 +10,12 @@ if (position_meeting(mouse_x, mouse_y, id)
 			dash();
 			log("dash activated");
 			break;
-		case GADGET.DECOY:
-			decoy();
+		case GADGET.LURE:
+			lure();
 			log("decoy activated");
 			break;
 		case GADGET.GPS:
-			GPS();
+			gps();
 			log("GPS activated");
 			break;
 		case GADGET.TELEPORT: 

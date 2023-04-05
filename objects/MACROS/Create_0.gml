@@ -34,7 +34,7 @@ enum SENSE
 enum GADGET
 {
 	GPS,
-	DECOY,
+	LURE,
 	TELEPORT,
 	DASH,
 	THERMAL,
@@ -44,5 +44,22 @@ enum GADGET
 enum PSTATE
 {
 	NORMAL,
-	FREEZE
+	FREEZE,
+	DASH
+}
+
+enum GPS
+{
+	PLAYER,
+	AIRBORNE,
+	GROUND,
+	ENEMY
+}
+
+enum LISTTYPE
+{
+	OPTIONS,
+	GRAPHICS,
+	AUDIO,
+	CONTROLS
 }

@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Counter variables
-heat = 10 * room_speed;
-maxHeat = heat;
+followID = noone;
 
-// Properties
-startColor = c_orange;
-endColor = c_blue;
+alarm[0] = 10 * room_speed; // Destroy self after 10 seconds

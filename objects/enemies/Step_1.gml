@@ -44,11 +44,11 @@ if (heatSpawnTimer > 0) heatSpawnTimer--;
 else
 {
 	heatSpawnTimer = heatSpawnTime;
-	instance_create_layer(x, y, "Instances", obj_heat);
+	instance_create_layer(x, y, "Instances", obj_smellResidue);
 }
 
 // Deal damage to the player if close enough + but not the janitor
-if (distance_to_object(obj_player) < attackRange) && (!passive)
+if (distance_to_object(obj_player) < attackRange) && (!passive) && (!stunned)
 {
 	with(obj_player)
 	{

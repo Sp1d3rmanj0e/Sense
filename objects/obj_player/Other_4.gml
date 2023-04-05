@@ -1,4 +1,4 @@
-/// @description Player Stats, GUI, Sound
+/// @description Spawn Controllers + Stats
 
 // Spawn the Player's GUI
 if (!instance_exists(obj_gui))
@@ -14,7 +14,11 @@ if (!instance_exists(obj_flashlight))
 	
 // Spawn the sanity demon spawner
 if (!instance_exists(demonSpawner))
-	instance_create_layer(x, y, "Instances", demonSpawner);
+	instance_create_layer(0, 0, "Instances", demonSpawner);
+
+// Spawn the pause menu
+if (!instance_exists(pauseSpawner))
+	instance_create_layer(0, 0, "GUI", pauseSpawner);
 
 #region player stats
 // Get stats based on the current difficulty

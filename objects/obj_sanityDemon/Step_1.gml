@@ -1,2 +1,3 @@
 
-script_execute(stateScript);
+if (!stunned)
+	script_execute(stateScript);

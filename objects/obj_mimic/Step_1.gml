@@ -2,4 +2,6 @@
 
 // Get direction of motion
 event_inherited();
-script_execute(stateScript);
+
+if (!stunned)
+	script_execute(stateScript);

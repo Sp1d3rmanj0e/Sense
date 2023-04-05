@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "followCamera",
+    "path": "objects/followCamera/followCamera.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

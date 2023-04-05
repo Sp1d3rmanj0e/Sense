@@ -17,10 +17,11 @@ function get_sense_sprite(_sense)
 		case SENSE.HEAR: return spr_hearing;
 		case SENSE.TASTE: return spr_taste;
 		case SENSE.SMELL: return spr_smell;
-		default:return noone;
+		default: return noone;
 	}
 }
 
+// Create all of the sense buttons
 for (var i = 0; i < numSenses; i++)
 {
 	var _senseSprite = get_sense_sprite(i);

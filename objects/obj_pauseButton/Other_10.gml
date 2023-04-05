@@ -17,13 +17,15 @@ switch(text)
 		new_list(LISTTYPE.CONTROLS);
 		break;
 		
-	case "Exit":
-		with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
+	case "Return to Main Menu":
 		with(pauseSpawner) event_user(0); // Unpause game
+		resetGlobalVars();
+		room_goto(rm_intro);
 		break;
 		
-	case "Copy":
-		new_list(LISTTYPE.OPTIONS);
+	case "Resume":
+		with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
+		with(pauseSpawner) event_user(0); // Unpause game
 		break;
 		
 	default:

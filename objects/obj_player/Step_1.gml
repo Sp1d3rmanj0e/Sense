@@ -3,11 +3,11 @@ if (state = PSTATE.NORMAL)
 {
 	
 // Keybinds
-keyRight = keyboard_check(ord("D"));
-keyLeft = keyboard_check(ord("A"));
-keyUp = keyboard_check(ord("W"));
-keyDown = keyboard_check(ord("S"));
-keyInteract = keyboard_check_pressed(vk_space);
+keyRight = keyboard_check(global.kb_keyRight); // keyboard_check(ord("D"));
+keyLeft = keyboard_check(global.kb_keyLeft); //ord("A"));
+keyUp = keyboard_check(global.kb_keyUp); //ord("W"));
+keyDown = keyboard_check(global.kb_keyDown); //ord("S"));
+keyInteract = keyboard_check_pressed(global.kb_keyInteract); //vk_space);
 
 // Calculate direction and speed
 moveX = (keyRight - keyLeft);

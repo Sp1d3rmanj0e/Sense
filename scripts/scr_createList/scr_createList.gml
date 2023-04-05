@@ -37,25 +37,25 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 	
 	switch(_type)
 	{
-		// (-1 signifies no options)
+		// (-1/no fourth input  signifies no options)
 		case LISTTYPE.OPTIONS:
 			addButton(_buttonArr, "Graphics", true);
 			addButton(_buttonArr, "Controls", true);
 			addButton(_buttonArr, "Audio", true);
-			addButton(_buttonArr, "Copy", true);
-			addButton(_buttonArr, "Exit", true);
+			addButton(_buttonArr, "Return to Main Menu", true);
+			addButton(_buttonArr, "Resume", true);
 			break;
 			
 		case LISTTYPE.GRAPHICS:
-			addButton(_buttonArr, "Graphics Quality", false, ["Low", "Medium", "High"]);
-			addButton(_buttonArr, "VSync", true, ["On", "Off"]);
+			addButton(_buttonArr, "Arachnaphobia Mode", true, ["On", "Off"]);
+			addButton(_buttonArr, "Fullscreen", true, ["On", "Off"]);
 			break;
 			
 		case LISTTYPE.CONTROLS:
-			addButton(_buttonArr, "Keybind Ex. 1", true, [-1]);
-			addButton(_buttonArr, "Keybind Ex. 2", true, [-1]);
-			addButton(_buttonArr, "Keybind Ex. 3", true, [-1]);
-			addButton(_buttonArr, "Keybind Ex. 4", true, [-1]);
+			addButton(_buttonArr, "Move Left", true);
+			addButton(_buttonArr, "Move Right", true);
+			addButton(_buttonArr, "Move Up", true);
+			addButton(_buttonArr, "Move Down", true);
 			break;
 			
 		case LISTTYPE.AUDIO:

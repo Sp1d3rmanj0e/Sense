@@ -57,6 +57,12 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			addButton(_buttonArr, "Move Up", true, [getUnicodeString(global.kb_keyUp), "Press any key..."]);
 			addButton(_buttonArr, "Move Down", true, [getUnicodeString(global.kb_keyDown), "Press any key..."]);
 			addButton(_buttonArr, "Interact", true, [getUnicodeString(global.kb_keyInteract), "Press any key..."]);
+			addButton(_buttonArr, "Activate Gadget", true, [getUnicodeString(global.kb_keyGadgetActivate), "Press any key..."]);
+			addButton(_buttonArr, "Sense 1 Hotkey", true, [getUnicodeString(global.kb_keyHotkey1), "Press any key..."]);
+			addButton(_buttonArr, "Sense 2 Hotkey", true, [getUnicodeString(global.kb_keyHotkey2), "Press any key..."]);
+			addButton(_buttonArr, "Sense 3 Hotkey", true, [getUnicodeString(global.kb_keyHotkey3), "Press any key..."]);
+			addButton(_buttonArr, "Sense 4 Hotkey", true, [getUnicodeString(global.kb_keyHotkey4), "Press any key..."]);
+			addButton(_buttonArr, "Sense 5 Hotkey", true, [getUnicodeString(global.kb_keyHotkey5), "Press any key..."]);
 			break;
 			
 		case LISTTYPE.AUDIO:

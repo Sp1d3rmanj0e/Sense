@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "Pause Menu",
+    "path": "folders/Objects/ui/Pause Menu.yy",
   },
 }

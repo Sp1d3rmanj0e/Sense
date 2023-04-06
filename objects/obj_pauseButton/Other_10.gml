@@ -32,7 +32,13 @@ switch(bText) // Does different actions based on its text
 	case "Move Up":
 	case "Move Down":
 	case "Interact":
-		
+	case "Activate Gadget":
+	case "Sense 1 Hotkey":
+	case "Sense 2 Hotkey":
+	case "Sense 3 Hotkey":
+	case "Sense 4 Hotkey":
+	case "Sense 5 Hotkey":
+	 
 		if (selected == 1) // Entering keybind mode
 		{
 			// Create this object to get the next keyboard button

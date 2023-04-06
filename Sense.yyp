@@ -193,7 +193,7 @@
     {"id":{"name":"snd_DoorClose1","path":"sounds/snd_DoorClose1/snd_DoorClose1.yy",},"order":0,},
     {"id":{"name":"obj_feelRing","path":"objects/obj_feelRing/obj_feelRing.yy",},"order":3,},
     {"id":{"name":"spr_eyeSide_2","path":"sprites/spr_eyeSide_2/spr_eyeSide_2.yy",},"order":0,},
-    {"id":{"name":"obj_loadAndSaveKeybinds","path":"objects/obj_loadAndSaveKeybinds/obj_loadAndSaveKeybinds.yy",},"order":6,},
+    {"id":{"name":"obj_loadAndSaveKeybinds","path":"objects/obj_loadAndSaveKeybinds/obj_loadAndSaveKeybinds.yy",},"order":3,},
     {"id":{"name":"spr_distraction_box_item","path":"sprites/spr_distraction_box_item/spr_distraction_box_item.yy",},"order":15,},
     {"id":{"name":"scr_createList","path":"scripts/scr_createList/scr_createList.yy",},"order":14,},
     {"id":{"name":"spr_sanityDemon3","path":"sprites/spr_sanityDemon3/spr_sanityDemon3.yy",},"order":2,},

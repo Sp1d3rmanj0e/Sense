@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"obj_sense_button_board","path":"objects/obj_sense_button_board/obj_sense_button_board.yy",},"order":3,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":5,},
+    {"id":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},"order":12,},
     {"id":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"order":1,},
     {"id":{"name":"spr_difficulty_go","path":"sprites/spr_difficulty_go/spr_difficulty_go.yy",},"order":5,},
     {"id":{"name":"spr_wallLightSource","path":"sprites/spr_wallLightSource/spr_wallLightSource.yy",},"order":3,},
@@ -125,7 +126,6 @@
     {"id":{"name":"obj_ghost","path":"objects/obj_ghost/obj_ghost.yy",},"order":7,},
     {"id":{"name":"scr_getFootSound","path":"scripts/scr_getFootSound/scr_getFootSound.yy",},"order":10,},
     {"id":{"name":"spr_I_tv","path":"sprites/spr_I_tv/spr_I_tv.yy",},"order":13,},
-    {"id":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},"order":9,},
     {"id":{"name":"obj_heat","path":"objects/obj_heat/obj_heat.yy",},"order":2,},
     {"id":{"name":"spr_echo_item","path":"sprites/spr_echo_item/spr_echo_item.yy",},"order":0,},
     {"id":{"name":"spr_JanitorFront","path":"sprites/spr_JanitorFront/spr_JanitorFront.yy",},"order":1,},
@@ -327,9 +327,9 @@
       ]},
     {"roomId":{"name":"rm_uiTest","path":"rooms/rm_uiTest/rm_uiTest.yy",},},
     {"roomId":{"name":"rm_copyRoom","path":"rooms/rm_copyRoom/rm_copyRoom.yy",},},
-    {"roomId":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},},
     {"roomId":{"name":"rm_room_template","path":"rooms/rm_room_template/rm_room_template.yy",},},
     {"roomId":{"name":"rm_Gwall_5","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},},
+    {"roomId":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":9,},

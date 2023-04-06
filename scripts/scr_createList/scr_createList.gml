@@ -47,8 +47,8 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			break;
 			
 		case LISTTYPE.GRAPHICS:
-			addButton(_buttonArr, "Arachnaphobia Mode", true, ["On", "Off"]);
-			addButton(_buttonArr, "Fullscreen", true, ["On", "Off"]);
+			addButton(_buttonArr, "Arachnaphobia Mode", true, ["Off", "On"], global.arachnaphobiaMode);
+			addButton(_buttonArr, "Fullscreen", true, ["Off", "On"], global.fullscreen);
 			break;
 			
 		case LISTTYPE.CONTROLS:
@@ -66,7 +66,7 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			break;
 			
 		case LISTTYPE.AUDIO:
-			addButton(_buttonArr, "Volume", false, ["10%", "25%", "50%", "75%", "100%"]);
+			addButton(_buttonArr, "Volume", false, ["0%", "10%", "25%", "50%", "75%", "100%"]);
 			break;
 	}
 	

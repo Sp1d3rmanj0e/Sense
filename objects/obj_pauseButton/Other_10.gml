@@ -52,6 +52,20 @@ switch(bText) // Does different actions based on its text
 		
 		break;
 		
+	case "Fullscreen":
+		global.fullscreen = selected;
+		window_set_fullscreen(global.fullscreen);
+		break;
+		
+	case "Arachnaphobia Mode":
+		global.arachnaphobiaMode = selected;
+		break;
+		
+	case "Volume":
+		global.volume = selected;
+		logVal("new volume", global.volume);
+		break;
+		
 	default:
 		show_debug_message("No button task assigned to this button");
 }

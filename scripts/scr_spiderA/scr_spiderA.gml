@@ -36,26 +36,36 @@ else // Moving
 	{
 		case 0:
 		case 180:
-		
-			sprite_index = spr_spiderSide;
+			if (global.arachnaphobiaMode)
+				sprite_index = spr_spiderSide_A;
+			else
+				sprite_index = spr_spiderSide;
 			break;
 		case 45:
 		case 135:
-
-			sprite_index = spr_spiderBack3;
+			if (global.arachnaphobiaMode)
+				sprite_index = spr_spiderBack3_A;
+			else
+				sprite_index = spr_spiderBack3;
 			break;
 		case 90:
-			
-			sprite_index = spr_spiderBack;
+			if (global.arachnaphobiaMode)
+				sprite_index = spr_spiderBack_A;
+			else
+				sprite_index = spr_spiderBack;
 			break;
 		case 225:
 		case 315:
-			
-			sprite_index = spr_spiderFront3;
+			if (global.arachnaphobiaMode)
+				sprite_index = spr_spiderFront3_A;
+			else
+				sprite_index = spr_spiderFront3;
 			break;
 		case 270:
-			
-			sprite_index = spr_spiderFront;
+			if (global.arachnaphobiaMode)
+				sprite_index = spr_spiderFront_A;
+			else
+				sprite_index = spr_spiderFront;
 			break;
 	}
 	

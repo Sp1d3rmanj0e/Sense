@@ -1,7 +1,14 @@
 global.difficulty = DIFF.EASY;
 global.lostSenses = [];
-global.settingKeybind = false;
 
+// Pause menu
+global.settingKeybind = false;
+global.fullscreen = true;
+global.volume = 0;
+global.arachnaphobiaMode = false;
+
+
+// Enums
 enum DIFF
 {
 	EASY = 0,

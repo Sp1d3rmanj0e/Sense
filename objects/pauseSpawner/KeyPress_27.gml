@@ -14,6 +14,8 @@ if (gamePaused)
 	var _camY = camera_get_view_y(view_camera[0]);
 	
 	list = scr_createList(LISTTYPE.OPTIONS, _camX, _camY, 0, noone); // Create the first list
+	
+	instance_activate_object(obj_loadAndSaveKeybinds);
 }
 else
 {

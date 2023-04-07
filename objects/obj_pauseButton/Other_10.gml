@@ -23,7 +23,6 @@ switch(bText) // Does different actions based on its text
 		break;
 		
 	case "Resume":
-		//with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
 		with(pauseSpawner) event_user(0); // Unpause game
 		break;
 	
@@ -70,7 +69,23 @@ switch(bText) // Does different actions based on its text
 		
 	case "Reset To Default":
 		log("resetting to defaults");
+		show_debug_message("obj_load_and_save_keybinds exists: " + string(instance_exists(obj_loadAndSaveKeybinds)));
 		with(obj_loadAndSaveKeybinds) event_user(0); // Reset to default event
+		
+		/*
+		 * When you reset to defaults, the button doesn't switch the 
+		 * data automatically, so what we do is close and open the
+		 * controls list to manually refresh the buttons
+		 */
+		with(obj_pauseButton)
+		{
+			if (bText == "Controls")
+			{
+				new_list(LISTTYPE.CONTROLS);
+				new_list(LISTTYPE.CONTROLS);
+			}
+		}
+		
 		break;
 	
 	default:

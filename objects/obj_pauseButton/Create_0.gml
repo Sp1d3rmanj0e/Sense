@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-logImportant("created button");
-
 // Property vars
 defaultColor = make_color_rgb(150, 50*generation + 50, 50*generation + 50);
 selColor = c_white;

@@ -8,8 +8,7 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 		generation : _gen,
 		buttonParent : _parent
 	});
-	
-	logImportant("Created list");
+
 	
 	// Create an array to contain button data
 	var _buttonArr = [];

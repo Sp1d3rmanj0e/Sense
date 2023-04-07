@@ -153,7 +153,6 @@
     {"id":{"name":"scr_eyeball","path":"scripts/scr_eyeball/scr_eyeball.yy",},"order":4,},
     {"id":{"name":"scr_janitor","path":"scripts/scr_janitor/scr_janitor.yy",},"order":1,},
     {"id":{"name":"spr_heart_rate","path":"sprites/spr_heart_rate/spr_heart_rate.yy",},"order":2,},
-    {"id":{"name":"obj_jumpscare","path":"objects/obj_jumpscare/obj_jumpscare.yy",},"order":3,},
     {"id":{"name":"spr_GPS_item_active","path":"sprites/spr_GPS_item_active/spr_GPS_item_active.yy",},"order":6,},
     {"id":{"name":"spr_eyeFront_0","path":"sprites/spr_eyeFront_0/spr_eyeFront_0.yy",},"order":4,},
     {"id":{"name":"spr_wall_light","path":"sprites/spr_wall_light/spr_wall_light.yy",},"order":4,},

@@ -20,6 +20,11 @@ if (!instance_exists(demonSpawner))
 if (!instance_exists(pauseSpawner))
 	instance_create_layer(0, 0, "GUI", pauseSpawner);
 
+// Spawn the sense wheel
+if (!instance_exists(obj_senseWheel))
+	instance_create_layer(camera_get_view_width(view_camera[0]) - sprite_get_width(obj_senseWheel),
+							sprite_get_height(obj_senseWheel), "GUI", obj_senseWheel);
+
 #region player stats
 // Get stats based on the current difficulty
 playerHealth = scr_diffStats(3, 2, 1, 1); // Reset player health every round

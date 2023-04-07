@@ -55,7 +55,7 @@ part_type_speed(dashTrail,0.1, 0.2, 0, 0);
 part_type_direction(dashTrail, 0, 359, 0, 20);
 
 // Functions
-function takeDmg(_enemyThatHurtPlayer) // Enemy can call this when able to hurt you
+function takeDmg(_objectIndexOfEnemy) // Enemy can call this when able to hurt you
 {
 	if (!invuln) // Only take damage if not invulnerable
 	{
@@ -85,8 +85,8 @@ function takeDmg(_enemyThatHurtPlayer) // Enemy can call this when able to hurt 
 			instance_create_layer(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]),
 									"GUI", obj_deathScreenSpawner,
 									{
-										enemyThatKilledPlayer : _enemyThatHurtPlayer
-									})
+										enemyThatKilledPlayer : _objectIndexOfEnemy
+									});
 			/*
 			if (global.difficulty == DIFF.HARDER)
 			{ // Hardcore mode (restart after one hit)

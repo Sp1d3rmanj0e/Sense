@@ -52,6 +52,6 @@ if (distance_to_object(obj_player) < attackRange) && (!passive) && (!stunned)
 {
 	with(obj_player)
 	{
-		takeDmg();
+		takeDmg(other.object_index);
 	}
 }

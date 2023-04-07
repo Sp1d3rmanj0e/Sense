@@ -55,7 +55,7 @@ part_type_speed(dashTrail,0.1, 0.2, 0, 0);
 part_type_direction(dashTrail, 0, 359, 0, 20);
 
 // Functions
-function takeDmg() // Enemy can call this when able to hurt you
+function takeDmg(_enemyThatHurtPlayer) // Enemy can call this when able to hurt you
 {
 	if (!invuln) // Only take damage if not invulnerable
 	{
@@ -74,6 +74,20 @@ function takeDmg() // Enemy can call this when able to hurt you
 		// Restart game/round if health is 0
 		if (playerHealth <= 0)
 		{
+			// Freeze the player where they are
+			state = PSTATE.FREEZE;
+			
+			// Switch to death animation
+			
+			// Create deathScreenSpawner in the top left of the camera
+			// The constructor will add the sprite of the that killed them
+			// That sprite will be what the jumpscare is
+			instance_create_layer(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]),
+									"GUI", obj_deathScreenSpawner,
+									{
+										enemyThatKilledPlayer : _enemyThatHurtPlayer
+									})
+			/*
 			if (global.difficulty == DIFF.HARDER)
 			{ // Hardcore mode (restart after one hit)
 				game_restart();
@@ -82,6 +96,7 @@ function takeDmg() // Enemy can call this when able to hurt you
 			{ // Anything else (restart round after all lives lost)
 				room_restart();
 			}
+			*/
 		}
 	}
 }

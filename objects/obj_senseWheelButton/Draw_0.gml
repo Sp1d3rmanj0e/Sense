@@ -30,4 +30,8 @@ var _angle = image_angle - obj_senseWheel.anglePerSense/2 - obj_senseWheel.angle
 draw_sprite_ext(senseSprite, 0, 
 					x + lengthdir_x(_extend, _angle), y + lengthdir_y(_extend, _angle),
 					_scale, _scale, 0, c_white, 1);
-	
+
+// Draw the button that can be pressed to activate the button
+_extend = 80;
+draw_text_ext_transformed(x + lengthdir_x(_extend, _angle), y + lengthdir_y(_extend, _angle),
+							hotkeyButton, 10, 200, _scale, _scale, 0);

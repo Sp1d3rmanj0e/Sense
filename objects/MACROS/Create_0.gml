@@ -31,11 +31,11 @@ enum WORLD
 
 enum SENSE
 {
-	SEE,
-	HEAR,
 	FEEL,
-	TASTE,
+	HEAR,
+	SEE,
 	SMELL,
+	TASTE,
 	NONE
 }
 

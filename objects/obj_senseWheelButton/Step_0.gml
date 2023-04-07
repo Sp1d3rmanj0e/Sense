@@ -12,11 +12,11 @@ var _activateButton; // button to press to activate this sense
 
 switch(sense)
 {
-	case 2: _activateButton = global.kb_keyHotkey1; break;
+	case 0: _activateButton = global.kb_keyHotkey1; break;
 	case 1: _activateButton = global.kb_keyHotkey2; break;
-	case 0: _activateButton = global.kb_keyHotkey3; break;
-	case 4: _activateButton = global.kb_keyHotkey4; break;
-	case 3: _activateButton = global.kb_keyHotkey5; break;
+	case 2: _activateButton = global.kb_keyHotkey3; break;
+	case 3: _activateButton = global.kb_keyHotkey4; break;
+	case 4: _activateButton = global.kb_keyHotkey5; break;
 }
 
 if (keyboard_check_pressed(_activateButton))

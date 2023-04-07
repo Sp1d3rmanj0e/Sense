@@ -20,3 +20,19 @@ function switch_sense(_sense)
 	if (instance_exists(obj_player))
 		obj_player.curSense = _sense;
 }
+
+hotkeyButton = "";
+
+/*
+switch(sense)
+{
+	case SENSE.FEEL:  hotkeyButton = getUnicodeString(global.kb_keyHotkey1); break;
+	case SENSE.HEAR:  hotkeyButton = getUnicodeString(global.kb_keyHotkey2); break;
+	case SENSE.SEE:   hotkeyButton = getUnicodeString(global.kb_keyHotkey3); break;
+	case SENSE.SMELL: hotkeyButton = getUnicodeString(global.kb_keyHotkey4); break;
+	case SENSE.TASTE: hotkeyButton = getUnicodeString(global.kb_keyHotkey5); break;
+	default: hotkeyButton = "Button not found";
+}
+
+show_debug_message("My sense: " + string(sense));
+*/

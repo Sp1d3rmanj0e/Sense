@@ -11,7 +11,7 @@ passive = false;
 
 // Sight vars
 viewConeDeg = 45;
-maxViewDist = 1 * WORLD.CELL_SIZE;
+maxViewDist = 3 * WORLD.CELL_SIZE;
 
 // Path and movement
 eSpeed = 3.7;

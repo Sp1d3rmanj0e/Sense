@@ -1,6 +1,6 @@
 /// @description Default sound settings
 
-max_distance_to_be_heard = 300;
+max_distance_to_be_heard = WORLD.CELL_SIZE * 8;
 start_dropping_off_at    = 100;
 multiplier               = 10;
 

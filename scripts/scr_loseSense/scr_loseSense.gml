@@ -84,6 +84,10 @@ function getLoseSenseSequence(_sense)
 	switch(_sense)
 	{
 		case SENSE.SEE: return sq_loseSenseSight;
+		case SENSE.HEAR: return sq_loseSenseHear;
+		case SENSE.SMELL: return sq_loseSenseSmell;
+		case SENSE.TASTE: return sq_loseSenseTaste;
+		case SENSE.FEEL: return sq_loseSenseFeel;
 		default: return sq_loseSense;
 	}
 }

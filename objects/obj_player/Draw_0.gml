@@ -24,5 +24,35 @@ if (curSense == SENSE.FEEL)
 }
 
 draw_self();
+
+/*
+ * Invulnerability
+ * If the player is invulnerable, it will flash white
+ * then fade out.  It will keep doing that until no longer
+ * invulnerable.
+ * (It will be drawn over the normal player sprite)
+ */
+ if (invuln)
+ {
+	if (flashAlpha > 0)
+		flashAlpha -= 0.05;
+	else
+		flashAlpha = 1;
+	 
+	shader_set(sd_flash);
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle,
+						flashColor, flashAlpha);
+	shader_reset();
+ }
+
+
+
 depth = 100 - y/room_height*100 + layerDepth;
 draw_set_color(c_white);
+
+
+draw_text(x, y+20, global.kb_keyLeft);
+draw_text(x, y+40, global.kb_keyRight);
+draw_text(x, y+60, global.kb_keyDown);
+draw_text(x, y+80, global.kb_keyUp);
+draw_text(x, y+100, global.kb_keyInteract);

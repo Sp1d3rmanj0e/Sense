@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-global.midTransition = false;
+//global.midTransition = false;
 global.roomTarget = noone;
 
 // Creates a layer for the sequence to be on
@@ -19,25 +19,19 @@ function TransitionPlaceSequence(_type)
 // Create the transition
 function TransitionStart(_type, _roomTarget)
 {
-	if (!global.midTransition)
-	{
-		global.midTransition = true;
-		global.roomTarget = _roomTarget;
-		TransitionPlaceSequence(_type);
-		return true;
-	}
-	else return false;
+	global.roomTarget = _roomTarget;
+	TransitionPlaceSequence(_type);
 }
 
 // Switch rooms
 function TransitionChangeRoom()
 {
 	room_goto(global.roomTarget);
+	TransitionFinished();
 }
 
 // End the transition
 function TransitionFinished()
 {
 	layer_sequence_destroy(self.elementID);
-	global.midTransition = false;
 }

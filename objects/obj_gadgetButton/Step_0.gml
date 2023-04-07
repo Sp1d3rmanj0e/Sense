@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if (position_meeting(mouse_x, mouse_y, id) 
-&& mouse_check_button_pressed(mb_left))
+&& (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(global.kb_keyGadgetActivate)))
 {
 	switch(obj_player.curGadget)
 	{
@@ -10,12 +10,12 @@ if (position_meeting(mouse_x, mouse_y, id)
 			dash();
 			log("dash activated");
 			break;
-		case GADGET.DECOY:
-			decoy();
+		case GADGET.LURE:
+			lure();
 			log("decoy activated");
 			break;
 		case GADGET.GPS:
-			GPS();
+			gps();
 			log("GPS activated");
 			break;
 		case GADGET.TELEPORT: 

@@ -1,6 +1,14 @@
 global.difficulty = DIFF.EASY;
 global.lostSenses = [];
 
+// Pause menu
+global.settingKeybind = false;
+global.fullscreen = true;
+global.volume = 2;
+global.arachnaphobiaMode = false;
+
+
+// Enums
 enum DIFF
 {
 	EASY = 0,
@@ -23,18 +31,18 @@ enum WORLD
 
 enum SENSE
 {
-	SEE,
-	HEAR,
 	FEEL,
-	TASTE,
+	HEAR,
+	SEE,
 	SMELL,
+	TASTE,
 	NONE
 }
 
 enum GADGET
 {
 	GPS,
-	DECOY,
+	LURE,
 	TELEPORT,
 	DASH,
 	THERMAL,
@@ -44,5 +52,22 @@ enum GADGET
 enum PSTATE
 {
 	NORMAL,
-	FREEZE
+	FREEZE,
+	DASH
+}
+
+enum GPS
+{
+	PLAYER,
+	AIRBORNE,
+	GROUND,
+	ENEMY
+}
+
+enum LISTTYPE
+{
+	OPTIONS,
+	GRAPHICS,
+	AUDIO,
+	CONTROLS
 }

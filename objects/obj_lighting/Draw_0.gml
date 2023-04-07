@@ -52,7 +52,7 @@ else
 							_lightLen++;
 						}
 					
-						draw_circle((x-_cx) + lengthdir_x(_lightLen, _pointDir), (y - _cy) + lengthdir_y(_lightLen, _pointDir), 50, true);
+						//draw_circle((x-_cx) + lengthdir_x(_lightLen, _pointDir), (y - _cy) + lengthdir_y(_lightLen, _pointDir), 50, true);
 						draw_sprite_ext(spr_lightSourceFlashlight, 
 										0, x - _cx, y - _cy,
 										_lightLen/(5*_spriteWidth), // Width. Expands as the light gets longer

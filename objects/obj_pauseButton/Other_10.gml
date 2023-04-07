@@ -23,7 +23,7 @@ switch(bText) // Does different actions based on its text
 		break;
 		
 	case "Resume":
-		with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
+		//with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
 		with(pauseSpawner) event_user(0); // Unpause game
 		break;
 	
@@ -68,6 +68,11 @@ switch(bText) // Does different actions based on its text
 		logVal("new volume", global.volume);
 		break;
 		
+	case "Reset To Default":
+		log("resetting to defaults");
+		with(obj_loadAndSaveKeybinds) event_user(0); // Reset to default event
+		break;
+	
 	default:
 		show_debug_message("No button task assigned to this button");
 }

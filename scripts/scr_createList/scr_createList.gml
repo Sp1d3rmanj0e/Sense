@@ -63,6 +63,7 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			addButton(_buttonArr, "Sight Hotkey", true, [getUnicodeString(global.kb_keyHotkey3), "Press any key..."]);
 			addButton(_buttonArr, "Smell Hotkey", true, [getUnicodeString(global.kb_keyHotkey4), "Press any key..."]);
 			addButton(_buttonArr, "Taste Hotkey", true, [getUnicodeString(global.kb_keyHotkey5), "Press any key..."]);
+			addButton(_buttonArr, "Reset To Default", true);
 			break;
 			
 		case LISTTYPE.AUDIO:

@@ -26,18 +26,19 @@ switch(bText) // Does different actions based on its text
 		with(obj_pauseList) destroyGen(0); // Destroy all lists and children of said lists (buttons)
 		with(pauseSpawner) event_user(0); // Unpause game
 		break;
-		
+	
+	// If any hotkey button is pressed, activate the change hotkey button
 	case "Move Left":
 	case "Move Right":
 	case "Move Up":
 	case "Move Down":
 	case "Interact":
 	case "Activate Gadget":
-	case "Sense 1 Hotkey":
-	case "Sense 2 Hotkey":
-	case "Sense 3 Hotkey":
-	case "Sense 4 Hotkey":
-	case "Sense 5 Hotkey":
+	case "Touch Hotkey":
+	case "Hearing Hotkey":
+	case "Sight Hotkey":
+	case "Smell Hotkey": 
+	case "Taste Hotkey": 
 	 
 		if (selected == 1) // Entering keybind mode
 		{
@@ -63,6 +64,7 @@ switch(bText) // Does different actions based on its text
 		
 	case "Volume":
 		global.volume = selected;
+		audio_master_gain(global.volume * 25);
 		logVal("new volume", global.volume);
 		break;
 		

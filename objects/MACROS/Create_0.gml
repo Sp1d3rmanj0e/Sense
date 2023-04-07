@@ -4,7 +4,7 @@ global.lostSenses = [];
 // Pause menu
 global.settingKeybind = false;
 global.fullscreen = true;
-global.volume = 0;
+global.volume = 2;
 global.arachnaphobiaMode = false;
 
 

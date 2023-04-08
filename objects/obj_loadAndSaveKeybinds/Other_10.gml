@@ -12,3 +12,6 @@ global.kb_keyHotkey2 =			def_keyHotkey2;
 global.kb_keyHotkey3 =			def_keyHotkey3;
 global.kb_keyHotkey4 =			def_keyHotkey4;
 global.kb_keyHotkey5 =			def_keyHotkey5;
+
+// Save the default keybinds to the computer
+with(obj_loadAndSaveKeybinds) saveKeybindsToFile();

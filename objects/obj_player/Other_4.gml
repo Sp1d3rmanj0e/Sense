@@ -40,8 +40,19 @@ curGadget = global.nextRoundGadget;
 // (Accounting for the room restarting multiple times, 
 // we don't want to inundate the lostGadgets array with
 // several of the same gadget)
+var _gadgetAlreadyLost = false
 for (var i = 0; i < array_length(global.lostGadgets); i++)
 {
-	array_push(global.lostGadgets, curGadget);
+	
+	if (global.lostGadgets[i] == curGadget)
+		_gadgetAlreadyLost = true;
 }
+
+if (!_gadgetAlreadyLost)
+{
+	array_push(global.lostGadgets, curGadget);
+	log("gadget was not already lost");
+	log(string(global.lostGadgets));
+}
+	
 #endregion

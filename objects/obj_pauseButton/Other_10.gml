@@ -18,7 +18,7 @@ switch(bText) // Does different actions based on its text
 		
 	case "Return to Main Menu":
 		with(pauseSpawner) event_user(0); // Unpause game
-		resetGlobalVars();
+		//resetGlobalVars();
 		room_goto(rm_intro);
 		break;
 		

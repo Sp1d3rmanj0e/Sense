@@ -7,4 +7,5 @@ function resetGlobalVars(){
 	resetLostGadgets();
 	global.nextRoundGadget = GADGET.NONE;
 	global.level = 1;
+	logImportant("RESETTING GLOBAL VARS")
 }

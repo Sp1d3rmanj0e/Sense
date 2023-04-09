@@ -38,6 +38,8 @@ function getMaxSense()
 	var _maxCounter = 0;
 	var _maxSense = SENSE.NONE;
 	
+	log(string(global.counters));
+	
 	// Loop through all 5 senses
 	for (var i = 0; i < 5; i++)
 	{
@@ -47,26 +49,14 @@ function getMaxSense()
 		// higher than the current max counter
 		if (_counter > _maxCounter) {
 			_maxCounter = _counter;				// Store the highest counter value
-			_maxSense   = numToSense(i); // Store the enum of said counter
+			_maxSense   = i;					// Store the enum of said counter
 		}
 	}
 	
+	logVal("max sense", _maxSense);
+	
 	// Return the sense most used
 	return _maxSense;
-}
-
-// Turns the number index into the enum version (SENSE.)
-function numToSense(_num)
-{
-	switch(_num)
-	{
-		case 0: return SENSE.SEE;
-		case 1: return SENSE.HEAR;
-		case 2: return SENSE.FEEL;
-		case 3: return SENSE.TASTE;
-		case 4: return SENSE.SMELL;
-		default: return SENSE.NONE;
-	}
 }
 
 function resetCounters()

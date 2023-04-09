@@ -80,7 +80,9 @@ for (var gadget = 0; gadget < numButtons; gadget++) {
 								"Instances", obj_button,
 								{
 									text : _buttonName,
-									executeCode : [set_gadget_to_use,gadgetToCheck]
+									executeCode : [set_gadget_to_use,gadgetToCheck],
+									condition : "nextRoundGadget",
+									valueForCondition : gadgetToCheck
 								});
 	}
 	

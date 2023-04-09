@@ -58,9 +58,12 @@ switch(state)
 	
 	case GPS.ENEMY:
 		
-		// Follow new enemy
-		x = trackId.x;
-		y = trackId.y;
+		if (instance_exists(trackId))
+		{
+			// Follow new enemy
+			x = trackId.x;
+			y = trackId.y;
+		}
 		
 	break;
 }

@@ -20,7 +20,7 @@ function deactivateSense(_sense)
 	resetCounters(); // Reset so it doesn't carry to the next round
 }
 
-global.counters   = [0, 0, 0, 0, 0]; // How much of each sense was used (Five 0s for each sense)
+global.counters = [0, 0, 0, 0, 0]; // How much of each sense was used (Five 0s for each sense)
 
 // Increments the counter based on which sense was used
 function incrCounter(_sense)
@@ -77,6 +77,11 @@ function resetCounters()
 function resetLostSenses()
 {
 	global.lostSenses = [];
+}
+
+function resetLostGadgets()
+{
+	global.lostGadgets = [];
 }
 
 function getLoseSenseSequence(_sense)

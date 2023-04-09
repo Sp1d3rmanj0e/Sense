@@ -23,3 +23,9 @@ function scr_button(_num){
 	}
 	show_debug_message(global.difficulty);
 }
+
+function set_gadget_to_use(_gadget)
+{
+	global.nextRoundGadget = _gadget;
+	logVal("next round gadget set to", global.nextRoundGadget);
+}

@@ -32,4 +32,16 @@ hardcoreMode = scr_diffStats(false, false, false, true);
 walkSp       = 4;
 
 origWalkSp = walkSp; // Save walk speed just in case
+
+curGadget = global.nextRoundGadget;
+
+// Add the new gadget to the list of broken gadgets
+// for next round only if it isn't already on there
+// (Accounting for the room restarting multiple times, 
+// we don't want to inundate the lostGadgets array with
+// several of the same gadget)
+for (var i = 0; i < array_length(global.lostGadgets); i++)
+{
+	array_push(global.lostGadgets, curGadget);
+}
 #endregion

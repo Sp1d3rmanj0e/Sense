@@ -11,6 +11,7 @@
     {"id":{"name":"spr_blocks","path":"sprites/spr_blocks/spr_blocks.yy",},"order":9,},
     {"id":{"name":"MACROS","path":"objects/MACROS/MACROS.yy",},"order":0,},
     {"id":{"name":"scr_spider","path":"scripts/scr_spider/scr_spider.yy",},"order":0,},
+    {"id":{"name":"home_screen_vinagrette","path":"sprites/home_screen_vinagrette/home_screen_vinagrette.yy",},"order":11,},
     {"id":{"name":"obj_night_vision_helmet","path":"objects/obj_night_vision_helmet/obj_night_vision_helmet.yy",},"order":1,},
     {"id":{"name":"snd_FlashlightOn","path":"sounds/snd_FlashlightOn/snd_FlashlightOn.yy",},"order":1,},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},"order":2,},

@@ -63,7 +63,7 @@ switch(bText) // Does different actions based on its text
 		
 	case "Volume":
 		global.volume = selected;
-		audio_master_gain(global.volume * 25);
+		audio_master_gain((global.volume * 25)/50);
 		logVal("new volume", global.volume);
 		break;
 		

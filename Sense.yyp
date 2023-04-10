@@ -51,6 +51,7 @@
     {"id":{"name":"spr_sanityDemon2","path":"sprites/spr_sanityDemon2/spr_sanityDemon2.yy",},"order":1,},
     {"id":{"name":"spr_dev_sprite","path":"sprites/spr_dev_sprite/spr_dev_sprite.yy",},"order":6,},
     {"id":{"name":"spr_resGlitches","path":"sprites/spr_resGlitches/spr_resGlitches.yy",},"order":5,},
+    {"id":{"name":"spr_bed_white","path":"sprites/spr_bed_white/spr_bed_white.yy",},"order":13,},
     {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"order":7,},
     {"id":{"name":"obj_soundIcon","path":"objects/obj_soundIcon/obj_soundIcon.yy",},"order":1,},
     {"id":{"name":"scr_play_sound_at","path":"scripts/scr_play_sound_at/scr_play_sound_at.yy",},"order":5,},

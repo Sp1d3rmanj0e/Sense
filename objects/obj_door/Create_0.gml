@@ -1,10 +1,7 @@
 // Door vars
 
-// Get whether a front or side door
-rotated = (image_angle != 0);
-
 // Get the correct sprite perspective
-if (rotated) // Not Straight Up
+if ((image_angle % 180) != 0) // Not Vertical
 {
 	sprite_index = spr_door_left;
 }

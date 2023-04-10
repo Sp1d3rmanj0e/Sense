@@ -8,4 +8,7 @@
 // Deactivate enemies
 instance_destroy(enemies);
 
+// Stop sanity demon from spawning
+instance_destroy(demonSpawner);
+
 alarm[0] = 3 * room_speed;

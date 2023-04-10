@@ -87,16 +87,6 @@ function takeDmg(_objectIndexOfEnemy) // Enemy can call this when able to hurt y
 									{
 										enemyThatKilledPlayer : _objectIndexOfEnemy
 									});
-			/*
-			if (global.difficulty == DIFF.HARDER)
-			{ // Hardcore mode (restart after one hit)
-				game_restart();
-			}
-			else
-			{ // Anything else (restart round after all lives lost)
-				room_restart();
-			}
-			*/
 		}
 	}
 }

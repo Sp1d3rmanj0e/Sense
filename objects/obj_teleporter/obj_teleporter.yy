@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_teleporter",
   "spriteId": {
-    "name": "spr_teleporter",
-    "path": "sprites/spr_teleporter/spr_teleporter.yy",
+    "name": "spr_teleporter_pad",
+    "path": "sprites/spr_teleporter_pad/spr_teleporter_pad.yy",
   },
   "solid": false,
   "visible": true,

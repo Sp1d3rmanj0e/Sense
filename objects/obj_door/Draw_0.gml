@@ -7,18 +7,27 @@ lightFrames = (lightFrames + sprite_get_speed(spr_door_front_light) / room_speed
 // Draw the door light if ending door
 if (roomTarget != noone)
 {
-	if (rotated)
+	switch(image_angle % 180)
 	{
-		draw_sprite(spr_door_left_light, lightFrames, x, y);
-		draw_sprite_ext(spr_door_left_light, lightFrames, x, y, -1, 1, 0, c_white, 1);
-	}
-	else
-	{
-		draw_sprite(spr_door_front_light, lightFrames, x, y);
-		draw_sprite_ext(spr_door_front_light, lightFrames, x, y, -1, 1, 0, c_white, 1);
+		case -90:	// Left
+					draw_sprite_ext(spr_door_left_light, lightFrames, x, y, -1, 1, 0, c_white, 1);
+			break;
+		case 0:		// Up
+					draw_sprite(spr_door_front_light, lightFrames, x, y);
+			break;
+		case 90:	// Right
+					draw_sprite(spr_door_left_light, lightFrames, x, y);
+			break;
+		case 180:	// Down
+					draw_sprite_ext(spr_door_front_light, lightFrames, x, y, 1, -1, 0, c_white, 1);
+			break;
 	}
 }
 
 // Draw the door
 draw_self();
+
+draw_text(x, y, string(image_angle));
+draw_text(x, y+20, string(image_angle % 180));
+
 				

@@ -45,6 +45,4 @@ draw_self();
 	shader_reset();
  }
 
-
-
 depth = 100 - y/room_height*100 + layerDepth;

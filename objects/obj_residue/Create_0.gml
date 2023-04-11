@@ -1,8 +1,5 @@
 /// @description
 
-// Go just below everything on the layer
-depth++;
-
 // Properties
 realResidue = noone; // Actual residue
 glitched = false; // If spawned by the mimic

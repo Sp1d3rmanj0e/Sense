@@ -17,8 +17,11 @@ if (openable) _frame += 2;
 image_index = _frame;
 
 // Draw darkness under the door if it's the ending door
-draw_set_color(c_black);
-draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
+if (roomTarget != noone)
+{
+	draw_set_color(c_black);
+	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, false);
+}
 
 // Draw the door
 draw_self();

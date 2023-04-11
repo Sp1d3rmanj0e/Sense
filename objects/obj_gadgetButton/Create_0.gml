@@ -12,7 +12,7 @@ function dash()
 	
 	if (!instance_exists(obj_dash)) // Not activated
 	{
-		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_dash);
+		instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_dash);
 	}
 	else // Activated
 	{
@@ -32,7 +32,7 @@ function lure()
 		instance_destroy(obj_lure);
 	
 	// Create a new lurew
-	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_lure);
+	instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_lure);
 }
 
 /**
@@ -48,7 +48,7 @@ function gps()
 	if (!instance_exists(obj_gps)) // Not activated
 	{
 		// Create the GPS to be shot
-		instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_gps);
+		instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_gps);
 	}
 	else // Activated
 	{
@@ -69,12 +69,14 @@ function teleport()
 	{
 		// Create a teleporter if none exist
 		if (!instance_exists(obj_teleporter)) {
-			instance_create_layer(x,y,"Instances",obj_teleporter);
+			instance_create_layer(x,y,"Structures",obj_teleporter);
 		}
 		else // Otherwise, teleport back to teleporter
 		{
 			x = obj_teleporter.x;
 			y = obj_teleporter.y;
+			
+			// Break the the teleporter
 			instance_destroy(obj_teleporter);
 		}
 	}

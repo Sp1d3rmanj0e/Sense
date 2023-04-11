@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_teleporter_device",
+  "name": "obj_teleporterBroken",
   "spriteId": {
-    "name": "spr_teleporter_item",
-    "path": "sprites/spr_teleporter_item/spr_teleporter_item.yy",
+    "name": "spr_teleporter_pad_broken",
+    "path": "sprites/spr_teleporter_pad_broken/spr_teleporter_pad_broken.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,9 +24,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

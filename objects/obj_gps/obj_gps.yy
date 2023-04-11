@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_gps",
   "spriteId": {
-    "name": "spr_GPS_item_active",
-    "path": "sprites/spr_GPS_item_active/spr_GPS_item_active.yy",
+    "name": "spr_GPS_item",
+    "path": "sprites/spr_GPS_item/spr_GPS_item.yy",
   },
   "solid": false,
   "visible": true,

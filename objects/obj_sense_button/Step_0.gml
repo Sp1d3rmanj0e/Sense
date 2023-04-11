@@ -21,7 +21,7 @@ var _scale = lerp(minSize,maxSize,hover);
 image_xscale = _scale;
 image_yscale = _scale;
 
-
+/*
 var _clicked = ((point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2)) && (mouse_check_button_pressed(mb_left)));
 var _hotkeyPressed = (keyboard_check_pressed(ord(string(hotkey))));
 
@@ -42,3 +42,4 @@ if  ((_clicked) || (_hotkeyPressed)) && (!deactivated)
 		}
 	}
 }
+*/

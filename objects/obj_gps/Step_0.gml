@@ -58,9 +58,15 @@ switch(state)
 	
 	case GPS.ENEMY:
 		
-		// Follow new enemy
-		x = trackId.x;
-		y = trackId.y;
+		sprite_index = spr_GPS_item_active;
+		image_angle = 0;
+		
+		if (instance_exists(trackId))
+		{
+			// Follow new enemy
+			x = trackId.x;
+			y = trackId.y;
+		}
 		
 	break;
 }

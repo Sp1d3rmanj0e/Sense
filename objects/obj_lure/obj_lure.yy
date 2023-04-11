@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_lure",
   "spriteId": {
-    "name": "spr_door_left",
-    "path": "sprites/spr_door_left/spr_door_left.yy",
+    "name": "spr_placed_distraction_box",
+    "path": "sprites/spr_placed_distraction_box/spr_placed_distraction_box.yy",
   },
   "solid": false,
   "visible": true,

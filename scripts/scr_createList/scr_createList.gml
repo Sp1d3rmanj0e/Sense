@@ -8,8 +8,7 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 		generation : _gen,
 		buttonParent : _parent
 	});
-	
-	logImportant("Created list");
+
 	
 	// Create an array to contain button data
 	var _buttonArr = [];
@@ -47,19 +46,27 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			break;
 			
 		case LISTTYPE.GRAPHICS:
-			addButton(_buttonArr, "Arachnaphobia Mode", true, ["On", "Off"]);
-			addButton(_buttonArr, "Fullscreen", true, ["On", "Off"]);
+			addButton(_buttonArr, "Arachnaphobia Mode", true, ["Off", "On"], global.arachnaphobiaMode);
+			addButton(_buttonArr, "Fullscreen", true, ["Off", "On"], global.fullscreen);
 			break;
 			
 		case LISTTYPE.CONTROLS:
-			addButton(_buttonArr, "Move Left", true);
-			addButton(_buttonArr, "Move Right", true);
-			addButton(_buttonArr, "Move Up", true);
-			addButton(_buttonArr, "Move Down", true);
+			addButton(_buttonArr, "Move Left", true, [getUnicodeString(global.kb_keyLeft), "Press any key..."]);
+			addButton(_buttonArr, "Move Right", true, [getUnicodeString(global.kb_keyRight), "Press any key..."]);
+			addButton(_buttonArr, "Move Up", true, [getUnicodeString(global.kb_keyUp), "Press any key..."]);
+			addButton(_buttonArr, "Move Down", true, [getUnicodeString(global.kb_keyDown), "Press any key..."]);
+			addButton(_buttonArr, "Interact", true, [getUnicodeString(global.kb_keyInteract), "Press any key..."]);
+			addButton(_buttonArr, "Activate Gadget", true, [getUnicodeString(global.kb_keyGadgetActivate), "Press any key..."]);
+			addButton(_buttonArr, "Touch Hotkey", true, [getUnicodeString(global.kb_keyHotkey1), "Press any key..."]);
+			addButton(_buttonArr, "Hearing Hotkey", true, [getUnicodeString(global.kb_keyHotkey2), "Press any key..."]);
+			addButton(_buttonArr, "Sight Hotkey", true, [getUnicodeString(global.kb_keyHotkey3), "Press any key..."]);
+			addButton(_buttonArr, "Smell Hotkey", true, [getUnicodeString(global.kb_keyHotkey4), "Press any key..."]);
+			addButton(_buttonArr, "Taste Hotkey", true, [getUnicodeString(global.kb_keyHotkey5), "Press any key..."]);
+			addButton(_buttonArr, "Reset To Default", true);
 			break;
 			
 		case LISTTYPE.AUDIO:
-			addButton(_buttonArr, "Volume", false, ["10%", "25%", "50%", "75%", "100%"]);
+			addButton(_buttonArr, "Volume", false, ["0%", "25%", "50%", "75%", "100%"], global.volume);
 			break;
 	}
 	

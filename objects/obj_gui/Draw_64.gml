@@ -40,4 +40,29 @@ if (instance_exists(obj_player))
 	
 	// Draw healthbar
 	draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);
+	
+	/*
+	#region create Health bar
+
+	var _healthbarVPadding = 100; // Creating space at the bottom/top of the screen
+								 // where the healthbar is not drawn
+								 
+	// Dimensions of the healthbar
+	var _healthbarTop = _healthbarVPadding
+	var _healthbarBottom = camera_get_view_height(view_camera[0]) - _healthbarVPadding;
+	var _healthbarStartX = 10;
+	var _healhbarWidth = 15;
+	
+	// Healthbar data
+	var _healthPercent = obj_player.playerHealth/3 * 100;
+	
+	// Draws the healthbar on the midle left of the screen
+	// The healthbaris vertical and red
+	draw_healthbar(_healthbarStartX, _healthbarTop,
+				   _healthbarStartX + _healhbarWidth,
+				   _healthbarBottom, _healthPercent,
+				   c_dkgray, c_red, c_red, 3, true, false);
+
+	#endregion create Health bar
+	*/
 }

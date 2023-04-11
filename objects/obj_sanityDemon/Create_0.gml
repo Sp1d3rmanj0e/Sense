@@ -4,6 +4,14 @@
 // Footstep and heat
 event_inherited();
 
+// Since the sanity demon spawns later than everything else
+// we need to check separately from the original code to see
+// if the footstep sounds should be on or off at spawn in time
+if (obj_player.curSense != SENSE.HEAR)
+	audio_emitter_gain(footsteps, 0);
+else
+	audio_emitter_gain(footsteps, 1);
+
 // Aggro
 passive = false;
 

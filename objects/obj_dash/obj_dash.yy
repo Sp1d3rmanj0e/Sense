@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_dash",
   "spriteId": {
-    "name": "spr_dashTmp",
-    "path": "sprites/spr_dashTmp/spr_dashTmp.yy",
+    "name": "spr_dash_arrow",
+    "path": "sprites/spr_dash_arrow/spr_dash_arrow.yy",
   },
   "solid": false,
   "visible": true,

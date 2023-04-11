@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-logImportant("created button");
-
 // Property vars
 defaultColor = make_color_rgb(150, 50*generation + 50, 50*generation + 50);
 selColor = c_white;
@@ -13,6 +11,18 @@ valueOffset = width*(2/3);
 // Value vars
 listID = noone; // Stores a listID if the
 				// button makes a new list
+
+/*
+ Default create vars (happens before create event)
+
+ 		generation : generation,
+		bText : _button[0],
+		isToggle : _button[1],
+		options : _button[2],
+		selected : _button[3],
+		height : buttonHeight,
+		width : 300
+*/
 
 // Functions
 

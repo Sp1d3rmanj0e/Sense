@@ -5,3 +5,5 @@ event_inherited();
 
 if (!stunned)
 	script_execute(stateScript);
+	
+with(obj_player) screenShake(other.anger/5);

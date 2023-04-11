@@ -20,6 +20,11 @@ if (!instance_exists(demonSpawner))
 if (!instance_exists(pauseSpawner))
 	instance_create_layer(0, 0, "GUI", pauseSpawner);
 
+// Spawn the sense wheel
+if (!instance_exists(obj_senseWheel))
+	instance_create_layer(camera_get_view_width(view_camera[0]) - sprite_get_width(obj_senseWheel),
+							sprite_get_height(obj_senseWheel), "GUI", obj_senseWheel);
+
 #region player stats
 // Get stats based on the current difficulty
 playerHealth = scr_diffStats(3, 2, 1, 1); // Reset player health every round
@@ -27,4 +32,27 @@ hardcoreMode = scr_diffStats(false, false, false, true);
 walkSp       = 4;
 
 origWalkSp = walkSp; // Save walk speed just in case
+
+curGadget = global.nextRoundGadget;
+
+// Add the new gadget to the list of broken gadgets
+// for next round only if it isn't already on there
+// (Accounting for the room restarting multiple times, 
+// we don't want to inundate the lostGadgets array with
+// several of the same gadget)
+var _gadgetAlreadyLost = false
+for (var i = 0; i < array_length(global.lostGadgets); i++)
+{
+	
+	if (global.lostGadgets[i] == curGadget)
+		_gadgetAlreadyLost = true;
+}
+
+if (!_gadgetAlreadyLost)
+{
+	array_push(global.lostGadgets, curGadget);
+	log("gadget was not already lost");
+	log(string(global.lostGadgets));
+}
+	
 #endregion

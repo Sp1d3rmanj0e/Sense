@@ -24,6 +24,9 @@ if (!activated) && (roomTarget != noone)
 	// Make player lose that sense
 	deactivateSense(_mostUsedSense);
 	
+	// Increment level counter
+	global.level++;
+	
 	// Freeze player and remove UI for best view
 	obj_player.state = PSTATE.FREEZE;
 	clearScreen();

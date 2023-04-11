@@ -65,4 +65,18 @@ if (instance_exists(obj_player))
 
 	#endregion create Health bar
 	*/
+	
+
+	
+	// Bar values
+	var _healthPercent = obj_player.playerHealth/3 * 100;
+	var _usesPercent = 3/6 * 100; // Fix this later
+	
+	// Draw the bars
+	draw_healthbar(healthbarStart, topPadding, barEnd, topPadding+barHeight,
+					_healthPercent, c_dkgray, healtbarColor, healtbarColor, 1, true, false);
+	draw_healthbar(usesBarStart, topPadding*2 + barHeight, barEnd, topPadding*2 + barHeight*2,
+					_usesPercent, c_dkgray, usesBarColor, usesBarColor, 1, true, false);
+	
+	
 }

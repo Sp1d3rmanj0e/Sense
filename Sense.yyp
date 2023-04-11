@@ -219,6 +219,7 @@
     {"id":{"name":"spr_mysteryResidue","path":"sprites/spr_mysteryResidue/spr_mysteryResidue.yy",},"order":1,},
     {"id":{"name":"spr_roll_device_item_active","path":"sprites/spr_roll_device_item_active/spr_roll_device_item_active.yy",},"order":10,},
     {"id":{"name":"spr_sight_damaged","path":"sprites/spr_sight_damaged/spr_sight_damaged.yy",},"order":8,},
+    {"id":{"name":"spr_healBarOutline","path":"sprites/spr_healBarOutline/spr_healBarOutline.yy",},"order":8,},
     {"id":{"name":"spr_janitor","path":"sprites/spr_janitor/spr_janitor.yy",},"order":0,},
     {"id":{"name":"snd_DoorOpen1","path":"sounds/snd_DoorOpen1/snd_DoorOpen1.yy",},"order":3,},
     {"id":{"name":"spr_wallLight","path":"sprites/spr_wallLight/spr_wallLight.yy",},"order":2,},

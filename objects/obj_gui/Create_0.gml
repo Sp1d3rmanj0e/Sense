@@ -26,4 +26,31 @@ beats = ds_list_create();
 //decSprites[GADGET.NIGHTVIS] = [spr_night_vision_side_animation_left, spr_night_vision_side_animation_right]
 //decSprites[GADGET.TASER]    = [spr_taser_side_animation_left, spr_taser_side_animation_right];
 //decSprites[GADGET.TELEPORT] = [spr_teleport_side_animation_left, spr_teleport_side_animation_right];
-decSprites[GADGET.NONE]     = [noone, noone];
+//decSprites[GADGET.NONE]     = [noone, noone];
+
+#region healthbars
+// View properties
+camWidth = camera_get_view_width(view_camera[0]);
+	
+// Bar properties
+healthbarWidth = 500;
+usesBarWidth = 400;
+barHeight = 20;
+rightPadding = 128; // Push the bars left from the right wall by this value
+topPadding = 10; // Spacing between the roof and other bars
+	
+// Bar locations
+barEnd			= camWidth - rightPadding;
+healthbarStart	= barEnd - healthbarWidth;
+usesBarStart	= barEnd - usesBarWidth;
+
+// Bar colors
+healtbarColor = make_color_rgb(158, 11, 15);
+usesBarColor = #7A95A1;
+#endregion healthbars
+
+#region heartrate monitor
+
+
+
+#endregion heartrate monitor

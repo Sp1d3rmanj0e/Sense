@@ -41,6 +41,7 @@ if (instance_exists(obj_player))
 	// Draw healthbar
 	draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);
 	
+	/*
 	#region create Health bar
 
 	var _healthbarVPadding = 100; // Creating space at the bottom/top of the screen
@@ -63,4 +64,5 @@ if (instance_exists(obj_player))
 				   c_dkgray, c_red, c_red, 3, true, false);
 
 	#endregion create Health bar
+	*/
 }

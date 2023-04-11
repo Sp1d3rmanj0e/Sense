@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "@senses",
-    "path": "folders/Sprites/@senses.yy",
+    "name": "Sense Icons",
+    "path": "folders/Sprites/@senses/Sense Icons.yy",
   },
 }

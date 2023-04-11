@@ -46,3 +46,5 @@ draw_self();
  }
 
 depth = 100 - y/room_height*100 + layerDepth;
+
+draw_text(x, y, depth);

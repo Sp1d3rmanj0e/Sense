@@ -3,6 +3,17 @@
 // Inherit the parent event
 event_inherited();
 
+// Get the maximum number of uses for the selected gadget
+numGadgetUsesLeft = 0;
+switch(obj_player.curGadget)
+{
+	case GADGET.DASH:		numGadgetUsesLeft = 5; break;
+	case GADGET.GPS:		numGadgetUsesLeft = 1; break;
+	case GADGET.LURE:		numGadgetUsesLeft = 2; break;
+	case GADGET.TELEPORT:	numGadgetUsesLeft = 3; break;
+	case GADGET.THERMAL:	numGadgetUsesLeft = 3; break;
+}
+
 // Functions for the gadget
 function dash()
 {
@@ -12,11 +23,16 @@ function dash()
 	
 	if (!instance_exists(obj_dash)) // Not activated
 	{
-		instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_dash);
+		if (numGadgetUsesLeft > 0)
+		{
+			instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_dash);
+			numGadgetUsesLeft--;
+		}
 	}
 	else // Activated
 	{
 		instance_destroy(obj_dash);
+		numGadgetUsesLeft++;
 	}
 	
 }
@@ -27,12 +43,17 @@ function dash()
  */
 function lure()
 {
-	// Destroy any existing lures
-	if (instance_exists(obj_lure))
-		instance_destroy(obj_lure);
+	if (numGadgetUsesLeft > 0)
+	{
+		numGadgetUsesLeft--;
 	
-	// Create a new lurew
-	instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_lure);
+		// Destroy any existing lures
+		if (instance_exists(obj_lure))
+			instance_destroy(obj_lure);
+	
+		// Create a new lurew
+		instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_lure);
+	}
 }
 
 /**
@@ -47,11 +68,18 @@ function gps()
 	// Check if the gadget is already activated
 	if (!instance_exists(obj_gps)) // Not activated
 	{
-		// Create the GPS to be shot
-		instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_gps);
+		if (numGadgetUsesLeft > 0)
+		{
+			numGadgetUsesLeft--;
+		
+			// Create the GPS to be shot
+			instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_gps);
+		}
 	}
 	else // Activated
 	{
+		numGadgetUsesLeft++;
+		
 		// Recall the GPS (Player decided not to use it)
 		instance_destroy(obj_gps);
 	}
@@ -65,37 +93,44 @@ function gps()
  */
 function teleport()
 {
-	with(obj_player)
+	if (numGadgetUsesLeft > 0)
 	{
-		// Create a teleporter if none exist
-		if (!instance_exists(obj_teleporter)) {
-			instance_create_layer(x,y,"Structures",obj_teleporter);
-		}
-		else // Otherwise, teleport back to teleporter
+		with(obj_player)
 		{
-			x = obj_teleporter.x;
-			y = obj_teleporter.y;
+			// Create a teleporter if none exist
+			if (!instance_exists(obj_teleporter)) {
+				other.numGadgetUsesLeft--;
+				instance_create_layer(x,y,"Structures",obj_teleporter);
+			}
+			else // Otherwise, teleport back to teleporter
+			{
+				x = obj_teleporter.x;
+				y = obj_teleporter.y;
 			
-			// Break the the teleporter
-			instance_destroy(obj_teleporter);
+				// Break the the teleporter
+				instance_destroy(obj_teleporter);
+			}
 		}
 	}
 }
 
 function thermal()
 {
-	function createHeat()
+	if (numGadgetUsesLeft > 0)
 	{
-		var _id = instance_create_layer(x, y, "Effects", obj_heat);
-		_id.followID = id;
-	}
-		if (!instance_exists(obj_heat))
+		function createHeat()
 		{
+			var _id = instance_create_layer(x, y, "Effects", obj_heat);
+			_id.followID = id;
+		}
+			if (!instance_exists(obj_heat))
+			{
 	
-		with(obj_wallLight)
-			createHeat();
+			with(obj_wallLight)
+				createHeat();
 	
-		with(enemies)
-			createHeat();
+			with(enemies)
+				createHeat();
+		}
 	}
 }

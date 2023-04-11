@@ -1,13 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-<<<<<<< HEAD:sprites/spr_bed/spr_bed.yy
-  "name": "spr_bed",
-  "bboxMode": 2,
-=======
   "name": "spr_bed_white",
   "bboxMode": 0,
->>>>>>> f193c4fb8d1a6138d156c4ffe4ba56470374f3aa:sprites/spr_bed_white/spr_bed_white.yy
   "collisionKind": 1,
   "type": 0,
   "origin": 0,
@@ -17,7 +12,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 7,
   "bbox_right": 59,
-  "bbox_top": 33,
+  "bbox_top": 8,
   "bbox_bottom": 60,
   "HTile": false,
   "VTile": false,
@@ -30,8 +25,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 8,
+  "gridY": 8,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4a736f16-375e-431a-928e-2174889f09d6",},
   ],
@@ -50,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e9411e2f-aee6-43d3-9d17-f5ec4f66a335","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a736f16-375e-431a-928e-2174889f09d6","path":"sprites/spr_bed_white/spr_bed_white.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"14c9ed53-1765-4e3d-85ab-2661931fc034","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4a736f16-375e-431a-928e-2174889f09d6","path":"sprites/spr_bed_white/spr_bed_white.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -74,7 +69,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "living room",
-    "path": "folders/Sprites/furniture/living room.yy",
+    "name": "living room_bedroom",
+    "path": "folders/Sprites/furniture/living room_bedroom.yy",
   },
 }

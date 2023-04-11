@@ -23,6 +23,12 @@ if (curSense == SENSE.FEEL)
 	}
 }
 
+// Draw pseudo shadows
+// If you are further from a light, the player appears darker
+var _darkness = clamp(125 - distance_to_object(obj_wallLight), 0, 125);
+var _darknessBlend = make_color_rgb(_darkness, _darkness, _darkness);
+image_blend = _darknessBlend;
+
 draw_self();
 
 /*

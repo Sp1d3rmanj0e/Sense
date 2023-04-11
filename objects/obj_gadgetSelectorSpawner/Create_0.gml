@@ -1,5 +1,8 @@
 /// @description
 
+// Set the default selected gadget to none
+global.nextRoundGadget = GADGET.NONE;
+
 function getGadgetName(_gadget)
 {
 	switch(_gadget)

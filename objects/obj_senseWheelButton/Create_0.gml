@@ -14,14 +14,35 @@ rotationOffset = 0;
 
 function switch_sense(_sense)
 {
-	with(parent) // Tell parent to set this button as the selected button
-		change_sense(_sense);
+	// If the button is pressed and the player
+	// already had that sense active, it turns
+	// off the sense until pressed again.
+	// Otherwise, it just switches to the selected
+	// sense
+	if (obj_player.curSense == _sense) // New sense is old sense
+	{
+		if (instance_exists(obj_player))
+			obj_player.curSense = SENSE.NONE;
+	}
+	else // New sense is not old sense
+	{
+		with(parent) // Tell parent to set this button as the selected button
+			change_sense(_sense);
 		
-	if (instance_exists(obj_player))
-		obj_player.curSense = _sense;
+		if (instance_exists(obj_player))
+			obj_player.curSense = _sense;
+	}
 }
 
 hotkeyButton = "";
+
+
+// Deactivate button if sense was lost
+deactivated = false
+for (var i = 0; i < array_length(global.lostSenses); i++)
+{
+	if (global.lostSenses[i] == sense) deactivated = true;
+}
 
 /*
 switch(sense)

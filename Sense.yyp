@@ -142,6 +142,7 @@
     {"id":{"name":"spr_wall_test","path":"sprites/spr_wall_test/spr_wall_test.yy",},"order":2,},
     {"id":{"name":"spr_night_vision_helmet_item_active","path":"sprites/spr_night_vision_helmet_item_active/spr_night_vision_helmet_item_active.yy",},"order":8,},
     {"id":{"name":"obj_ghost","path":"objects/obj_ghost/obj_ghost.yy",},"order":7,},
+    {"id":{"name":"spr_information_temp","path":"sprites/spr_information_temp/spr_information_temp.yy",},"order":17,},
     {"id":{"name":"scr_getFootSound","path":"scripts/scr_getFootSound/scr_getFootSound.yy",},"order":10,},
     {"id":{"name":"fnt_leaderboardButtons","path":"fonts/fnt_leaderboardButtons/fnt_leaderboardButtons.yy",},"order":2,},
     {"id":{"name":"spr_I_tv","path":"sprites/spr_I_tv/spr_I_tv.yy",},"order":13,},

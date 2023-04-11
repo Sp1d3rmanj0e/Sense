@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-sanity = 100;
-spawnCap = 0;
-maxSpawns = 12;
+sanity = 100; // Overwritten in Room Start Event
+howManyEyesOnMap = 0; // Increases as sanity decreases
+maxEyeSpawns = 120; // Max total number of eyeballs to spawn on the map
 
 // Create wall location grid
 var gridX = ceil(room_width / WORLD.CELL_SIZE);

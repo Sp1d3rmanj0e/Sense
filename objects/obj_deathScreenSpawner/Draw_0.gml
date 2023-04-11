@@ -27,12 +27,11 @@ var _jumpscareSprite = noone;
 
 switch(_enemy)
 {
-	case obj_spider:		_jumpscareSprite = spr_spiderFront; break;
-	case obj_mimic:			_jumpscareSprite = spr_mimicFront; break;
-	case obj_janitor:		_jumpscareSprite = spr_JanitorFront; break;
-	case obj_ghost:			_jumpscareSprite = spr_ghost; break;
-	case obj_sanityDemon:	_jumpscareSprite = spr_sanityDemon3; break;
-	case obj_eyeball:		_jumpscareSprite = spr_eyeFront_2; break;
+	case obj_spider:		_jumpscareSprite = spr_jumpscareSpider; break;
+	case obj_mimic:			_jumpscareSprite = spr_jumpscareMimic; break;
+	case obj_ghost:			_jumpscareSprite = spr_jumpscareGhost; break;
+	case obj_sanityDemon:	_jumpscareSprite = spr_jumpscareDemon; break;
+	case obj_eyeball:		_jumpscareSprite = spr_jumpscareEye; break;
 	default: _jumpscareSprite = spr_distraction_box_item_active;
 }
 

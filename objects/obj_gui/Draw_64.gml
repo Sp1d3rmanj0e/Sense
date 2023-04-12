@@ -3,20 +3,29 @@
 // Only draw player stats if player exists
 if (instance_exists(obj_player))
 {
+
+
+	#region draw the heartbeat sensor
+	
+		
+	
+	#endregion draw the heartbeat sensor
+
+	#region unused code
+	/*
+	
 	// Draw UI Backdrop
-	draw_sprite(spr_ui_bar, 0, 677, 746);
+	//draw_sprite(spr_ui_bar, 0, 677, 746);
 
 	// Draw a hearbeat for every instance in the ds_list
-	for (var i = 0; i < ds_list_size(beats); i++)
-	{
-		draw_sprite(spr_heart_rate, 0, ds_list_find_value(beats, i), 550);
-	}
+	//for (var i = 0; i < ds_list_size(beats); i++)
+	//{
+	//	draw_sprite(spr_heart_rate, 0, ds_list_find_value(beats, i), 550);
+	//}
 
 	// Draw heart rate covers
-	draw_sprite(spr_heart_rate_caps, 0, 677, 589);
-
+	//draw_sprite(spr_heart_rate_caps, 0, 677, 589);
 	
-	/*
 	#region Draw decorative sprite icons
 	
 	// Get the current gadget
@@ -39,7 +48,7 @@ if (instance_exists(obj_player))
 	*/
 	
 	// Draw healthbar
-	draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);
+	//draw_sprite(spr_healthBar, obj_player.playerHealth, 902, 642);
 	
 	/*
 	#region create Health bar
@@ -66,7 +75,9 @@ if (instance_exists(obj_player))
 	#endregion create Health bar
 	*/
 	
-
+	#endregion unused code
+	
+	#region Draw the healthbar and the gadget uses bar
 	
 	// Bar values
 	var _healthPercent = obj_player.playerHealth/3 * 100;
@@ -78,5 +89,5 @@ if (instance_exists(obj_player))
 	draw_healthbar(usesBarStart, topPadding*2 + barHeight, barEnd, topPadding*2 + barHeight*2,
 					_usesPercent, c_dkgray, usesBarColor, usesBarColor, 1, true, false);
 	
-	
+	#endregion Draw the healthbar and the gadget uses bar
 }

@@ -5,18 +5,19 @@ if (instance_exists(obj_player))
 {
 	if (deactivated)
 	{
-		image_index = 2; // Deactivated (Dark Gray)
+		image_index = 2; // Deactivated (Red)
 	}
 	else if (obj_player.curSense == sense)
 	{
-		image_index = 1; // Activated (Yellow)
+		image_index = 0; // Activated (Light Gray)
 	}
 	else
 	{
-		image_index = 0; // Available but not activated (Gray)
+		image_index = 1; // Available but not activated (Dark Gray)
 	}
 }
 
+// Draw self
 draw_sprite_ext(spr_sense_button, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
 
 // Get the sense sprite to represent
@@ -30,4 +31,5 @@ switch(sense)
 	case SENSE.TASTE: _sprite = spr_taste   break;
 }
 
+// Draw the sense icon on the button
 draw_sprite_ext(_sprite, 0, x, y, image_xscale*0.75, image_yscale*0.75, 0, c_white, 1);

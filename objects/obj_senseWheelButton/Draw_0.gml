@@ -52,4 +52,3 @@ _extend = 80;
 draw_text_ext_transformed(x + lengthdir_x(_extend, _angle), y + lengthdir_y(_extend, _angle),
 							hotkeyButton, 10, 200, _scale, _scale, 0);
 							
-draw_text(x, y, image_blend);

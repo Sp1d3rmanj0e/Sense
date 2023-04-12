@@ -35,7 +35,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/ui/Buttons.yy",
+    "name": "@senses",
+    "path": "folders/Objects/@senses.yy",
   },
 }

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_gadgetButton",
   "spriteId": {
-    "name": "spr_sense_button",
-    "path": "sprites/spr_sense_button/spr_sense_button.yy",
+    "name": "spr_gadget_button",
+    "path": "sprites/spr_gadget_button/spr_gadget_button.yy",
   },
   "solid": false,
   "visible": true,

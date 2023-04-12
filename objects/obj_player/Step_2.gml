@@ -8,7 +8,7 @@ var _camX = x - _camWidth/2;
 var _camY = y - _camHeight/2;
 
 // Camera does not go out of map bounds
-_camX = clamp(_camX, 0, room_width - _camWidth);
+_camX = clamp(_camX, 0, room_width - _camWidth + 150);
 _camY = clamp(_camY, 0, room_height - 500); // -500 so the camera doesn't block the
 											// bottom of the screen
 

@@ -58,3 +58,18 @@ usesBarColor = #7A95A1;
 
 
 #endregion heartrate monitor
+
+// Functions
+
+function check_if_sense_is_lost(_sense)
+{
+	var _isValidSense = true
+	
+	for (var lostSenses = 0; lostSenses < array_length(global.lostSenses); lostSenses++)
+	{
+		if (_sense == global.lostSenses[lostSenses])
+			_isValidSense = false;
+	}
+	
+	return _isValidSense;
+}

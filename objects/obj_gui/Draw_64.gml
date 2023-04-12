@@ -81,7 +81,13 @@ if (instance_exists(obj_player))
 	
 	// Bar values
 	var _healthPercent = obj_player.playerHealth/3 * 100;
-	var _usesPercent = 3/6 * 100; // Fix this later
+	
+	var _usesPercent = 0;
+	if (instance_exists(obj_gadgetButton))
+		with(obj_gadgetButton)
+		{
+			_usesPercent = numGadgetUsesLeft/startingGadgetUses * 100;
+		}
 	
 	// Draw the bars
 	draw_healthbar(healthbarStart, topPadding, barEnd, topPadding+barHeight,

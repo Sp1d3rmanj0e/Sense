@@ -14,6 +14,9 @@ switch(obj_player.curGadget)
 	case GADGET.THERMAL:	numGadgetUsesLeft = 3; break;
 }
 
+// Stores the original value for the uses bar in the GUI object
+startingGadgetUses = numGadgetUsesLeft;
+
 // Functions for the gadget
 function dash()
 {

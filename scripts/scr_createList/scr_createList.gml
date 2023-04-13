@@ -46,7 +46,7 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			break;
 			
 		case LISTTYPE.GRAPHICS:
-			addButton(_buttonArr, "Arachnaphobia Mode", true, ["Off", "On"], global.arachnaphobiaMode);
+			addButton(_buttonArr, "Arachnaphobia", true, ["Off", "On"], global.arachnaphobiaMode);
 			addButton(_buttonArr, "Fullscreen", true, ["Off", "On"], global.fullscreen);
 			break;
 			

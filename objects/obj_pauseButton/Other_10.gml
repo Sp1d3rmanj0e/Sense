@@ -57,7 +57,7 @@ switch(bText) // Does different actions based on its text
 		window_set_fullscreen(global.fullscreen);
 		break;
 		
-	case "Arachnaphobia Mode":
+	case "Arachnaphobia":
 		global.arachnaphobiaMode = selected;
 		break;
 		

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Property vars
-defaultColor = make_color_rgb(150, 50*generation + 50, 50*generation + 50);
+defaultColor = make_color_rgb(150, 50*generation + 65, 50*generation + 65);
 selColor = c_white;
 
 titleOffset = width*0.25;

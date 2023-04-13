@@ -14,6 +14,4 @@ if (instance_exists(activationObj))
 		case obj_teleporter:	teleport_GUI();		break;
 		case obj_heat:			thermal_GUI();		break;
 	}
-	
-	draw_text(10, 30, "active");
 }

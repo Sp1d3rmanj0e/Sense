@@ -1,7 +1,5 @@
 /// @description Get the activation object
 
-instance_destroy();
-
 // The activation object is the object the gadgetGUI looks
 // for to start drawing its stats.
 // Ex. Only once the teleporter is placed, will it draw the
@@ -23,7 +21,7 @@ switch(activationObj)
 			draw_text(0, camHeight - 20, "Press any direction to dash.");
 		}
 	break;
-	case obj_gui:
+	case obj_gps:
 		function GPS_GUI()
 		{
 			draw_circle(50, camHeight-50, 50, false);

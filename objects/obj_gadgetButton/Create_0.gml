@@ -135,5 +135,6 @@ function thermal()
 			with(enemies)
 				createHeat();
 		}
+		numGadgetUsesLeft--;
 	}
 }

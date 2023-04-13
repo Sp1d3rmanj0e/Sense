@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "structures",
-    "path": "folders/Sprites/structures.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

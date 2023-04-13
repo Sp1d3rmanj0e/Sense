@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "janitor",
-    "path": "folders/Sprites/enemies/janitor.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

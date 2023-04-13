@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "GUIcons",
-    "path": "folders/Objects/ui/GUIcons.yy",
+    "path": "folders/Objects/Z_Archived/GUIcons.yy",
   },
 }

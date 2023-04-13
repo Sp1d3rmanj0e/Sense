@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ui",
-    "path": "folders/Sprites/ui.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

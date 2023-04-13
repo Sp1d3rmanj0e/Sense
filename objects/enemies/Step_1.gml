@@ -44,7 +44,7 @@ if (heatSpawnTimer > 0) heatSpawnTimer--;
 else
 {
 	heatSpawnTimer = heatSpawnTime;
-	instance_create_layer(x, y, "Instances", obj_smellResidue);
+	instance_create_layer(x, y, "Instances", obj_scent);
 }
 
 // Deal damage to the player if close enough + but not the janitor

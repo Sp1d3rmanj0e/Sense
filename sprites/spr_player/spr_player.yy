@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

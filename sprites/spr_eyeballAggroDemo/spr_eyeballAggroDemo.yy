@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "aggro",
-    "path": "folders/Sprites/enemies/eyeball/aggro.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

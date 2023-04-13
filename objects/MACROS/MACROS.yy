@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "Z_Archived",
+    "path": "folders/Objects/Z_Archived.yy",
   },
 }

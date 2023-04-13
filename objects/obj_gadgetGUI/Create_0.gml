@@ -8,8 +8,6 @@
 // activationObj initialized in constructor of obj_gadgetButton
 
 // Properties
-gadgetColor = #7A95A1;
-
 camHeight = camera_get_view_height(view_camera[0]);
 
 // Only put the function we'll be using this round in memory
@@ -33,7 +31,7 @@ switch(activationObj)
 			draw_text(0, camHeight - 35, "lure uptime");
 			var _gadgetTimePercent = obj_lure.alarm[0]/obj_lure.uptime*100;
 			draw_healthbar(0, camHeight-15, 50, camHeight, _gadgetTimePercent, 
-						   c_black, gadgetColor, gadgetColor, 1, true, true);
+						   c_black, global.color_gadget, global.color_gadget, 1, true, true);
 		}
 	break;
 	case obj_teleporter:
@@ -48,7 +46,7 @@ switch(activationObj)
 			draw_text(0, camHeight - 35, "thermal uptime");
 			var _gadgetTimePercent = obj_heat.alarm[0]/obj_heat.uptime*100;
 			draw_healthbar(0, camHeight-15, 50, camHeight, _gadgetTimePercent, 
-						   c_black, gadgetColor, gadgetColor, 1, true, true);
+						   c_black, global.color_gadget, global.color_gadget, 1, true, true);
 		}
 	break;
 }

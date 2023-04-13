@@ -345,7 +345,6 @@
     {"name":"inst_47D1AD44","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},
     {"name":"inst_640341B9","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},
     {"name":"inst_25E99610","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},
-    {"name":"inst_69E44F38","path":"rooms/rm_Gwall_5/rm_Gwall_5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

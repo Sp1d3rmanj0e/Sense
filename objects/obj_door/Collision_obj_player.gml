@@ -8,7 +8,7 @@ function clearScreen()
 	instance_destroy(obj_sense_button);
 }
 
-// Only activate once
+// Only activate once.  Start the cutscene
 if (!activated) && (roomTarget != noone)
 {
 	activated = true;

@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_headphone_reminder",
-  "spriteId": {
-    "name": "Sprite208",
-    "path": "sprites/Sprite208/Sprite208.yy",
-  },
+  "name": "obj_inputLeaderboardData",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -28,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "spriteless",
+    "path": "folders/Objects/spriteless.yy",
   },
 }

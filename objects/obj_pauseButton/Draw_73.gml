@@ -78,7 +78,7 @@ else
 // Reset Draw Settings
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_set_font(fnt_normal);
+draw_set_font(-1);
 
 // Draw box around button
 draw_roundrect(x, y, x+width, y+height, true);

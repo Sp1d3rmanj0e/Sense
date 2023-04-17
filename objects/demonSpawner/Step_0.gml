@@ -9,18 +9,19 @@ else if (!instance_exists(obj_sanityDemon))
 	instance_create_layer(startX, startY, "Instances", obj_sanityDemon);
 }
 
-// In decimal form - 1 to 0
 var _percentInsane = sanity/startSanity;
 
-// Gets the num of sanity entities based on current sanity
-spawnCap = (0.5- _percentInsane) * maxSpawns * 0.5; // spawnCap is amt of entities at 0 sanity
+
 
 // Change player heart rate based on _percentInsane
 if (instance_exists(obj_gui))
 {
 	obj_gui.beatSpawnTime = _percentInsane * 90 + 30; // 30 is fastest, 120 is slowest
 }
-if (instance_number(obj_sanitySpawn) < spawnCap)
+
+// Gets the num of sanity entities based on current sanity
+howManyEyesOnMap = (0.5- _percentInsane) * (maxEyeSpawns / 0.5); // spawnCap is amt of entities at 0 sanity
+if (instance_number(obj_sanitySpawn) < howManyEyesOnMap)
 {
 	var _x = -1;
 	var _y = -1;
@@ -30,8 +31,8 @@ if (instance_number(obj_sanitySpawn) < spawnCap)
 		var _width = ds_grid_width(wallLoc);
 		var _height = ds_grid_height(wallLoc);
 		
-		var _randX = irandom(_width);
-		var _randY = irandom(_height);
+		var _randX = irandom(_width-1);
+		var _randY = irandom(_height-1);
 		
 		if (ds_grid_get(wallLoc, _randX, _randY) == 1)
 		{

@@ -55,9 +55,10 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height))
 }
 
 
-// Middle Center Alignment
+// Middle Center Alignment + Font
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
+draw_set_font(fnt_settings);
 
 // Draw only the title when the button
 // has no options.  Otherwise, draw both.
@@ -74,9 +75,10 @@ else
 	draw_text(x + width/2, y+height/2, bText);	
 }
 
-// Reset Draw Alignment
+// Reset Draw Settings
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+draw_set_font(-1);
 
 // Draw box around button
 draw_roundrect(x, y, x+width, y+height, true);

@@ -257,7 +257,7 @@ function draw_array(_array)
 		}
 	}
 	
-	draw_set_font(fnt_normal);
+	draw_set_font(-1);
 }
 
 function add_score(_name, _score, _difficulty, _category)

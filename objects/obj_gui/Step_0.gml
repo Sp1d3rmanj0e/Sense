@@ -1,6 +1,6 @@
-/// @description Move heartbeat across screen
+/// @description Move heartbeat across screen UNUSED
 
-
+/*
 #region beat move code
 // Increment all x locations in ds_list (remove if too far along)
 for (var i = 0; i < ds_list_size(beats); i++)

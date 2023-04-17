@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "spriteless",
-    "path": "folders/Objects/spriteless.yy",
+    "name": "controllers",
+    "path": "folders/Objects/spriteless/controllers.yy",
   },
 }

@@ -1,3 +1,4 @@
+/*
 global.difficulty = DIFF.EASY;
 global.lostSenses = [];
 global.lostGadgets = [];

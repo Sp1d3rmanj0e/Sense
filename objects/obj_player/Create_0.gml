@@ -26,7 +26,7 @@ curGadget = GADGET.DASH;
 curSense = SENSE.NONE;
 
 // Sense vars
-feelRad = 2 * WORLD.CELL_SIZE;
+feelRad = 3 * WORLD.CELL_SIZE;
 
 // special vars
 trashCollected = 0;

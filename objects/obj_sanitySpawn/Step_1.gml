@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Hide if near player
 
 // Disappear if player gets too close
 if (hiding == false)

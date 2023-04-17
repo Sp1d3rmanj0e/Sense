@@ -29,7 +29,7 @@ function createButtons()
 			options : _button[2],
 			selected : _button[3],
 			height : buttonHeight,
-			width : 300
+			width : 350
 		});
 		
 		ds_list_add(buttonIDs, _buttonID); // Add the button ID to the list

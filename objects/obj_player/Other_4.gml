@@ -21,9 +21,9 @@ if (!instance_exists(pauseSpawner))
 	instance_create_layer(0, 0, "GUI", pauseSpawner);
 
 // Spawn the sense wheel
-if (!instance_exists(obj_senseWheel))
-	instance_create_layer(camera_get_view_width(view_camera[0]) - sprite_get_width(obj_senseWheel),
-							sprite_get_height(obj_senseWheel), "GUI", obj_senseWheel);
+//if (!instance_exists(obj_senseWheel))
+//	instance_create_layer(camera_get_view_width(view_camera[0]) - sprite_get_width(obj_senseWheel),
+//							sprite_get_height(obj_senseWheel) + 200, "GUI", obj_senseWheel);
 
 #region player stats
 // Get stats based on the current difficulty

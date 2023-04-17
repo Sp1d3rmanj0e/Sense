@@ -283,7 +283,7 @@
   "eventToFunction": {},
   "eventStubScript": null,
   "parent": {
-    "name": "Sequences",
-    "path": "folders/Sequences.yy",
+    "name": "loseSense",
+    "path": "folders/Sequences/loseSense.yy",
   },
 }

@@ -151,4 +151,4 @@ else // Sense Use time
 }
 
 // Reset font
-draw_set_font(fnt_normal);
+draw_set_font(-1);

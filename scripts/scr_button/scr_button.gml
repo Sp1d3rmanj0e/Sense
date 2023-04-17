@@ -29,3 +29,14 @@ function set_gadget_to_use(_gadget)
 	global.nextRoundGadget = _gadget;
 	logVal("next round gadget set to", global.nextRoundGadget);
 }
+
+function open_pause_menu()
+{
+	with(pauseSpawner)	event_user(1); // Pause manually
+}
+
+function start_intro_video()
+{
+	room_goto(rm_startAnimation);
+	instance_create_layer(0,0, "Instances", obj_startVideoSpawner);
+}

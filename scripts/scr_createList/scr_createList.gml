@@ -44,10 +44,17 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			addButton(_buttonArr, "Return to Main Menu", true);
 			addButton(_buttonArr, "Resume", true);
 			break;
+		
+		case LISTTYPE.OPTIONSHOME:
+			addButton(_buttonArr, "Graphics", true);
+			addButton(_buttonArr, "Controls", true);
+			addButton(_buttonArr, "Audio", true);
+			addButton(_buttonArr, "Resume", true);
+			break;
 			
 		case LISTTYPE.GRAPHICS:
-			addButton(_buttonArr, "Arachnaphobia Mode", true, ["Off", "On"], global.arachnaphobiaMode);
-			addButton(_buttonArr, "Fullscreen", true, ["Off", "On"], global.fullscreen);
+			addButton(_buttonArr, "Arachnaphobia", true, ["Off", "On"], global.arachnaphobiaMode);
+			addButton(_buttonArr, "Fullscreen", true, ["Off", "On"], window_get_fullscreen());
 			break;
 			
 		case LISTTYPE.CONTROLS:

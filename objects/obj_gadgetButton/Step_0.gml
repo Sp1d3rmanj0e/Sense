@@ -29,4 +29,6 @@ if (position_meeting(mouse_x, mouse_y, id)
 	}
 	
 	log("clicked");
+	
+	event_user(0);
 }

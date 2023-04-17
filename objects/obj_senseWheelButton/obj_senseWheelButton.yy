@@ -35,7 +35,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "@senses",
-    "path": "folders/Objects/@senses.yy",
+    "name": "Z_Archived",
+    "path": "folders/Objects/Z_Archived.yy",
   },
 }

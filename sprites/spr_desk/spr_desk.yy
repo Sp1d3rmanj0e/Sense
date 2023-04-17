@@ -69,7 +69,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "living room_bedroom",
-    "path": "folders/Sprites/furniture/living room_bedroom.yy",
+    "name": "tables",
+    "path": "folders/Sprites/furniture/living room_bedroom/tables.yy",
   },
 }

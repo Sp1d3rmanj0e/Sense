@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GUIcons",
-    "path": "folders/Objects/ui/GUIcons.yy",
+    "name": "Logo",
+    "path": "folders/Objects/ui/Logo.yy",
   },
 }

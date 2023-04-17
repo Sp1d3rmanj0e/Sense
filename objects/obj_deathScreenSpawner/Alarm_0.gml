@@ -11,7 +11,7 @@ if (global.difficulty != DIFF.HARDER)
 {
 	
 	// Not Hardcore mode
-	instance_create_layer(_camX + _camWidth/2, _camY + _camHeight * (4/5), "GUI", obj_button,
+	instance_create_layer(_camX + _camWidth/2, _camY + _camHeight * (11/12), "GUI", obj_button,
 	{
 		executeCode : room_restart,
 		roomCode : room,
@@ -22,7 +22,7 @@ else
 {
 
 	// Hardcore mode
-	instance_create_layer(_camX + _camWidth/2, _camY + _camHeight * (4/5), "GUI", obj_button,
+	instance_create_layer(_camX + _camWidth/2, _camY + _camHeight * (11/12), "GUI", obj_button,
 	{
 		executeCode : game_restart,
 		roomCode : rm_intro,

@@ -1,6 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// If not clickable (deactivated), turn red
+if (deactivated) 
+{
+	image_blend = c_red;
+}
+// If selected, but turned off, turn grey
+else if (obj_senseWheel.curSense == sense) && (obj_player.curSense == SENSE.NONE) 
+{
+	image_blend = c_grey;
+}
+// If not turned off and not deactivated, turn white
+else 
+{
+	image_blend = c_white; 
+}
+
 image_angle = startAngle + rotationOffset;
 
 var _selected = (sense == parent.curSense);
@@ -35,3 +51,4 @@ draw_sprite_ext(senseSprite, 0,
 _extend = 80;
 draw_text_ext_transformed(x + lengthdir_x(_extend, _angle), y + lengthdir_y(_extend, _angle),
 							hotkeyButton, 10, 200, _scale, _scale, 0);
+							

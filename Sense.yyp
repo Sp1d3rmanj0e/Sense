@@ -301,6 +301,7 @@
     {"id":{"name":"spr_difficultyExt","path":"sprites/spr_difficultyExt/spr_difficultyExt.yy",},"order":2,},
     {"id":{"name":"spr_echo_side_animation_left","path":"sprites/spr_echo_side_animation_left/spr_echo_side_animation_left.yy",},"order":2,},
     {"id":{"name":"spr_dash_arrow","path":"sprites/spr_dash_arrow/spr_dash_arrow.yy",},"order":7,},
+    {"id":{"name":"spr_Basement_tileset","path":"sprites/spr_Basement_tileset/spr_Basement_tileset.yy",},"order":5,},
     {"id":{"name":"obj_sense_logo_blank","path":"objects/obj_sense_logo_blank/obj_sense_logo_blank.yy",},"order":1,},
     {"id":{"name":"testSpawner","path":"objects/testSpawner/testSpawner.yy",},"order":3,},
     {"id":{"name":"spr_roll_device_item","path":"sprites/spr_roll_device_item/spr_roll_device_item.yy",},"order":9,},

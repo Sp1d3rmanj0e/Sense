@@ -1,7 +1,7 @@
 /// @description Save Leaderboard Data
 
 // Get the array of data from leaderboard
-var _saveData = [obj_leaderboard.topTimeCompleted, obj_leaderboard.topSenseUseTime];
+var _saveData = [global.topTimeCompleted, global.topSenseUseTime];
 
 // Turn all the data into a JSON string and save it via a buffer
 var _string = json_stringify(_saveData);

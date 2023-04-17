@@ -13,7 +13,7 @@ if (file_exists("savedgame.save"))
 	// The array is stored as follows
 	/*
 	 * [
-	 *  topTimeCompleted [
+	 *  global.topTimeCompleted [
 	 *
 	 *   easy [ top12 [ [TITLE, VALUE] ] ]
 	 *   medium [ "" ]
@@ -22,7 +22,7 @@ if (file_exists("savedgame.save"))
 	 *
 	 *  ]
 	 *
-	 *  topSenseUseTime [ "" ]
+	 *  global.topSenseUseTime [ "" ]
 	 * ]
 	 *
 	 * In other words
@@ -32,6 +32,11 @@ if (file_exists("savedgame.save"))
 	var _topTimeCompleted = _loadData[0];
 	var _topSenseUseTime = _loadData[1];
 	
-	obj_leaderboard.topTimeCompleted = _topTimeCompleted;
-	obj_leaderboard.topSenseUseTime = _topSenseUseTime;
+	global.topTimeCompleted = _topTimeCompleted;
+	global.topSenseUseTime = _topSenseUseTime;
+}
+else
+{
+	global.topSenseUseTime  = [];
+	global.topTimeCompleted = [];
 }

@@ -143,11 +143,11 @@ for (var i = 0; i < 2; i++)
 
 if (categorySel == 0) // Time completed
 {
-	draw_array(topTimeCompleted[difficultySel]);
+	draw_array(global.topTimeCompleted[difficultySel]);
 }
 else // Sense Use time
 {
-	draw_array(topSenseUseTime[difficultySel]);
+	draw_array(global.topSenseUseTime[difficultySel]);
 }
 
 // Reset font

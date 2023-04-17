@@ -42,25 +42,33 @@ function saveKeybindsToFile()
 }
 
 // Gets a custom keybind set from the computer
+// If none exist, use default
 function importKeybinds()
 {
-	var _buffer = buffer_load("keybinds.save");
-	var _string = buffer_read(_buffer, buffer_string);
-	buffer_delete(_buffer);
+	if (file_exists("keybinds.save"))
+	{
+		var _buffer = buffer_load("keybinds.save");
+		var _string = buffer_read(_buffer, buffer_string);
+		buffer_delete(_buffer);
 	
-	var _loadData = json_parse(_string);
+		var _loadData = json_parse(_string);
 	
-	global.kb_keyLeft			= _loadData[0];
-	global.kb_keyRight			= _loadData[1];
-	global.kb_keyUp				= _loadData[2];
-	global.kb_keyDown			= _loadData[3];
-	global.kb_keyInteract		= _loadData[4];
-	global.kb_keyGadgetActivate = _loadData[5];
-	global.kb_keyHotkey1		= _loadData[6];
-	global.kb_keyHotkey2		= _loadData[7];
-	global.kb_keyHotkey3		= _loadData[8];
-	global.kb_keyHotkey4		= _loadData[9];
-	global.kb_keyHotkey5		= _loadData[10];
+		global.kb_keyLeft			= _loadData[0];
+		global.kb_keyRight			= _loadData[1];
+		global.kb_keyUp				= _loadData[2];
+		global.kb_keyDown			= _loadData[3];
+		global.kb_keyInteract		= _loadData[4];
+		global.kb_keyGadgetActivate = _loadData[5];
+		global.kb_keyHotkey1		= _loadData[6];
+		global.kb_keyHotkey2		= _loadData[7];
+		global.kb_keyHotkey3		= _loadData[8];
+		global.kb_keyHotkey4		= _loadData[9];
+		global.kb_keyHotkey5		= _loadData[10];
+	}
+	else
+	{
+		event_user(0);
+	}
 }
 
 // Returns whether a custom keybind set exists or not
@@ -68,3 +76,5 @@ function keybindsExist()
 {
 	return (file_exists("keybinds.save"));
 }
+
+importKeybinds();

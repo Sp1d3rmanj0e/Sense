@@ -1,6 +1,11 @@
 
 // Contains any and all leaderboard functions
 
+/*
+ * > Takes a player name, score, difficulty, and category
+ * > Finds its rank among other players in the category
+ * > Places their score on the leaderboard if applicable
+ */
 function add_score(_name, _score, _difficulty, _category)
 {
 	// Initialize a var to store the array pointer
@@ -15,7 +20,6 @@ function add_score(_name, _score, _difficulty, _category)
 	
 	if (_numPanels != 0)
 	{
-		log("pushing normally");
 		for (var i = 0; i < _numPanels; i++)
 		{
 			var _curScore = _array[_difficulty][i][1];
@@ -37,25 +41,26 @@ function add_score(_name, _score, _difficulty, _category)
 				}
 				
 				// Pop the last value
-				array_pop(_array[_difficulty]);
+				// (Only necessary if leaderboard at max capacity)
+				if (_numPanels >= numButtons)
+					array_pop(_array[_difficulty]);
 				
 				// Insert new score in the new empty space
 				_array[_difficulty][i] = [_name, number_to_time(_score, true)];
-				
-				log("found new position");
 				
 				return; // Stop the function immediately after adding the value
 			}
 		}
 		
-		if (_numPanels < 12)
+		// If there's an empty spot on the leaderboard,
+		// fill that spot with new data
+		if (_numPanels < numButtons)
 		{
 			array_push(_array[_difficulty], [_name, number_to_time(_score, true)]);
 		}
 	}
 	else
 	{
-		log("pushing abnormally");
 		array_push(_array[_difficulty], [_name, number_to_time(_score, true)]);
 	}
 }

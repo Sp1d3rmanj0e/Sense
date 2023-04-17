@@ -275,9 +275,15 @@ function draw_array(_array)
 
 
 // Tests
-add_score("HIGHEST SCORE", 2, 0, 0);
-add_score("HIGHEST SCORE1", 2.02, 0, 0);
-//add_score("HIGHEST SCORE0.5", 0.01, 0, 0);
-add_score("HIGHEST SCOR2E", 1, 0, 0);
-//add_score("HIGHEST SCORE3", 4.01, 0, 0);
-//add_score("HIGHEST SCORE4", 100.01, 0, 0);
+add_score("HIGHEST SCORE", 0.01, 0, 0);
+add_score("HIGHEST SCORE1", 1, 0, 0);
+add_score("HIGHEST SCORE0.5", 0.5, 0, 0);
+add_score("HIGHEST SCOR2", 2, 0, 0);
+add_score("HIGHEST SCORE3", 3, 0, 0);
+add_score("HIGHEST SCORE4", 4, 0, 0);
+add_score("HIGHEST SCOR5", 5, 0, 0);
+add_score("HIGHEST SCORE6", 6, 0, 0);
+add_score("HIGHEST SCORE7", 7, 0, 0);
+add_score("HIGHEST SCOR8", 8, 0, 0);
+add_score("HIGHEST SCORE9", 9, 0, 0);
+add_score("HIGHEST SCORE10", 0.02, 0, 0);

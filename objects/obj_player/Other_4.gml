@@ -31,6 +31,8 @@ playerHealth = scr_diffStats(3, 2, 1, 1); // Reset player health every round
 hardcoreMode = scr_diffStats(false, false, false, true);
 walkSp       = 4;
 
+origPlayerHealth = playerHealth; // Save starting player health to compare it to
+								 // Existing health
 origWalkSp = walkSp; // Save walk speed just in case
 
 curGadget = global.nextRoundGadget;

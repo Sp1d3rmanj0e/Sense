@@ -2,6 +2,8 @@
 
 load_leaderboard_data();
 
+keyboard_string = "";
+
 // Start cursor flashing
 alarm[0] = 1;
 cursorVisible = false;

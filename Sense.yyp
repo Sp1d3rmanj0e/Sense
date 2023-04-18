@@ -26,7 +26,6 @@
     {"id":{"name":"spr_dresser_short_side","path":"sprites/spr_dresser_short_side/spr_dresser_short_side.yy",},"order":2,},
     {"id":{"name":"obj_gadgetGUI","path":"objects/obj_gadgetGUI/obj_gadgetGUI.yy",},"order":5,},
     {"id":{"name":"snd_ConcreteFootsteps","path":"sounds/snd_ConcreteFootsteps/snd_ConcreteFootsteps.yy",},"order":1,},
-    {"id":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},"order":14,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":0,},
     {"id":{"name":"spr_ghostAggro","path":"sprites/spr_ghostAggro/spr_ghostAggro.yy",},"order":1,},
     {"id":{"name":"rm_tut_thermal","path":"rooms/rm_tut_thermal/rm_tut_thermal.yy",},"order":4,},
@@ -196,6 +195,7 @@
     {"id":{"name":"spr_smell_damaged","path":"sprites/spr_smell_damaged/spr_smell_damaged.yy",},"order":10,},
     {"id":{"name":"sq_loseSenseSmell","path":"sequences/sq_loseSenseSmell/sq_loseSenseSmell.yy",},"order":4,},
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},"order":4,},
+    {"id":{"name":"sq_endScene","path":"sequences/sq_endScene/sq_endScene.yy",},"order":9,},
     {"id":{"name":"snd_GravelFootsteps","path":"sounds/snd_GravelFootsteps/snd_GravelFootsteps.yy",},"order":4,},
     {"id":{"name":"scr_button","path":"scripts/scr_button/scr_button.yy",},"order":4,},
     {"id":{"name":"obj_difficultyDesc","path":"objects/obj_difficultyDesc/obj_difficultyDesc.yy",},"order":0,},
@@ -464,7 +464,6 @@
     {"roomId":{"name":"rm_tut_lure","path":"rooms/rm_tut_lure/rm_tut_lure.yy",},},
     {"roomId":{"name":"rm_objective","path":"rooms/rm_objective/rm_objective.yy",},},
     {"roomId":{"name":"rm_tut_lobby","path":"rooms/rm_tut_lobby/rm_tut_lobby.yy",},},
-    {"roomId":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},},
     {"roomId":{"name":"rm_setScore","path":"rooms/rm_setScore/rm_setScore.yy",},},
   ],
   "Folders": [

@@ -11,24 +11,37 @@ function clearScreen()
 // Only activate once.  Start the cutscene
 if (!activated) && (roomTarget != noone)
 {
-	activated = true;
+	if (roomTarget != rm_setScore)
+	{
+		activated = true;
 	
-	// Destroy all enemies
-	with(enemies) instance_destroy();
+		// Destroy all enemies
+		with(enemies) instance_destroy();
 
-	// Create a cutscene
-	var _mostUsedSense = getMaxSense();
-	var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
-	TransitionStart(_loseSenseSequence, roomTarget);
+		// Create a cutscene
+		var _mostUsedSense = getMaxSense();
+		var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
+		TransitionStart(_loseSenseSequence, roomTarget);
 	
-	// Make player lose that sense
-	deactivateSense(_mostUsedSense);
+		// Make player lose that sense
+		deactivateSense(_mostUsedSense);
 	
-	// Increment level counter
-	global.level++;
+		// Increment level counter
+		global.level++;
 	
-	// Freeze player and remove UI for best view
-	obj_player.state = PSTATE.FREEZE;
-	clearScreen();
+		// Freeze player and remove UI for best view
+		obj_player.state = PSTATE.FREEZE;
+		clearScreen();
+	}
+	else
+	{
+		activated = true;
+		
+		TransitionStart(sq_endScene, rm_setScore);
+		
+		// Freeze player and remove UI for best view
+		obj_player.state = PSTATE.FREEZE;
+		clearScreen();
+	}
 }
 

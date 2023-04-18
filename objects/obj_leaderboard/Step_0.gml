@@ -7,4 +7,6 @@ if (keyboard_check(vk_control) && keyboard_check(vk_shift) && (keyboard_check_pr
 {
 	global.topSenseUseTime  = [[], [], [], []];
 	global.topTimeCompleted = [[], [], [], []];
+	
+	save_leaderboard_data();
 }

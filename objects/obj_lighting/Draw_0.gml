@@ -56,7 +56,7 @@ else
 						draw_sprite_ext(spr_lightSourceFlashlight, 
 										0, x - _cx, y - _cy,
 										_lightLen/(5*_spriteWidth), // Width. Expands as the light gets longer
-										_lightLen/_spriteHeight, // Length. +35 to bleed into wall
+										(_lightLen+25)/_spriteHeight, // Length. +35 to bleed into wall
 										_pointDir - 90, c_white, 1);
 					}
 				break;

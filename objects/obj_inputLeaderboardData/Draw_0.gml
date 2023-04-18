@@ -4,12 +4,10 @@
 var _timeScore  = seconds_to_minutes_decimal(global.timeCompleted);
 var _senseScore = seconds_to_minutes_decimal(global.senseUseTime);
 
-var _difficulty = 0;
-
 
 // Get player rank.  If lower than 12, don't ask for name
-var _timeRank = get_rank(_timeScore, _difficulty, 0);
-var _senseRank = get_rank(_senseScore, _difficulty, 1);
+var _timeRank = get_rank(_timeScore, global.difficulty, 0);
+var _senseRank = get_rank(_senseScore, global.difficulty, 1);
 
 // If qualifies is true, the game will ask for a name
 var _qualifies = ((_timeRank <= 10) || (_senseRank <= 10)) 

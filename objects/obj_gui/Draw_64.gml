@@ -19,13 +19,13 @@ if (instance_exists(obj_player))
 	draw_healthbar(healthbarStart, topPadding, barEnd, topPadding+barHeight,
 					_healthPercent, c_dkgray, global.color_health, global.color_health, 1, true, false);
 	draw_healthbar_divider(healthbarStart, topPadding, healthbarWidth, barHeight, 
-							obj_player.origPlayerHealth-1, 5, 2);
+							obj_player.origPlayerHealth-1, 5);
 							
 	// Draw the gadget uses bar and its divider
 	draw_healthbar(usesBarStart, topPadding*2 + barHeight, barEnd, topPadding*2 + barHeight*2,
 					_usesPercent, c_dkgray, global.color_gadget, global.color_gadget, 1, true, false);
 	draw_healthbar_divider(usesBarStart, topPadding*2 + barHeight, usesBarWidth, barHeight, 
-							obj_gadgetButton.startingGadgetUses-1, -5, 2);
+							obj_gadgetButton.startingGadgetUses-1, -5);
 	
 	#endregion Draw the healthbar and the gadget uses bar
 }

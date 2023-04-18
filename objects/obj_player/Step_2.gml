@@ -17,6 +17,9 @@ camera_set_view_pos(view_camera[0], _camX + irandom_range(-sShake, sShake), _cam
 
 // Animations
 
+// Fade in after teleporting
+if (image_alpha < 1) image_alpha += 0.05;
+
 // Animate only if player is moving
 if (hsp == 0 && vsp == 0)
 {

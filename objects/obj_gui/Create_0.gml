@@ -33,7 +33,7 @@ function check_if_sense_is_lost(_sense)
 	return _isValidSense;
 }
 
-function draw_healthbar_divider(_x, _y, _width, _height, _numDividers, _slantIntensity, _lineWidth)
+function draw_healthbar_divider(_x, _y, _width, _height, _numDividers, _slantIntensity)
 {
 	var _dividerX, _bottomY;
 	
@@ -46,6 +46,6 @@ function draw_healthbar_divider(_x, _y, _width, _height, _numDividers, _slantInt
 		_bottomY = _y + _height;
 		
 		draw_line_width(_dividerX - _slantIntensity, _y-3,
-						_dividerX + _slantIntensity, _bottomY+3, _lineWidth);
+						_dividerX + _slantIntensity, _bottomY+3, _slantIntensity*2);
 	}
 }

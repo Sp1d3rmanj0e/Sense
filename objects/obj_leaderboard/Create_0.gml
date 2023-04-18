@@ -55,7 +55,7 @@ global.topSenseUseTime  = [
 					*/
 #endregion
 
-load_leaderboard_data_server();
+load_leaderboard_data();
 
 //global.topSenseUseTime  = [[], [], [], []];
 //global.topTimeCompleted = [[], [], [], []];
@@ -252,19 +252,22 @@ function draw_array(_array)
 	var _panelHeight = (room_height - ((paddingV * 2) + (buttonHeight * 2)) - bottomPadding) / _halfOfButtons;
 	var _panelWidth = (room_width - paddingH*2 - scorePadding*2)/2//room_width /2; //(room_width - ((paddingH * 2) + (scorePadding * 2)) / 2);
 	
-	for (var i = 0; i < _length; i++)
+	if (_length > 0) // Don't attempt to read an empty array
 	{
-		if (i < _halfOfButtons) // First 5 panels
+		for (var i = 0; i < _length; i++)
 		{
-			draw_panel(paddingH + scorePadding, 
-						(paddingV + buttonHeight * 2) + _panelHeight * i + scorePadding/2,
-						_panelWidth, _panelHeight-scorePadding, i+1, _array[i]);
-		}
-		else // Last 5 panels
-		{
-			draw_panel(paddingH + scorePadding + _panelWidth, 
-						(paddingV + buttonHeight * 2) + _panelHeight * (i - _halfOfButtons) + scorePadding/2,
-						_panelWidth, _panelHeight - scorePadding, i+1, _array[i]);
+			if (i < _halfOfButtons) // First 5 panels
+			{
+				draw_panel(paddingH + scorePadding, 
+							(paddingV + buttonHeight * 2) + _panelHeight * i + scorePadding/2,
+							_panelWidth, _panelHeight-scorePadding, i+1, _array[i]);
+			}
+			else // Last 5 panels
+			{
+				draw_panel(paddingH + scorePadding + _panelWidth, 
+							(paddingV + buttonHeight * 2) + _panelHeight * (i - _halfOfButtons) + scorePadding/2,
+							_panelWidth, _panelHeight - scorePadding, i+1, _array[i]);
+			}
 		}
 	}
 	draw_set_font(-1);

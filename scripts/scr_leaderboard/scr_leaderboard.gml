@@ -90,12 +90,20 @@ function get_rank(_time, _difficulty, _category)
 	else
 		_array = global.topSenseUseTime;
 	
-	for (var i = 0; i < array_length(_array[_difficulty]); i++)
+	// Only check array if there is stuff to check in the array
+	if (array_length(_array[_difficulty]) > 0)
 	{
-		var _curScore = number_to_time(_array[_difficulty][i][1], false);
+		for (var i = 0; i < array_length(_array[_difficulty]); i++)
+		{
+			var _curScore = number_to_time(_array[_difficulty][i][1], false);
 		
-		if (_time < _curScore)
-			return i+1; // If the score did better than another one, return that new position
+			if (_time < _curScore)
+				return i+1; // If the score did better than another one, return that new position
+		}
+	}
+	else // Otherwise, return first place because it's the only value
+	{
+		return 1;
 	}
 	
 	return -1; // Did not have a top 10 rank
@@ -211,8 +219,8 @@ function load_leaderboard_data()
 	}
 	else
 	{
-		global.topSenseUseTime  = [];
-		global.topTimeCompleted = [];
+		global.topSenseUseTime  = [[],[],[],[]];
+		global.topTimeCompleted = [[],[],[],[]];
 	}
 	
 	if (global.ip != noone) load_leaderboard_data_server();

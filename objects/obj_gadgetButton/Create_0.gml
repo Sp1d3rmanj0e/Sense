@@ -34,8 +34,12 @@ function dash()
 	}
 	else // Activated
 	{
-		instance_destroy(obj_dash);
-		numGadgetUsesLeft++;
+		// Only cancel dash if not actively using it
+		if (obj_player.state != PSTATE.DASH)
+		{
+			instance_destroy(obj_dash);
+			numGadgetUsesLeft++;
+		}
 	}
 	
 }

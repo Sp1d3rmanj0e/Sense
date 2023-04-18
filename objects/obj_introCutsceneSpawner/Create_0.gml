@@ -1,3 +1,3 @@
 /// @description
 
-TransitionStart(sq_startScene, rm_selGadget);
+layID = TransitionStart(sq_startScene, rm_selGadget);

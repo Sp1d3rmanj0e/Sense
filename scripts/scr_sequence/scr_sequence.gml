@@ -13,14 +13,16 @@ function TransitionPlaceSequence(_type)
 	// Spawn sequence at camera location
 	var _camX = camera_get_view_x(view_camera[0]);
 	var _camY = camera_get_view_y(view_camera[0]);
-	layer_sequence_create(_lay, _camX, _camY, _type);
+	var _layID = layer_sequence_create(_lay, _camX, _camY, _type);
+	return _layID;
 }
 
 // Create the transition
 function TransitionStart(_type, _roomTarget)
 {
 	global.roomTarget = _roomTarget;
-	TransitionPlaceSequence(_type);
+	var _layID = TransitionPlaceSequence(_type);
+	return _layID;
 }
 
 // Switch rooms

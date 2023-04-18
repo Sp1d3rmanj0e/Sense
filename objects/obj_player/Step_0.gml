@@ -1,4 +1,4 @@
-/// @description Speed Changes + Sense Loss
+/// @description Speed Changes + Sense Loss + Sense Time Counters
 
 // Start the player speed as normal
 walkSp = origWalkSp;
@@ -25,3 +25,10 @@ if (_id != noone) && (_id.realResidue == spr_resWeb) // Check if the residue are
 // Increment sense counter
 if (curSense != SENSE.NONE)
 	incrCounter(curSense);
+
+
+// Adds 1 second to the timer every second.
+// During the scoring phase, a function will turn the seconds into
+// minutes and seconds with seconds_to_minutes_decimal()
+if (curSense != SENSE.NONE) global.senseUseTime += 0.01/room_speed;
+global.timeCompleted += 0.1/room_speed;

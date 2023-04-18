@@ -8,6 +8,10 @@
  */
 function add_score(_name, _score, _difficulty, _category)
 {
+	log("Player: " + _name + " with score: " + string(_score) + " on difficulty: " + string(_difficulty) + " on category: " + string(_category));
+
+	var _numButtons = 10;
+	
 	// Initialize a var to store the array pointer
 	var _array;
 	
@@ -42,11 +46,16 @@ function add_score(_name, _score, _difficulty, _category)
 				
 				// Pop the last value
 				// (Only necessary if leaderboard at max capacity)
-				if (_numPanels >= numButtons)
+				if (_numPanels >= _numButtons)
 					array_pop(_array[_difficulty]);
 				
 				// Insert new score in the new empty space
 				_array[_difficulty][i] = [_name, number_to_time(_score, true)];
+				
+				log(string(_array[_difficulty]));
+				logImportant("Placed " + _name + " at position: " + string(i));
+				
+				save_leaderboard_data();
 				
 				return; // Stop the function immediately after adding the value
 			}
@@ -54,7 +63,7 @@ function add_score(_name, _score, _difficulty, _category)
 		
 		// If there's an empty spot on the leaderboard,
 		// fill that spot with new data
-		if (_numPanels < numButtons)
+		if (_numPanels < _numButtons)
 		{
 			array_push(_array[_difficulty], [_name, number_to_time(_score, true)]);
 		}
@@ -63,6 +72,8 @@ function add_score(_name, _score, _difficulty, _category)
 	{
 		array_push(_array[_difficulty], [_name, number_to_time(_score, true)]);
 	}
+	
+	save_leaderboard_data();
 }
 
 function get_rank(_time, _difficulty, _category)
@@ -87,5 +98,135 @@ function get_rank(_time, _difficulty, _category)
 			return i+1; // If the score did better than another one, return that new position
 	}
 	
-	return -1; // Did not have a top 12 rank
+	return -1; // Did not have a top 10 rank
+}
+
+/*
+ * @param _num - the value to change types
+ * @param _toString - 
+ *		True: Turns a number into a string
+ *		Ex, 12.32 -> 12:32
+ *		False: Turns a string in form ##:## to a num
+ *		Ex, 12:32 -> 12.32
+ */
+function number_to_time(_num, _toString)
+{
+	// Turn the number into a string
+	_num = string(_num);
+	
+	// Initialize vars because they might be used more than once
+	var i;
+	var _charAtInd;
+	var _stringLen = string_length(_num);
+	
+	if (_toString)
+	{
+	
+	// Check if the number is in format # or #.##
+	// If it is the former, turn it into format #.##
+	// and then return it
+	var _hasDecimal = false;
+	for (i = 0; i < _stringLen; i++)
+	{
+		_charAtInd = string_char_at(_num, i);
+		
+		if (_charAtInd == ".")
+			_hasDecimal = true;
+	}
+	
+	// If it had no decimal, append :00 to the end
+	// and return it as it is
+	// Ex, 1 -> 1:00
+	if (!_hasDecimal)
+		return _num + ":00";
+
+	}
+	
+	// Replace "." with ":" (or V/V)
+	// Ex, 1.23 -> 1:23
+	var _return = "";
+	
+	for (i = 1; i < _stringLen+1; i++)
+	{
+		// Get the letter at position
+		_charAtInd = string_char_at(_num, i);
+		
+		// If the letter was ".", replace it with ":" (or V/V)
+		if ((_charAtInd == ".") && (_toString)) // . -> :
+			_return += ":";
+		else if ((_charAtInd == ":") && (!_toString)) // : -> .
+			_return += ".";
+		else
+			_return += _charAtInd; // Otherwise, just readd the same letter
+	}
+	
+	if (_toString)
+	{
+		// Return the fixed string
+		return _return;
+	}
+	else
+	{
+		// Return the number
+		return real(_return);
+	}
+}
+
+function load_leaderboard_data()
+{
+	if (file_exists("savedgame.save"))
+	{
+		var _buffer = buffer_load("savedgame.save");
+		var _string = buffer_read( _buffer, buffer_string);
+		buffer_delete(_buffer);
+	
+		var _loadData = json_parse( _string);
+	
+		show_debug_message(_loadData);
+	
+		// The array is stored as follows
+		/*
+			* [
+			*  global.topTimeCompleted [
+			*
+			*   easy [ top12 [ [TITLE, VALUE] ] ]
+			*   medium [ "" ]
+			*   hard [ "" ]
+			*   hardcore [ "" ]
+			*
+			*  ]
+			*
+			*  global.topSenseUseTime [ "" ]
+			* ]
+			*
+			* In other words
+			* [CATEGORY] > [DIFFICULTY] > [POSITION (1-12)] > [TITLE or VALUE]
+			*/
+	
+		var _topTimeCompleted = _loadData[0];
+		var _topSenseUseTime = _loadData[1];
+	
+		global.topTimeCompleted = _topTimeCompleted;
+		global.topSenseUseTime = _topSenseUseTime;
+	}
+	else
+	{
+		global.topSenseUseTime  = [];
+		global.topTimeCompleted = [];
+	}
+}
+
+function save_leaderboard_data()
+{
+	// Get the array of data from leaderboard
+	var _saveData = [global.topTimeCompleted, global.topSenseUseTime];
+
+	// Turn all the data into a JSON string and save it via a buffer
+	var _string = json_stringify(_saveData);
+	var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
+	buffer_write(_buffer, buffer_string, _string);
+	buffer_save(_buffer, "savedgame.save");
+	buffer_delete(_buffer);
+
+	show_debug_message("Game saved! " + _string);
 }

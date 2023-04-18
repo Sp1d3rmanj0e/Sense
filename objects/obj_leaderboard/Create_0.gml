@@ -55,10 +55,10 @@ global.topSenseUseTime  = [
 					*/
 #endregion
 
-//event_user(1); // Load current leaderboard stats
+load_leaderboard_data();
 
-global.topSenseUseTime  = [[], [], [], []];
-global.topTimeCompleted = [[], [], [], []];
+//global.topSenseUseTime  = [[], [], [], []];
+//global.topTimeCompleted = [[], [], [], []];
 
 colorMain   = make_color_rgb(125,0,25);
 colorFill   = make_color_rgb(147,49,69);
@@ -275,6 +275,7 @@ function draw_array(_array)
 
 
 // Tests
+/*
 add_score("HIGHEST SCORE", 0.01, 0, 0);
 add_score("HIGHEST SCORE1", 1, 0, 0);
 add_score("HIGHEST SCORE0.5", 0.5, 0, 0);

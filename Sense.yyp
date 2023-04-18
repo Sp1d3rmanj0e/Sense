@@ -385,6 +385,7 @@
     {"id":{"name":"spr_mouth","path":"sprites/spr_mouth/spr_mouth.yy",},"order":0,},
     {"id":{"name":"spr_sense_logo_blank_pink","path":"sprites/spr_sense_logo_blank_pink/spr_sense_logo_blank_pink.yy",},"order":2,},
     {"id":{"name":"snd_loseSmell","path":"sounds/snd_loseSmell/snd_loseSmell.yy",},"order":3,},
+    {"id":{"name":"spr_introCutscene","path":"sprites/spr_introCutscene/spr_introCutscene.yy",},"order":10,},
     {"id":{"name":"spr_feelRing","path":"sprites/spr_feelRing/spr_feelRing.yy",},"order":0,},
     {"id":{"name":"snd_DoorOpen3","path":"sounds/snd_DoorOpen3/snd_DoorOpen3.yy",},"order":5,},
     {"id":{"name":"spr_fire3","path":"sprites/spr_fire3/spr_fire3.yy",},"order":3,},

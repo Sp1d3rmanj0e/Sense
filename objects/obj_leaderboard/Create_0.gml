@@ -55,7 +55,7 @@ global.topSenseUseTime  = [
 					*/
 #endregion
 
-load_leaderboard_data();
+load_leaderboard_data_server();
 
 //global.topSenseUseTime  = [[], [], [], []];
 //global.topTimeCompleted = [[], [], [], []];

@@ -49,6 +49,8 @@ if (_qualifies)
 		// If clicked, submit score and go to leaderboard room
 		if (_touchingMouse && mouse_check_button_pressed(mb_left))
 		{
+			load_leaderboard_data();
+			
 			// Only add the score if it was a top 10 score
 			if (_timeRank != -1)
 				add_score(name, _timeScore, _difficulty, 0);

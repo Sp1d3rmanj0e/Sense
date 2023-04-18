@@ -214,6 +214,8 @@ function load_leaderboard_data()
 		global.topSenseUseTime  = [];
 		global.topTimeCompleted = [];
 	}
+	
+	if (global.ip != noone) load_leaderboard_data_server();
 }
 
 function save_leaderboard_data()
@@ -229,4 +231,52 @@ function save_leaderboard_data()
 	buffer_delete(_buffer);
 
 	show_debug_message("Game saved! " + _string);
+	
+	if (global.ip != noone) save_leaderboard_data_server();
+}
+
+function load_leaderboard_data_server()
+{
+	if (!instance_exists(obj_leaderboardServer))
+		instance_create_layer(0, 0, "Instances", obj_leaderboardServer)
+	
+	with(obj_leaderboardServer)
+	{
+		sendListOverUDP(global.ip, 8080, [], msgType.GET_DATA);
+	}
+}
+
+function save_leaderboard_data_server()
+{
+	
+	if (!instance_exists(obj_leaderboardServer))
+		instance_create_layer(0, 0, "Instances", obj_leaderboardServer)
+	
+	with(obj_leaderboardServer)
+	{
+		// Store the leaderboard into a single array
+		var _saveData = [global.topTimeCompleted, global.topSenseUseTime];
+
+		// Send the data to the server
+		sendListOverUDP(global.ip, 8080, _saveData, msgType.STORE_DATA);
+	}
+}
+
+// Special thanks to navidcrt at https://www.youtube.com/@navidrct for the code
+function sendListOverUDP(ip, port, data, type){
+	
+	// Connect to the server
+	network_connect_raw(global.client, ip, port);
+	
+	// Encode the data
+	array_insert(data, 0, type); // add the action command at the start of the array
+	var dataJson = json_stringify(data); // Turn the ds_list into a string
+	var data_size = string_byte_length(dataJson); // Get the byte size of the string
+	show_debug_message("> " + dataJson);
+	
+	// Send the data
+	var buffer = buffer_create(data_size, buffer_fixed, 1);
+	buffer_seek(buffer, buffer_seek_start, 0);
+	buffer_write(buffer, buffer_text, dataJson); // Add the data to the buffer
+	network_send_udp_raw(global.client, ip, port, buffer, buffer_tell(buffer)); // Send the data to server
 }

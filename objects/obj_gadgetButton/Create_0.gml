@@ -34,8 +34,12 @@ function dash()
 	}
 	else // Activated
 	{
-		instance_destroy(obj_dash);
-		numGadgetUsesLeft++;
+		// Only cancel dash if not actively using it
+		if (obj_player.state != PSTATE.DASH)
+		{
+			instance_destroy(obj_dash);
+			numGadgetUsesLeft++;
+		}
 	}
 	
 }
@@ -102,7 +106,6 @@ function teleport()
 		{
 			// Create a teleporter if none exist
 			if (!instance_exists(obj_teleporter)) {
-				other.numGadgetUsesLeft--;
 				instance_create_layer(x,y,"Structures",obj_teleporter);
 			}
 			else // Otherwise, teleport back to teleporter
@@ -110,6 +113,10 @@ function teleport()
 				x = obj_teleporter.x;
 				y = obj_teleporter.y;
 			
+				other.numGadgetUsesLeft--;
+				
+				image_alpha = 0;
+				
 				// Break the the teleporter
 				instance_destroy(obj_teleporter);
 			}

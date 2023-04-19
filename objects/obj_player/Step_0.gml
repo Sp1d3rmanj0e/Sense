@@ -1,4 +1,4 @@
-/// @description Speed Changes + Sense Loss
+/// @description Speed Changes + Sense Loss + Sense Time Counters
 
 // Start the player speed as normal
 walkSp = origWalkSp;
@@ -22,6 +22,20 @@ if (_id != noone) && (_id.realResidue == spr_resWeb) // Check if the residue are
 	walkSp *= 0.66; // Reduce speed by 1/3
 }
 
-// Increment sense counter
-if (curSense != SENSE.NONE)
+// Increment sense counter (Taste is excluded because its counter is special)
+if (curSense != SENSE.NONE) && (curSense != SENSE.TASTE)
+{
 	incrCounter(curSense);
+}
+else if (curSense == SENSE.TASTE) && (place_meeting(x, y, obj_residue))
+{
+	// Only increment the smell sense if a residue is actively being smelled
+	incrCounter(SENSE.TASTE);
+}
+
+
+// Adds 1 second to the timer every second.
+// During the scoring phase, a function will turn the seconds into
+// minutes and seconds with seconds_to_minutes_decimal()
+if (curSense != SENSE.NONE) global.senseUseTime += 0.01/room_speed;
+global.timeCompleted += 0.1/room_speed;

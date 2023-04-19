@@ -32,3 +32,20 @@ function check_if_sense_is_lost(_sense)
 	
 	return _isValidSense;
 }
+
+function draw_healthbar_divider(_x, _y, _width, _height, _numDividers, _slantIntensity)
+{
+	var _dividerX, _bottomY;
+	
+	var _spacingPerDivider = _width/(_numDividers+1);
+	
+	
+	for (var i = 0; i < _numDividers; i++)
+	{
+		_dividerX = _x + _spacingPerDivider * (i+1);
+		_bottomY = _y + _height;
+		
+		draw_line_width(_dividerX - _slantIntensity, _y-3,
+						_dividerX + _slantIntensity, _bottomY+3, _slantIntensity*2);
+	}
+}

@@ -25,8 +25,8 @@ global.counters = [0, 0, 0, 0, 0]; // How much of each sense was used (Five 0s f
 // Increments the counter based on which sense was used
 function incrCounter(_sense)
 {
-	//{SEE, HEAR, FEEL, TASTE, SMELL}
-	var _multiplier = [1, 1.2, 1.4, 3, 1.3]; // Increases the weight of using a sense. 
+	// FEEL HEAR SEE SMELL TASTE
+	var _multiplier = [1.4, 1.2, 1, 10, 3]; // Increases the weight of using a sense. 
 											 // (3 frames use time * 1.5 multiplier = 4.5 counters)
 	var _mult = _multiplier[_sense];  // Gets the multiplier for set sense
 	global.counters[_sense] += _mult; // Adds multiplier value to the sense counter

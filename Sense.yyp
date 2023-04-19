@@ -56,6 +56,7 @@
     {"id":{"name":"scr_mimic","path":"scripts/scr_mimic/scr_mimic.yy",},"order":2,},
     {"id":{"name":"scr_particles","path":"scripts/scr_particles/scr_particles.yy",},"order":13,},
     {"id":{"name":"spr_difficulty_back","path":"sprites/spr_difficulty_back/spr_difficulty_back.yy",},"order":4,},
+    {"id":{"name":"spr_net_gun_destroyed","path":"sprites/spr_net_gun_destroyed/spr_net_gun_destroyed.yy",},"order":19,},
     {"id":{"name":"rm_tut_taste","path":"rooms/rm_tut_taste/rm_tut_taste.yy",},"order":3,},
     {"id":{"name":"spr_resGoo","path":"sprites/spr_resGoo/spr_resGoo.yy",},"order":0,},
     {"id":{"name":"obj_pauseButton","path":"objects/obj_pauseButton/obj_pauseButton.yy",},"order":1,},

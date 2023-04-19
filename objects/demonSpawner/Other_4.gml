@@ -4,10 +4,10 @@ switch(global.difficulty)
 {
 	
 	case DIFF.EASY:
-		sanity = 3000;
+		sanity = 4200;
 		break;
 	case DIFF.MEDIUM:
-		sanity = 2500;
+		sanity = 3000;
 		break;
 	case DIFF.HARD:
 		sanity = 2000;

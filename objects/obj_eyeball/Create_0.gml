@@ -10,7 +10,7 @@ randomize();
 passive = false;
 
 // Sight vars
-viewConeDeg = 45;
+viewConeDeg = 30;
 maxViewDist = 5 * WORLD.CELL_SIZE;
 
 // Scripts

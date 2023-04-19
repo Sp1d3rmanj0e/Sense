@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "rm_introCutscene",
+  "name": "rm_1_introCutscene",
   "isDnd": false,
   "volume": 1.0,
   "parentRoom": null,
@@ -25,7 +25,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_65F038D2","path":"rooms/rm_introCutscene/rm_introCutscene.yy",},
+    {"name":"inst_65F038D2","path":"rooms/rm_1_introCutscene/rm_1_introCutscene.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -49,7 +49,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "start",
-    "path": "folders/Rooms/start.yy",
+    "name": "intro cutscenes",
+    "path": "folders/Rooms/start/intro cutscenes.yy",
   },
 }

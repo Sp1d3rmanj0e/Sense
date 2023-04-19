@@ -11,7 +11,9 @@ function clearScreen()
 // Only activate once.  Start the cutscene
 if (!activated) && (roomTarget != noone)
 {
-	if (roomTarget != rm_setScore)
+	var _inTheIntroCutscene = (roomTarget == rm_3_introFightCutscene) || (room == rm_4_introFightAftermath);
+	
+	if (roomTarget != rm_setScore) && (!_inTheIntroCutscene)
 	{
 		activated = true;
 	
@@ -33,7 +35,7 @@ if (!activated) && (roomTarget != noone)
 		obj_player.state = PSTATE.FREEZE;
 		clearScreen();
 	}
-	else
+	else if (roomTarget == rm_setScore) // Transitioning to leaderboard, no need to find max used sense and stuff
 	{
 		activated = true;
 		
@@ -42,6 +44,11 @@ if (!activated) && (roomTarget != noone)
 		// Freeze player and remove UI for best view
 		obj_player.state = PSTATE.FREEZE;
 		clearScreen();
+	}
+	else // In the intro cutscene stuff, just needs to go to the next room
+	{
+		room_goto(roomTarget);
+		activated = true;
 	}
 }
 

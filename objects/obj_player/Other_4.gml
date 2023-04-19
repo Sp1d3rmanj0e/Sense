@@ -1,24 +1,28 @@
 /// @description Spawn Controllers + Stats
 
-// Spawn the Player's GUI
-if (!instance_exists(obj_gui))
-	instance_create_layer(0, 0, "Instances", obj_gui);
+// Don't spawn any of this in intro cutscene
+if (room != rm_2_introHallway) && (room != rm_4_introFightAftermath)
+{
+	// Spawn the Player's GUI
+	if (!instance_exists(obj_gui))
+		instance_create_layer(0, 0, "Instances", obj_gui);
 	
-// Spawn the Sound Control
-if (!instance_exists(obj_soundControl))
-	instance_create_layer(0, 0, "Instances", obj_soundControl);
+	// Spawn the Sound Control
+	if (!instance_exists(obj_soundControl))
+		instance_create_layer(0, 0, "Instances", obj_soundControl);
 	
-// Spawn the flashlight
-if (!instance_exists(obj_flashlight))
-	instance_create_layer(x, y, "Instances", obj_flashlight);
+	// Spawn the flashlight
+	if (!instance_exists(obj_flashlight))
+		instance_create_layer(x, y, "Instances", obj_flashlight);
 	
-// Spawn the sanity demon spawner
-if (!instance_exists(demonSpawner))
-	instance_create_layer(0, 0, "Instances", demonSpawner);
+	// Spawn the sanity demon spawner
+	if (!instance_exists(demonSpawner))
+		instance_create_layer(0, 0, "Instances", demonSpawner);
 
-// Spawn the pause menu
-if (!instance_exists(pauseSpawner))
-	instance_create_layer(0, 0, "GUI", pauseSpawner);
+	// Spawn the pause menu
+	if (!instance_exists(pauseSpawner))
+		instance_create_layer(0, 0, "GUI", pauseSpawner);
+}
 
 // Spawn the sense wheel
 //if (!instance_exists(obj_senseWheel))

@@ -25,7 +25,7 @@ var host = network_create_server(network_socket_udp, port, 5);
 if (host < 0)
 {
     show_debug_message("Failed to create a broadcast server");
-    game_end();
+	global.ip = noone;
 }
 else
 {

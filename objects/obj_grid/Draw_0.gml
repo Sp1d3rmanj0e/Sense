@@ -14,5 +14,5 @@ if (keyboard_check(vk_f1))
 	}
 	draw_set_alpha(1);
 	draw_path(global.grid, x, y, true);
-
+	
 }

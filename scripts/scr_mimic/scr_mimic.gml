@@ -79,6 +79,7 @@ if (state == STATE.WANDER)
 		// Find an open space to travel to
 		while(true)
 		{
+			
 			// Choose a random spot to go to
 			var gotoX = irandom_range(1, cw - 1) * tile_size;
 			var gotoY = irandom_range(1, ch - 1) * tile_size;

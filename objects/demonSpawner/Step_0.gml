@@ -11,14 +11,6 @@ else if (!instance_exists(obj_sanityDemon))
 
 var _percentInsane = sanity/startSanity;
 
-
-
-// Change player heart rate based on _percentInsane
-if (instance_exists(obj_gui))
-{
-	obj_gui.beatSpawnTime = _percentInsane * 90 + 30; // 30 is fastest, 120 is slowest
-}
-
 // Gets the num of sanity entities based on current sanity
 howManyEyesOnMap = (0.5- _percentInsane) * (maxEyeSpawns / 0.5); // spawnCap is amt of entities at 0 sanity
 if (instance_number(obj_sanitySpawn) < howManyEyesOnMap)

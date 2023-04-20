@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Tracker",
-    "path": "folders/Sprites/player/player gadget sprites/Tracker.yy",
+    "path": "folders/Sprites/player/player special sprites/Tracker.yy",
   },
 }

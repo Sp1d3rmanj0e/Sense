@@ -28,19 +28,19 @@ if (newPath == true)
 		if (instance_number(obj_residue) > 0)
 		{
 			// Create garbage array
-			var _garbage = [];
+			var _residue = [];
 			
 			// Get number of garbage pieces on the map
-			var  _numGarbage = instance_number(obj_residue);
+			var  _numResidue = instance_number(obj_residue);
 		
 			// Look for garbage to clean up
-			for (var i = 0; i < _numGarbage; ++i;)
+			for (var i = 0; i < _numResidue; ++i;)
 			{
-			    _garbage[i] = instance_find(obj_residue,i);
+			    _residue[i] = instance_find(obj_residue,i);
 			}
 			
 			// Choose a random piece of garbage and get ID
-			targetId = _garbage[irandom(_numGarbage-1)];
+			targetId = _residue[irandom(_numResidue-1)];
 			
 			// Get x and y from ID and go there
 			var _x = targetId.x;
@@ -53,12 +53,16 @@ if (newPath == true)
 			gotoX = irandom_range(1, cw - 1) * tile_size;
 			gotoY = irandom_range(1, ch - 1) * tile_size;
 			
+			//log("Finding residue location location: (" + string(gotoX) + ", " + string(gotoY) + ")");
+			
 		}
 		else
 		{
 			// Choose a random spot to go to
 			gotoX = irandom_range(1, cw - 1) * tile_size;
 			gotoY = irandom_range(1, ch - 1) * tile_size;
+			
+			//log("Trying new location location: (" + string(gotoX) + ", " + string(gotoY) + ")");
 		}
 		
 		// Make sure that random location isn't in a wall
@@ -66,6 +70,10 @@ if (newPath == true)
 		{
 			// Break the while loop and continue the code
 			exit;
+		}
+		else
+		{
+			//log("invalid location");
 		}
 	}
 }

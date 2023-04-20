@@ -4,29 +4,14 @@ function scr_player_decoy_A(_dir){
 
 	switch(_dir)
 	{
-		case 0:
-		case 180:
-		
-			sprite_index = spr_playerSide;
-			break;
-		case 45:
-		case 135:
-
-			sprite_index = spr_playerQBack;
-			break;
-		case 90:
-			
-			sprite_index = spr_playerBack;
-			break;
-		case 225:
-		case 315:
-			
-			sprite_index = spr_playerQFront;
-			break;
-		case 270:
-			
-			sprite_index = spr_playerFront;
-			break;
+		case 0:   sprite_index = spr_player_decoy_right;		break;
+		case 45:  sprite_index = spr_player_decoy_backRight;	break;
+		case 90:  sprite_index = spr_player_decoy_back;			break;
+		case 135: sprite_index = spr_player_decoy_backLeft;		break;
+		case 180: sprite_index = spr_player_decoy_left;			break;
+		case 225: sprite_index = spr_player_decoy_frontLeft;	break;
+		case 270: sprite_index = spr_player_decoy_front;		break;
+		case 315: sprite_index = spr_player_decoy_frontRight;	break;
 	}
 
 }

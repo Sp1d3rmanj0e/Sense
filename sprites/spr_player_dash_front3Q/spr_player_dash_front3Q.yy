@@ -83,6 +83,6 @@
   "nineSlice": null,
   "parent": {
     "name": "Dash",
-    "path": "folders/Sprites/player/player gadget sprites/Dash.yy",
+    "path": "folders/Sprites/player/player special sprites/Dash.yy",
   },
 }

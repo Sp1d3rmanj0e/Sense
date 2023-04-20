@@ -39,13 +39,17 @@ function draw_healthbar_divider(_x, _y, _width, _height, _numDividers, _slantInt
 	
 	var _spacingPerDivider = _width/(_numDividers+1);
 	
-	
+	// Draw the dividers
 	for (var i = 0; i < _numDividers; i++)
 	{
 		_dividerX = _x + _spacingPerDivider * (i+1);
 		_bottomY = _y + _height;
 		
-		draw_line_width(_dividerX - _slantIntensity, _y-3,
-						_dividerX + _slantIntensity, _bottomY+3, _slantIntensity*2);
+		draw_line_width(_dividerX - _slantIntensity, _y-1,
+						_dividerX + _slantIntensity, _bottomY+1, _slantIntensity*2);
 	}
+	
+	// Draw line over and under the healthbar
+	draw_line_width(_x-1, _y+_height, _x+_width, _y+_height, _slantIntensity);
+	draw_line_width(_x-1, _y, _x+_width, _y, _slantIntensity);
 }

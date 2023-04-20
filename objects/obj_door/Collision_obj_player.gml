@@ -5,6 +5,7 @@
 function clearScreen()
 {
 	instance_destroy(obj_gui);
+	instance_destroy(obj_gadgetGUI);
 	instance_destroy(obj_sense_button);
 }
 

@@ -17,5 +17,5 @@ else // door closed
 }
 
 // Play door sound
-//if (doorOpen) playsoundAt(obj_player, 1, snd_DoorOpen1, false);
-//else		  playsoundAt(obj_player, 1, snd_DoorClose3, false);
+//if (doorOpen) audio_play_sound(snd_DoorOpen,  1, false);
+//else		  audio_play_sound(snd_DoorClose, 1, false);

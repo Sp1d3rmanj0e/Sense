@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_DoorOpen2",
+  "name": "snd_DoorOpen",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_DoorOpen2.mp3",
-  "duration": 1.306062,
+  "soundFile": "snd_DoorOpen.mp3",
+  "duration": 0.470187,
   "parent": {
     "name": "Structure",
     "path": "folders/Sounds/Structure.yy",

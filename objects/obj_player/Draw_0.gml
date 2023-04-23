@@ -1,5 +1,8 @@
 /// @description Animations, Feel Ring, Shadows
 
+// Make sure the footsteps noise emitter follows the player
+update_emitter_position(footsteps);
+
 // Make sure the hitbox stays the same no matter what sprite it is
 mask_index = spr_playerFront;
 
@@ -62,12 +65,13 @@ if (hsp == 0 && vsp == 0)
 	image_speed = 0; // Freezes on that frame
 	
 	// Pause footsteps if not moving
-	//audio_pause_sound(footCur);
+	emitter_mute(footsteps);
 }
 else // Moving
 {	
 	// Play footstep noises when moving
-	//audio_resume_sound(footCur);
+	if (curSense == SENSE.HEAR)
+		emitter_unmute(footsteps);
 	
 	image_speed = 1; // Sets animation speed to normal when moving
 	

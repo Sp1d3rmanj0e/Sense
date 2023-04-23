@@ -1,7 +1,7 @@
 /// @description Get Direction of motion + attack player + sound
 
 // Move the footstep noise to the enemy
-audio_emitter_position(footsteps, x, y, 0);
+update_emitter_position(footsteps);
 
 // Get whether enemy is moving or not
 var _moving = ((prevX - x) != 0 || (prevY - y) != 0);
@@ -11,19 +11,17 @@ if (_moving)
 	// Set new direction of motion
 	dir = point_direction(prevX, prevY, x, y);
 	
-	// Resume footstep sounds (if needed)
-	audio_emitter_gain(footsteps, 1);
+	emitter_unmute(footsteps);
 }
 else
 {
-	// Pause footstep sound (by muting it)
-	audio_emitter_gain(footsteps, 0);
+	emitter_mute(footsteps);
 }
 
 // Mute audio if player hear sense is not activated
 if (obj_player.curSense != SENSE.HEAR)
 {
-	audio_emitter_gain(footsteps, 0);
+	emitter_mute(footsteps);
 	
 	// Create a sound icon when player could hear, but isn't actively hearing
 	if ((_moving)

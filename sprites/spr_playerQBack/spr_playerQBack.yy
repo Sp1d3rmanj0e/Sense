@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "player_full_arms",
+    "path": "folders/Sprites/player/player_full_arms.yy",
   },
 }

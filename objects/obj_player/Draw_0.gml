@@ -85,6 +85,7 @@ else // Moving
 	
 	image_speed = 1; // Sets animation speed to normal when moving
 	
+	/*
 	// Get the animation script based on the player's current status
 	var _playerAnimScript = scr_player_default_A;
 	
@@ -103,8 +104,28 @@ else // Moving
 	{
 		_playerAnimScript = scr_player_flashlight_A;
 	}
+	*/
 	
-	script_execute(_playerAnimScript, _dir);
+	//script_execute(_playerAnimScript, _dir);
+	
+	// Draw the base of the player
+	script_execute(scr_player_base_A, _dir);
 }
+
+#region arms
+// The arms rely on the player's base angle as dir
+// only works when the player is moving.  The arms have
+// to be drawn even when standing still
+	
+// The left arm is for senses.
+var _leftArmAnim = scr_player_leftArm_default_A;
+	
+//if (curSense == SENSE.SEE) _leftArmAnim = scr_player_left_arm_light_A
+
+var _sprite = script_execute(_leftArmAnim);
+log("drawing sprite: " + string(_sprite));
+draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
+#endregion arms	
 
 #endregion animations

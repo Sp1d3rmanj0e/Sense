@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "playerAnimations",
-    "path": "folders/Scripts/playerAnimations.yy",
+    "name": "old animartions",
+    "path": "folders/Scripts/playerAnimations/old animartions.yy",
   },
 }

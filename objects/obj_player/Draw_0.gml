@@ -4,6 +4,7 @@
 mask_index = spr_playerFront;
 
 // Feeling sense (vibrations when enemies are near)
+#region feel sense
 if (curSense == SENSE.FEEL)
 {
 	// Store nearby enemies in a ds_list
@@ -26,6 +27,9 @@ if (curSense == SENSE.FEEL)
 	}
 }
 
+#endregion feel sense
+#region pseudo shadows
+
 // Draw pseudo shadows
 // If you are further from a light, the player appears darker
 var _maxDarkness = 150;
@@ -35,25 +39,7 @@ image_blend = _darknessBlend;
 
 draw_self();
 
-/*
- * Invulnerability
- * If the player is invulnerable, it will flash white
- * then fade out.  It will keep doing that until no longer
- * invulnerable.
- * (It will be drawn over the normal player sprite)
- */
- if (invuln)
- {
-	if (flashAlpha > 0)
-		flashAlpha -= 0.05;
-	else
-		flashAlpha = 1;
-	 
-	shader_set(sd_flash);
-	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle,
-						flashColor, flashAlpha);
-	shader_reset();
- }
+#endregion pseudo shadows
 
 depth = 100 - y/room_height*100 + layerDepth;
 
@@ -111,3 +97,32 @@ draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, imag
 #endregion arms	
 
 #endregion animations
+#region invulnerability flash
+/*
+ * Invulnerability
+ * If the player is invulnerable, it will flash white
+ * then fade out.  It will keep doing that until no longer
+ * invulnerable.
+ * (It will be drawn over the normal player sprite)
+ */
+ if (invuln)
+ {
+	if (flashAlpha > 0)
+		flashAlpha -= 0.05;
+	else
+		flashAlpha = 1;
+	 
+	shader_set(sd_flash);
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle,
+						flashColor, flashAlpha);
+	
+	_sprite = script_execute(_leftArmAnim);
+	draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
+
+	_sprite = script_execute(_rightArmAnim);
+	draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
+	
+	shader_reset();
+ }
+ 
+ #endregion invulnerability flas

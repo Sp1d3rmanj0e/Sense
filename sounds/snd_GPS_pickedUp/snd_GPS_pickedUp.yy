@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_senseWheelSwap",
+  "name": "snd_GPS_pickedUp",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.05,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_senseWheelSwap.mp3",
-  "duration": 0.20898,
+  "soundFile": "snd_GPS_pickedUp.mp3",
+  "duration": 0.264,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sounds/UI.yy",
+    "name": "Utility",
+    "path": "folders/Sounds/Utility.yy",
   },
 }

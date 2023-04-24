@@ -287,6 +287,7 @@
     {"id":{"name":"spr_cutlerySilver","path":"sprites/spr_cutlerySilver/spr_cutlerySilver.yy",},"order":2,},
     {"id":{"name":"snd_FlashlightOff","path":"sounds/snd_FlashlightOff/snd_FlashlightOff.yy",},"order":0,},
     {"id":{"name":"spr_door_front_light","path":"sprites/spr_door_front_light/spr_door_front_light.yy",},"order":11,},
+    {"id":{"name":"snd_GPS_pickedUp","path":"sounds/snd_GPS_pickedUp/snd_GPS_pickedUp.yy",},"order":7,},
     {"id":{"name":"rm_tut_smell","path":"rooms/rm_tut_smell/rm_tut_smell.yy",},"order":4,},
     {"id":{"name":"spr_door_left_light","path":"sprites/spr_door_left_light/spr_door_left_light.yy",},"order":12,},
     {"id":{"name":"spr_mimicFront3","path":"sprites/spr_mimicFront3/spr_mimicFront3.yy",},"order":5,},

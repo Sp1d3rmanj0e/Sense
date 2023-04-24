@@ -54,6 +54,7 @@ switch(state)
 		if (place_meeting(x, y, obj_player))
 		{
 			state = GPS.PLAYER;
+			audio_play_sound(snd_GPS_pickedUp, 1, false);
 		}
 		
 	break;

@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "In progress",
-    "path": "folders/Sprites/player/player special sprites/Dash/In progress.yy",
+    "name": "Dash",
+    "path": "folders/Sprites/player/player_feet/Dash.yy",
   },
 }

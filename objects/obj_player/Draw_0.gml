@@ -96,11 +96,20 @@ if (instance_exists(obj_gadgetButton))
 {
 	if (curGadget == GADGET.LURE) 
 	&& (obj_gadgetButton.numGadgetUsesLeft > 0) _rightArmAnim = scr_player_rightArm_decoy_A;
+	
+	else if (curGadget == GADGET.GPS)
+	&& (instance_exists(obj_gps))
+	&& (obj_gps.state == GPS.PLAYER) _rightArmAnim = scr_player_rightArm_tracker_A;
 }
 
 // Get the sprite angle of the arms to use
 var _leftArmSprite = script_execute(_leftArmAnim);
 var _rightArmSprite = script_execute(_rightArmAnim);
+var _footSprite = noone;
+
+// If dash is activated, draw the boots as well
+if (curGadget == GADGET.DASH) 
+	_footSprite = script_execute(scr_player_feet_dash_A);
 
 // Draw the arms
 // Only one arm can be in front of the other.  Based on the base angle,
@@ -130,6 +139,10 @@ switch(sprite_index)
 
 	break;
 }
+
+// Draw boots if they exist
+if (_footSprite != noone)
+	draw_sprite_ext(_footSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 #endregion arms	
 

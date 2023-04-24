@@ -1,6 +1,6 @@
 /// @description Draw self and arrow pointing
 
-draw_self();
+if (state != GPS.PLAYER) draw_self();
 
 // Draw an arrow to point towards enemy
 if (state == GPS.ENEMY)

@@ -375,6 +375,7 @@
     {"id":{"name":"testSpawner","path":"objects/testSpawner/testSpawner.yy",},"order":3,},
     {"id":{"name":"spr_roll_device_item","path":"sprites/spr_roll_device_item/spr_roll_device_item.yy",},"order":9,},
     {"id":{"name":"spr_poof","path":"sprites/spr_poof/spr_poof.yy",},"order":1,},
+    {"id":{"name":"snd_GPS_stuck","path":"sounds/snd_GPS_stuck/snd_GPS_stuck.yy",},"order":8,},
     {"id":{"name":"spr_eyeFront_2","path":"sprites/spr_eyeFront_2/spr_eyeFront_2.yy",},"order":1,},
     {"id":{"name":"spr_playerBase_left","path":"sprites/spr_playerBase_left/spr_playerBase_left.yy",},"order":7,},
     {"id":{"name":"spr_Bwall_tileset","path":"sprites/spr_Bwall_tileset/spr_Bwall_tileset.yy",},"order":4,},

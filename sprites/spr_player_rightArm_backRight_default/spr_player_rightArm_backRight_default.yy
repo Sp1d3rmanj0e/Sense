@@ -82,7 +82,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "right_arms",
-    "path": "folders/Sprites/player/player_arms/right_arms.yy",
+    "name": "Default",
+    "path": "folders/Sprites/player/player_arms/right_arms/Default.yy",
   },
 }

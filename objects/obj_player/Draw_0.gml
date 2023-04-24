@@ -84,19 +84,22 @@ else // Moving
 // only works when the player is moving.  The arms have
 // to be drawn even when standing still
 	
-// The left arm is for senses.
+// Left arm is for senses
 var _leftArmAnim = scr_player_leftArm_default_A;
 
 // The right arm is for gadgets
 var _rightArmAnim = scr_player_rightArm_default_A;
 
-var _sprite;
+if (curGadget == GADGET.LURE) 
+&& (obj_gadgetButton.numGadgetUsesLeft > 0) _rightArmAnim = scr_player_rightArm_decoy_A;
 
-_sprite = script_execute(_leftArmAnim);
-draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+// Get the sprite angle of the arms to use
+var _leftArmSprite = script_execute(_leftArmAnim);
+var _rightArmSprite = script_execute(_rightArmAnim);
 
-_sprite = script_execute(_rightArmAnim);
-draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+// Draw the arms
+draw_sprite_ext(_leftArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+draw_sprite_ext(_rightArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 #endregion arms	
 
@@ -117,14 +120,14 @@ draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, imag
 		flashAlpha = 1;
 	 
 	shader_set(sd_flash);
+	
+	// Draw the body
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle,
 						flashColor, flashAlpha);
 	
-	_sprite = script_execute(_leftArmAnim);
-	draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
-
-	_sprite = script_execute(_rightArmAnim);
-	draw_sprite_ext(_sprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
+	// Draw the arms
+	draw_sprite_ext(_leftArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
+	draw_sprite_ext(_rightArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, flashColor, flashAlpha);
 	
 	shader_reset();
  }

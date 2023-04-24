@@ -87,11 +87,16 @@ else // Moving
 // Left arm is for senses
 var _leftArmAnim = scr_player_leftArm_default_A;
 
+if (curSense == SENSE.SEE) _leftArmAnim = scr_player_leftArm_flashlight_A;
+
 // The right arm is for gadgets
 var _rightArmAnim = scr_player_rightArm_default_A;
 
-if (curGadget == GADGET.LURE) 
-&& (obj_gadgetButton.numGadgetUsesLeft > 0) _rightArmAnim = scr_player_rightArm_decoy_A;
+if (instance_exists(obj_gadgetButton))
+{
+	if (curGadget == GADGET.LURE) 
+	&& (obj_gadgetButton.numGadgetUsesLeft > 0) _rightArmAnim = scr_player_rightArm_decoy_A;
+}
 
 // Get the sprite angle of the arms to use
 var _leftArmSprite = script_execute(_leftArmAnim);

@@ -30,5 +30,7 @@ if (position_meeting(mouse_x, mouse_y, id)
 	
 	log("clicked");
 	
-	event_user(0);
+	// Only spawn UI if a gadget exists
+	if (obj_player.curGadget != GADGET.NONE)
+		event_user(0);
 }

@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_flashlight",
-  "spriteId": {
-    "name": "spr_flashlight_item",
-    "path": "sprites/spr_flashlight_item/spr_flashlight_item.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

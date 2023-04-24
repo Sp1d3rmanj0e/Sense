@@ -42,4 +42,5 @@ for (var i = 0; i < 4; i++)
 	
 	// Replacement is found, set player's new sense to _newCurSense
 	obj_player.curSense = _newCurSense;
+	audio_play_sound(snd_senseWheelSwap, 1, false);
 }

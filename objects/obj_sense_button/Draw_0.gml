@@ -22,13 +22,30 @@ draw_sprite_ext(spr_sense_button, image_index, x, y, image_xscale, image_yscale,
 
 // Get the sense sprite to represent
 var _sprite = noone;
-switch(sense)
+
+// If deactivated, use the broken sense sprites instead
+// of the normal one
+if (!deactivated)
 {
-	case SENSE.FEEL:  _sprite = spr_touch   break;
-	case SENSE.HEAR:  _sprite = spr_hearing break;
-	case SENSE.SEE:   _sprite = spr_sight   break;
-	case SENSE.SMELL: _sprite = spr_smell   break;
-	case SENSE.TASTE: _sprite = spr_taste   break;
+	switch(sense)
+	{
+		case SENSE.FEEL:  _sprite = spr_touch   break;
+		case SENSE.HEAR:  _sprite = spr_hearing break;
+		case SENSE.SEE:   _sprite = spr_sight   break;
+		case SENSE.SMELL: _sprite = spr_smell   break;
+		case SENSE.TASTE: _sprite = spr_taste   break;
+	}
+}
+else
+{
+	switch(sense)
+	{
+		case SENSE.FEEL:  _sprite = spr_touch_damaged   break;
+		case SENSE.HEAR:  _sprite = spr_hearing_damaged break;
+		case SENSE.SEE:   _sprite = spr_sight_damaged	break;
+		case SENSE.SMELL: _sprite = spr_smell_damaged	break;
+		case SENSE.TASTE: _sprite = spr_taste_damaged   break;
+	}
 }
 
 // Draw the sense icon on the button

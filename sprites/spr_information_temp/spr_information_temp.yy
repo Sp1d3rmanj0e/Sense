@@ -76,7 +76,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ui",
-    "path": "folders/Sprites/ui.yy",
+    "name": "Cutscene",
+    "path": "folders/Sprites/ui/Cutscene.yy",
   },
 }

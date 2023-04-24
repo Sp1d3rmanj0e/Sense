@@ -23,6 +23,7 @@ function goto(_path, _x, _y, _speed, _grid)
 	// If the path is impossible
 	else
 	{
+		//log("Path is impossible");
 		return false;
 	}
 }

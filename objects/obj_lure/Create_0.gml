@@ -4,6 +4,8 @@
 uptime = 10 * room_speed;
 alarm[0] = uptime;
 
+audio_play_sound(snd_Decoy_placed, 1, false);
+
 // Lure vars
 lureRadius = 10 * WORLD.CELL_SIZE;
 

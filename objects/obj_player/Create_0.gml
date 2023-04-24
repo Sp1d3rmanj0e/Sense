@@ -37,6 +37,10 @@ state = PSTATE.NORMAL;
 // Depth vars
 layerDepth = layer_get_depth(layer);
 
+// Sounds
+var _footSound = getFootSound();
+footsteps = create_emitter(_footSound);
+
 // Initialize player dash particles
 pSystem = part_system_create_layer("Effects", false);
 dashTrail = part_type_create();

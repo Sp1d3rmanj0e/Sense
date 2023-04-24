@@ -80,7 +80,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Sprites/Tutorial.yy",
+    "name": "Sense",
+    "path": "Sense.yyp",
   },
 }

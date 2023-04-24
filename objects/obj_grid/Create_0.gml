@@ -45,11 +45,12 @@ function furnitureWalls()
 		if (solid)
 		{
 			// Get the cell that the furniture is in
-			var _x = round(x/cell_size);
-			var _y = round(y/cell_size);
+			var _x = round((x+32)/cell_size);
+			var _y = round((y+32)/cell_size);
 		
 			// Add tiles for any present wall
 	        mp_grid_add_cell(global.grid, _x, _y);
 		}
 	}
+	
 }

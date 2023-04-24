@@ -83,7 +83,7 @@ function gps()
 			instance_create_layer(obj_player.x, obj_player.y, "Structures", obj_gps);
 		}
 	}
-	else // Activated
+	else if (obj_gps.state == GPS.PLAYER)// Activated
 	{
 		numGadgetUsesLeft++;
 		

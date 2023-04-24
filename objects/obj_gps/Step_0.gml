@@ -15,6 +15,7 @@ switch(state)
 		if (mouse_check_button_pressed(mb_right))
 		{
 			state = GPS.AIRBORNE;
+			audio_play_sound(snd_GPS_thrown, 1, false);
 		}
 	
 	break;
@@ -31,6 +32,7 @@ switch(state)
 		else // Switch to ground state if hit wall
 		{
 			state = GPS.GROUND;
+			audio_play_sound(snd_GPS_hitWall, 1, false);
 		}
 		
 		// If contacting an enemy, 

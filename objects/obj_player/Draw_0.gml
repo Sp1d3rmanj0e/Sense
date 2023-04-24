@@ -103,8 +103,33 @@ var _leftArmSprite = script_execute(_leftArmAnim);
 var _rightArmSprite = script_execute(_rightArmAnim);
 
 // Draw the arms
-draw_sprite_ext(_leftArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
-draw_sprite_ext(_rightArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+// Only one arm can be in front of the other.  Based on the base angle,
+// it decides which arm goes on top of the other
+switch(sprite_index)
+{
+
+	case spr_playerBase_back:	
+	case spr_playerBase_backRight:
+	case spr_playerBase_right:	
+	case spr_playerBase_frontRight:
+	
+	// Right arm drawn over left arm
+	draw_sprite_ext(_leftArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(_rightArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
+	break;
+	
+	case spr_playerBase_backLeft:	
+	case spr_playerBase_left:
+	case spr_playerBase_frontLeft:
+	case spr_playerBase_front:		
+
+	// Left arm drawn over right arm
+	draw_sprite_ext(_rightArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	draw_sprite_ext(_leftArmSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
+	break;
+}
 
 #endregion arms	
 

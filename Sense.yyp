@@ -55,6 +55,7 @@
     {"id":{"name":"obj_teleporterBroken","path":"objects/obj_teleporterBroken/obj_teleporterBroken.yy",},"order":11,},
     {"id":{"name":"spr_player_head_left_thermal","path":"sprites/spr_player_head_left_thermal/spr_player_head_left_thermal.yy",},"order":3,},
     {"id":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},"order":2,},
+    {"id":{"name":"obj_piano","path":"objects/obj_piano/obj_piano.yy",},"order":5,},
     {"id":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"order":3,},
     {"id":{"name":"snd_car","path":"sounds/snd_car/snd_car.yy",},"order":0,},
     {"id":{"name":"obj_soundControl","path":"objects/obj_soundControl/obj_soundControl.yy",},"order":1,},

@@ -203,6 +203,7 @@
     {"id":{"name":"spr_washer","path":"sprites/spr_washer/spr_washer.yy",},"order":2,},
     {"id":{"name":"spr_night_vision_helmet_item_active","path":"sprites/spr_night_vision_helmet_item_active/spr_night_vision_helmet_item_active.yy",},"order":8,},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},"order":4,},
+    {"id":{"name":"obj_lightPixel","path":"objects/obj_lightPixel/obj_lightPixel.yy",},"order":4,},
     {"id":{"name":"spr_player_leftArm_backRight_default","path":"sprites/spr_player_leftArm_backRight_default/spr_player_leftArm_backRight_default.yy",},"order":2,},
     {"id":{"name":"obj_ghost","path":"objects/obj_ghost/obj_ghost.yy",},"order":7,},
     {"id":{"name":"spr_information_temp","path":"sprites/spr_information_temp/spr_information_temp.yy",},"order":0,},
@@ -671,12 +672,15 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"lights","folderPath":"folders/Sprites/lights.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"operationBlackBird","folderPath":"folders/Sprites/operationBlackBird.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy","order":0,},
+<<<<<<< HEAD
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player special sprites","folderPath":"folders/Sprites/player/player special sprites.yy","order":10,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dash","folderPath":"folders/Sprites/player/player special sprites/Dash.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"In progress","folderPath":"folders/Sprites/player/player special sprites/Dash/In progress.yy","order":7,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Decoy","folderPath":"folders/Sprites/player/player special sprites/Decoy.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Flashlight","folderPath":"folders/Sprites/player/player special sprites/Flashlight.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tracker","folderPath":"folders/Sprites/player/player special sprites/Tracker.yy","order":1,},
+=======
+>>>>>>> 599df0a987c2346dac415ef63d388b4326171508
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player_arms","folderPath":"folders/Sprites/player/player_arms.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"left arms","folderPath":"folders/Sprites/player/player_arms/left arms.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"default","folderPath":"folders/Sprites/player/player_arms/left arms/default.yy","order":8,},

@@ -24,6 +24,12 @@ enemy_distY = 0;
 radar_ring_search_radius = 0;
 radar_speed = 15;
 
+// Colors
+baseColor = make_color_rgb(16, 102, 19);
+playerDotColor = make_color_rgb(33, 33, 33);
+enemyDotColor = make_color_rgb(163, 41, 41);
+sonarRingColor = c_green;
+
 // Ping vars
 dot_alpha = 1;
 ping_time = 1.5 * room_speed;
@@ -54,11 +60,11 @@ switch(activationObj)
 			#region base setup
 			
 			// Draw the background circle
-			draw_set_color(c_white);
+			draw_set_color(baseColor);
 			draw_circle(_x, _y, circleRad, false);
 			
 			// Draw player icon
-			draw_set_color(c_lime);
+			draw_set_color(playerDotColor);
 			draw_circle(_x, _y, 5, false);
 			
 			#endregion base setup
@@ -69,7 +75,7 @@ switch(activationObj)
 				var _trackee = obj_gps.trackId;
 				
 				// Only draw enemy location if such location exists
-				if (_trackee != noone)
+				if (_trackee != noone) && (instance_exists(_trackee))
 				{
 					// Increase the radar ring until it goes out of scope
 					// then bring it back to the start to go again
@@ -109,7 +115,7 @@ switch(activationObj)
 			{
 				draw_set_alpha(dot_alpha);
 				dot_alpha -= alpha_falloff;
-				draw_set_color(c_red);
+				draw_set_color(enemyDotColor);
 				draw_circle(_x + enemy_distX, _y + enemy_distY, 5, false);
 			}
 			else dot_alpha = 1;
@@ -117,7 +123,7 @@ switch(activationObj)
 			draw_set_alpha(1);
 
 			// Draw the radar ring
-			draw_set_color(c_green);
+			draw_set_color(sonarRingColor);
 			draw_circle(_x, _y, radar_ring_search_radius * scale, true);
 			
 			#endregion Draw the enemy location + radar

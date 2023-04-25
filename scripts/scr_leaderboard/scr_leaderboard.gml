@@ -81,6 +81,8 @@ function get_rank(_time, _difficulty, _category)
 	// Turn score from a string into a number
 	_time = number_to_time(_time, false);
 	
+	logVal("Time", _time);
+	
 	// Initialize the array to check
 	var _array;
 	
@@ -90,22 +92,35 @@ function get_rank(_time, _difficulty, _category)
 	else
 		_array = global.topSenseUseTime;
 	
+	logVal("Array", _array);
+	
 	// Only check array if there is stuff to check in the array
 	if (array_length(_array[_difficulty]) > 0)
 	{
 		for (var i = 0; i < array_length(_array[_difficulty]); i++)
 		{
 			var _curScore = number_to_time(_array[_difficulty][i][1], false);
-		
+			
+			logVal("Current score check", _curScore);
+			
 			if (_time < _curScore)
+			{
+				log("My time: " + string(_time) + ".  Time beat: " + string(_curScore));
+				
 				return i+1; // If the score did better than another one, return that new position
+			}
 		}
+		
+		// If not all 10 spots are full, there will always be a spot for the new score no matter what
+		if (i < 10) return i+1;
 	}
 	else // Otherwise, return first place because it's the only value
 	{
+		log("Time was only value");
 		return 1;
 	}
 	
+	log("Not a top 10 rank");
 	return -1; // Did not have a top 10 rank
 }
 

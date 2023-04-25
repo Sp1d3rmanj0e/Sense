@@ -15,7 +15,7 @@ if (global.difficulty != DIFF.HARDER)
 	{
 		executeCode : room_restart,
 		roomCode : room,
-		text : "Restart Room"
+		text : "Restart Floor"
 	});
 }
 else

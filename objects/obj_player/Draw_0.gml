@@ -72,6 +72,8 @@ else // Moving
 	// Play footstep noises when moving
 	if (curSense == SENSE.HEAR)
 		emitter_unmute(footsteps);
+	else
+		emitter_mute(footsteps);
 	
 	image_speed = 1; // Sets animation speed to normal when moving
 	

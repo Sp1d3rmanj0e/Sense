@@ -18,7 +18,9 @@ if ((_movementButtonPressed == 1) && (!pressed))
 {
 	pressed = true; // Only allow one press
 	
-	obj_player.state = PSTATE.DASH; // Dash state
+	if (obj_player.state != PSTATE.FREEZE)
+		obj_player.state = PSTATE.DASH; // Dash state
+	
 	audio_play_sound(snd_Dash_used, 1, false);
 	obj_player.invuln = true; // Invuln on
 	

@@ -232,6 +232,7 @@
     {"id":{"name":"spr_playerBack","path":"sprites/spr_playerBack/spr_playerBack.yy",},"order":3,},
     {"id":{"name":"scr_eyeball","path":"scripts/scr_eyeball/scr_eyeball.yy",},"order":4,},
     {"id":{"name":"scr_janitor","path":"scripts/scr_janitor/scr_janitor.yy",},"order":1,},
+    {"id":{"name":"spr_broken_item_bag","path":"sprites/spr_broken_item_bag/spr_broken_item_bag.yy",},"order":26,},
     {"id":{"name":"spr_playerBase_front","path":"sprites/spr_playerBase_front/spr_playerBase_front.yy",},"order":1,},
     {"id":{"name":"spr_heart_rate","path":"sprites/spr_heart_rate/spr_heart_rate.yy",},"order":17,},
     {"id":{"name":"scr_leaderboard","path":"scripts/scr_leaderboard/scr_leaderboard.yy",},"order":16,},

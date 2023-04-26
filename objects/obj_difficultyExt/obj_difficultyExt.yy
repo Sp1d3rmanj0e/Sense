@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Difficulty",
-    "path": "folders/Objects/ui/Difficulty.yy",
+    "name": "Z_Archived",
+    "path": "folders/Objects/Z_Archived.yy",
   },
 }

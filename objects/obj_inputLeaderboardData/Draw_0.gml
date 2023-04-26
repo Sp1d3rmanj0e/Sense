@@ -51,9 +51,9 @@ if (_qualifies)
 			
 			// Only add the score if it was a top 10 score
 			if (_timeRank != -1)
-				add_score(name, _timeScore, _difficulty, 0);
+				add_score(name, _timeScore, global.difficulty, 0);
 			if (_senseRank != -1)
-				add_score(name, _senseScore, _difficulty, 1);
+				add_score(name, _senseScore, global.difficulty, 1);
 			
 			room_goto(rm_leaderboard);
 		}
@@ -70,8 +70,8 @@ else
 	// If clicked, submit score and go to leaderboard room
 	if (_touchingMouse && mouse_check_button_pressed(mb_left))
 	{
-		add_score(name, _timeScore, _difficulty, 0);
-		add_score(name, _senseScore, _difficulty, 1);
+		add_score(name, _timeScore, global.difficulty, 0);
+		add_score(name, _senseScore, global.difficulty, 1);
 			
 		room_goto(rm_leaderboard);
 	}
@@ -88,7 +88,7 @@ draw_set_halign(fa_center);
 draw_set_color(colorMain);
 
 var _difficultyStr = "";
-switch(_difficulty)
+switch(global.difficulty)
 {
 	case 0: _difficultyStr = "EASY"; break;
 	case 1: _difficultyStr = "MEDIUM"; break;

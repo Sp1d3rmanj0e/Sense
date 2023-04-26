@@ -1,25 +1,45 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var _cx, _cy, _cw, _ch;
+
 if (!surface_exists(surf))
 {
-	var _cw = camera_get_view_width(view_camera[0]);
-	var _ch = camera_get_view_height(view_camera[0]);
-	surf = surface_create(_cw, _ch);
-	surface_set_target(surf);
-	draw_set_color(c_black);
-	draw_set_alpha(0);
-	draw_rectangle(0, 0, _cw, _ch, false);
-	surface_reset_target();
+    if (vp_visible)
+    {
+        _cw = camera_get_view_width(view_camera[0]);
+        _ch = camera_get_view_height(view_camera[0]);
+    }
+    else
+    {
+        _cw = room_width;
+        _ch = room_height;
+    }
+    surf = surface_create(_cw, _ch);
+    surface_set_target(surf);
+    draw_set_color(c_black);
+    draw_set_alpha(0);
+    draw_rectangle(0, 0, _cw, _ch, false);
+    surface_reset_target();
 }
 else
 {
-	if (surface_exists(surf))
-	{
-		var _cw = camera_get_view_width(view_camera[0]);
-		var _ch = camera_get_view_height(view_camera[0]);
-		var _cx = camera_get_view_x(view_camera[0]);
-		var _cy = camera_get_view_y(view_camera[0]);
+    if (surface_exists(surf))
+    {
+        if (vp_visible)
+        {
+            _cx = camera_get_view_x(view_camera[0]);
+            _cy = camera_get_view_y(view_camera[0]);
+            _cw = camera_get_view_width(view_camera[0]);
+            _ch = camera_get_view_height(view_camera[0]);
+        }
+        else
+        {
+            _cx = 0;
+            _cy = 0;
+            _cw = room_width;
+            _ch = room_height;
+        }
 		surface_set_target(surf);
 		draw_set_color(c_black);
 		draw_set_alpha(darkness);
@@ -78,6 +98,12 @@ else
 						draw_sprite_ext(spr_lightSourceRadial, 0, x - _cx, y - _cy, _randomScale, _randomScale, 0, c_white, 1);
 					}
 					break;
+					
+				case obj_lightPixel:
+					
+					draw_sprite_ext(spr_pixel, 0, x - _cx, y - _cy, image_xscale, image_yscale, 0, c_white, 1);
+					
+				break;
 			}
 		}
 		gpu_set_blendmode(bm_normal);

@@ -169,7 +169,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "gadget_items",
-    "path": "folders/Sprites/gadgets_powers/gadget_items.yy",
+    "name": "Z_Archived",
+    "path": "folders/Sprites/Z_Archived.yy",
   },
 }

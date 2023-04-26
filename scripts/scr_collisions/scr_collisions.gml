@@ -24,6 +24,7 @@ function collisions()
 	}
 
 	object_collisions(obj_furniture);
+	object_collisions(obj_piano);
 
 	x += hsp;
 	y += vsp;

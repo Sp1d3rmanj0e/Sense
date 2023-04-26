@@ -31,6 +31,7 @@
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_305C9F5A","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78D0FB15","properties":[],"isDnd":false,"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":64.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Structures","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CB2E3A4","properties":[
@@ -74,7 +75,11 @@
     {"name":"inst_28C14518","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_15111B2E","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_2B142CAC","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
+<<<<<<< HEAD
     {"name":"inst_2C7F191A","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
+=======
+    {"name":"inst_78D0FB15","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
+>>>>>>> 7da3e0112c21794851df904f6807ee7d553a0783
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

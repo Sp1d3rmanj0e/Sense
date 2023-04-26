@@ -54,30 +54,26 @@ if (image_alpha < 1) image_alpha += 0.05;
 // Get directions of motion **THANKS TO FriendlyCosmonaut
 var _moveX = keyRight - keyLeft;
 var _moveY = keyDown - keyUp;
-	
-// Gets the degree direction the player is facing
 var _dir = point_direction(0, 0, _moveX, _moveY);
 
 // Animate only if player is moving
 if (hsp == 0 && vsp == 0)
 {
-	image_index = 3; // Sets animation to idle frame (the fourth frame)
-	image_speed = 0; // Freezes on that frame
+	image_index = 3;
+	image_speed = 0;
 	
-	// Pause footsteps if not moving
-	emitter_mute(footsteps);
+	emitter_mute(footsteps); // Pause footsteps if not moving
 }
 else // Moving
 {	
+	
+	image_speed = 1;
+	
 	// Play footstep noises when moving
-	if (curSense == SENSE.HEAR)
-		emitter_unmute(footsteps);
-	else
-		emitter_mute(footsteps);
+	if (curSense == SENSE.HEAR) emitter_unmute(footsteps);
+	else						emitter_mute(footsteps);
 	
-	image_speed = 1; // Sets animation speed to normal when moving
-	
-	// Draw the base of the player
+	// Set the new base sprite of the player
 	script_execute(scr_player_base_A, _dir);
 }
 
@@ -85,15 +81,15 @@ else // Moving
 // The arms rely on the player's sprite as dir
 // only works when the player is moving.  The arms have
 // to be drawn even when standing still
-	
-// Left arm is for senses
+
 var _leftArmAnim = scr_player_leftArm_default_A;
-
-if (curSense == SENSE.SEE) _leftArmAnim = scr_player_leftArm_flashlight_A;
-
-// The right arm is for gadgets
 var _rightArmAnim = scr_player_rightArm_default_A;
 
+// Flashlight arm if sight is active
+if (curSense == SENSE.SEE) 
+	_leftArmAnim = scr_player_leftArm_flashlight_A;
+
+// Get the gadget sprite arm if one exists
 if (instance_exists(obj_gadgetButton))
 {
 	if (curGadget == GADGET.LURE) 
@@ -104,14 +100,9 @@ if (instance_exists(obj_gadgetButton))
 	&& (obj_gps.state == GPS.PLAYER) _rightArmAnim = scr_player_rightArm_tracker_A;
 }
 
-// Get the sprite angle of the arms to use
+// Get the sprite angle of arms
 var _leftArmSprite = script_execute(_leftArmAnim);
 var _rightArmSprite = script_execute(_rightArmAnim);
-var _footSprite = noone;
-
-// If dash is activated, draw the boots as well
-if (curGadget == GADGET.DASH) 
-	_footSprite = script_execute(scr_player_feet_dash_A);
 
 // Draw the arms
 // Only one arm can be in front of the other.  Based on the base angle,
@@ -142,11 +133,34 @@ switch(sprite_index)
 	break;
 }
 
-// Draw boots if they exist
-if (_footSprite != noone)
-	draw_sprite_ext(_footSprite, -1, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+#endregion arms
 
-#endregion arms	
+#region head and feet
+
+// Feet
+
+// If dash is activated, draw the boots as well
+if (curGadget == GADGET.DASH) 
+	draw_sprite_ext(script_execute(scr_player_feet_dash_A), -1, x, y, image_xscale, 
+					image_yscale, image_angle, image_blend, image_alpha);
+	
+// Headbands
+
+// Tracker
+if (curGadget == GADGET.GPS) && (instance_exists(obj_gps)) && (obj_gps.state != GPS.PLAYER)
+	draw_sprite_ext(script_execute(scr_player_head_tracker_A), -1, x, y, image_xscale, 
+					image_yscale, image_angle, image_blend, image_alpha);
+					
+// Thermal
+else if (curGadget == GADGET.THERMAL) && (instance_exists(obj_heat))
+	draw_sprite_ext(script_execute(scr_player_head_thermal_A), -1, x, y, image_xscale, 
+					image_yscale, image_angle, image_blend, image_alpha);
+
+#endregion head and feet
+
+
+
+	
 
 #endregion animations
 #region invulnerability flash

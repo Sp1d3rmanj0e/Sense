@@ -12,7 +12,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 8,
   "bbox_right": 57,
-  "bbox_top": 16,
+  "bbox_top": 11,
   "bbox_bottom": 57,
   "HTile": false,
   "VTile": false,
@@ -64,7 +64,10 @@
     "eventStubScript": null,
   },
   "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"161b76c5-d69e-46c0-ab11-4e374653ed81","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 3",},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"87bf7281-10d3-4136-8a39-e2a457a8dd9d","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8c5ccc60-4dc0-4116-b691-ab88547f377f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2beccec2-43d3-4696-ba25-1bf97d1ff557","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2",},
   ],
   "nineSlice": null,
   "parent": {

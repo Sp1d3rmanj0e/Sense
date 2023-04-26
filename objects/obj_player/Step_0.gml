@@ -38,4 +38,4 @@ else if (curSense == SENSE.TASTE) && (place_meeting(x, y, obj_residue))
 // During the scoring phase, a function will turn the seconds into
 // minutes and seconds with seconds_to_minutes_decimal()
 if (curSense != SENSE.NONE) global.senseUseTime += 0.01/room_speed;
-global.timeCompleted += 0.1/room_speed;
+global.timeCompleted += 0.01/room_speed;

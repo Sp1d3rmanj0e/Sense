@@ -38,6 +38,6 @@ else
 	{
 		executeCode : game_restart,
 		roomCode : rm_intro,
-		text : "Restart Entirely"
+		text : "Restart Game"
 	});
 }

@@ -75,11 +75,7 @@
     {"name":"inst_28C14518","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_15111B2E","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_2B142CAC","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
-<<<<<<< HEAD
     {"name":"inst_2C7F191A","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
-=======
-    {"name":"inst_78D0FB15","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
->>>>>>> 7da3e0112c21794851df904f6807ee7d553a0783
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

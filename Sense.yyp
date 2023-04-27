@@ -348,6 +348,7 @@
     {"id":{"name":"spr_healthBar","path":"sprites/spr_healthBar/spr_healthBar.yy",},"order":14,},
     {"id":{"name":"spr_player_head_backRight_thermal","path":"sprites/spr_player_head_backRight_thermal/spr_player_head_backRight_thermal.yy",},"order":8,},
     {"id":{"name":"spr_pot10","path":"sprites/spr_pot10/spr_pot10.yy",},"order":1,},
+    {"id":{"name":"rm_Bwall_2","path":"rooms/rm_Bwall_2/rm_Bwall_2.yy",},"order":1,},
     {"id":{"name":"spr_player_rightArm_back_decoy","path":"sprites/spr_player_rightArm_back_decoy/spr_player_rightArm_back_decoy.yy",},"order":0,},
     {"id":{"name":"spr_playerFront","path":"sprites/spr_playerFront/spr_playerFront.yy",},"order":4,},
     {"id":{"name":"spr_gpsArrowTmp","path":"sprites/spr_gpsArrowTmp/spr_gpsArrowTmp.yy",},"order":4,},
@@ -596,6 +597,7 @@
     {"roomId":{"name":"rm_Bwall_1","path":"rooms/rm_Bwall_1/rm_Bwall_1.yy",},},
     {"roomId":{"name":"rm_3_introFightCutscene","path":"rooms/rm_3_introFightCutscene/rm_3_introFightCutscene.yy",},},
     {"roomId":{"name":"rm_4_introFightAftermath","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},},
+    {"roomId":{"name":"rm_Bwall_2","path":"rooms/rm_Bwall_2/rm_Bwall_2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":7,},

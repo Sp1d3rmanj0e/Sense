@@ -12,7 +12,7 @@ if (distance_to_object(obj_player) < 5)
 		instance_create_layer(0, 0, "Instances", obj_tpPlayerController);
 		
 		// Get the tutorial room to go to when activated
-		switch(image_index)
+		switch(startFrame)
 		{
 			case 0: room_goto(rm_tut_ghost); break;
 			case 1: room_goto(rm_tut_eyeball); break;
@@ -22,4 +22,7 @@ if (distance_to_object(obj_player) < 5)
 			case 5: room_goto(rm_tut_sanityDemon); break;
 		}
 	}
+	
+	image_index = startFrame + 6; // Outlined version
 }
+else image_index = startFrame; // Not outlined version

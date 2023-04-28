@@ -12,44 +12,67 @@ function clearScreen()
 // Only activate once.  Start the cutscene
 if (!activated) && (roomTarget != noone)
 {
-	var _inTheIntroCutscene = (roomTarget == rm_3_introFightCutscene) || (room == rm_4_introFightAftermath);
+	//var _inTheIntroCutscene = (roomTarget == rm_3_introFightCutscene) || (room == rm_4_introFightAftermath);
 	
-	if (roomTarget != rm_setScore) && (!_inTheIntroCutscene)
+	activated = true;
+	obj_player.state = PSTATE.FREEZE;
+	clearScreen();
+	with(enemies) instance_destroy(); // Destroy all enemies
+	
+	switch (roomTarget)
 	{
-		activated = true;
 	
-		// Destroy all enemies
-		with(enemies) instance_destroy();
+		case rm_setScore: // End of the game
+			
+			// Find which cutscene to use
+			if (obj_player.trashCollected == 6) // +1 Tutorial +5 levels
+			{
+				// Janitor ending
+				TransitionStart(sq_endScene_trash, rm_setScore);
+			}
+			else
+			{
+				// Main ending
+				TransitionStart(sq_endScene_main, rm_setScore);
+			}
+			
+		break;
+		
+		case rm_3_introFightCutscene: // Intro cutscenes
+		case rm_4_introFightAftermath:
+			
+			// In the intro cutscene stuff, just needs to go to the next room
+			room_goto(roomTarget);
+		
+		break;
+		
+		case rm_intro: // Wimp ending
+		
+			TransitionStart(sq_endScene_wimp, rm_setScore);
+		
+		break;
+		
+		case rm_selGadget: // Lose sense
 
-		// Create a cutscene
-		var _mostUsedSense = getMaxSense();
-		var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
-		TransitionStart(_loseSenseSequence, roomTarget);
+			if (room != rm_4_introFightAftermath) // Make sure not in cutscene at the moment
+			{
+				// Create a cutscene
+				var _mostUsedSense = getMaxSense();
+				var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
+				TransitionStart(_loseSenseSequence, roomTarget);
 	
-		// Make player lose that sense
-		deactivateSense(_mostUsedSense);
+				// Make player lose that sense
+				deactivateSense(_mostUsedSense);
 	
-		// Increment level counter
-		global.level++;
-	
-		// Freeze player and remove UI for best view
-		obj_player.state = PSTATE.FREEZE;
-		clearScreen();
-	}
-	else if (roomTarget == rm_setScore) // Transitioning to leaderboard, no need to find max used sense and stuff
-	{
-		activated = true;
+				// Increment level counter
+				global.level++;
+			}
+			else
+			{
+				room_goto(roomTarget);
+			}
+		break;
 		
-		TransitionStart(sq_endScene, rm_setScore);
-		
-		// Freeze player and remove UI for best view
-		obj_player.state = PSTATE.FREEZE;
-		clearScreen();
-	}
-	else // In the intro cutscene stuff, just needs to go to the next room
-	{
-		room_goto(roomTarget);
-		activated = true;
+		default: room_goto(roomTarget);
 	}
 }
-

@@ -9,7 +9,7 @@ camWidth = camera_get_view_width(view_camera[0]);
 healthbarWidth = 500;
 usesBarWidth = 400;
 barHeight = 20;
-rightPadding = sprite_get_width(spr_gadget_button)*1.75; // Push the bars left from the right wall by this value
+rightPadding = sprite_get_width(spr_gadget_button) + 48; // Push the bars left from the right wall by this value
 topPadding = 10; // Spacing between the roof and other bars
 	
 // Bar locations

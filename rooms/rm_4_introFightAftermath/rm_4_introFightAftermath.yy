@@ -16,14 +16,14 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Lighting","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Lighting","instances":[],"visible":false,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[
         {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"lights","instances":[
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F539964","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":512.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20827279","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":160.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_28C14518","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":32.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_15111B2E","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":928.0,"y":32.0,},
             {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C7F191A","properties":[],"isDnd":false,"objectId":{"name":"obj_lightPixel","path":"objects/obj_lightPixel/obj_lightPixel.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-1407.0,"scaleY":-703.00006,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1408.0,"y":704.00006,},
-          ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+          ],"visible":false,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Top_decorations","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_77BE4830","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":0.0,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":384.0,},
@@ -76,6 +76,7 @@
     {"name":"inst_15111B2E","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_2B142CAC","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
     {"name":"inst_2C7F191A","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
+    {"name":"inst_78D0FB15","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

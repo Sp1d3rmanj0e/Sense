@@ -54,11 +54,14 @@ function get_gadget_sprite(_enum)
 
 function get_if_gadget_broken(_enum)
 {
+	// Mod doesn't work for negative numbers,
+	// so when it gets below 0, put it back up by 5
+	if (_enum < 0) _enum += 5;
+	
 	for (var i = 0; i < array_length(global.lostGadgets); i++)
 	{
 		if (global.lostGadgets[i] == _enum)
 		{
-			show_debug_message(string(global.lostGadgets[i]) + " = " + string(_enum));
 			return true; // Gadget found to be broken
 		}
 	}

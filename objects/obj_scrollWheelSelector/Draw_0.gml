@@ -50,6 +50,7 @@ for (var i = -2; i <= 2; i++)
 	// Draw properties
 	var _sprite = get_gadget_sprite((focusedGadget + i) mod 5); 
 	var _broken = get_if_gadget_broken((focusedGadget + i) mod 5);
+	logImportant(string((focusedGadget + i) mod 5) + " = " + string(_broken));
 	if (_sprite < 0) _sprite += 4;
 	var _offset = drawBuffer * i + (x - room_width/2);
 	var _alpha  = 1 - abs(_offset)/drawBuffer/2; // 0, 50, 100, 50, 0

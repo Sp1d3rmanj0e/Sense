@@ -192,3 +192,4 @@ else if (curGadget == GADGET.THERMAL) && (instance_exists(obj_heat))
  }
  
  #endregion invulnerability flas
+

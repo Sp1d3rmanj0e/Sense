@@ -37,6 +37,9 @@ state = PSTATE.NORMAL;
 // Depth vars
 layerDepth = layer_get_depth(layer);
 
+// Effect timer
+bloodEffectTime = 4.5 * room_speed;
+
 // Sounds
 var _footSound = getFootSound();
 footsteps = create_emitter(_footSound);
@@ -68,6 +71,9 @@ function takeDmg(_objectIndexOfEnemy) // Enemy can call this when able to hurt y
 		// Decrease health
 		playerHealth--;
 		screenShake(7);
+		
+		// Add blood effect
+		alarm[3] = bloodEffectTime;
 		
 		// Temp invulnerability
 		invuln = true;

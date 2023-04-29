@@ -59,13 +59,29 @@ for (var i = -2; i <= 2; i++)
 	{
 		draw_sprite_ext(_sprite, 0, room_width/2 + _offset, y, _scale, _scale, 0, c_white, _alpha);
 	}
-	else
+	else // Is the currently selected gadget
 	{
+		// Don't animate if broken
+		if (_broken) image_speed = 0;
+		else // If not broken, check if hovered or clicked
+		{
+			if (position_meeting(mouse_x, mouse_y, id))
+			{
+				_scale = 3;
+				 
+				if (mouse_check_button_pressed(mb_left))
+				{
+					global.nextRoundGadget = focusedGadget;
+					room_goto(getNextRoom());
+				}
+			}
+		}
+		
 		image_alpha = _alpha;
 		image_xscale = _scale;
 		image_yscale = _scale;
 		
-		if (_broken) image_speed = 0;
+		
 	}
 	
 	if (_broken)
@@ -76,6 +92,7 @@ for (var i = -2; i <= 2; i++)
 
 #endregion sprites
 
+// Draw name
 draw_set_font(fnt_title);
 draw_set_halign(fa_center);
 draw_text(room_width/2, room_height * 0.60, get_gadget_name(focusedGadget));

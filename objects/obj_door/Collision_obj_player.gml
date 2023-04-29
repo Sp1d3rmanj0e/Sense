@@ -60,10 +60,13 @@ if (!activated) && (roomTarget != noone)
 				var _mostUsedSense = getMaxSense();
 				var _loseSenseSequence = getLoseSenseSequence(_mostUsedSense);
 				TransitionStart(_loseSenseSequence, roomTarget);
-	
+
+				// Stop using the senses during the cutscene
+				obj_player.curSense = SENSE.NONE;
+
 				// Make player lose that sense
 				deactivateSense(_mostUsedSense);
-	
+
 				// Increment level counter
 				global.level++;
 			}

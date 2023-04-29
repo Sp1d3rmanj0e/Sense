@@ -4,7 +4,7 @@
 x = room_width/2;
 y = room_height/2;
 
-focusedGadget = 2;
+focusedGadget = irandom(4);
 drawBuffer = 350;
 
 function get_gadget_name(_gadget)
@@ -19,6 +19,20 @@ function get_gadget_name(_gadget)
 	}
 	
 	return "NO NAME";
+}
+
+function getNextRoom()
+{
+	switch(global.level)
+	{
+		case 1: return rm_Gwall_1; // Theoretically should never happen because level 1 is started by another button
+		case 2:	return rm_Gwall_2;
+		case 3:	return rm_Gwall_3;
+		case 4:	return rm_Gwall_4;
+		case 5:	return rm_Gwall_5;
+		case 6:	return rm_intro; // Will be switched to win area
+		default: show_debug_message("room not found"); return rm_intro;
+	}
 }
 
 function get_gadget_sprite(_enum)

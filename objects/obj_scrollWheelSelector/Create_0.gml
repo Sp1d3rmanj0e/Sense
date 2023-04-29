@@ -7,6 +7,20 @@ y = room_height/2;
 focusedGadget = 2;
 drawBuffer = 350;
 
+function get_gadget_name(_gadget)
+{
+	switch(_gadget)
+	{
+		case GADGET.DASH:			return "Dash";
+		case GADGET.GPS:			return "Tracker";
+		case GADGET.LURE:			return "Decoy";
+		case GADGET.TELEPORT:		return "Teleporter";
+		case GADGET.THERMAL:		return "Thermal";
+	}
+	
+	return "NO NAME";
+}
+
 function get_gadget_sprite(_enum)
 {
 	// Mod doesn't work for negative numbers,
@@ -15,11 +29,11 @@ function get_gadget_sprite(_enum)
 	
 	switch(_enum)
 	{
-		case 0: return spr_dash_item_active; break;
-		case 1: return spr_placed_distraction_box; break;
-		case 2: return spr_GPS_item_active; break;
-		case 3: return spr_teleporter_pad; break;
-		case 4: return spr_night_vision_helmet_item_active; break;
+		case GADGET.DASH:		 return spr_dash_item_active; break;
+		case GADGET.GPS:		 return spr_GPS_item_active; break;
+		case GADGET.LURE:		 return spr_placed_distraction_box; break;
+		case GADGET.TELEPORT:	 return spr_teleporter_pad; break;
+		case GADGET.THERMAL:	 return spr_night_vision_helmet_item_active; break;
 		default: return spr_fire1;
 	}
 }

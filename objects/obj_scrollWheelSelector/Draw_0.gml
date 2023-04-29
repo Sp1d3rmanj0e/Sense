@@ -38,6 +38,8 @@ if (abs(x - room_width/2) >= drawBuffer)
 
 #endregion scrolling
 
+#region sprites
+
 // Animate self as the currently focused gadget
 sprite_index = get_gadget_sprite(focusedGadget);
 
@@ -72,5 +74,9 @@ for (var i = -2; i <= 2; i++)
 	}
 }
 
+#endregion sprites
 
-
+draw_set_font(fnt_title);
+draw_set_halign(fa_center);
+draw_text(room_width/2, room_height * 0.60, get_gadget_name(focusedGadget));
+draw_set_font(-1);

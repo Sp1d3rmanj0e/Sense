@@ -126,6 +126,8 @@ function teleport()
 
 function thermal()
 {
+	audio_play_sound(snd_thermalOn, 1, 0);
+	
 	if (numGadgetUsesLeft > 0)
 	{
 		function createHeat()
@@ -144,4 +146,6 @@ function thermal()
 		}
 		numGadgetUsesLeft--;
 	}
+	
+	alarm[0] = obj_heat.uptime;
 }

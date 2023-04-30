@@ -3,6 +3,7 @@
 #region blood splatter
 
 // Only draw blood splatter when the effect timer is still active
+//if (playerHealth == 0) alarm[3] = bloodEffectTime; // Keep blood on if dead
 if (alarm[3] != -1)
 {
 	// Draw the blood splatter

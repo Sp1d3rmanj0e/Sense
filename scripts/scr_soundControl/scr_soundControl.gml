@@ -34,6 +34,19 @@ function getFootSound()
 	return _footNoise;
 }
 
+function get_enemy_sound()
+{
+	switch(object_index)
+	{
+		case obj_janitor:	return snd_Janitor1 ;
+		//case obj_mimic:		return snd_ ;
+		//case obj_spider:	return snd_ ;
+		//case obj_eyeball:	return snd_ ;
+		//case obj_ghost:		return snd_ ;
+		default: return getFootSound(); // Placeholder
+	}
+}
+
 function create_emitter(_footNoise)
 {
 	// Spawn sound control

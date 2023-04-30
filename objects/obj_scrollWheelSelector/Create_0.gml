@@ -70,7 +70,7 @@ function get_if_gadget_broken(_enum)
 }
 
 // Animations
-scrollSpeed = 7;
+scrollSpeed = 13;
 scroll = 0;
 
 function scroll_right()

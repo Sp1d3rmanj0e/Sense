@@ -1,3 +1,3 @@
 /// @description
 
-scroll_right();
+scroll_left();

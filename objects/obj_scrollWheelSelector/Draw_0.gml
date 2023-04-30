@@ -1,8 +1,5 @@
 /// @description
 
-//var _numWorkingGadgets = ds_list_size(workingGadgets);
-
-
 #region scrolling
 
 // If not actively scrolling, animate
@@ -38,7 +35,7 @@ if (abs(x - room_width/2) >= drawBuffer)
 
 #endregion scrolling
 
-#region sprites
+#region gadget sprites
 
 // Animate self as the currently focused gadget
 sprite_index = get_gadget_sprite(focusedGadget);
@@ -50,7 +47,6 @@ for (var i = -2; i <= 2; i++)
 	// Draw properties
 	var _sprite = get_gadget_sprite((focusedGadget + i) mod 5); 
 	var _broken = get_if_gadget_broken((focusedGadget + i) mod 5);
-	logImportant(string((focusedGadget + i) mod 5) + " = " + string(_broken));
 	if (_sprite < 0) _sprite += 4;
 	var _offset = drawBuffer * i + (x - room_width/2);
 	var _alpha  = 1 - abs(_offset)/drawBuffer/2; // 0, 50, 100, 50, 0
@@ -91,9 +87,43 @@ for (var i = -2; i <= 2; i++)
 	}
 }
 
-#endregion sprites
+#endregion gadget sprites
 
-// Draw name
+#region buttons
+
+// Scale if hovered over
+// Scroll if clicked
+var _rightScale = 1;
+var _leftScale = 1;
+
+var _checkBuffer = 100; // How far from the wall to consider an arrow hovered over
+
+// Right side check
+if (point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_width, room_height))
+{
+	_rightScale = 2;
+	
+	if (mouse_check_button_pressed(mb_left)) scroll_left();
+}
+
+// Left side check
+if (point_in_rectangle(mouse_x, mouse_y, 0, 0, _checkBuffer, room_height))
+{
+	_leftScale = 2;
+	
+	if (mouse_check_button_pressed(mb_left)) scroll_right();
+}
+
+// Draw the right button
+draw_sprite_ext(spr_changeGadgetButton, 0, room_width - 80, room_height/2, _rightScale, _rightScale, 0, c_white, 1);
+
+// Draw the left button
+draw_sprite_ext(spr_changeGadgetButton, 0, 80, room_height/2, _leftScale * -1, _leftScale, 0, c_white, 1);
+
+
+#endregion buttons
+
+// Draw gadget name
 draw_set_font(fnt_title);
 draw_set_halign(fa_center);
 draw_text(room_width/2, room_height * 0.60, get_gadget_name(focusedGadget));

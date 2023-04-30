@@ -32,6 +32,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5e0e37c8-ecdc-4c37-b714-e25c6b656a7d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8684db39-9e1b-48ba-a434-97cd53af2b5d",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d9395793-5e28-4133-9850-565a0f500918",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"793dad8c-5560-4571-a5d5-7ce9834bf6b8",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -43,7 +44,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -52,6 +53,7 @@
             {"id":"70fca7f6-44e3-4bec-935c-7c0dec6097f4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5e0e37c8-ecdc-4c37-b714-e25c6b656a7d","path":"sprites/spr_healthBar/spr_healthBar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e27cf62c-ba03-4267-8bd8-8d467662a5f3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8684db39-9e1b-48ba-a434-97cd53af2b5d","path":"sprites/spr_healthBar/spr_healthBar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4a60ed89-09c7-4520-938e-cc8d55e00563","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d9395793-5e28-4133-9850-565a0f500918","path":"sprites/spr_healthBar/spr_healthBar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8d7f29f9-cf53-4be3-8cbb-cd647c6da134","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"793dad8c-5560-4571-a5d5-7ce9834bf6b8","path":"sprites/spr_healthBar/spr_healthBar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

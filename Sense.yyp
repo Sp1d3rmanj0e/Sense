@@ -230,6 +230,7 @@
     {"id":{"name":"sq_loseSenseHear","path":"sequences/sq_loseSenseHear/sq_loseSenseHear.yy",},"order":2,},
     {"id":{"name":"spr_mimicBack","path":"sprites/spr_mimicBack/spr_mimicBack.yy",},"order":3,},
     {"id":{"name":"spr_flashlight","path":"sprites/spr_flashlight/spr_flashlight.yy",},"order":29,},
+    {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},"order":14,},
     {"id":{"name":"spr_jumpscareDemon","path":"sprites/spr_jumpscareDemon/spr_jumpscareDemon.yy",},"order":4,},
     {"id":{"name":"spr_playerBack","path":"sprites/spr_playerBack/spr_playerBack.yy",},"order":3,},
     {"id":{"name":"scr_eyeball","path":"scripts/scr_eyeball/scr_eyeball.yy",},"order":4,},

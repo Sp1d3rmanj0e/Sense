@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Destroy children
 
 instance_destroy(obj_sense_button);
 instance_destroy(obj_senseWheelButton);

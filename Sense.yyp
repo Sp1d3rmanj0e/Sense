@@ -99,6 +99,8 @@
     {"id":{"name":"scr_janitorA","path":"scripts/scr_janitorA/scr_janitorA.yy",},"order":2,},
     {"id":{"name":"par_lightParent","path":"objects/par_lightParent/par_lightParent.yy",},"order":3,},
     {"id":{"name":"spr_spiderFront3","path":"sprites/spr_spiderFront3/spr_spiderFront3.yy",},"order":4,},
+    {"id":{"name":"spr_imageScroller","path":"sprites/spr_imageScroller/spr_imageScroller.yy",},"order":15,},
+    {"id":{"name":"obj_imageScroller","path":"objects/obj_imageScroller/obj_imageScroller.yy",},"order":5,},
     {"id":{"name":"spr_player_leftArm_left_default","path":"sprites/spr_player_leftArm_left_default/spr_player_leftArm_left_default.yy",},"order":6,},
     {"id":{"name":"spr_smellResidue","path":"sprites/spr_smellResidue/spr_smellResidue.yy",},"order":1,},
     {"id":{"name":"spr_eye","path":"sprites/spr_eye/spr_eye.yy",},"order":4,},

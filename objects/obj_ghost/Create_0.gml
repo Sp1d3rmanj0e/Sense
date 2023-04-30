@@ -3,6 +3,8 @@
 // Footstep and heat
 event_inherited();
 
+//emitter_set_foot_sound(footsteps, snd_ghost); // Change from generic foot sound to ghost sound
+
 // Randomize
 randomize();
 

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var _footNoise = get_enemy_sound();
+var _footNoise = getFootSound();
 
 footsteps = create_emitter(_footNoise);
 

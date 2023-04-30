@@ -34,17 +34,25 @@ function getFootSound()
 	return _footNoise;
 }
 
-function get_enemy_sound()
+function get_enemy_noise(_animScript)
 {
-	switch(object_index)
-	{
-		case obj_janitor:	return snd_Janitor1 ;
-		//case obj_mimic:		return snd_ ;
-		//case obj_spider:	return snd_ ;
-		//case obj_eyeball:	return snd_ ;
-		//case obj_ghost:		return snd_ ;
-		default: return getFootSound(); // Placeholder
-	}
+	
+/*
+var _newFootSound = snd_mimic;
+
+switch(_animScript)
+{
+	case: ... _newFootSound = ...; break;
+}
+
+emitter_set_foot_sound(_emitter, _newFootSound)
+
+*/
+}
+
+function emitter_set_foot_sound(_emitter, _newSound)
+{
+	audio_play_sound_on(_emitter, _newSound, 1, 1);
 }
 
 function create_emitter(_footNoise)

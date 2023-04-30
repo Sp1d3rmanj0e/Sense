@@ -165,7 +165,7 @@
     {"id":{"name":"snd_GrassFootsteps","path":"sounds/snd_GrassFootsteps/snd_GrassFootsteps.yy",},"order":3,},
     {"id":{"name":"snd_teleporter_placed","path":"sounds/snd_teleporter_placed/snd_teleporter_placed.yy",},"order":6,},
     {"id":{"name":"spr_flashlight_side_animation_right","path":"sprites/spr_flashlight_side_animation_right/spr_flashlight_side_animation_right.yy",},"order":9,},
-    {"id":{"name":"snd_sanityDemon","path":"sounds/snd_sanityDemon/snd_sanityDemon.yy",},"order":3,},
+    {"id":{"name":"snd_gamemaster","path":"sounds/snd_gamemaster/snd_gamemaster.yy",},"order":3,},
     {"id":{"name":"obj_heat","path":"objects/obj_heat/obj_heat.yy",},"order":10,},
     {"id":{"name":"spr_player_leftArm_backLeft_flashlight","path":"sprites/spr_player_leftArm_backLeft_flashlight/spr_player_leftArm_backLeft_flashlight.yy",},"order":1,},
     {"id":{"name":"scr_collision_line_tile","path":"scripts/scr_collision_line_tile/scr_collision_line_tile.yy",},"order":2,},

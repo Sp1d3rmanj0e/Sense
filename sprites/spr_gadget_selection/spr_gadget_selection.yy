@@ -25,8 +25,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 741,
+  "gridY": 704,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"baa43e65-7256-4034-921f-55d259660a63",},
   ],
@@ -64,7 +64,9 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e8fed3e2-301e-4b92-9a39-88585c7eab24","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"186d2ed0-bee5-42a0-a690-dccd903c329c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 3",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e33bc265-36f2-4a3f-98ea-552d42cb3273","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e8fed3e2-301e-4b92-9a39-88585c7eab24","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c710206a-db3b-4382-a1f7-46f440149de4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,

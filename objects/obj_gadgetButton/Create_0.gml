@@ -113,6 +113,8 @@ function teleport()
 				x = obj_teleporter.x;
 				y = obj_teleporter.y;
 			
+				audio_play_sound(snd_teleporterUsed, 1, 0);
+			
 				other.numGadgetUsesLeft--;
 				
 				image_alpha = 0;
@@ -126,6 +128,8 @@ function teleport()
 
 function thermal()
 {
+	audio_play_sound(snd_thermalOn, 1, 0);
+	
 	if (numGadgetUsesLeft > 0)
 	{
 		function createHeat()
@@ -144,4 +148,6 @@ function thermal()
 		}
 		numGadgetUsesLeft--;
 	}
+	
+	alarm[0] = obj_heat.uptime;
 }

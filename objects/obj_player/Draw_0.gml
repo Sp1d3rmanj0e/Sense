@@ -89,6 +89,10 @@ var _rightArmAnim = scr_player_rightArm_default_A;
 if (curSense == SENSE.SEE) 
 	_leftArmAnim = scr_player_leftArm_flashlight_A;
 
+// Feel arm if feel is active
+else if (curSense == SENSE.FEEL)
+	_leftArmAnim = scr_player_leftArm_feel_A;
+
 // Get the gadget sprite arm if one exists
 if (instance_exists(obj_gadgetButton))
 {
@@ -192,3 +196,4 @@ else if (curGadget == GADGET.THERMAL) && (instance_exists(obj_heat))
  }
  
  #endregion invulnerability flas
+

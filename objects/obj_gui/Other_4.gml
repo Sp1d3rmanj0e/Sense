@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Create sense and gadget buttons
 
 // Always be at the top left of the camera
 x = camera_get_view_x(view_camera[0]);

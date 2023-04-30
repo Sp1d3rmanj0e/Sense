@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+audio_play_sound(snd_pauseMenuOpen, 1, 0);
+
 if (!global.settingKeybind) { // Don't leave the settings room until
 							  // the keybind being set is complete
 

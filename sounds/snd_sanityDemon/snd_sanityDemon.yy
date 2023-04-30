@@ -17,7 +17,7 @@
   "soundFile": "snd_sanityDemon.mp3",
   "duration": 7.000812,
   "parent": {
-    "name": "LoseSenseSounds",
-    "path": "folders/Sounds/LoseSenseSounds.yy",
+    "name": "Entity",
+    "path": "folders/Sounds/Entity.yy",
   },
 }

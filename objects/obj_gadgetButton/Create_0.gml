@@ -113,6 +113,8 @@ function teleport()
 				x = obj_teleporter.x;
 				y = obj_teleporter.y;
 			
+				audio_play_sound(snd_teleporterUsed, 1, 0);
+			
 				other.numGadgetUsesLeft--;
 				
 				image_alpha = 0;

@@ -432,6 +432,7 @@
     {"id":{"name":"spr_van_with_logo","path":"sprites/spr_van_with_logo/spr_van_with_logo.yy",},"order":3,},
     {"id":{"name":"spr_sound_indicator","path":"sprites/spr_sound_indicator/spr_sound_indicator.yy",},"order":2,},
     {"id":{"name":"scr_player_rightArm_tracker_A","path":"scripts/scr_player_rightArm_tracker_A/scr_player_rightArm_tracker_A.yy",},"order":2,},
+    {"id":{"name":"snd_teleporterUsed","path":"sounds/snd_teleporterUsed/snd_teleporterUsed.yy",},"order":13,},
     {"id":{"name":"spr_player_leftArm_frontLeft_flashlight","path":"sprites/spr_player_leftArm_frontLeft_flashlight/spr_player_leftArm_frontLeft_flashlight.yy",},"order":4,},
     {"id":{"name":"spr_ghost","path":"sprites/spr_ghost/spr_ghost.yy",},"order":0,},
     {"id":{"name":"obj_leaderboard","path":"objects/obj_leaderboard/obj_leaderboard.yy",},"order":2,},

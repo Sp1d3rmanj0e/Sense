@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_car",
+  "name": "snd_teleporterUsed",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.76,
+  "volume": 0.83,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_car.mp3",
-  "duration": 4.75425,
+  "soundFile": "snd_teleporterUsed.mp3",
+  "duration": 1.17551,
   "parent": {
-    "name": "Cutscene",
-    "path": "folders/Sounds/Cutscene.yy",
+    "name": "Utility",
+    "path": "folders/Sounds/Utility.yy",
   },
 }

@@ -44,7 +44,7 @@ if (anger >= maxAnger)
 	
 	state = STATE.CHASE;
 	animScript = defaultAnimScript;
-	//emitter_set_foot_sound(footsteps, snd_mimic); // Reset back to default mimic noises
+	//emitter_set_foot_sound(snd_mimic); // Reset back to default mimic noises
 	
 	// Set transform timer to 0
 	mimicFormTimer = -1;
@@ -57,7 +57,7 @@ else
 	// Transform back
 	mimicFormTimer = -1;
 	animScript = defaultAnimScript;
-	//emitter_set_foot_sound(footsteps, get_enemy_noise(animScript)); // Reset back to default mimic noises
+	//emitter_set_foot_sound(snd_mimic); // Reset back to default mimic noises
 }
 
 // State machine
@@ -139,9 +139,9 @@ if (state == STATE.WANDER)
 		// Take enemy's sprite
 		animScript = copyID.animScript;
 		
-		//emitter_set_foot_sound(footsteps, get_enemy_noise(animScript)); // Get new footstep noises
-																		  // based on the new enemy
-																		  // it is mimicing
+		//emitter_set_foot_sound(get_enemy_noise(animScript));	// Get new footstep noises
+																// based on the new enemy
+																// it is mimicing
 	}
 	
 	#endregion code

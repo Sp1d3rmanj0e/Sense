@@ -3,7 +3,7 @@
 // Footstep and heat
 event_inherited();
 
-emitter_set_foot_sound(footsteps, snd_Janitor1); // Change from generic foot sound to janitor sound
+emitter_set_foot_sound(snd_Janitor1); // Change from generic foot sound to janitor sound
 
 // Randomize
 randomize();

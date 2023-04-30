@@ -3,9 +3,9 @@
 // Footstep and heat
 event_inherited();
 
-//emitter_set_foot_sound(footsteps, snd_mimic); // Change from generic foot sound to mimic sound
-												// NOTE: This will be changed dynamically based on
-												//	who the mimic copies
+//emitter_set_foot_sound(snd_mimic); // Change from generic foot sound to mimic sound
+									 // NOTE: This will be changed dynamically based on
+									 //	who the mimic copies
 
 // Randomize
 randomize();

@@ -4,6 +4,7 @@
   "name": "Sense",
   "resources": [
     {"id":{"name":"obj_sense_button_board","path":"objects/obj_sense_button_board/obj_sense_button_board.yy",},"order":3,},
+    {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":6,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":8,},
     {"id":{"name":"rm_Gwall_4","path":"rooms/rm_Gwall_4/rm_Gwall_4.yy",},"order":3,},
     {"id":{"name":"spr_resMudprintsGlitched","path":"sprites/spr_resMudprintsGlitched/spr_resMudprintsGlitched.yy",},"order":7,},
@@ -591,9 +592,10 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"rm_startAnimation","path":"rooms/rm_startAnimation/rm_startAnimation.yy",},},
     {"groupName":"Start","children":[
-        {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
         {"roomId":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},},
         {"roomId":{"name":"rm_difficulty","path":"rooms/rm_difficulty/rm_difficulty.yy",},},
       ],},

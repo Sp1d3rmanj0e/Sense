@@ -21,6 +21,8 @@ if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2))
 	// Check if clicked
 	if (mouse_check_button_pressed(mb_left))
 	{
+		audio_play_sound(snd_buttonPressed, 1, 0);
+		
 		if (roomCode != noone) // Check if button is a room
 		{
 			room_goto(roomCode);

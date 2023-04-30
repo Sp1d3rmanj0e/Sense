@@ -12,6 +12,8 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height))
 	// Check if button was clicked
 	var _clicked = (mouse_check_button_pressed(mb_left) && (!global.settingKeybind));
 	
+	if (_clicked) audio_play_sound(snd_buttonPressed, 1, 0);
+	
 	if (options[0] != -1) 
 	{
 		if (isToggle)

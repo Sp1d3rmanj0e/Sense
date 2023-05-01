@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_loseHearing.mp3",
-  "duration": 1.28,
+  "duration": 3.216,
   "parent": {
     "name": "LoseSenseSounds",
     "path": "folders/Sounds/LoseSenseSounds.yy",

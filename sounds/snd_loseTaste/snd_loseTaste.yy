@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_loseTaste.mp3",
-  "duration": 2.351,
+  "duration": 2.037551,
   "parent": {
     "name": "LoseSenseSounds",
     "path": "folders/Sounds/LoseSenseSounds.yy",

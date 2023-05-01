@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (instance_exists(demonSpawner)) instance_destroy(demonSpawner) // No sanity demons in test rooms
+
 if (room != rm_testingHub)
 {
 	// Check for line change command

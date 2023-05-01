@@ -34,6 +34,28 @@ function getFootSound()
 	return _footNoise;
 }
 
+function get_enemy_noise(_animScript)
+{
+	
+/*
+var _newFootSound = snd_mimic;
+
+switch(_animScript)
+{
+	case: ... _newFootSound = ...; break;
+}
+
+emitter_set_foot_sound(_emitter, _newFootSound)
+
+*/
+}
+
+function emitter_set_foot_sound(_newSound)
+{
+	audio_stop_sound(footSound); // Stop old sound
+	footSound = audio_play_sound_on(footsteps, _newSound, 1, 1); // Start new sound
+}
+
 function create_emitter(_footNoise)
 {
 	// Spawn sound control
@@ -51,7 +73,7 @@ function create_emitter(_footNoise)
 						  obj_soundControl.multiplier);
 						  
 	// Play the emitter on loop
-	audio_play_sound_on(footsteps, _footNoise, 1, 1);
+	footSound = audio_play_sound_on(footsteps, _footNoise, 1, 1);
 	
 	// Place the emitter on its creator
 	audio_emitter_position(footsteps, x, y, 0);

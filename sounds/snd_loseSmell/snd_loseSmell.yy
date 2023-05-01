@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_loseSmell.mp3",
-  "duration": 2.664438,
+  "duration": 3.264,
   "parent": {
     "name": "LoseSenseSounds",
     "path": "folders/Sounds/LoseSenseSounds.yy",

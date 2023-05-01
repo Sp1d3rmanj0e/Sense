@@ -3,6 +3,8 @@
 // Footstep and heat
 event_inherited();
 
+//emitter_set_foot_sound(snd_eyeball); // Change from generic foot sound to eyeball sound
+
 // Randomize seed
 randomize();
 

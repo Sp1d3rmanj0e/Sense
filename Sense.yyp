@@ -184,6 +184,7 @@
     {"id":{"name":"enemies","path":"objects/enemies/enemies.yy",},"order":6,},
     {"id":{"name":"spr_teleport_side_animation_right","path":"sprites/spr_teleport_side_animation_right/spr_teleport_side_animation_right.yy",},"order":4,},
     {"id":{"name":"sq_loseSenseTaste","path":"sequences/sq_loseSenseTaste/sq_loseSenseTaste.yy",},"order":5,},
+    {"id":{"name":"rm_Bwall_4","path":"rooms/rm_Bwall_4/rm_Bwall_4.yy",},"order":3,},
     {"id":{"name":"rm_tut_mimic","path":"rooms/rm_tut_mimic/rm_tut_mimic.yy",},"order":4,},
     {"id":{"name":"spr_tutorialInfo","path":"sprites/spr_tutorialInfo/spr_tutorialInfo.yy",},"order":1,},
     {"id":{"name":"spr_player_rightArm_front_decoy","path":"sprites/spr_player_rightArm_front_decoy/spr_player_rightArm_front_decoy.yy",},"order":3,},
@@ -648,6 +649,7 @@
     {"roomId":{"name":"rm_4_introFightAftermath","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},},
     {"roomId":{"name":"rm_Bwall_2","path":"rooms/rm_Bwall_2/rm_Bwall_2.yy",},},
     {"roomId":{"name":"rm_Bwall_3","path":"rooms/rm_Bwall_3/rm_Bwall_3.yy",},},
+    {"roomId":{"name":"rm_Bwall_4","path":"rooms/rm_Bwall_4/rm_Bwall_4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

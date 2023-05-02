@@ -1,5 +1,7 @@
 /// @description
 
+draw_set_color(c_white);
+
 #region scrolling
 
 // If not actively scrolling, animate

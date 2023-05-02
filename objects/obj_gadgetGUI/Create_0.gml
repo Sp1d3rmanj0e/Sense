@@ -7,8 +7,7 @@
 
 // activationObj initialized in constructor of obj_gadgetButton
 
-// Properties
-camHeight = camera_get_view_height(view_camera[0]);
+guiHeight = display_get_gui_height();
 
 #region GPS Properties
 
@@ -48,8 +47,8 @@ switch(activationObj)
 		{
 			// Create a pseudo x and y for the code to work off of
 			// the x and y will be the coordinate of the center of the circle
-			var _x = circleRad;
-			var _y = camHeight - circleRad - 40;
+			var _x = circleRad+40;
+			var _y = guiHeight - circleRad - 40;
 			
 			#region base setup
 			
@@ -58,8 +57,8 @@ switch(activationObj)
 			draw_circle(_x, _y, circleRad, false);
 			
 			// Draw player icon
-			draw_set_color(playerDotColor);
-			draw_circle(_x, _y, 5, false);
+			//draw_set_color(playerDotColor);
+			//draw_circle(_x, _y, 5, false);
 			
 			#endregion base setup
 			
@@ -126,11 +125,11 @@ switch(activationObj)
 			// draw the connected gps overlay
 			if (instance_exists(obj_gps) && (obj_gps.state == GPS.ENEMY))
 			{
-				draw_sprite(spr_guiActive_tracker, 1, 0, camHeight); // Activated
+				draw_sprite_ext(spr_guiActive_tracker, 1, _x, _y, 1.95, 1.95, 0, c_white, 0.75); // Activated
 			}
 			else
 			{
-				draw_sprite(spr_guiActive_tracker, 0, 0, camHeight); // Deactivated
+				draw_sprite_ext(spr_guiActive_tracker, 0, _x, _y, 1.95, 1.95, 0, c_white, 0.75); // Deactivated
 			}
 		}
 	break;
@@ -138,22 +137,22 @@ switch(activationObj)
 		function lure_GUI()
 		{
 			
-			draw_sprite(spr_guiActive_decoy, 0, 0, camHeight);
+			draw_sprite(spr_guiActive_decoy, 0, 0, guiHeight);
 			
 			var _gadgetTimePercent = obj_lure.alarm[0]/obj_lure.uptime*100;
-			draw_healthbar(0, camHeight-15, 50, camHeight, _gadgetTimePercent, 
-						   c_black, global.color_gadget, global.color_gadget, 1, true, true);
+			draw_healthbar(36, guiHeight-4, 89, guiHeight-22, _gadgetTimePercent, 
+						   c_black, global.color_gadget, global.color_gadget, 1, false, false);
 						   
 		}
 	break;
 	case obj_heat:
 		function thermal_GUI()
 		{
-			draw_sprite(spr_guiActive_thermal, 0, 0, camHeight);
+			draw_sprite(spr_guiActive_thermal, 0, 0, guiHeight);
 			
 			var _gadgetTimePercent = obj_heat.alarm[0]/obj_heat.uptime*100;
-			draw_healthbar(0, camHeight-15, 50, camHeight, _gadgetTimePercent, 
-						   c_black, global.color_gadget, global.color_gadget, 1, true, true);
+			draw_healthbar(36, guiHeight-4, 89, guiHeight-22, _gadgetTimePercent, 
+						   c_black, global.color_gadget, global.color_gadget, 1, false, false);
 		}
 	break;
 }

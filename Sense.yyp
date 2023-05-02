@@ -293,6 +293,7 @@
     {"id":{"name":"spr_JanitorBack","path":"sprites/spr_JanitorBack/spr_JanitorBack.yy",},"order":2,},
     {"id":{"name":"spr_can_trash","path":"sprites/spr_can_trash/spr_can_trash.yy",},"order":1,},
     {"id":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},"order":4,},
+    {"id":{"name":"spr_warehouse","path":"sprites/spr_warehouse/spr_warehouse.yy",},"order":10,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":8,},
     {"id":{"name":"spr_desk","path":"sprites/spr_desk/spr_desk.yy",},"order":0,},
     {"id":{"name":"spr_player_head_frontLeft_tracker","path":"sprites/spr_player_head_frontLeft_tracker/spr_player_head_frontLeft_tracker.yy",},"order":4,},

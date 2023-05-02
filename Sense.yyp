@@ -63,6 +63,7 @@
     {"id":{"name":"spr_player_head_left_thermal","path":"sprites/spr_player_head_left_thermal/spr_player_head_left_thermal.yy",},"order":3,},
     {"id":{"name":"rm_leaderboard","path":"rooms/rm_leaderboard/rm_leaderboard.yy",},"order":2,},
     {"id":{"name":"spr_player_head_back_tracker","path":"sprites/spr_player_head_back_tracker/spr_player_head_back_tracker.yy",},"order":0,},
+    {"id":{"name":"scr_get_rand_room","path":"scripts/scr_get_rand_room/scr_get_rand_room.yy",},"order":18,},
     {"id":{"name":"obj_piano","path":"objects/obj_piano/obj_piano.yy",},"order":5,},
     {"id":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"order":2,},
     {"id":{"name":"snd_car","path":"sounds/snd_car/snd_car.yy",},"order":0,},

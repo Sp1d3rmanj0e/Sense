@@ -93,15 +93,15 @@ for (var i = -2; i <= 2; i++)
 
 // Scale if hovered over
 // Scroll if clicked
-var _rightScale = 1;
-var _leftScale = 1;
+var _rightScale = 1.75;
+var _leftScale = 1.75;
 
-var _checkBuffer = 100; // How far from the wall to consider an arrow hovered over
+var _checkBuffer = 500; // How far from the wall to consider an arrow hovered over
 
 // Right side check
 if (point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_width, room_height))
 {
-	_rightScale = 2;
+	_rightScale = 2.5;
 	
 	if (mouse_check_button_pressed(mb_left)) scroll_left();
 }
@@ -109,7 +109,7 @@ if (point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_widt
 // Left side check
 if (point_in_rectangle(mouse_x, mouse_y, 0, 0, _checkBuffer, room_height))
 {
-	_leftScale = 2;
+	_leftScale = 2.5;
 	
 	if (mouse_check_button_pressed(mb_left)) scroll_right();
 }

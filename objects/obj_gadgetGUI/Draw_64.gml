@@ -8,10 +8,8 @@ if (instance_exists(activationObj))
 {
 	switch(activationObj)
 	{
-		case obj_dash:			dash_GUI();			break;
 		case obj_gps:			GPS_GUI();			break;
 		case obj_lure:			lure_GUI();			break;
-		case obj_teleporter:	teleport_GUI();		break;
 		case obj_heat:			thermal_GUI();		break;
 	}
 }

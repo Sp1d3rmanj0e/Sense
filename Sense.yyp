@@ -493,6 +493,7 @@
     {"id":{"name":"spr_player_head_right_tracker","path":"sprites/spr_player_head_right_tracker/spr_player_head_right_tracker.yy",},"order":7,},
     {"id":{"name":"spr_JanitorSide","path":"sprites/spr_JanitorSide/spr_JanitorSide.yy",},"order":5,},
     {"id":{"name":"spr_difficultyDesc","path":"sprites/spr_difficultyDesc/spr_difficultyDesc.yy",},"order":39,},
+    {"id":{"name":"spr_tutorialObjective","path":"sprites/spr_tutorialObjective/spr_tutorialObjective.yy",},"order":7,},
     {"id":{"name":"spr_tutorialInfo_enemies","path":"sprites/spr_tutorialInfo_enemies/spr_tutorialInfo_enemies.yy",},"order":6,},
     {"id":{"name":"spr_player_leftArm_right_default","path":"sprites/spr_player_leftArm_right_default/spr_player_leftArm_right_default.yy",},"order":7,},
     {"id":{"name":"spr_smell_indicator","path":"sprites/spr_smell_indicator/spr_smell_indicator.yy",},"order":5,},

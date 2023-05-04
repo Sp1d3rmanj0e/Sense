@@ -68,6 +68,7 @@
     {"id":{"name":"scr_get_rand_room","path":"scripts/scr_get_rand_room/scr_get_rand_room.yy",},"order":18,},
     {"id":{"name":"obj_piano","path":"objects/obj_piano/obj_piano.yy",},"order":5,},
     {"id":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"order":2,},
+    {"id":{"name":"spr_creditsPlayers","path":"sprites/spr_creditsPlayers/spr_creditsPlayers.yy",},"order":8,},
     {"id":{"name":"snd_car","path":"sounds/snd_car/snd_car.yy",},"order":0,},
     {"id":{"name":"obj_soundControl","path":"objects/obj_soundControl/obj_soundControl.yy",},"order":0,},
     {"id":{"name":"spr_eyeballAggroDemo","path":"sprites/spr_eyeballAggroDemo/spr_eyeballAggroDemo.yy",},"order":4,},
@@ -248,6 +249,7 @@
     {"id":{"name":"spr_playerBack","path":"sprites/spr_playerBack/spr_playerBack.yy",},"order":3,},
     {"id":{"name":"scr_eyeball","path":"scripts/scr_eyeball/scr_eyeball.yy",},"order":4,},
     {"id":{"name":"scr_janitor","path":"scripts/scr_janitor/scr_janitor.yy",},"order":1,},
+    {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},"order":8,},
     {"id":{"name":"spr_broken_item_bag","path":"sprites/spr_broken_item_bag/spr_broken_item_bag.yy",},"order":26,},
     {"id":{"name":"spr_playerBase_front","path":"sprites/spr_playerBase_front/spr_playerBase_front.yy",},"order":1,},
     {"id":{"name":"spr_heart_rate","path":"sprites/spr_heart_rate/spr_heart_rate.yy",},"order":18,},
@@ -654,6 +656,7 @@
     {"roomId":{"name":"rm_tut_eyeball","path":"rooms/rm_tut_eyeball/rm_tut_eyeball.yy",},},
     {"roomId":{"name":"rm_4_introFightAftermath","path":"rooms/rm_4_introFightAftermath/rm_4_introFightAftermath.yy",},},
     {"roomId":{"name":"rm_Bwall_2","path":"rooms/rm_Bwall_2/rm_Bwall_2.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

@@ -487,6 +487,7 @@
     {"id":{"name":"spr_cutleryGold","path":"sprites/spr_cutleryGold/spr_cutleryGold.yy",},"order":0,},
     {"id":{"name":"spr_tutorialTitle","path":"sprites/spr_tutorialTitle/spr_tutorialTitle.yy",},"order":0,},
     {"id":{"name":"spr_player_head_right_tracker","path":"sprites/spr_player_head_right_tracker/spr_player_head_right_tracker.yy",},"order":7,},
+    {"id":{"name":"ts_Basement","path":"tilesets/ts_Basement/ts_Basement.yy",},"order":3,},
     {"id":{"name":"spr_JanitorSide","path":"sprites/spr_JanitorSide/spr_JanitorSide.yy",},"order":5,},
     {"id":{"name":"spr_difficultyDesc","path":"sprites/spr_difficultyDesc/spr_difficultyDesc.yy",},"order":39,},
     {"id":{"name":"spr_tutorialInfo_enemies","path":"sprites/spr_tutorialInfo_enemies/spr_tutorialInfo_enemies.yy",},"order":6,},
@@ -549,6 +550,7 @@
     {"id":{"name":"spr_fade_effect","path":"sprites/spr_fade_effect/spr_fade_effect.yy",},"order":7,},
     {"id":{"name":"spr_fire3","path":"sprites/spr_fire3/spr_fire3.yy",},"order":3,},
     {"id":{"name":"spr_spiderBack","path":"sprites/spr_spiderBack/spr_spiderBack.yy",},"order":1,},
+    {"id":{"name":"rm_Basement_1","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},"order":0,},
     {"id":{"name":"snd_GhostGoop","path":"sounds/snd_GhostGoop/snd_GhostGoop.yy",},"order":2,},
     {"id":{"name":"snd_sanityDemonSpawn","path":"sounds/snd_sanityDemonSpawn/snd_sanityDemonSpawn.yy",},"order":4,},
     {"id":{"name":"rm_Bwall_1","path":"rooms/rm_Bwall_1/rm_Bwall_1.yy",},"order":0,},
@@ -652,6 +654,7 @@
     {"roomId":{"name":"rm_Bwall_3","path":"rooms/rm_Bwall_3/rm_Bwall_3.yy",},},
     {"roomId":{"name":"rm_Bwall_4","path":"rooms/rm_Bwall_4/rm_Bwall_4.yy",},},
     {"roomId":{"name":"rm_Bwall_5","path":"rooms/rm_Bwall_5/rm_Bwall_5.yy",},},
+    {"roomId":{"name":"rm_Basement_1","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
@@ -787,6 +790,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Z_Archived","folderPath":"folders/Sprites/Z_Archived.yy","order":15,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Basement_L1","folderPath":"folders/Rooms/maps/Basement_L1.yy","order":7,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

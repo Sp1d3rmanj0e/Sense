@@ -48,7 +48,7 @@ if (!activated) && (roomTarget != noone)
 		
 		case rm_intro: // Wimp ending
 		
-			TransitionStart(sq_endScene_wimp, rm_setScore);
+			TransitionStart(sq_endScene_wimp, rm_intro);
 		
 		break;
 		

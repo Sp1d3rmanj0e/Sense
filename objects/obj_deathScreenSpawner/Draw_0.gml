@@ -36,4 +36,3 @@ switch(_enemy)
 }
 
 draw_sprite(_jumpscareSprite, 0, _camX + _camWidth/2, _camY + _camHeight/2);
-

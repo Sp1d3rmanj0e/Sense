@@ -8,13 +8,13 @@ if (!vertical) // Not Vertical
 {
 	sprite_index = spr_door_left;
 	
-	if (roomTarget != noone) sprite_index = spr_door_left_gold;
+	if (roomTarget != noone) && (!hidden) sprite_index = spr_door_left_gold;
 }
 else // Straight Up
 {
 	sprite_index = spr_door_front;
 	
-	if (roomTarget != noone) sprite_index = spr_door_front_gold;
+	if (roomTarget != noone) && (!hidden) sprite_index = spr_door_front_gold;
 }
 
 openable = false;

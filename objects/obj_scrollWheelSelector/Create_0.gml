@@ -21,6 +21,7 @@ function get_gadget_name(_gadget)
 	return "NO NAME";
 }
 
+/*
 function getNextRoom()
 {
 	switch(global.level)
@@ -34,6 +35,7 @@ function getNextRoom()
 		default: show_debug_message("room not found"); return rm_intro;
 	}
 }
+*/
 
 function get_gadget_sprite(_enum)
 {

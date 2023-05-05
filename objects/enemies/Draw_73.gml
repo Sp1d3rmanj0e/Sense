@@ -3,5 +3,5 @@
 
 if (stunned)
 {
-	draw_sprite(spr_stunnedTemp, -1, x, y);
+	draw_sprite(spr_stunned, -1, x, y);
 }

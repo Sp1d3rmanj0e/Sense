@@ -45,7 +45,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "start",
-    "path": "folders/Rooms/start.yy",
+    "name": "intro animations",
+    "path": "folders/Rooms/start/intro animations.yy",
   },
 }

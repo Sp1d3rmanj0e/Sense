@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Set to fullscreen
-window_set_fullscreen(true);
+window_set_fullscreen(global.fullscreen);
 
 // Get tilemap
 tilemap = layer_tilemap_get_id("walls");

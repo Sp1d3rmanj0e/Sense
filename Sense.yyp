@@ -554,6 +554,7 @@
     {"id":{"name":"spr_tutorialTitle_enemies","path":"sprites/spr_tutorialTitle_enemies/spr_tutorialTitle_enemies.yy",},"order":5,},
     {"id":{"name":"spr_cup","path":"sprites/spr_cup/spr_cup.yy",},"order":0,},
     {"id":{"name":"spr_player_leftArm_back_feel","path":"sprites/spr_player_leftArm_back_feel/spr_player_leftArm_back_feel.yy",},"order":0,},
+    {"id":{"name":"rm_Basement_3","path":"rooms/rm_Basement_3/rm_Basement_3.yy",},"order":2,},
     {"id":{"name":"sq_loseSenseFeel","path":"sequences/sq_loseSenseFeel/sq_loseSenseFeel.yy",},"order":1,},
     {"id":{"name":"spr_bed_blue","path":"sprites/spr_bed_blue/spr_bed_blue.yy",},"order":0,},
     {"id":{"name":"obj_gadgetSelectorSpawner","path":"objects/obj_gadgetSelectorSpawner/obj_gadgetSelectorSpawner.yy",},"order":6,},
@@ -680,6 +681,7 @@
     {"roomId":{"name":"rm_Basement_1","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},},
     {"roomId":{"name":"rm_Basement_2","path":"rooms/rm_Basement_2/rm_Basement_2.yy",},},
     {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
+    {"roomId":{"name":"rm_Basement_3","path":"rooms/rm_Basement_3/rm_Basement_3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

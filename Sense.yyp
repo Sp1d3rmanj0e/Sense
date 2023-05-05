@@ -45,6 +45,7 @@
     {"id":{"name":"spr_hearing_damaged","path":"sprites/spr_hearing_damaged/spr_hearing_damaged.yy",},"order":2,},
     {"id":{"name":"spr_player_rightArm_right_tracker","path":"sprites/spr_player_rightArm_right_tracker/spr_player_rightArm_right_tracker.yy",},"order":7,},
     {"id":{"name":"spr_box1","path":"sprites/spr_box1/spr_box1.yy",},"order":0,},
+    {"id":{"name":"rm_Basement_2","path":"rooms/rm_Basement_2/rm_Basement_2.yy",},"order":1,},
     {"id":{"name":"spr_ear","path":"sprites/spr_ear/spr_ear.yy",},"order":1,},
     {"id":{"name":"spr_echo_side_animation_right","path":"sprites/spr_echo_side_animation_right/spr_echo_side_animation_right.yy",},"order":3,},
     {"id":{"name":"obj_sense_logo_background_blue","path":"objects/obj_sense_logo_background_blue/obj_sense_logo_background_blue.yy",},"order":0,},
@@ -656,6 +657,7 @@
     {"roomId":{"name":"rm_Bwall_4","path":"rooms/rm_Bwall_4/rm_Bwall_4.yy",},},
     {"roomId":{"name":"rm_Bwall_5","path":"rooms/rm_Bwall_5/rm_Bwall_5.yy",},},
     {"roomId":{"name":"rm_Basement_1","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},},
+    {"roomId":{"name":"rm_Basement_2","path":"rooms/rm_Basement_2/rm_Basement_2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

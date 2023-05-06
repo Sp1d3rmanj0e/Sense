@@ -309,6 +309,7 @@
     {"id":{"name":"obj_sense_button","path":"objects/obj_sense_button/obj_sense_button.yy",},"order":7,},
     {"id":{"name":"scr_spiderA","path":"scripts/scr_spiderA/scr_spiderA.yy",},"order":5,},
     {"id":{"name":"spr_JanitorBack","path":"sprites/spr_JanitorBack/spr_JanitorBack.yy",},"order":2,},
+    {"id":{"name":"ts_Kitchen","path":"tilesets/ts_Kitchen/ts_Kitchen.yy",},"order":4,},
     {"id":{"name":"spr_can_trash","path":"sprites/spr_can_trash/spr_can_trash.yy",},"order":1,},
     {"id":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},"order":4,},
     {"id":{"name":"spr_warehouse","path":"sprites/spr_warehouse/spr_warehouse.yy",},"order":10,},

@@ -576,6 +576,7 @@
     {"id":{"name":"spr_introCutsceneRoofCover","path":"sprites/spr_introCutsceneRoofCover/spr_introCutsceneRoofCover.yy",},"order":1,},
     {"id":{"name":"spr_feelRing","path":"sprites/spr_feelRing/spr_feelRing.yy",},"order":0,},
     {"id":{"name":"spr_fade_effect","path":"sprites/spr_fade_effect/spr_fade_effect.yy",},"order":7,},
+    {"id":{"name":"spr_hedge_tileset","path":"sprites/spr_hedge_tileset/spr_hedge_tileset.yy",},"order":9,},
     {"id":{"name":"spr_fire3","path":"sprites/spr_fire3/spr_fire3.yy",},"order":3,},
     {"id":{"name":"spr_spiderBack","path":"sprites/spr_spiderBack/spr_spiderBack.yy",},"order":1,},
     {"id":{"name":"rm_Basement_1","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},"order":0,},

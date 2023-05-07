@@ -513,6 +513,7 @@
     {"id":{"name":"obj_gadgetButton","path":"objects/obj_gadgetButton/obj_gadgetButton.yy",},"order":6,},
     {"id":{"name":"scr_sanityDemon","path":"scripts/scr_sanityDemon/scr_sanityDemon.yy",},"order":3,},
     {"id":{"name":"spr_bed_red","path":"sprites/spr_bed_red/spr_bed_red.yy",},"order":1,},
+    {"id":{"name":"rm_Basement_4","path":"rooms/rm_Basement_4/rm_Basement_4.yy",},"order":3,},
     {"id":{"name":"obj_ui_bar","path":"objects/obj_ui_bar/obj_ui_bar.yy",},"order":5,},
     {"id":{"name":"spr_cutleryGold","path":"sprites/spr_cutleryGold/spr_cutleryGold.yy",},"order":0,},
     {"id":{"name":"spr_tutorialTitle","path":"sprites/spr_tutorialTitle/spr_tutorialTitle.yy",},"order":0,},
@@ -701,6 +702,7 @@
     {"roomId":{"name":"rm_Hedge_3","path":"rooms/rm_Hedge_3/rm_Hedge_3.yy",},},
     {"roomId":{"name":"rm_Hedge_4","path":"rooms/rm_Hedge_4/rm_Hedge_4.yy",},},
     {"roomId":{"name":"rm_Hedge_5","path":"rooms/rm_Hedge_5/rm_Hedge_5.yy",},},
+    {"roomId":{"name":"rm_Basement_4","path":"rooms/rm_Basement_4/rm_Basement_4.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

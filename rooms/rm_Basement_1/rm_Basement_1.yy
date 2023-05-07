@@ -486,7 +486,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Basement_L1",
-    "path": "folders/Rooms/maps/Basement_L1.yy",
+    "name": "L1_Basement",
+    "path": "folders/Rooms/maps/L1_Basement.yy",
   },
 }

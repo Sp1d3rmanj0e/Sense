@@ -590,7 +590,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Bwall_L4",
-    "path": "folders/Rooms/maps/Bwall_L4.yy",
+    "name": "L4_Bwall",
+    "path": "folders/Rooms/maps/L4_Bwall.yy",
   },
 }

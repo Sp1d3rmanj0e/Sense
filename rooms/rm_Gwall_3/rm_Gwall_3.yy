@@ -512,7 +512,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Gwall_L2",
-    "path": "folders/Rooms/maps/Gwall_L2.yy",
+    "name": "L2_Gwall",
+    "path": "folders/Rooms/maps/L2_Gwall.yy",
   },
 }

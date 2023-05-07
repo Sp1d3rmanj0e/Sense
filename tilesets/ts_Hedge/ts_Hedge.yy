@@ -22,7 +22,7 @@
   "out_columns": 6,
   "tile_count": 36,
   "autoTileSets": [
-    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Gwall Auto-tile","tiles":[
+    {"resourceType":"GMAutoTileSet","resourceVersion":"1.0","name":"Hedge Auto-tile","tiles":[
         6,
         30,
         12,

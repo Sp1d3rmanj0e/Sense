@@ -24,7 +24,7 @@ function get_room_door(isFront)
 {
 	switch(global.level)
 	{
-		//case 1: return  break;
+		case 1: if (isFront) return spr_basement_door_front else return spr_basement_door_left;
 		//case 2:	 break;
 		//case 3:	 break;
 		//case 4:	 break;

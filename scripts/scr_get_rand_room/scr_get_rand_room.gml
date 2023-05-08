@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 // Returns a random room based on the level given
-function get_rand_room(_level){
-	
+function get_rand_room(_level)
+{
 	// Possible choices for the random room function
 	roomLayout = 
 	[
@@ -13,9 +13,22 @@ function get_rand_room(_level){
 		[rm_Gwall_4], // Level 4
 		[rm_Gwall_5]  // Level 5
 	];
-
+	
 	var _possibleRooms = roomLayout[_level-1];
 	var _numPossibleRooms = array_length(_possibleRooms);
 	
 	return _possibleRooms[irandom(_numPossibleRooms-1)];
+}
+
+function get_room_door(isFront)
+{
+	switch(global.level)
+	{
+		//case 1: return  break;
+		//case 2:	 break;
+		//case 3:	 break;
+		//case 4:	 break;
+		//case 5:	 break;
+		default: if (isFront) return spr_door_front; else return spr_door_left;
+	}
 }

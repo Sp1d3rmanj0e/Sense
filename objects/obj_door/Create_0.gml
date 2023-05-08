@@ -6,13 +6,13 @@ vertical = ((image_angle % 180) == 0);
 // and if it's the ending door, make it gold
 if (!vertical) // Not Vertical
 {
-	sprite_index = spr_door_left;
+	sprite_index = get_room_door(false);
 	
 	if (roomTarget != noone) && (!hidden) sprite_index = spr_door_left_gold;
 }
 else // Straight Up
 {
-	sprite_index = spr_door_front;
+	sprite_index = get_room_door(true);
 	
 	if (roomTarget != noone) && (!hidden) sprite_index = spr_door_front_gold;
 }

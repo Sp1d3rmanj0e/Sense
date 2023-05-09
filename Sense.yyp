@@ -393,6 +393,7 @@
     {"id":{"name":"spr_lamppost","path":"sprites/spr_lamppost/spr_lamppost.yy",},"order":7,},
     {"id":{"name":"spr_resTeardropGlitched","path":"sprites/spr_resTeardropGlitched/spr_resTeardropGlitched.yy",},"order":10,},
     {"id":{"name":"spr_dashTmp","path":"sprites/spr_dashTmp/spr_dashTmp.yy",},"order":22,},
+    {"id":{"name":"spr_Countertops","path":"sprites/spr_Countertops/spr_Countertops.yy",},"order":11,},
     {"id":{"name":"spr_ending_selection","path":"sprites/spr_ending_selection/spr_ending_selection.yy",},"order":8,},
     {"id":{"name":"spr_taser_item","path":"sprites/spr_taser_item/spr_taser_item.yy",},"order":34,},
     {"id":{"name":"spr_sense_logo_blank","path":"sprites/spr_sense_logo_blank/spr_sense_logo_blank.yy",},"order":1,},

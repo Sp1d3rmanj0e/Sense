@@ -310,7 +310,7 @@
 -3,1,1,0,-3,1,-2,0,-6,1,-2,0,3,1,0,0,-11,1,-2,0,1,1,-3,0,3,1,0,0,-3,1,1,0,-4,1,7,-2147483648,0,1,-2147483648,0,1,1,-31,0,1,1,-3,0,1,1,-7,0,12,
 -2147483648,0,-2147483648,-2147483648,0,1,-2147483648,0,1,1,-2147483648,-2147483648,-4,0,8,-2147483648,0,0,-2147483648,-2147483648,0,-2147483648,-2147483648,-17,0,1,1,-3,0,1,1,-4,0,11,-2147483648,0,-2147483648,-2147483648,0,-2147483648,0,0,1,-2147483648,0,-4,1,1,0,-46,1,-2,0,
 -2,1,-2,-2147483648,-5,0,1,1,-6,0,1,-2147483648,-3,0,-14,-2147483648,-7,0,-2,-2147483648,1,0,-8,-2147483648,5,0,1,1,-2147483648,-2147483648,-15,0,-18,-2147483648,1,0,-5,-2147483648,1,0,-8,-2147483648,1,0,-54,1,],},"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_Gwall_carpet","path":"sprites/spr_Gwall_carpet/spr_Gwall_carpet.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_floor_carpet","path":"sprites/spr_floor_carpet/spr_floor_carpet.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
   "creationCodeFile": "",
@@ -512,7 +512,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Gwall_L2",
-    "path": "folders/Rooms/maps/Gwall_L2.yy",
+    "name": "L2_Gwall",
+    "path": "folders/Rooms/maps/L2_Gwall.yy",
   },
 }

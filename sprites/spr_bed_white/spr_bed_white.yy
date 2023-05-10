@@ -70,6 +70,6 @@
   "nineSlice": null,
   "parent": {
     "name": "beds",
-    "path": "folders/Sprites/furniture/living room_bedroom/beds.yy",
+    "path": "folders/Sprites/structures/furniture/living room_bedroom/beds.yy",
   },
 }

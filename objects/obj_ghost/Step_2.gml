@@ -4,8 +4,6 @@ var _previousState = sprite_index;
 
 script_execute(animScript);
 
-log("Previous: " + string(_previousState) + " : Current: " + string(sprite_index));
-
 // This checks if the ghost has switched from their current state
 // (say passive) to a new state (to aggro)
 if (sprite_index != _previousState)

@@ -1,7 +1,7 @@
 /// @description
 
 scale = 3;
-scaleSpeed = 0.0035;
+scaleSpeed = 0.0025;
 
 alpha = 1;							// Control the alpha of the image
 alphaDirection = 0;					// Control whether fading in or out

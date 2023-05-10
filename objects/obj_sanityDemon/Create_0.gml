@@ -4,7 +4,7 @@
 // Footstep and heat
 event_inherited();
 
-//emitter_set_foot_sound(snd_sanityDemon); // Change from generic foot sound to sanityDemon sound
+emitter_set_foot_sound(snd_sanityDemon); // Change from generic foot sound to sanityDemon sound
 
 // Since the sanity demon spawns later than everything else
 // we need to check separately from the original code to see

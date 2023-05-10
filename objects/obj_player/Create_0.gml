@@ -84,6 +84,8 @@ function takeDmg(_objectIndexOfEnemy) // Enemy can call this when able to hurt y
 		// Restart game/round if health is 0
 		if (playerHealth <= 0)
 		{
+			audio_play_sound(snd_die, 1, false);
+			
 			// Freeze the player where they are
 			state = PSTATE.FREEZE;
 			
@@ -97,6 +99,10 @@ function takeDmg(_objectIndexOfEnemy) // Enemy can call this when able to hurt y
 									{
 										enemyThatKilledPlayer : _objectIndexOfEnemy
 									});
+		}
+		else
+		{
+			audio_play_sound(snd_hurt, 1, false);
 		}
 	}
 }

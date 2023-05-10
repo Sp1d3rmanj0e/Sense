@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "machines",
-    "path": "folders/Sprites/furniture/basement/machines.yy",
+    "path": "folders/Sprites/structures/furniture/basement/machines.yy",
   },
 }

@@ -70,6 +70,6 @@
   "nineSlice": null,
   "parent": {
     "name": "chairs and couches",
-    "path": "folders/Sprites/furniture/living room_bedroom/chairs and couches.yy",
+    "path": "folders/Sprites/structures/furniture/living room_bedroom/chairs and couches.yy",
   },
 }

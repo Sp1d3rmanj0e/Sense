@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "pots",
-    "path": "folders/Sprites/furniture/kitchen/pots.yy",
+    "path": "folders/Sprites/structures/furniture/kitchen/pots.yy",
   },
 }

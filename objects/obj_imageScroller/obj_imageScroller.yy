@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_imageScroller",
   "spriteId": {
-    "name": "spr_imageScroller",
-    "path": "sprites/spr_imageScroller/spr_imageScroller.yy",
+    "name": "spr_house",
+    "path": "sprites/spr_house/spr_house.yy",
   },
   "solid": false,
   "visible": true,

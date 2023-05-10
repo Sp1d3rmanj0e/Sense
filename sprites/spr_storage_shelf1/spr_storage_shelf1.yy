@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "shelving",
-    "path": "folders/Sprites/furniture/basement/shelving.yy",
+    "path": "folders/Sprites/structures/furniture/basement/shelving.yy",
   },
 }

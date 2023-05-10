@@ -69,6 +69,6 @@
   "nineSlice": null,
   "parent": {
     "name": "dressers",
-    "path": "folders/Sprites/furniture/living room_bedroom/dressers.yy",
+    "path": "folders/Sprites/structures/furniture/living room_bedroom/dressers.yy",
   },
 }

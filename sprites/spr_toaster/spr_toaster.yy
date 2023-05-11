@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "appliances",
-    "path": "folders/Sprites/structures/furniture/kitchen/appliances.yy",
+    "name": "kitchen",
+    "path": "folders/Sprites/structures/furniture/kitchen.yy",
   },
 }

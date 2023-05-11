@@ -1,4 +1,4 @@
-/// @description Button Code
+/// @description Button code
 
 // Get button dimensions
 var _x1 = bbox_left;

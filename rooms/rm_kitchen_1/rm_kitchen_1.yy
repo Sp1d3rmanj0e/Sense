@@ -303,6 +303,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A21E6E8","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":63,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3168.0,"y":1952.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48AD9508","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.25,"scaleY":1.25,"imageIndex":60,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3184.0,"y":1680.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3252BE7E","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":1.25,"scaleY":1.25,"imageIndex":14,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2512.0,"y":608.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_528627C2","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"roomTarget","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"rm_selGadget",},
+          ],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3360.0,"y":1824.0,},
       ],"visible":true,"depth":600,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"visual_walls_2","tilesetId":{"name":"ts_Kitchen_Counter","path":"tilesets/ts_Kitchen_Counter/ts_Kitchen_Counter.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":53,"SerialiseHeight":35,"TileCompressedData":[
 -162,-2147483648,-5,12,-58,-2147483648,1,18,-52,-2147483648,1,18,-19,-2147483648,1,24,-3,12,-23,-2147483648,1,18,-5,-2147483648,1,18,-19,-2147483648,1,18,-26,-2147483648,1,18,-5,-2147483648,1,18,-5,-2147483648,1,24,-7,12,-6,-2147483648,1,18,-8,-2147483648,-4,12,-14,
@@ -503,6 +506,7 @@
     {"name":"inst_4A21E6E8","path":"rooms/rm_Kitchen_1/rm_Kitchen_1.yy",},
     {"name":"inst_48AD9508","path":"rooms/rm_Kitchen_1/rm_Kitchen_1.yy",},
     {"name":"inst_3252BE7E","path":"rooms/rm_Kitchen_1/rm_Kitchen_1.yy",},
+    {"name":"inst_528627C2","path":"rooms/rm_Kitchen_1/rm_Kitchen_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -278,7 +278,7 @@
     {"id":{"name":"spr_broken_item_bag","path":"sprites/spr_broken_item_bag/spr_broken_item_bag.yy",},"order":26,},
     {"id":{"name":"spr_playerBase_front","path":"sprites/spr_playerBase_front/spr_playerBase_front.yy",},"order":1,},
     {"id":{"name":"spr_heart_rate","path":"sprites/spr_heart_rate/spr_heart_rate.yy",},"order":18,},
-    {"id":{"name":"spr_basement_door_gold","path":"sprites/spr_basement_door_gold/spr_basement_door_gold.yy",},"order":4,},
+    {"id":{"name":"spr_basement_door_left_gold","path":"sprites/spr_basement_door_left_gold/spr_basement_door_left_gold.yy",},"order":4,},
     {"id":{"name":"scr_leaderboard","path":"scripts/scr_leaderboard/scr_leaderboard.yy",},"order":16,},
     {"id":{"name":"spr_GPS_item_active","path":"sprites/spr_GPS_item_active/spr_GPS_item_active.yy",},"order":6,},
     {"id":{"name":"spr_eyeFront_0","path":"sprites/spr_eyeFront_0/spr_eyeFront_0.yy",},"order":4,},

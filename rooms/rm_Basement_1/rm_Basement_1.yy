@@ -106,6 +106,7 @@
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_58783AC0","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":1.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2432.0,"y":1984.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_274DDE53","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":1.0,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":448.0,},
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_239ACB81","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":1.0,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1920.0,"y":1728.0,},
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_E2AA1A","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":1.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2304.0,"y":2176.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46C31E_1_3_1_7","properties":[],"isDnd":false,"objectId":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":0.0,},
@@ -263,6 +264,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21724A55","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"solid","path":"objects/obj_furniture/obj_furniture.yy",},"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"value":"False",},
           ],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":43,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":640.0,"y":1712.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EBA9A5E","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"roomTarget","path":"objects/obj_door/obj_door.yy",},"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"value":"rm_selGadget",},
+          ],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2336.0,"y":2208.0,},
       ],"visible":true,"depth":600,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"visual_walls","tilesetId":{"name":"ts_Basement","path":"tilesets/ts_Basement/ts_Basement.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":53,"SerialiseHeight":35,"TileCompressedData":[
 1,24,-11,12,1,24,-18,12,1,24,-7,12,4,24,12,12,24,-4,12,1,24,-4,12,3,6,18,0,-9,-2147483648,2,0,18,-6,-2147483648,-2,0,-10,-2147483648,1,18,-7,-2147483648,4,18,-2147483648,-2147483648,18,-4,-2147483648,1,18,-3,-2147483648,
@@ -463,6 +467,7 @@
     {"name":"inst_21D5F437","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},
     {"name":"inst_553F9FFC","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},
     {"name":"inst_4E8B290","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},
+    {"name":"inst_2EBA9A5E","path":"rooms/rm_Basement_1/rm_Basement_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

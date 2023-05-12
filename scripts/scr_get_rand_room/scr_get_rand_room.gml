@@ -25,10 +25,23 @@ function get_room_door(isFront)
 	switch(global.level)
 	{
 		case 1: if (isFront) return spr_basement_door_front else return spr_basement_door_left;
-		//case 2: if (isFront) return spr_basement_door_front else return spr_basement_door_left;
-		//case 3:	 break;
-		//case 4:	 break;
-		//case 5:	 break;
+		case 2: if (isFront) return spr_door_front else return spr_door_left;
+		case 3: if (isFront) return spr_kitchen_door_front else return spr_kitchen_door_left;
+		case 4: if (isFront) return spr_door_front else return spr_door_left;
+		case 5: if (isFront) return spr_door_front else return spr_door_left;
+		default: if (isFront) return spr_door_front; else return spr_door_left;
+	}
+}
+
+function get_gold_room_door(isFront)
+{
+	switch(global.level)
+	{
+		case 1: if (isFront) return spr_basement_door_front_gold else return spr_basement_door_left_gold;
+		case 2: if (isFront) return spr_door_front_gold else return spr_door_left_gold;
+		case 3: if (isFront) return spr_kitchen_door_front_gold else return spr_kitchen_door_left_gold;
+		case 4: if (isFront) return spr_door_front_gold else return spr_door_left_gold;
+		case 5: if (isFront) return spr_door_front else return spr_door_left;
 		default: if (isFront) return spr_door_front; else return spr_door_left;
 	}
 }

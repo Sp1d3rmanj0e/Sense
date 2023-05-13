@@ -28,6 +28,16 @@
     "resourceType": "KeyframeStore<MomentsEventKeyframe>",
   },
   "tracks": [
+    {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"snd_gamemaster","keyframes":{"Keyframes":[
+          {"id":"9d5ce543-2e81-422e-8393-4d36a8703500","Key":345.0,"Length":572.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Mode":0,"Id":{"name":"snd_gamemaster","path":"sounds/snd_gamemaster/snd_gamemaster.yy",},"resourceVersion":"1.0","resourceType":"AudioKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AudioKeyframe>",},
+        ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AudioKeyframe>",},"trackColour":4282953202,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"position","keyframes":{"Keyframes":[
+              {"id":"52aced08-bed9-4aac-95ee-b1c20084ae9d","Key":345.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":-704.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},"1":{"EmbeddedAnimCurve":null,"RealValue":-396.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
+            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4282953202,"inheritsTrackColour":true,"builtinName":14,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
+        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","keyframes":{"Keyframes":[
+              {"id":"f15b47a4-f889-4fb6-aef2-110c4a785a6d","Key":345.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
+            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4282953202,"inheritsTrackColour":true,"builtinName":8,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":true,"modifiers":[],},
+      ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"snd_loseFeel","keyframes":{"Keyframes":[
           {"id":"02faab1b-0120-40bd-b3b1-67e2d3417db1","Key":923.0,"Length":86.20122,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Mode":0,"Id":{"name":"snd_loseFeel","path":"sounds/snd_loseFeel/snd_loseFeel.yy",},"resourceVersion":"1.0","resourceType":"AudioKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AudioKeyframe>",},
         ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AudioKeyframe>",},"trackColour":4282967794,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
@@ -37,16 +47,6 @@
         {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","keyframes":{"Keyframes":[
               {"id":"f17fd65c-fd07-45a3-bec9-19640eb05c1b","Key":923.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
             ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4282967794,"inheritsTrackColour":true,"builtinName":8,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":true,"modifiers":[],},
-      ],"events":[],"isCreationTrack":false,"modifiers":[],},
-    {"resourceType":"GMAudioTrack","resourceVersion":"1.1","name":"snd_sanityDemon","keyframes":{"Keyframes":[
-          {"id":"d3c5d870-6960-47c4-9dcd-3b80b169274f","Key":406.0,"Length":420.04874,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Mode":0,"Id":{"name":"snd_gamemaster","path":"sounds/snd_gamemaster/snd_gamemaster.yy",},"resourceVersion":"1.0","resourceType":"AudioKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AudioKeyframe>",},
-        ],"resourceVersion":"1.0","resourceType":"KeyframeStore<AudioKeyframe>",},"trackColour":4294102088,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[
-        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"position","keyframes":{"Keyframes":[
-              {"id":"a0eda45a-e0a6-416c-a352-2b90459436de","Key":416.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":-704.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},"1":{"EmbeddedAnimCurve":null,"RealValue":-396.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
-            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4294102088,"inheritsTrackColour":true,"builtinName":14,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
-        {"resourceType":"GMRealTrack","resourceVersion":"1.0","name":"rotation","keyframes":{"Keyframes":[
-              {"id":"2f7de240-4b3a-42d6-aa0d-2d3017236898","Key":406.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":true,"Channels":{"0":{"EmbeddedAnimCurve":null,"RealValue":0.0,"AnimCurveId":null,"resourceVersion":"1.0","resourceType":"RealKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<RealKeyframe>",},
-            ],"resourceVersion":"1.0","resourceType":"KeyframeStore<RealKeyframe>",},"trackColour":4294102088,"inheritsTrackColour":true,"builtinName":8,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":true,"modifiers":[],},
       ],"events":[],"isCreationTrack":false,"modifiers":[],},
     {"resourceType":"GMGraphicTrack","resourceVersion":"1.0","name":"spr_geyser","keyframes":{"Keyframes":[
           {"id":"780688c7-7eea-4533-9d49-1c54364b49d3","Key":897.0,"Length":40.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"spr_geyser","path":"sprites/spr_geyser/spr_geyser.yy",},"resourceVersion":"1.0","resourceType":"AssetSpriteKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<AssetSpriteKeyframe>",},

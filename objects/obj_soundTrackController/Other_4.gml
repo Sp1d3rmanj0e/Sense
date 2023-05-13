@@ -12,7 +12,6 @@
 */
 
 var _newSound = noone;
-alarm[0] = -1;
 
 // Soundtrack to play if in any tutorial room
 // All tutorial room names start with rm_tut.  If it has that, it's a tutorial room
@@ -55,7 +54,7 @@ if (_newSound != noone)
 	{
 		currentSound = _newSound;
 		audio_stop_all(); // Stop old sound before starting new sound
-		audio_play_sound(_newSound, 2, 0);
+		audio_play_sound(_newSound, 2, 1);
 	}
 }
 else

@@ -4,7 +4,7 @@
   "name": "snd_gadgetSelection",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.25,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_gadgetSelection.mp3",
-  "duration": 35.657143,
+  "duration": 36.15347,
   "parent": {
     "name": "Soundtracks",
     "path": "folders/Sounds/Soundtracks.yy",

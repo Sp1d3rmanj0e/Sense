@@ -1,4 +1,4 @@
-/// @description
+/// @description Play the soundtrack
 
 /*
 	This search checks songs in 3 different ways
@@ -12,6 +12,7 @@
 */
 
 var _newSound = noone;
+alarm[0] = -1;
 
 // Soundtrack to play if in any tutorial room
 // All tutorial room names start with rm_tut.  If it has that, it's a tutorial room
@@ -20,11 +21,14 @@ if (string_copy(room_get_name(room), 1, 6) == "rm_tut")
 	_newSound = snd_tutorial;
 }
 
+
 // Specific room soundtracks
 switch(room)
 {
 	case rm_intro: _newSound = snd_mainMenu; break;
 	case rm_credits: _newSound = snd_credits; break;
+	case rm_leaderboard: 
+	case rm_setScore: _newSound = snd_tutorial; break;
 	case rm_selGadget: _newSound = snd_gadgetSelection; break;
 }
 
@@ -51,10 +55,11 @@ if (_newSound != noone)
 	{
 		currentSound = _newSound;
 		audio_stop_all(); // Stop old sound before starting new sound
-		audio_play_sound(_newSound, 2, true);
+		audio_play_sound(_newSound, 2, 0);
 	}
 }
 else
 {
 	audio_stop_all(); // There is no new soundtrack to replace the old one
+	currentSound = noone;
 }

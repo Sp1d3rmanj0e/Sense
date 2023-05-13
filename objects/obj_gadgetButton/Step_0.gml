@@ -4,6 +4,8 @@
 if (position_meeting(mouse_x, mouse_y, id) 
 && (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(global.kb_keyGadgetActivate)))
 {
+	audio_play_sound(snd_buttonPressed, 1, 0);
+	
 	switch(obj_player.curGadget)
 	{
 		case GADGET.DASH:

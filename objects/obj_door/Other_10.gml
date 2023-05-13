@@ -9,11 +9,13 @@ if (doorOpen)
 {
 	// Remove tile
 	tilemap_set_at_pixel(tilemap, 0, x, y);
+	play_sound_at_preset(x, y, snd_DoorOpen);
 }
 else // door closed
 {
 	// Add tile
 	tilemap_set_at_pixel(tilemap, 1, x, y);
+	play_sound_at_preset(x, y, snd_DoorClose);
 }
 
 // Play door sound

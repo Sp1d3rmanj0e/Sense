@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_backgroundNoise4",
+  "name": "snd_tutorial",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.05,
+  "volume": 0.25,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_backgroundNoise4.mp3",
-  "duration": 157.70122,
+  "soundFile": "snd_tutorial.mp3",
+  "duration": 32.75755,
   "parent": {
     "name": "Soundtracks",
     "path": "folders/Sounds/Soundtracks.yy",

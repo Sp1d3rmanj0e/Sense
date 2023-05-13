@@ -82,6 +82,18 @@ function create_emitter(_footNoise)
 	return footsteps;
 }
 
+function play_sound_at_preset(_x, _y, _sound)
+{
+	// Spawn sound control
+	if (!instance_exists(obj_soundControl))
+		instance_create_layer(0, 0, "Instances", obj_soundControl);
+	
+	return audio_play_sound_at(_sound, _x, _y, 1,
+						obj_soundControl.max_distance_to_be_heard,
+						obj_soundControl.start_dropping_off_at,
+						obj_soundControl.multiplier, 0, 1);
+}
+
 function update_emitter_position(_emitter)
 {
 	audio_emitter_position(_emitter, x, y, 0);

@@ -78,7 +78,6 @@
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Top_decorations","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_550559DA","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":2.0,"rotation":-180.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1408.0,"y":2240.0,},
-        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_7D86CEC","spriteId":{"name":"spr_door_ceiling","path":"sprites/spr_door_ceiling/spr_door_ceiling.yy",},"headPosition":2.0,"rotation":-270.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3328.0,"y":512.0,},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46C31E_1_3_1_12","properties":[],"isDnd":false,"objectId":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-48.0,"y":0.0,},
@@ -201,6 +200,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1433BC1D","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"solid","path":"objects/obj_furniture/obj_furniture.yy",},"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"value":"False",},
           ],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":50,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":976.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_26F30ABD","properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3360.0,"y":480.0,},
       ],"visible":true,"depth":600,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"visual_walls","tilesetId":{"name":"ts_Hedge","path":"tilesets/ts_Hedge/ts_Hedge.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":53,"SerialiseHeight":35,"TileCompressedData":[
 1,24,-19,12,1,24,-15,12,1,24,-5,12,1,24,-9,12,3,6,18,0,-9,-2147483648,1,0,-7,-2147483648,2,0,18,-15,-2147483648,1,18,-5,-2147483648,1,18,-8,-2147483648,4,0,6,18,-2147483648,-8,0,2,-2147483648,0,-7,-2147483648,2,0,
@@ -370,6 +370,7 @@
     {"name":"inst_1D30CBB0","path":"rooms/rm_Hedge_2/rm_Hedge_2.yy",},
     {"name":"inst_651B7E3E","path":"rooms/rm_Hedge_2/rm_Hedge_2.yy",},
     {"name":"inst_1433BC1D","path":"rooms/rm_Hedge_2/rm_Hedge_2.yy",},
+    {"name":"inst_26F30ABD","path":"rooms/rm_Hedge_2/rm_Hedge_2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

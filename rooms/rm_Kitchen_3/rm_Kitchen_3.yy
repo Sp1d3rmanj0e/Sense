@@ -92,6 +92,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DFE4DDA","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"tilemapName","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"value":"\"visual_walls_2\"",},
           ],"isDnd":false,"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":65.0,"y":1796.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_35E3F00B","properties":[],"isDnd":false,"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":0.0,},
       ],"visible":true,"depth":500,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Structures","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1CEFDAB7","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":61,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2944.0,"y":1840.0,},
@@ -496,6 +497,7 @@
     {"name":"inst_367DD56E","path":"rooms/rm_Kitchen_3/rm_Kitchen_3.yy",},
     {"name":"inst_1F282A7","path":"rooms/rm_Kitchen_3/rm_Kitchen_3.yy",},
     {"name":"inst_7DFE4DDA","path":"rooms/rm_Kitchen_3/rm_Kitchen_3.yy",},
+    {"name":"inst_35E3F00B","path":"rooms/rm_Kitchen_3/rm_Kitchen_3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

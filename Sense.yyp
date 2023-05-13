@@ -513,6 +513,7 @@
     {"id":{"name":"snd_FloorFootsteps","path":"sounds/snd_FloorFootsteps/snd_FloorFootsteps.yy",},"order":2,},
     {"id":{"name":"obj_difficultyExt","path":"objects/obj_difficultyExt/obj_difficultyExt.yy",},"order":5,},
     {"id":{"name":"snd_Dash_used","path":"sounds/snd_Dash_used/snd_Dash_used.yy",},"order":9,},
+    {"id":{"name":"rm_Kitchen_2","path":"rooms/rm_Kitchen_2/rm_Kitchen_2.yy",},"order":1,},
     {"id":{"name":"rm_tut_ghost","path":"rooms/rm_tut_ghost/rm_tut_ghost.yy",},"order":0,},
     {"id":{"name":"spr_jackOLantern","path":"sprites/spr_jackOLantern/spr_jackOLantern.yy",},"order":4,},
     {"id":{"name":"spr_I_bg_wall","path":"sprites/spr_I_bg_wall/spr_I_bg_wall.yy",},"order":2,},
@@ -739,6 +740,7 @@
     {"roomId":{"name":"rm_Hedge_5","path":"rooms/rm_Hedge_5/rm_Hedge_5.yy",},},
     {"roomId":{"name":"rm_Basement_4","path":"rooms/rm_Basement_4/rm_Basement_4.yy",},},
     {"roomId":{"name":"rm_Basement_5","path":"rooms/rm_Basement_5/rm_Basement_5.yy",},},
+    {"roomId":{"name":"rm_Kitchen_2","path":"rooms/rm_Kitchen_2/rm_Kitchen_2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

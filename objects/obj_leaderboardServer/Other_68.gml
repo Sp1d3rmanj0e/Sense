@@ -2,19 +2,26 @@
 
 if (async_load[? "size"] > 0) && (global.ip != noone)
 {
-	var _buffer = async_load[? "buffer"];
-	buffer_seek(_buffer, buffer_seek_start, 0);
-	var _data = buffer_read(_buffer, buffer_string);
+	try {
+		var _buffer = async_load[? "buffer"];
+		buffer_seek(_buffer, buffer_seek_start, 0);
+		var _data = buffer_read(_buffer, buffer_string);
 	
-	show_debug_message("Data before decoding: " + string(_data));
-	var _dataDecoded = json_parse(_data);
-	show_debug_message("< " + string(_dataDecoded));
+		show_debug_message("Data before decoding: " + string(_data));
+		var _dataDecoded = json_parse(_data);
+		show_debug_message("< " + string(_dataDecoded));
 	
-	show_debug_message("Data after decoding: " + string(_dataDecoded));
+		show_debug_message("Data after decoding: " + string(_dataDecoded));
 	
-	// _data[command, global.topTimeCompleted, global.topSenseUseTime]
-	global.topTimeCompleted = _dataDecoded[1];
-	global.topSenseUseTime = _dataDecoded[2];
+		// _data[command, global.topTimeCompleted, global.topSenseUseTime]
+		global.topTimeCompleted = _dataDecoded[1];
+		global.topSenseUseTime = _dataDecoded[2];
+	}
+	catch(e)
+	{
+		log("Server doesn't exist");
+		log(string(e));
+	}
 	
 }
 

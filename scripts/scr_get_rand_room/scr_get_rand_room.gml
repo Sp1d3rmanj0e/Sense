@@ -41,7 +41,7 @@ function get_gold_room_door(isFront)
 		case 2: if (isFront) return spr_door_front_gold else return spr_door_left_gold;
 		case 3: if (isFront) return spr_kitchen_door_front_gold else return spr_kitchen_door_left_gold;
 		case 4: if (isFront) return spr_door_front_gold else return spr_door_left_gold;
-		case 5: if (isFront) return spr_hedge_door_front_gold else return spr_door_left_gold;
+		case 5: if (isFront) return spr_hedge_door_front_gold else return spr_hedge_door_left_gold;
 		default: if (isFront) return spr_door_front; else return spr_door_left;
 	}
 }

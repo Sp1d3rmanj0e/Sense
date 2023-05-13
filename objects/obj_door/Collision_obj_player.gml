@@ -18,6 +18,7 @@ if (!activated) && (roomTarget != noone)
 	obj_player.state = PSTATE.FREEZE;
 	clearScreen();
 	with(enemies) instance_destroy(); // Destroy all enemies
+	instance_destroy(demonSpawner); // Don't let sanity demon spawn
 	
 	switch (roomTarget)
 	{

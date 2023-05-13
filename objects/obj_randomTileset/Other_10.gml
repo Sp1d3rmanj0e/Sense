@@ -4,7 +4,7 @@
 randomize();
 
 // Gets tilemap id
-var _tilemap = layer_tilemap_get_id("visual_walls");
+var _tilemap = layer_tilemap_get_id(tilemapName);
 
 // Finds amount of tiles in map
 var _tileX = ceil(room_width / WORLD.CELL_SIZE);

@@ -38,7 +38,7 @@ else
 // Returns openable T/F
 
 #region interaction with the door
-if (obj_player.keyInteract && openable)
+if (instance_exists(obj_player) && obj_player.keyInteract && openable)
 {
 	// If interact delay is over
 	if (interactDelayTimer == -1)

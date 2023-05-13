@@ -17,7 +17,7 @@
   },
   "moments": {
     "Keyframes": [
-      {"id":"ca6b9110-a259-4684-a7fc-9c066482ff32","Key":478.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"8a69ab52-4aad-4115-b7a7-62223990e6de","Key":457.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "TransitionChangeRoom",
             ],"resourceVersion":"1.0","resourceType":"MomentsEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MomentsEventKeyframe>",},
     ],
@@ -184,7 +184,10 @@
         {"resourceVersion":"1.0","resourceType":"InvisibleModifier",},
       ],},
   ],
-  "visibleRange": null,
+  "visibleRange": {
+    "x": 0.0,
+    "y": 499.9999,
+  },
   "lockOrigin": false,
   "showBackdrop": true,
   "showBackdropImage": false,

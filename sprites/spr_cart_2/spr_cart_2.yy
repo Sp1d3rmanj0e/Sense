@@ -68,12 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-<<<<<<< HEAD
-    "name": "kitchen",
-    "path": "folders/Sprites/structures/furniture/kitchen.yy",
-=======
     "name": "carts",
     "path": "folders/Sprites/structures/furniture/kitchen/carts.yy",
->>>>>>> 1d56863576a801b93ce242c5b6485e016d753af9
   },
 }

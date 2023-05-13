@@ -31,7 +31,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"43688583-3374-4909-a50e-694ac2111dd7",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"97890568-7cac-46d3-9304-96d244dea36b",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8af675c0-d490-4deb-b362-0b6355818ee4",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1a067b7f-f1db-40f7-950e-abbef31939df",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9499f799-7636-43d8-9b64-e950e22e3235",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -51,7 +51,7 @@
             {"id":"16845488-5366-407f-abb6-962e8816bbb5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43688583-3374-4909-a50e-694ac2111dd7","path":"sprites/spr_basement_door_front/spr_basement_door_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6104ec3f-677c-4e82-b66f-9dbc31d2291c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"97890568-7cac-46d3-9304-96d244dea36b","path":"sprites/spr_basement_door_front/spr_basement_door_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8c6077b6-51bb-4b30-a73b-40abd2475bd2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8af675c0-d490-4deb-b362-0b6355818ee4","path":"sprites/spr_basement_door_front/spr_basement_door_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1b11ef37-3404-4dda-a565-b249340a7266","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1a067b7f-f1db-40f7-950e-abbef31939df","path":"sprites/spr_basement_door_front/spr_basement_door_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"75087fdb-0a39-4f53-953b-e4d7ef25f6fa","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9499f799-7636-43d8-9b64-e950e22e3235","path":"sprites/spr_basement_door_front/spr_basement_door_front.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

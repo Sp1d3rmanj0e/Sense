@@ -128,26 +128,23 @@ function teleport()
 
 function thermal()
 {
-	audio_play_sound(snd_thermalOn, 1, 0);
-	
-	if (numGadgetUsesLeft > 0)
+	// Only activate if not currently active
+	if (numGadgetUsesLeft > 0) && (!instance_exists(obj_heat))
 	{
+		audio_play_sound(snd_thermalOn, 1, 0);
+		
 		function createHeat()
 		{
 			var _id = instance_create_layer(x, y, "Effects", obj_heat);
 			_id.followID = id;
 		}
-			if (!instance_exists(obj_heat))
-			{
-	
+
 			with(obj_wallLight)
 				createHeat();
 	
 			with(enemies)
 				createHeat();
-		}
 		numGadgetUsesLeft--;
+		alarm[0] = obj_heat.uptime;
 	}
-	
-	alarm[0] = obj_heat.uptime;
 }

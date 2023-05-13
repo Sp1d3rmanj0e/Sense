@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_credits.mp3",
-  "duration": 35.657143,
+  "duration": 72.17633,
   "parent": {
     "name": "Soundtracks",
     "path": "folders/Sounds/Soundtracks.yy",

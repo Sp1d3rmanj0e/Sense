@@ -49,6 +49,8 @@ var _clicked = ((point_in_circle(mouse_x, mouse_y, x+20, y, sprite_width/2)) && 
 // Check if mouse is touching button
 if  ((_clicked) || (_hotkeyPressed)) && (!deactivated)
 {
+	audio_play_sound(snd_senseWheelSwap, 1, false);
+	
 	// Toggle this button (on or off)
 	if (instance_exists(obj_player))
 	{

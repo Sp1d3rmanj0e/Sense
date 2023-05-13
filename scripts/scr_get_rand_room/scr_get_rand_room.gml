@@ -28,8 +28,8 @@ function get_room_door(isFront)
 		case 2: if (isFront) return spr_door_front else return spr_door_left;
 		case 3: if (isFront) return spr_kitchen_door_front else return spr_kitchen_door_left;
 		case 4: if (isFront) return spr_door_front else return spr_door_left;
-		case 5: if (isFront) return spr_door_front else return spr_door_left;
-		default: if (isFront) return spr_hedge_door_front; else return spr_hedge_door_left;
+		case 5: if (isFront) return spr_hedge_door_front else return spr_hedge_door_left;
+		default: if (isFront) return spr_door_front; else return spr_door_left;
 	}
 }
 

@@ -9,7 +9,7 @@ function get_rand_room(_level)
 	[
 		[rm_Basement_1, rm_Basement_2, rm_Basement_3, rm_Basement_4, rm_Basement_5], // Level 1
 		[rm_Gwall_1, rm_Gwall_2, rm_Gwall_3, rm_Gwall_4, rm_Gwall_5], // Level 2
-		[rm_Kitchen_1, rm_Kitchen_2, rm_Kitchen_3], // Level 3
+		[rm_Kitchen_1, rm_Kitchen_2, rm_Kitchen_3, rm_Kitchen_4, rm_Kitchen_5], // Level 3
 		[rm_Bwall_1, rm_Bwall_2, rm_Bwall_3, rm_Bwall_4, rm_Bwall_5], // Level 4
 		[rm_Hedge_1, rm_Hedge_2, rm_Hedge_3, rm_Hedge_4, rm_Hedge_5]  // Level 5
 	];

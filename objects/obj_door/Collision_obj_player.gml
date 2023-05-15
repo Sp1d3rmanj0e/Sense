@@ -12,6 +12,9 @@ function clearScreen()
 // Only activate once.  Start the cutscene
 if (!activated) && (roomTarget != noone)
 {
+	// Stop music for the cutscenes to sound good
+	audio_stop_all();
+	
 	//var _inTheIntroCutscene = (roomTarget == rm_3_introFightCutscene) || (room == rm_4_introFightAftermath);
 	
 	activated = true;

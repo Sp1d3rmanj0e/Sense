@@ -197,3 +197,4 @@ else if (curGadget == GADGET.THERMAL) && (instance_exists(obj_heat))
  
  #endregion invulnerability flas
 
+draw_text(x, y, string(depth));

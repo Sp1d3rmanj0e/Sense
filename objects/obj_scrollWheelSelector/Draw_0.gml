@@ -71,7 +71,9 @@ for (var i = -2; i <= 2; i++)
 				if (mouse_check_button_pressed(mb_left))
 				{
 					global.nextRoundGadget = focusedGadget;
-					room_goto(get_rand_room(global.level));
+					
+					// Get the next room to go to
+					room_goto(get_next_room());
 				}
 			}
 		}

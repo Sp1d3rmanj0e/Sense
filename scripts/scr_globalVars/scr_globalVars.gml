@@ -3,6 +3,7 @@ global.difficulty = DIFF.EASY;
 global.lostSenses = [];
 global.lostGadgets = [];
 global.nextRoundGadget = GADGET.NONE;
+global.roomOrder = [];
 
 global.level = 1;
 
@@ -24,5 +25,6 @@ function resetGlobalVars()
 	global.level = 1;
 	global.timeCompleted = 0;
 	global.senseUseTime = 0;
+	global.roomOrder = [];
 	logImportant("RESETTING GLOBAL VARS");
 }

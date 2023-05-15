@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-// Returns a random room based on the level given
+// Returns a random room on that level based on the level given
 function get_rand_room(_level)
 {
 	// Possible choices for the random room function
@@ -18,6 +18,26 @@ function get_rand_room(_level)
 	var _numPossibleRooms = array_length(_possibleRooms);
 	
 	return _possibleRooms[irandom(_numPossibleRooms-1)];
+}
+
+// Generates a list with each spot in the array a random room from that level
+// Ex. [Random level 1 room, random level 2 room, etc.]
+function generate_room_list()
+{
+	global.roomOrder = [];
+	
+	for (var i = 1; i <= 5; i++)
+	{
+		array_push(global.roomOrder, get_rand_room(i));
+	}
+}
+
+// Gets the room to go to based on the level the player is on
+// and the room set in the room order
+function get_next_room()
+{
+	if (array_length(global.roomOrder) == 0) generate_room_list();
+	return global.roomOrder[global.level-1];
 }
 
 function get_room_door(isFront)

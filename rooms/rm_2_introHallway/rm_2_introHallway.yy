@@ -29,7 +29,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2430FFBB","properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":92.0,"y":374.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37C9BA52","properties":[],"isDnd":false,"objectId":{"name":"obj_randomTileset","path":"objects/obj_randomTileset/obj_randomTileset.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":-32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53513B6E","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"imageIndex":41,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1132.0,"y":537.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"lights","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F69575E","properties":[],"isDnd":false,"objectId":{"name":"obj_wallLight","path":"objects/obj_wallLight/obj_wallLight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":256.0,},
@@ -64,7 +63,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_295745C","properties":[],"isDnd":false,"objectId":{"name":"obj_tall_wall","path":"objects/obj_tall_wall/obj_tall_wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":4,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":192.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1F2348DE","properties":[],"isDnd":false,"objectId":{"name":"obj_garbage","path":"objects/obj_garbage/obj_garbage.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F025302","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"imageIndex":7,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":800.0,"y":448.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55F2E19C","properties":[],"isDnd":false,"objectId":{"name":"obj_piano","path":"objects/obj_piano/obj_piano.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55F2E19C","properties":[],"isDnd":false,"objectId":{"name":"obj_piano","path":"objects/obj_piano/obj_piano.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":512.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53513B6E","properties":[],"isDnd":false,"objectId":{"name":"obj_furniture","path":"objects/obj_furniture/obj_furniture.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"imageIndex":41,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1132.0,"y":537.0,},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"visual_walls","tilesetId":{"name":"ts_Gwalls","path":"tilesets/ts_Gwalls/ts_Gwalls.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":11,"TileCompressedData":[
 1,24,-18,12,2,6,18,-18,-2147483648,2,6,18,-18,-2147483648,2,6,18,-18,-2147483648,2,
@@ -100,7 +100,6 @@
     {"name":"inst_1F2348DE","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_7B369A6B","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_5F025302","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
-    {"name":"inst_53513B6E","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_55F2E19C","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_59672F29","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_2F69575E","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
@@ -114,6 +113,7 @@
     {"name":"inst_1C43889A","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_7B6B36A0","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
     {"name":"inst_6420E63B","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
+    {"name":"inst_53513B6E","path":"rooms/rm_2_introHallway/rm_2_introHallway.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

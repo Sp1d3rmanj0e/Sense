@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 // Choose a random costume
-//image_index = irandom(image_number-1);
+sprite_index = choose(spr_sanitySpawn, spr_sanitySpawn2, spr_sanitySpawn3,
+					  spr_sanitySpawn4, spr_sanitySpawn5);
 
 // Initialize variables
 hiding = false;

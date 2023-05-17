@@ -4,17 +4,24 @@ vertical = ((image_angle % 180) == 0);
 
 // Gets the correct door perspective based on the angle
 // and if it's the ending door, make it gold
-if (!vertical) // Not Vertical
+if (override == noone)
 {
-	sprite_index = get_room_door(false);
+	if (!vertical) // Not Vertical
+	{
+		sprite_index = get_room_door(false);
 	
-	if (roomTarget != noone) && (!hidden) sprite_index = get_gold_room_door(false);
+		if (roomTarget != noone) && (!hidden) sprite_index = get_gold_room_door(false);
+	}
+	else // Straight Up
+	{
+		sprite_index = get_room_door(true);
+	
+		if (roomTarget != noone) && (!hidden) sprite_index = get_gold_room_door(true);
+	}
 }
-else // Straight Up
+else
 {
-	sprite_index = get_room_door(true);
-	
-	if (roomTarget != noone) && (!hidden) sprite_index = get_gold_room_door(true);
+	sprite_index = override;
 }
 
 openable = false;

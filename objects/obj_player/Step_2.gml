@@ -12,6 +12,12 @@ _camX = clamp(_camX, 0, room_width - _camWidth + 150);
 _camY = clamp(_camY, 0, room_height - 500); // -500 so the camera doesn't block the
 											// bottom of the screen
 
-// Camera follows player
-camera_set_view_pos(view_camera[0], _camX + irandom_range(-sShake, sShake), _camY + irandom_range(-sShake, sShake));
+// Get if viewport is activated
+var _viewport = room_get_viewport(room, 0);
+vp_visible = _viewport[0];
 
+// Camera follows player
+if (vp_visible)
+	camera_set_view_pos(view_camera[0], _camX + irandom_range(-sShake, sShake), _camY + irandom_range(-sShake, sShake));
+else
+	camera_set_view_pos(view_camera[0], 0 + irandom_range(-sShake, sShake), 0 + irandom_range(-sShake, sShake));

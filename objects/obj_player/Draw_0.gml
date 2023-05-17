@@ -46,6 +46,10 @@ draw_self();
 
 depth = 100 - y/room_height*100 + layerDepth;
 
+
+if (playerHealth > 0)
+{
+	
 #region Animations
 
 // Fade in after teleporting
@@ -194,5 +198,7 @@ else if (curGadget == GADGET.THERMAL) && (instance_exists(obj_heat))
 	
 	shader_reset();
  }
+ #endregion invulnerability flash
  
- #endregion invulnerability flas
+}
+else sprite_index = spr_player_laying_down;

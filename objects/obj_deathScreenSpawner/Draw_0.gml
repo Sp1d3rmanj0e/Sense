@@ -35,4 +35,14 @@ switch(_enemy)
 	default: _jumpscareSprite = spr_distraction_box_item_active;
 }
 
-draw_sprite(_jumpscareSprite, 0, _camX + _camWidth/2, _camY + _camHeight/2);
+var _camX = camera_get_view_width(view_camera[0]);
+var _camY = camera_get_view_height(view_camera[0]);
+
+// Spawn the jumpscare
+if (!instance_exists(obj_jumpscare))
+{
+	instance_create_layer(x + _camX/2, y + _camY/2, "GUI", obj_jumpscare,
+	{
+		sprite_index : _jumpscareSprite
+	});
+}

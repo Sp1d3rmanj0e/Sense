@@ -34,7 +34,6 @@ else
 	// Hardcore mode
 	instance_create_layer(_camX + _camWidth/2, _camY + _camHeight * (11/12), "GUI", obj_button,
 	{
-		executeCode : game_restart,
 		roomCode : rm_intro,
 		text : "Restart Game"
 	});

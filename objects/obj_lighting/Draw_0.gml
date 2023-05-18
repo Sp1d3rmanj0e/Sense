@@ -107,7 +107,7 @@ else
 				
 				case obj_lightGradient:
 				
-					draw_sprite_ext(spr_gradient, 0, x - _cx, y - _cy, image_xscale, image_yscale, 0, c_white, 1);
+					draw_sprite_ext(spr_gradient, 0, x - _cx, y - _cy, image_xscale, image_yscale, image_angle, c_white, 1);
 				
 				break;
 			}

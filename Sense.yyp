@@ -610,6 +610,7 @@
     {"id":{"name":"garbageSpawner","path":"objects/garbageSpawner/garbageSpawner.yy",},"order":1,},
     {"id":{"name":"obj_tpPlayerController","path":"objects/obj_tpPlayerController/obj_tpPlayerController.yy",},"order":3,},
     {"id":{"name":"rm_Kitchen_4","path":"rooms/rm_Kitchen_4/rm_Kitchen_4.yy",},"order":3,},
+    {"id":{"name":"obj_lightGradient","path":"objects/obj_lightGradient/obj_lightGradient.yy",},"order":5,},
     {"id":{"name":"spr_player_leftArm_front_default","path":"sprites/spr_player_leftArm_front_default/spr_player_leftArm_front_default.yy",},"order":3,},
     {"id":{"name":"spr_tutorialTitle_enemies","path":"sprites/spr_tutorialTitle_enemies/spr_tutorialTitle_enemies.yy",},"order":5,},
     {"id":{"name":"spr_cup","path":"sprites/spr_cup/spr_cup.yy",},"order":0,},

@@ -104,6 +104,12 @@ else
 					draw_sprite_ext(spr_pixel, 0, x - _cx, y - _cy, image_xscale, image_yscale, 0, c_white, 1);
 					
 				break;
+				
+				case obj_lightGradient:
+				
+					draw_sprite_ext(spr_gradient, 0, x - _cx, y - _cy, image_xscale, image_yscale, 0, c_white, 1);
+				
+				break;
 			}
 		}
 		gpu_set_blendmode(bm_normal);

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_eyeball",
+  "name": "snd_mimic",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.5,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_eyeball.mp3",
-  "duration": 7.128,
+  "soundFile": "snd_mimic.wav",
+  "duration": 3.403787,
   "parent": {
     "name": "Entity",
     "path": "folders/Sounds/Entity.yy",

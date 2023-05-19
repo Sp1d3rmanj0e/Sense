@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_eyeball",
+  "name": "snd_painting",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.5,
@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_eyeball.mp3",
-  "duration": 7.128,
+  "soundFile": "snd_painting.mp3",
+  "duration": 0.288,
   "parent": {
-    "name": "Entity",
-    "path": "folders/Sounds/Entity.yy",
+    "name": "Structure",
+    "path": "folders/Sounds/Structure.yy",
   },
 }

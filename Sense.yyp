@@ -16,6 +16,7 @@
     {"id":{"name":"spr_placeholderText","path":"sprites/spr_placeholderText/spr_placeholderText.yy",},"order":14,},
     {"id":{"name":"spr_hedge_door_front","path":"sprites/spr_hedge_door_front/spr_hedge_door_front.yy",},"order":11,},
     {"id":{"name":"spr_wallLightSource","path":"sprites/spr_wallLightSource/spr_wallLightSource.yy",},"order":3,},
+    {"id":{"name":"snd_decoyNoise","path":"sounds/snd_decoyNoise/snd_decoyNoise.yy",},"order":10,},
     {"id":{"name":"spr_blocks","path":"sprites/spr_blocks/spr_blocks.yy",},"order":1,},
     {"id":{"name":"MACROS","path":"objects/MACROS/MACROS.yy",},"order":3,},
     {"id":{"name":"spr_sanitySpawn2","path":"sprites/spr_sanitySpawn2/spr_sanitySpawn2.yy",},"order":8,},

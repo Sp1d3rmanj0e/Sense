@@ -12,3 +12,5 @@ instance_destroy(enemies);
 instance_destroy(demonSpawner);
 
 alarm[0] = 3 * room_speed;
+
+cMouseId = noone;

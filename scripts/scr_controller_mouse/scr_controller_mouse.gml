@@ -13,9 +13,11 @@ function create_controller_mouse(){
 		+ camera_get_view_width(view_camera[0])/2,
 		camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2,
 		"Instances", obj_controllerMouse);
+		
+		return _id;
 	}
 	
-	return _id;
+	return noone;
 }
 
 function destroy_controller_mouse(_id)

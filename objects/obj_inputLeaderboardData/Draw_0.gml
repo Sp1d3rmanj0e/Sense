@@ -49,6 +49,16 @@ if (_qualifies)
 		{
 			load_leaderboard_data();
 			
+			// Add [Controller] or [Keyboard] after name
+			if (global.controllerConnected)
+			{
+				name = name + " [Controller]";
+			}
+			else
+			{
+				name = name + " [Keyboard]";
+			}
+			
 			// Only add the score if it was a top 10 score
 			if (_timeRank != -1)
 				add_score(name, _timeScore, global.difficulty, 0);

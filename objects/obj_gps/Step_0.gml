@@ -27,7 +27,7 @@ switch(state)
 		}
 		
 		// Shoot if right click pressed
-		if (mouse_check_button_pressed(mb_right) || (gamepad_button_check_pressed(global.connectedPad, gp_stickl)))
+		if (mouse_check_button_pressed(mb_right) || (gamepad_button_check_pressed(global.connectedPad, gp_stickr)))
 		{
 			state = GPS.AIRBORNE;
 			audio_play_sound(snd_GPS_thrown, 1, false);

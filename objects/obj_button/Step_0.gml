@@ -13,13 +13,15 @@ image_yscale = _scale;
 
 
 // Check if mouse is touching button
-if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2))
+if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2) 
+|| (point_in_rectangle(obj_controllerMouse.x, obj_controllerMouse.y, _x1, _y1, _x2, _y2)))
 {
 	// Grow if mouse touching
 	if (hover < 1) hover+= changeSp;
 	
 	// Check if clicked
-	if (mouse_check_button_pressed(mb_left))
+	if (mouse_check_button_pressed(mb_left)
+	|| (gamepad_button_check_pressed(global.connectedPad, gp_stickr)))
 	{
 		audio_play_sound(snd_buttonPressed, 1, 0);
 		

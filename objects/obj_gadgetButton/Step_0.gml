@@ -2,7 +2,9 @@
 // You can write your code in this editor
 
 if (position_meeting(mouse_x, mouse_y, id) 
-&& (mouse_check_button_pressed(mb_left)) || (keyboard_check_pressed(global.kb_keyGadgetActivate)))
+&& (mouse_check_button_pressed(mb_left)) 
+|| (keyboard_check_pressed(global.kb_keyGadgetActivate))
+|| (gamepad_button_check_pressed(global.connectedPad, gp_shoulderlb)))
 {
 	audio_play_sound(snd_buttonPressed, 1, 0);
 	

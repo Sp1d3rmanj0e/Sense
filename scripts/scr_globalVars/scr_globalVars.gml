@@ -7,6 +7,10 @@ global.roomOrder = [];
 
 global.level = 1;
 
+// Controller Settings
+global.controllerConnected = false;
+global.connectedPad = 0;
+
 // Pause menu
 global.settingKeybind = false;
 global.fullscreen = true;

@@ -1,3 +1,0 @@
-/// @description
-
-scroll_right();

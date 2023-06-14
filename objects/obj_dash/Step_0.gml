@@ -1,14 +1,10 @@
 /// @description Dash mechanics
 
 // Get button inputs
-var _keyRight = obj_player.keyRight;
-var _keyLeft  = obj_player.keyLeft;
-var _keyUp    = obj_player.keyUp;
-var _keyDown  = obj_player.keyDown;
 
 // Get the direction of motion the player is moving in
-var _moveX = _keyRight - _keyLeft;
-var _moveY = _keyDown - _keyUp;
+var _moveX = sign(obj_player.moveX);
+var _moveY = sign(obj_player.moveY);
 
 // Checks if any movement button was pressed
 var _movementButtonPressed = ((_moveX != 0) || (_moveY != 0));

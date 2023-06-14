@@ -3,24 +3,38 @@ if (state = PSTATE.NORMAL)
 {
 	
 // Keybinds
-keyRight = keyboard_check(global.kb_keyRight); // keyboard_check(ord("D"));
-keyLeft = keyboard_check(global.kb_keyLeft); //ord("A"));
-keyUp = keyboard_check(global.kb_keyUp); //ord("W"));
-keyDown = keyboard_check(global.kb_keyDown); //ord("S"));
-keyInteract = keyboard_check_pressed(global.kb_keyInteract); //vk_space);
-
-// Calculate direction and speed
-moveX = (keyRight - keyLeft);
-moveY = (keyDown - keyUp);
-
-if (moveX != 0 && moveY != 0) // Moving diagonally
+if (!global.controllerConnected)
 {
-	var _diagSpd = walkSp * sin(45) * sin(45);
-	moveX *= _diagSpd;
-	moveY *= _diagSpd;
+	keyRight = keyboard_check(global.kb_keyRight);
+	keyLeft = keyboard_check(global.kb_keyLeft);
+	keyUp = keyboard_check(global.kb_keyUp);
+	keyDown = keyboard_check(global.kb_keyDown);
+	keyInteract = keyboard_check_pressed(global.kb_keyInteract);
+	
+	// Calculate direction and speed
+	moveX = (keyRight - keyLeft);
+	moveY = (keyDown - keyUp);
+
+	if (moveX != 0 && moveY != 0) // Moving diagonally
+	{
+		var _diagSpd = walkSp * sin(45) * sin(45);
+		moveX *= _diagSpd;
+		moveY *= _diagSpd;
+	}
+	else // Moving in only 1 axis
+	{
+		moveX *= walkSp;
+		moveY *= walkSp;
+	}
 }
-else // Moving in only 1 axis
+else // Controller is connected - use controller inputs instead
 {
+	moveX = gamepad_axis_value(global.connectedPad, gp_axisrh);
+	moveY = gamepad_axis_value(global.connectedPad, gp_axisrv);
+	keyInteract = gamepad_button_value(global.connectedPad, gp_shoulderrb);
+	
+	logImportant(string(keyInteract));
+	
 	moveX *= walkSp;
 	moveY *= walkSp;
 }

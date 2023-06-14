@@ -1,5 +1,6 @@
 /// @description Scroll up one sense
 
+/*
 
 // Create a variable to store the theoretical new sense
 // If no current sense is selected, assume it starts at 0

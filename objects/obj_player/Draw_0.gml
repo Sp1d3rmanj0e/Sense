@@ -56,8 +56,8 @@ if (playerHealth > 0)
 if (image_alpha < 1) image_alpha += 0.05;
 
 // Get directions of motion **THANKS TO FriendlyCosmonaut
-var _moveX = keyRight - keyLeft;
-var _moveY = keyDown - keyUp;
+var _moveX = sign(moveX);
+var _moveY = sign(moveY);
 var _dir = point_direction(0, 0, _moveX, _moveY);
 
 // Animate only if player is moving

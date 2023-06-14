@@ -9,10 +9,25 @@ switch(state)
 		y = obj_player.y;
 		
 		// Point in direction of mouse
-		image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
+		if (!global.controllerConnected) // Follow mouse if no controller connected
+		{
+			image_angle = point_direction(x, y, mouse_x, mouse_y) - 90;
+		}
+		else // Follow left stick if controller connected
+		{
+			var pointX, pointY;
+	
+			pointX = gamepad_axis_value(global.connectedPad, gp_axislh);
+			pointY = gamepad_axis_value(global.connectedPad, gp_axislv);
+	
+			if !(pointX == 0 && pointY == 0)
+			{
+				image_angle = point_direction(0, 0, pointX, pointY) - 90;
+			}
+		}
 		
 		// Shoot if right click pressed
-		if (mouse_check_button_pressed(mb_right))
+		if (mouse_check_button_pressed(mb_right) || (gamepad_button_check_pressed(global.connectedPad, gp_stickl)))
 		{
 			state = GPS.AIRBORNE;
 			audio_play_sound(snd_GPS_thrown, 1, false);

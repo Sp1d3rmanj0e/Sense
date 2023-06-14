@@ -21,4 +21,4 @@ else
 // after everything else gets deactivated
 instance_activate_object(obj_loadAndSaveKeybinds);
 
-existedPrior = create_controller_mouse();
+cMouseId = create_controller_mouse();

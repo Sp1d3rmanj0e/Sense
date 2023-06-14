@@ -6,4 +6,4 @@ instance_activate_all(); // Reactivate the game
 	
 with(list) destroyGen(0); // Destroy all lists
 
-//destroy_controller_mouse(existedPrior);
+destroy_controller_mouse(cMouseId);

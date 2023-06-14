@@ -229,6 +229,7 @@
     {"id":{"name":"kitchen_idea_1","path":"rooms/kitchen_idea_1/kitchen_idea_1.yy",},"order":0,},
     {"id":{"name":"rm_Gwall_1","path":"rooms/rm_Gwall_1/rm_Gwall_1.yy",},"order":0,},
     {"id":{"name":"spr_player_leftArm_frontRight_feel","path":"sprites/spr_player_leftArm_frontRight_feel/spr_player_leftArm_frontRight_feel.yy",},"order":5,},
+    {"id":{"name":"scr_controller_mouse","path":"scripts/scr_controller_mouse/scr_controller_mouse.yy",},"order":19,},
     {"id":{"name":"spr_JanitorFront3Q","path":"sprites/spr_JanitorFront3Q/spr_JanitorFront3Q.yy",},"order":4,},
     {"id":{"name":"spr_sense_logo_background_blue","path":"sprites/spr_sense_logo_background_blue/spr_sense_logo_background_blue.yy",},"order":0,},
     {"id":{"name":"rm_Gwall_3","path":"rooms/rm_Gwall_3/rm_Gwall_3.yy",},"order":2,},

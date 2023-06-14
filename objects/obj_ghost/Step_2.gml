@@ -11,11 +11,9 @@ if (sprite_index != _previousState)
 	if (sprite_index = spr_ghost) // Passive
 	{
 		emitter_set_foot_sound(snd_ghostPassive); // Switch to passive sounds
-		logImportant("passive");
 	}
 	else
 	{
 		emitter_set_foot_sound(snd_ghostAngry); // Switch to aggro sounds
-		logImportant("aggro");
 	}
 }

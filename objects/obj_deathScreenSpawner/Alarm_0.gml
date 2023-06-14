@@ -6,7 +6,6 @@ var _camY = camera_get_view_y(view_camera[0]);
 var _camWidth = camera_get_view_width(view_camera[0]);
 var _camHeight = camera_get_view_height(view_camera[0]);
 
-logImportant("creating buttons");
 
 if (global.difficulty != DIFF.HARDER)
 {

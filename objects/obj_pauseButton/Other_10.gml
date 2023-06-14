@@ -13,7 +13,10 @@ switch(bText) // Does different actions based on its text
 		break;
 		
 	case "Controls":
-		new_list(LISTTYPE.CONTROLS);
+		if (!global.controllerConnected)
+			new_list(LISTTYPE.CONTROLS);
+		else
+			new_list(LISTTYPE.CONTROLLERCONTROLS)
 		break;
 		
 	case "Return to Main Menu":

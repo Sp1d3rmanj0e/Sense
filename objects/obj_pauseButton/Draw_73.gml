@@ -4,13 +4,18 @@
 // Default border settings
 draw_set_color(defaultColor);
 
-// Check if mouse is hovering over
-if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height))
+// Check if mouse or controllermouse is hovering over
+if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height)
+|| (instance_exists(obj_controllerMouse) 
+&& (point_in_rectangle(obj_controllerMouse.x, obj_controllerMouse.y, 
+	x, y, x+width, y+height))))
 {
 	draw_set_color(selColor);
 	
 	// Check if button was clicked
-	var _clicked = (mouse_check_button_pressed(mb_left) && (!global.settingKeybind));
+	var _clicked = ((mouse_check_button_pressed(mb_left) 
+	|| gamepad_button_check_pressed(global.connectedPad, gp_stickr)) 
+	&& (!global.settingKeybind));
 	
 	if (_clicked) audio_play_sound(snd_buttonPressed, 1, 0);
 	
@@ -32,9 +37,12 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x+width, y+height))
 			* increment until selected is one less than
 			* the array length.
 			*/
-		
+			
+			var _isLeft = (point_in_rectangle(mouse_x, mouse_y, x, y, x + width/2, y+height)
+			|| (point_in_rectangle(obj_controllerMouse.x, obj_controllerMouse.y, x, y, x+width/2, y+height)));
+			
 			// Check if mouse is on the left side
-			if (point_in_rectangle(mouse_x, mouse_y, x, y, x + width/2, y+height))
+			if (_isLeft)
 			{
 				draw_decor_arrow(x, y + height/2, height/2, 4, 5, 2);
 			

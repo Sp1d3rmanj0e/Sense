@@ -72,7 +72,6 @@ switch(state)
 			trackId = _enemyId; // Store who to track
 			state = GPS.ENEMY; // Switch to tracking enemy state
 			audio_play_sound(snd_GPS_stuck, 1, false);
-			logImportant("Switching to GPS.ENEMY");
 			logImportant(string(_enemyId));
 		}
 		

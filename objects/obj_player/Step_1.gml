@@ -33,8 +33,6 @@ else // Controller is connected - use controller inputs instead
 	moveY = gamepad_axis_value(global.connectedPad, gp_axisrv);
 	keyInteract = gamepad_button_value(global.connectedPad, gp_shoulderrb);
 	
-	logImportant(string(keyInteract));
-	
 	moveX *= walkSp;
 	moveY *= walkSp;
 }

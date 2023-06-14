@@ -53,7 +53,6 @@ function add_score(_name, _score, _difficulty, _category)
 				_array[_difficulty][i] = [_name, number_to_time(_score, true)];
 				
 				log(string(_array[_difficulty]));
-				logImportant("Placed " + _name + " at position: " + string(i));
 				
 				save_leaderboard_data();
 				

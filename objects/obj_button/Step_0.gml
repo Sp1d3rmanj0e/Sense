@@ -12,9 +12,17 @@ image_xscale = _scale;
 image_yscale = _scale;
 
 
-// Check if mouse is touching button
-if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2) 
-|| (point_in_rectangle(obj_controllerMouse.x, obj_controllerMouse.y, _x1, _y1, _x2, _y2)))
+// Check if mouse or controller mouse is touching the button
+var _touchingMouse = false;
+
+if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2))
+	_touchingMouse = true;
+	
+if (instance_exists(obj_controllerMouse)) 
+&& (point_in_rectangle(obj_controllerMouse.x, obj_controllerMouse.y, _x1, _y1, _x2, _y2)) 
+	_touchingMouse = true;
+
+if (_touchingMouse)
 {
 	// Grow if mouse touching
 	if (hover < 1) hover+= changeSp;

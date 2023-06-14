@@ -71,7 +71,11 @@ function scr_createList(_type, _x, _y, _gen, _parent){
 			addButton(_buttonArr, "Taste Hotkey", true, [getUnicodeString(global.kb_keyHotkey5), "Press any key..."]);
 			addButton(_buttonArr, "Reset To Default", true);
 			break;
-			
+		
+		case LISTTYPE.CONTROLLERCONTROLS:
+			addButton(_buttonArr, "Not Added For Controller (Yet)", true);
+			break;
+		
 		case LISTTYPE.AUDIO:
 			addButton(_buttonArr, "Volume", false, ["0%", "25%", "50%", "75%", "100%"], global.volume);
 			break;

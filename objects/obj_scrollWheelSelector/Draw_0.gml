@@ -64,17 +64,16 @@ for (var i = -2; i <= 2; i++)
 		if (_broken) image_speed = 0;
 		else // If not broken, check if hovered or clicked
 		{
-			if (position_meeting(mouse_x, mouse_y, id))
+			_scale = 3;
+				
+			if (mouse_check_button_pressed(mb_left)
+			|| (gamepad_button_check_pressed(global.connectedPad, gp_stickr))
+			|| (keyboard_check_pressed(vk_space)))
 			{
-				_scale = 3;
-				 
-				if (mouse_check_button_pressed(mb_left))
-				{
-					global.nextRoundGadget = focusedGadget;
+				global.nextRoundGadget = focusedGadget;
 					
-					// Get the next room to go to
-					room_goto(get_next_room());
-				}
+				// Get the next room to go to
+				room_goto(get_next_room());
 			}
 		}
 		

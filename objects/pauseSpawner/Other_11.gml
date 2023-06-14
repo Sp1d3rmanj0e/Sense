@@ -1,4 +1,4 @@
-/// @description Pause game (manually)
+/// @description Pause game
 
 gamePaused = true;
 

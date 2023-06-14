@@ -1,8 +1,8 @@
 /// @description Controller Mouse
 
 // Move like a mouse
-hsp = gamepad_axis_value(global.connectedPad, gp_axisrh);
-vsp = gamepad_axis_value(global.connectedPad, gp_axisrv);
+hsp = gamepad_axis_value(global.connectedPad, gp_axislh);
+vsp = gamepad_axis_value(global.connectedPad, gp_axislv);
 
 hsp *= 5;
 vsp *= 5;

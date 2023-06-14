@@ -60,3 +60,10 @@ if  ((_clicked) || (_hotkeyPressed)) && (!deactivated)
 			obj_player.curSense = sense;
 	}
 }
+
+// If the right button is pressed, deactivate all senses
+if (global.controllerConnected 
+&& gamepad_button_check_pressed(global.connectedPad, gp_face2))
+{
+	obj_player.curSense = SENSE.NONE;
+}

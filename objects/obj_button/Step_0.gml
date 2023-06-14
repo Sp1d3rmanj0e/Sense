@@ -29,7 +29,7 @@ if (_touchingMouse)
 	
 	// Check if clicked
 	if (mouse_check_button_pressed(mb_left)
-	|| (gamepad_button_check_pressed(global.connectedPad, gp_stickr)))
+	|| (gamepad_button_check_pressed(global.connectedPad, gp_face1)))
 	{
 		audio_play_sound(snd_buttonPressed, 1, 0);
 		

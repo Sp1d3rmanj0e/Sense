@@ -67,7 +67,7 @@ for (var i = -2; i <= 2; i++)
 			_scale = 3;
 				
 			if (mouse_check_button_pressed(mb_left)
-			|| (gamepad_button_check_pressed(global.connectedPad, gp_stickr))
+			|| (gamepad_button_check_pressed(global.connectedPad, gp_face1))
 			|| (keyboard_check_pressed(vk_space)))
 			{
 				global.nextRoundGadget = focusedGadget;

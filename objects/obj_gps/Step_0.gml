@@ -17,8 +17,8 @@ switch(state)
 		{
 			var pointX, pointY;
 	
-			pointX = gamepad_axis_value(global.connectedPad, gp_axislh);
-			pointY = gamepad_axis_value(global.connectedPad, gp_axislv);
+			pointX = gamepad_axis_value(global.connectedPad, gp_axisrh);
+			pointY = gamepad_axis_value(global.connectedPad, gp_axisrv);
 	
 			if !(pointX == 0 && pointY == 0)
 			{

@@ -20,5 +20,6 @@ else
 // Allow the keybind object to keep working
 // after everything else gets deactivated
 instance_activate_object(obj_loadAndSaveKeybinds);
+instance_activate_object(obj_gamepad);
 
 cMouseId = create_controller_mouse();

@@ -6,10 +6,15 @@ switch(async_load[? "event_type"])             // Parse the async_load map to se
 	case "gamepad discovered":   
 		global.connectedPad = async_load[? "pad_index"];
 		global.controllerConnected = true;								// Mark that you can now use controllers
+		window_set_cursor(cr_none);
+		show_debug_message("Hiding cursor");
 		gamepad_set_axis_deadzone(global.connectedPad, 0.5);			// Set the "deadzone" for the axis
 		gamepad_set_button_threshold(global.connectedPad, 0.1);			// Set the "deadzone" for the buttons
 		break;
 	case "gamepad lost":
+		
+		if (room != rm_intro)
+			with(pauseSpawner) event_user(1);
 		
 		// Check to see if no other controllers are connected upon
 		// one of them being disconnected
@@ -25,5 +30,7 @@ switch(async_load[? "event_type"])             // Parse the async_load map to se
 		
 		if (!_atLeastOneControllerConnected)
 			global.controllerConnected = false;				// Mark that you can no longer use controllers
+			window_set_cursor(cr_default);
+			show_debug_message("Resetting cursor");
 		break;
 }

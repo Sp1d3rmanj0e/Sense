@@ -37,6 +37,11 @@ if (abs(x - room_width/2) >= drawBuffer)
 
 #endregion scrolling
 
+// Check if mouse is on either side of the screen
+var _checkBuffer = 500; // How far from the wall to consider an arrow hovered over
+var _leftSideButtonHovered = point_in_rectangle(mouse_x, mouse_y, 0, 0, _checkBuffer, room_height);
+var _rightSideButtonHovered = point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_width, room_height);
+
 #region gadget sprites
 
 // Animate self as the currently focused gadget
@@ -65,10 +70,23 @@ for (var i = -2; i <= 2; i++)
 		else // If not broken, check if hovered or clicked
 		{
 			_scale = 3;
-				
-			if (mouse_check_button_pressed(mb_left)
-			|| (gamepad_button_check_pressed(global.connectedPad, gp_face1))
-			|| (keyboard_check_pressed(vk_space)))
+			
+			var _clickable = false;
+			
+			// Check if override continue buttons were pressed
+			if (gamepad_button_check_pressed(global.connectedPad, gp_face1))
+			|| (keyboard_check_pressed(vk_space))
+			{
+				_clickable = true;
+			}
+			else if (mouse_check_button_pressed(mb_left)
+			&& (!_leftSideButtonHovered && !_rightSideButtonHovered))
+			{
+				_clickable = true;
+			}
+			
+			
+			if (_clickable)
 			{
 				global.nextRoundGadget = focusedGadget;
 					
@@ -99,10 +117,8 @@ for (var i = -2; i <= 2; i++)
 var _rightScale = 1.75;
 var _leftScale = 1.75;
 
-var _checkBuffer = 500; // How far from the wall to consider an arrow hovered over
-
 // Right side check
-if (point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_width, room_height))
+if (_rightSideButtonHovered)
 {
 	_rightScale = 2.5;
 	
@@ -110,7 +126,7 @@ if (point_in_rectangle(mouse_x, mouse_y, room_width - _checkBuffer, 0, room_widt
 }
 
 // Left side check
-if (point_in_rectangle(mouse_x, mouse_y, 0, 0, _checkBuffer, room_height))
+if (_leftSideButtonHovered)
 {
 	_leftScale = 2.5;
 	

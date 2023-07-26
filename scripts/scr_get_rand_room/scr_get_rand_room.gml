@@ -4,6 +4,8 @@
 // Returns a random room on that level based on the level given
 function get_rand_room(_level)
 {
+	randomize();
+	
 	// Possible choices for the random room function
 	roomLayout = 
 	[

@@ -115,6 +115,6 @@ draw_set_font(-1);
 
 // Draw the player scores
 draw_section(_sectionWallBuffer, room_height - 100-_sectionHeight, 500, 100, 
-				"Time Completed", _timeScore, 0, 0); 
+				"Time Completed", _timeScore, global.difficulty, 0); 
 draw_section(room_width-_sectionWallBuffer-500, room_height - 100-_sectionHeight, 500, 100, 
-				"Sense Use Time", _senseScore, 0, 1); 
+				"Sense Use Time", _senseScore, global.difficulty, 1); 

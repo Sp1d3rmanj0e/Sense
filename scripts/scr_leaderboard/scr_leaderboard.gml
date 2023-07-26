@@ -91,8 +91,6 @@ function get_rank(_time, _difficulty, _category)
 	else
 		_array = global.topSenseUseTime;
 	
-	logVal("Array", _array);
-	
 	// Only check array if there is stuff to check in the array
 	if (array_length(_array[_difficulty]) > 0)
 	{
@@ -105,7 +103,7 @@ function get_rank(_time, _difficulty, _category)
 			if (_time < _curScore)
 			{
 				log("My time: " + string(_time) + ".  Time beat: " + string(_curScore));
-				
+				logImportant(string(i+1));
 				return i+1; // If the score did better than another one, return that new position
 			}
 		}

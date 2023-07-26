@@ -214,6 +214,7 @@
     {"id":{"name":"spr_spiderSide","path":"sprites/spr_spiderSide/spr_spiderSide.yy",},"order":5,},
     {"id":{"name":"spr_bowl","path":"sprites/spr_bowl/spr_bowl.yy",},"order":1,},
     {"id":{"name":"spr_touch","path":"sprites/spr_touch/spr_touch.yy",},"order":5,},
+    {"id":{"name":"obj_override","path":"objects/obj_override/obj_override.yy",},"order":8,},
     {"id":{"name":"enemies","path":"objects/enemies/enemies.yy",},"order":6,},
     {"id":{"name":"spr_teleport_side_animation_right","path":"sprites/spr_teleport_side_animation_right/spr_teleport_side_animation_right.yy",},"order":4,},
     {"id":{"name":"sq_loseSenseTaste","path":"sequences/sq_loseSenseTaste/sq_loseSenseTaste.yy",},"order":5,},

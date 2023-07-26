@@ -22,6 +22,8 @@ name = "";
 // Will tell the player their score on a category
 function draw_section(_x, _y, _width, _height, _title, _score, _difficulty, _category)
 {
+	logImportant(string(get_rank(_score,_difficulty,_category)));
+	
 	// Translate incoming params to usable data
 	var _ranking = string(get_rank(_score, _difficulty, _category));
 	if (_ranking == -1) _ranking = " >10"

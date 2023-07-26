@@ -38,7 +38,7 @@ else
 // Returns openable T/F
 
 #region interaction with the door
-if (instance_exists(obj_player) && obj_player.keyInteract && openable)
+if (instance_exists(obj_player) && obj_player.keyInteract && openable && (sprite_index != spr_hedge_door_front_gold && sprite_index != spr_hedge_door_left_gold))
 {
 	// If interact delay is over
 	if (interactDelayTimer == -1)
